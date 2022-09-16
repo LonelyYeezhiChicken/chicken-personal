@@ -2,7 +2,9 @@ import { Header } from '../../components/home';
 
 function Home() {
   return (
-    <Header />
+    <div className="bg-zinc-800">
+      <Header />
+    </div>
   );
 }
 
