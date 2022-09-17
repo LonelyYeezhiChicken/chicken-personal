@@ -2,10 +2,10 @@ export function GoTo() {
   return (
     <div className="hidden md:block absolute -bottom-32 -left-32 w-96 h-96">
       <div className="absolute text-extrabold text-xl right-12 z-20 text-start top-1/4">
-        <span className="text-7xl">🎨</span>
-        <p>Got a project ?</p>
-        <a href="#" className="underline">
-          Let&#x27;s talk
+        <span className="text-7xl">🐣</span>
+        <p>Go to my Github</p>
+        <a href="https://github.com/LonelyYeezhiChicken" className="underline">
+          Let&#x27;s go 🐓
         </a>
       </div>
       <svg
