@@ -26,7 +26,7 @@ export function Header() {
             <Link to="/continue" className="py-2 px-6 flex hover:text-black">
               尋找一隻雞
             </Link>
-            <Link to="/continue" className="py-2 px-6 flex hover:text-black">
+            <Link to="/portfolio" className="py-2 px-6 flex hover:text-black">
               一隻雞的作品
             </Link>
           </nav>
