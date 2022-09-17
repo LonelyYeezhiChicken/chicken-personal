@@ -14,7 +14,7 @@ export function Header() {
           </svg> */}
         </div>
         <div className="flex items-center">
-          <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden">
+          <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg flex items-center">
             <a href="#" className="py-2 px-6 flex hover:text-black">
               雞舍
             </a>
@@ -28,11 +28,6 @@ export function Header() {
               一隻雞的作品
             </a>
           </nav>
-          <button className="lg:hidden flex flex-col ml-4">
-            <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
-            <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
-            <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
-          </button>
         </div>
       </div>
     </header>
