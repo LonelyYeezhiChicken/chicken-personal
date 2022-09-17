@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Header() {
   return (
     <header className="h-24 sm:h-32 flex items-center z-30 w-full">
@@ -15,18 +17,18 @@ export function Header() {
         </div>
         <div className="flex items-center">
           <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg flex items-center">
-            <a href="#" className="py-2 px-6 flex hover:text-black">
+            <Link to="/" className="py-2 px-6 flex hover:text-black">
               雞舍
-            </a>
-            <a href="#" className="py-2 px-6 flex hover:text-black">
+            </Link>
+            <Link to="/continue" className="py-2 px-6 flex hover:text-black">
               關於一隻雞
-            </a>
-            <a href="#" className="py-2 px-6 flex hover:text-black">
+            </Link>
+            <Link to="/continue" className="py-2 px-6 flex hover:text-black">
               尋找一隻雞
-            </a>
-            <a href="#" className="py-2 px-6 flex hover:text-black">
+            </Link>
+            <Link to="/continue" className="py-2 px-6 flex hover:text-black">
               一隻雞的作品
-            </a>
+            </Link>
           </nav>
         </div>
       </div>
