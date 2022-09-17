@@ -1,11 +1,11 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom";
 
 function Main() {
   return (
     <>
-      <div className="m-8">
+      <main className="dark:bg-gray-800 font-mono bg-white relative overflow-hidden h-screen">
         <Outlet />
-      </div>
+      </main>
     </>
   );
 }
