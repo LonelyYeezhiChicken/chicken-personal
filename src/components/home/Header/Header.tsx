@@ -16,7 +16,7 @@ export function Header() {
           </svg> */}
         </div>
         <div className="flex items-center">
-          <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden">
+          <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex md:flex items-center hidden">
             <Link to="/" className="py-2 px-6 flex hover:text-black">
               雞舍
             </Link>
@@ -30,7 +30,7 @@ export function Header() {
               一隻雞的作品
             </Link>
           </nav>
-          <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:hidden items-center flex">
+          <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:hidden md:hidden items-center flex">
             <Link to="/" className="py-2 px-6 flex hover:text-black">
               雞舍
             </Link>
