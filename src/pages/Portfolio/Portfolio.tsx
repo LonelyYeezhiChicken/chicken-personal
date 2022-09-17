@@ -9,10 +9,12 @@ type HCard = {
   imgPath: string;
 };
 
+const pageTitle: string = "🎨 一隻雞的作品";
+
 const p5Js: HCard = {
   id: 1,
   title: "P5 Js",
-  content: "主要為美術用圖的JS",
+  content: "主要為美術用途的JS",
   imgPath: p5Img,
 };
 
@@ -27,7 +29,7 @@ function Portfolio() {
   return (
     <>
       <Header />
-      <Title text="🎨 一隻雞的作品" />
+      <Title text={pageTitle} />
       <div className="flex relative z-20 items-center mt-5">
         <div className="container mx-auto px-6 flex-col justify-between items-center relative py-4">
           <div className="flex flex-col">
