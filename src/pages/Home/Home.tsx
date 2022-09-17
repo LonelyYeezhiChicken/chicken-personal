@@ -1,8 +1,9 @@
-import { Header, InputForm } from "../../components/home";
+import { Header, InputForm, GoTo } from "../../components/home";
 
 function Home() {
   return (
     <>
+      <GoTo />
       <Header />
       <InputForm />
     </>
