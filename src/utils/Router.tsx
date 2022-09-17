@@ -1,6 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { Main } from '../components/layouts';
-import { Header } from '../components/home';
 import { Home } from '../pages/Home';
 
 export function Router() {
