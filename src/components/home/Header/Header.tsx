@@ -1,6 +1,19 @@
 import { Link } from "react-router-dom";
 import { LinkMap } from "../../../models";
 
+let rootEl: HTMLElement | null = document.getElementById("root");
+let getEmoji: string = "🌛/🌞";
+
+function changDark(): void {
+  if (rootEl !== null) {
+    if (rootEl.className.includes("dark")) {
+      rootEl.classList.remove("dark");
+    } else {
+      rootEl.classList.add("dark");
+    }
+  }
+}
+
 export function Header() {
   return (
     <header className="h-24 sm:h-32 flex items-center z-30 w-full">
@@ -42,8 +55,14 @@ export function Header() {
             >
               一隻雞的作品
             </Link>
+            <button
+              className="py-2 px-6 flex hover:text-black "
+              onClick={() => changDark()}
+            >
+              {getEmoji}
+            </button>
           </nav>
-          <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:hidden md:hidden items-center flex">
+          <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg sm:flex lg:hidden md:hidden items-center hidden">
             <Link
               to={LinkMap.Home.toString()}
               className="py-2 px-6 flex hover:text-black"
@@ -68,6 +87,44 @@ export function Header() {
             >
               作品
             </Link>
+            <button
+              className="py-2 px-6 flex hover:text-black"
+              onClick={() => changDark()}
+            >
+              {getEmoji}
+            </button>
+          </nav>
+          <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:hidden md:hidden sm:hidden  items-center flex">
+            <Link
+              to={LinkMap.Home.toString()}
+              className="py-2 px-6 flex hover:text-black"
+            >
+              🏠
+            </Link>
+            <Link
+              to={LinkMap.About.toString()}
+              className="py-2 px-6 flex hover:text-black"
+            >
+              📋
+            </Link>
+            <Link
+              to={LinkMap.Find.toString()}
+              className="py-2 px-6 flex hover:text-black"
+            >
+              🔎
+            </Link>
+            <Link
+              to={LinkMap.Portfolio.toString()}
+              className="py-2 px-6 flex hover:text-black"
+            >
+              🎨
+            </Link>
+            <button
+              className="py-2 px-6 flex hover:text-black"
+              onClick={() => changDark()}
+            >
+              🌗
+            </button>
           </nav>
         </div>
       </div>
