@@ -1648,6 +1648,11 @@ vfile@^5.0.0:
     unist-util-stringify-position "^3.0.0"
     vfile-message "^3.0.0"
 
+vite-raw-plugin@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/vite-raw-plugin/-/vite-raw-plugin-1.0.1.tgz#334820e4bab3a4b7364763dbdb9555e6598876ed"
+  integrity sha512-bLY2UUM2WYc2R4NN/5KWmLxEkx6p+Br4Eg2VebAhvMn0JGrzAs+0Xb0suhas1ohxvaqhjiLNv35t2MxrEuKOCw==
+
 vite@^3.1.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/vite/-/vite-3.1.1.tgz#fcfe12c3fe7e4c6def1fc52e4dc9cb0ccb2b1a59"

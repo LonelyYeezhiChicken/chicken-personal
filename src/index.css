@@ -18,4 +18,8 @@
     code{
         @apply bg-gray-100 rounded dark:bg-gray-600  pl-3 pr-3
     }
+
+    ::-webkit-scrollbar {
+        @apply w-2;
+      }
 }
