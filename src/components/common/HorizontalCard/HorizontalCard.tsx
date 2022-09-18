@@ -30,8 +30,8 @@ export function HorizontalCard({ pgId, title, content, imgPath }: Props) {
 
   return (
     <div className="flex max-w-md bg-white shadow-lg rounded-lg overflow-hidden m-5">
-      <div className="w-1/3 bg-cover bg-landscape">
-        <img src={imgPath} className="w-90 h-40" />
+      <div className="w-1/3 bg-cover bg-landscape ">
+        <img src={imgPath} className="w-90 sm:h-40 h-32" />
       </div>
       <div className="w-2/3 p-4">
         <h1 className="text-gray-900 font-bold text-3xl">{title}</h1>
