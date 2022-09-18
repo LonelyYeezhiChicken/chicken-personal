@@ -1,7 +1,7 @@
 import { Header, Title, PageSide, PageBody } from "../../components";
 import { PageData } from "../../models";
 
-const pageTitle: string = "🎨 一隻雞的作品 - P5 Js";
+const pageTitle: string = "🎨 P5 Js";
 
 const pageList: PageData[] = [
   {
@@ -27,7 +27,7 @@ function P5JsPage() {
           <PageSide list={pageList} />
         </div>
         <div className="w-3/4 sm:w-4/5">
-          <PageBody />
+          <PageBody title={pageTitle} text="1231231241241412414142" />
         </div>
       </div>
     </>
