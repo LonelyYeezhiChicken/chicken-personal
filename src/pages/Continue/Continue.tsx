@@ -1,11 +1,12 @@
 import { Header } from "../../components/home";
 import build from "../../assets/Build.png";
 import { useNavigate } from "react-router-dom";
+import { LinkMap } from "../../models";
 
 function Continue() {
   const navigate = useNavigate();
   const goHome = () => {
-    navigate("/");
+    navigate(LinkMap.Home.toString());
   };
 
   return (

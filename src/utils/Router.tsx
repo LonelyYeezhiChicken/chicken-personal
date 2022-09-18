@@ -1,19 +1,24 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { Main } from "../components/layouts";
-import { Home, Continue, Portfolio } from "../pages";
+import { Home, Continue, Portfolio, P5JsPage } from "../pages";
+import { LinkMap } from "../models";
 
 export function Router() {
   return (
     <Routes>
-      <Route path="/" element={<Main />}>
+      <Route path={LinkMap.Home.toString()} element={<Main />}>
         {/* 主頁 */}
         <Route index element={<Home />} />
       </Route>
-      <Route path="/portfolio" element={<Main />}>
+      <Route path={LinkMap.Portfolio.toString()} element={<Main />}>
         {/* 作品集 */}
         <Route index element={<Portfolio />} />
       </Route>
-      <Route path="/continue" element={<Main />}>
+      <Route path={LinkMap.P5Js.toString()} element={<Main />}>
+        {/* P5 Js */}
+        <Route index element={<P5JsPage />} />
+      </Route>
+      <Route path={LinkMap.Continue.toString()} element={<Main />}>
         {/* 建設中 */}
         <Route index element={<Continue />} />
       </Route>
