@@ -22,4 +22,8 @@
     ::-webkit-scrollbar {
         @apply w-2;
       }
+
+    img[alt="mdImg"] { 
+        @apply max-h-80 max-w-7xl
+    }
 }
