@@ -18,9 +18,17 @@ const pageList: PageData[] = [
   },
 ];
 
+let aaa: string = "```csharp public class Test{} ```";
+
 const pageBody: PageBodyData = {
   title: pageTitle,
-  text: "1231231241241412414142",
+  text: `
+  # 我是標題
+  ### 我室內文
+  - 你好
+  - 我好  
+  ${aaa}
+  `,
 };
 
 function P5JsPage() {
