@@ -2,3 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    h1{
+        @apply text-4xl;
+    }
+
+    h2{
+        @apply text-3xl;
+    }
+    
+    h3 {
+      @apply text-2xl;
+    }
+
+    code{
+        @apply bg-gray-100 rounded dark:bg-gray-600  pl-3 pr-3
+    }
+
+    ::-webkit-scrollbar {
+        @apply w-2;
+      }
+}
