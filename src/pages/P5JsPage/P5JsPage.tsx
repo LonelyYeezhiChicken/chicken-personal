@@ -22,8 +22,14 @@ function P5JsPage() {
   return (
     <>
       <Header />
-      <Title text={pageTitle} />
-      <PageSide list={pageList} />
+      <div className="flex">
+        <div className="w-1/4 sm:w-1/5">
+          <PageSide list={pageList} />
+        </div>
+        <div className="w-3/4 sm:w-4/5">
+          <PageBody />
+        </div>
+      </div>
     </>
   );
 }
