@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { LinkMap } from "../../../models";
 
 type Props = {
   pgId: number;
@@ -18,10 +19,10 @@ export function HorizontalCard({ pgId, title, content, imgPath }: Props) {
     let path: string = "/";
     switch (page) {
       case 1:
-        path += "continue";
+        path = LinkMap.P5Js.toString();
         break;
       case 2:
-        path += "continue";
+        path = LinkMap.Continue.toString();
         break;
     }
     navigate(path);
