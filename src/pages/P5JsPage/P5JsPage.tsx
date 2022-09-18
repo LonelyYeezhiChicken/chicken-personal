@@ -1,5 +1,5 @@
-import { Header, Title, PageSide, PageBody } from "../../components";
-import { PageData } from "../../models";
+import { Header, Portfolio } from "../../components";
+import { PageData, PageBodyData } from "../../models";
 
 const pageTitle: string = "🎨 P5 Js";
 
@@ -18,18 +18,16 @@ const pageList: PageData[] = [
   },
 ];
 
+const pageBody: PageBodyData = {
+  title: pageTitle,
+  text: "1231231241241412414142",
+};
+
 function P5JsPage() {
   return (
     <>
       <Header />
-      <div className="flex">
-        <div className="w-1/4 sm:w-1/5">
-          <PageSide list={pageList} />
-        </div>
-        <div className="w-3/4 sm:w-4/5">
-          <PageBody title={pageTitle} text="1231231241241412414142" />
-        </div>
-      </div>
+      <Portfolio side={pageList} body={pageBody} />
     </>
   );
 }

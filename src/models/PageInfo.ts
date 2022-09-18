@@ -1,3 +1,8 @@
+export interface PortfolioData {
+    side: Array<PageData>,
+    body: PageBodyData
+}
+
 
 export interface PageDataList {
     list: Array<PageData>
