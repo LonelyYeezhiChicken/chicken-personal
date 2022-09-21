@@ -1,6 +1,7 @@
 import { Header, Portfolio } from "../../components";
 import { PageData, PageBodyData } from "../../models";
 import testMd from "../../note/p5jsNote/LineAndLoop/README.md";
+import { useTitle } from "../../utils/PageTitle";
 
 const pageTitle: string = "🎨 P5 Js";
 
@@ -33,6 +34,7 @@ const pageBody: PageBodyData = {
 };
 
 function P5JsPage() {
+  useTitle("Chicken Say Hi | P5 js");
   return (
     <>
       <Header />
