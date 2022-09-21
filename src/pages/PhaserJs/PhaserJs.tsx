@@ -1,6 +1,7 @@
 import { Header, Portfolio } from "../../components";
 import { PageData, PageBodyData } from "../../models";
 import testMd from "../../note/phaserJs/RpgGame/RpgGame.md";
+import { useTitle } from "../../utils/PageTitle";
 
 const pageTitle: string = "🎮 Phaser3 Js";
 
@@ -17,6 +18,7 @@ const pageBody: PageBodyData = {
 };
 
 function PhaserJs() {
+  useTitle("Chicken Say Hi | Phaser3 js");
   return (
     <>
       <Header />

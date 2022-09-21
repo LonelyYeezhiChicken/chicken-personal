@@ -1,6 +1,7 @@
 import { Title, Header, HorizontalCard } from "../../components";
 import phaserImg from "../../assets/phaser.jpg";
 import p5Img from "../../assets/p5.png";
+import { useTitle } from "../../utils/PageTitle";
 
 type HCard = {
   id: number;
@@ -26,6 +27,7 @@ const phaserJs: HCard = {
 };
 
 function Portfolio() {
+  useTitle("Chicken Say Hi | 作品集");
   return (
     <>
       <Header />
