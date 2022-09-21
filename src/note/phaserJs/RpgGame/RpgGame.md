@@ -8,11 +8,13 @@
 
 ### RPG Game
 - 選角畫面
-![mdImg](../../../assets/mdImgs/phaser/RpgGame/role.png)
+![mdImg](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/RpgGame/role.png?raw=true)
 
 - 戰士
-![mdImg](../../../assets/mdImgs/phaser/RpgGame/w.png)
+![mdImg](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/RpgGame/w.png?raw=true)
 - 坦克
-![mdImg](../../../assets/mdImgs/phaser/RpgGame/t.png)
+![mdImg](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/RpgGame/t.png?raw=true)
 - 法師
-![mdImg](../../../assets/mdImgs/phaser/RpgGame/m.png)
+![mdImg](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/RpgGame/m.png?raw=true)
+
+### [遊戲連結](https://lonelyyeezhichicken.github.io/rpg-game-v1/)
