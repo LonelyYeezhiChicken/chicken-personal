@@ -26,4 +26,12 @@
     img[alt="mdImg"] { 
         @apply max-h-80 max-w-7xl
     }
+
+    ul{
+        @apply list-disc ml-5
+    }
+
+    ol{
+        @apply list-decimal ml-10
+    }
 }

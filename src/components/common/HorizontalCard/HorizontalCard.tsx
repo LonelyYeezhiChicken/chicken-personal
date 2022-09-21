@@ -22,7 +22,7 @@ export function HorizontalCard({ pgId, title, content, imgPath }: Props) {
         path = LinkMap.P5Js.toString();
         break;
       case 2:
-        path = LinkMap.Continue.toString();
+        path = LinkMap.PhaserJs.toString();
         break;
     }
     navigate(path);

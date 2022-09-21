@@ -5,4 +5,5 @@ export enum LinkMap {
     Portfolio = "/portfolio",
     Continue = "/continue",
     P5Js = "/p5js",
+    PhaserJs = "/PhaserJs"
 }
