@@ -18,14 +18,18 @@
     .Md pre{
         @apply bg-gray-100 rounded dark:bg-gray-600  p-3 ;
     }
+
+    .Md code{
+        @apply bg-gray-100 rounded dark:bg-gray-600  p-1;
+    }
     
 
     ::-webkit-scrollbar {
         @apply w-2;
       }
 
-    .Md img[alt="mdImg"] { 
-        @apply max-h-80 max-w-7xl mt-3 mb-3;
+    img[alt="mdImg"] { 
+        @apply max-h-80  mt-3 mb-3;
     }
 
     .Md ul{
