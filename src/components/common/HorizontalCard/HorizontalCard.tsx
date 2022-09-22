@@ -22,7 +22,7 @@ export function HorizontalCard({ pgId, title, content, imgPath }: Props) {
         path = LinkMap.P5Js.toString();
         break;
       case 2:
-        path = LinkMap.PhaserJs.toString();
+        path = LinkMap.RpgGameV1.toString();
         break;
     }
     navigate(path);
@@ -38,7 +38,7 @@ export function HorizontalCard({ pgId, title, content, imgPath }: Props) {
         <p className="mt-2 text-gray-600 text-md">{content}</p>
         <div className="flex item-center justify-end mt-3">
           <button
-            className="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
+            className="px-3 py-2 bg-gray-800 text-white text-md font-bold uppercase rounded "
             onClick={() => goToPage(pgId)}
           >
             Go

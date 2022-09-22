@@ -1,6 +1,5 @@
-import { Header, Portfolio } from "../../components";
-import { PageData, PageBodyData } from "../../models";
-import testMd from "../../note/p5jsNote/LineAndLoop/README.md";
+import { Header, PageSide } from "../../components";
+import { PageData, PageBodyData, LinkMap } from "../../models";
 import { useTitle } from "../../utils/PageTitle";
 
 const pageTitle: string = "🎨 P5 Js";
@@ -8,37 +7,37 @@ const pageTitle: string = "🎨 P5 Js";
 const pageList: PageData[] = [
   {
     id: 1,
-    text: "線與迴圈",
+    text: "1. 線與迴圈",
+    goPath: LinkMap.LineAndLoop,
   },
   {
     id: 2,
-    text: "map 函式",
+    text: "2. map 函式",
+    goPath: LinkMap.MapFunc,
   },
   {
     id: 3,
-    text: "區塊漸層",
+    text: "3. 區塊漸層",
+    goPath: LinkMap.Gradient,
   },
   {
     id: 4,
-    text: "聲波",
+    text: "4. 聲波",
+    goPath: LinkMap.Wave,
   },
   {
     id: 5,
-    text: "arc 函式",
+    text: "5. arc 函式",
+    goPath: LinkMap.MethodArc,
   },
 ];
-
-const pageBody: PageBodyData = {
-  title: pageTitle,
-  text: testMd,
-};
 
 function P5JsPage() {
   useTitle("Chicken Say Hi | P5 js");
   return (
     <>
       <Header />
-      <Portfolio side={pageList} body={pageBody} />
+      <PageSide list={pageList} />
     </>
   );
 }
