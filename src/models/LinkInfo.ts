@@ -5,5 +5,10 @@ export enum LinkMap {
     Portfolio = "/portfolio",
     Continue = "/continue",
     P5Js = "/p5js",
-    PhaserJs = "/PhaserJs"
+    RpgGameV1 = "/rpgGameV1",
+    LineAndLoop = "/lineAndLoop",
+    MapFunc = "/mapFunc",
+    Gradient = "/gradient",
+    Wave = "/wave",
+    MethodArc = "/methodArc"
 }

@@ -1,1 +1,1 @@
-export { default as PhaserJs } from './PhaserJs'
+export { default as RpgGameV1 } from './RpgGameV1'
