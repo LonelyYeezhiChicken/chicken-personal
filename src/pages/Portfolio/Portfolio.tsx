@@ -1,5 +1,6 @@
 import { Title, Header, HorizontalCard } from "../../components";
 import phaserImg from "../../assets/phaser.jpg";
+import iron13 from "../../assets/iron13.png";
 import p5Img from "../../assets/p5.png";
 import { useTitle } from "../../utils/PageTitle";
 
@@ -26,14 +27,29 @@ const phaserJs: HCard = {
   imgPath: phaserImg,
 };
 
+const ironMan13: HCard = {
+  id: 3,
+  title: "第十三屆鐵人賽",
+  content: "C# 雞礎觀念",
+  imgPath: iron13,
+};
+
 function Portfolio() {
   useTitle("Chicken Say Hi | 作品集");
   return (
     <>
       <Header />
       <Title text={pageTitle} />
-      <div className="flex relative z-20 items-center mt-5">
-        <div className="container mx-auto px-6 flex-col justify-between items-center relative py-4">
+      <div className="flex relative z-20 items-center mt-5 max-h-full overflow-auto">
+        <div className="container mx-auto px-6 flex-col justify-between items-center relative py-4 mt-5">
+          <div className="flex flex-col">
+            <HorizontalCard
+              pgId={ironMan13.id}
+              title={ironMan13.title}
+              content={ironMan13.content}
+              imgPath={ironMan13.imgPath}
+            />
+          </div>
           <div className="flex flex-col">
             <HorizontalCard
               pgId={p5Js.id}
@@ -50,6 +66,7 @@ function Portfolio() {
               imgPath={phaserJs.imgPath}
             />
           </div>
+          <div className="flex flex-col m-20"></div>
         </div>
       </div>
     </>

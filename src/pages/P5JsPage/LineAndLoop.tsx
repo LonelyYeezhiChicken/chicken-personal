@@ -6,7 +6,7 @@ import { useTitle } from "../../utils/PageTitle";
 const pageTitle: string = "🎨 P5 - 線與迴圈";
 
 function LineAndLoop() {
-  useTitle("Chicken Say Hi | P5 js");
+  useTitle("Chicken Say Hi | P5 線與迴圈");
   return (
     <>
       <Header />

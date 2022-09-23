@@ -43,4 +43,8 @@
     .Md a{
         @apply underline-offset-4
     }
+
+    .Md   blockquote{
+        @apply pt-2 pb-5 ml-5 text-base border-l-4 bg-slate-600
+    }  
 }

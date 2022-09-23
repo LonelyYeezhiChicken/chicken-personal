@@ -2,8 +2,6 @@ import { Header, PageSide } from "../../components";
 import { PageData, PageBodyData, LinkMap } from "../../models";
 import { useTitle } from "../../utils/PageTitle";
 
-const pageTitle: string = "🎨 P5 Js";
-
 const pageList: PageData[] = [
   {
     id: 1,

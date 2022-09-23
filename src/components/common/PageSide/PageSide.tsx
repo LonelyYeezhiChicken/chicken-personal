@@ -3,11 +3,11 @@ import { PageDataList, PageData } from "../../../models";
 
 export function PageSide({ list }: PageDataList) {
   return (
-    <div className="relative bg-white dark:bg-gray-900 rounded-lg">
-      <div className="flex flex-col sm:flex-row sm:justify-around">
-        <div className="w-72 h-screen">
+    <div className="overflow-auto max-h-screen relative bg-white dark:bg-gray-900 rounded-lg">
+      <div className="flex flex-col sm:flex-row">
+        <div className="">
           <h2 className="ml-5 mt-10 text-3xl font-extrabold leading-9 border-b-2 border-gray-600 dark:border-gray-100 text-gray-800 dark:text-white mb-12">
-            目錄:{" "}
+            目錄:
           </h2>
           <nav className="mt-10 px-6 ">
             {list.map((item: PageData) => (
@@ -23,6 +23,7 @@ export function PageSide({ list }: PageDataList) {
               </Link>
             ))}
           </nav>
+          <div className="m-60"></div>
         </div>
       </div>
     </div>

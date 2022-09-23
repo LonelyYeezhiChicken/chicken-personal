@@ -24,6 +24,9 @@ export function HorizontalCard({ pgId, title, content, imgPath }: Props) {
       case 2:
         path = LinkMap.RpgGameV1.toString();
         break;
+      case 3:
+        path = LinkMap.IronMan13.toString();
+        break;
     }
     navigate(path);
   }
