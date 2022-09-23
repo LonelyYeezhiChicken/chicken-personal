@@ -3,7 +3,6 @@ import ReactMarkdown from "react-markdown";
 import { Link } from "react-router-dom";
 
 export function PageBody({ backPath, title, text }: PageBodyData) {
-  console.log(backPath);
   return (
     <div className="max-w-screen-xl mx-auto p-8 ">
       <h2 className="text-3xl font-extrabold leading-9 border-b-2 border-gray-600 dark:border-gray-100 text-gray-800 dark:text-white mb-12">
