@@ -1,7 +1,7 @@
 import ga4 from 'react-ga4'
 
 const TRACKING_ID: string = 'G-23JXYZ7T1V'
-const isProduction: boolean = true;
+const isProduction: boolean = false;
 
 export const init = () => ga4.initialize(TRACKING_ID, {
     testMode: !isProduction
