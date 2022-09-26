@@ -29,7 +29,7 @@
       }
 
     img[alt="mdImg"] { 
-        @apply max-h-80  mt-3 mb-3;
+        @apply max-h-80  mt-3 mb-3 dark:bg-slate-500 rounded;
     }
 
     .Md ul{
@@ -41,10 +41,10 @@
     }
 
     .Md a{
-        @apply underline-offset-4
+        @apply underline-offset-4;
     }
 
     .Md   blockquote{
-        @apply pt-2 pb-5 ml-5 text-base border-l-4 bg-slate-600
+        @apply pt-2 pb-5 pl-5 ml-5 text-base border-l-4 dark:bg-slate-600 bg-gray-100;
     }  
 }

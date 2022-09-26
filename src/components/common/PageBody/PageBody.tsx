@@ -2,6 +2,12 @@ import { PageBodyData } from "../../../models";
 import ReactMarkdown from "react-markdown";
 import { Link } from "react-router-dom";
 
+const tt = `
+| heading | b  |  c |  d  |
+| - | :- | -: | :-: |
+| cell 1 | cell 2 | 3 | 4 | 
+`;
+
 export function PageBody({ backPath, title, text }: PageBodyData) {
   return (
     <div className="max-w-screen-xl mx-auto p-8 ">
@@ -12,7 +18,7 @@ export function PageBody({ backPath, title, text }: PageBodyData) {
         <b>👈 回目錄</b>
       </Link>
       <ReactMarkdown className="leading-9 text-gray-500 dark:text-white Md">
-        {text}
+        {tt}
       </ReactMarkdown>
       <footer className="m-10 mb-32">
         <Link to={backPath} className="dark:text-yellow-50 text-gray-900">
