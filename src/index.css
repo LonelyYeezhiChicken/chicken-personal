@@ -21,15 +21,14 @@
 
     .Md code{
         @apply bg-gray-100 rounded dark:bg-gray-600  p-1;
-    }
-    
+    }    
 
     ::-webkit-scrollbar {
         @apply w-2;
       }
 
     img[alt="mdImg"] { 
-        @apply max-h-80  mt-3 mb-3;
+        @apply max-h-80  mt-3 mb-3 dark:bg-slate-500 rounded;
     }
 
     .Md ul{
@@ -41,10 +40,22 @@
     }
 
     .Md a{
-        @apply underline-offset-4
+        @apply underline-offset-4;
     }
 
-    .Md   blockquote{
-        @apply pt-2 pb-5 ml-5 text-base border-l-4 bg-slate-600
-    }  
+    .Md blockquote{
+        @apply pt-2 pb-5 pl-5 ml-5 text-base border-l-4 dark:bg-slate-600 bg-gray-100;
+    }
+    
+    .Md table {
+        @apply table p-4 dark:bg-gray-600 bg-white shadow rounded-lg m-10;
+    }
+
+    .Md th  {
+        @apply border p-4 dark:border-stone-500 whitespace-nowrap font-normal;
+    }
+
+    .Md td  {
+        @apply border p-4 dark:border-stone-500;
+    }
 }

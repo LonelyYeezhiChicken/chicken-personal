@@ -1,6 +1,7 @@
 import { PageBodyData } from "../../../models";
 import ReactMarkdown from "react-markdown";
 import { Link } from "react-router-dom";
+import remarkGfm from "remark-gfm";
 
 export function PageBody({ backPath, title, text }: PageBodyData) {
   return (
@@ -11,7 +12,10 @@ export function PageBody({ backPath, title, text }: PageBodyData) {
       <Link to={backPath} className="dark:text-yellow-50 text-gray-900 mb-10">
         <b>👈 回目錄</b>
       </Link>
-      <ReactMarkdown className="leading-9 text-gray-500 dark:text-white Md">
+      <ReactMarkdown
+        className="leading-9 text-gray-500 dark:text-white Md"
+        remarkPlugins={[remarkGfm]}
+      >
         {text}
       </ReactMarkdown>
       <footer className="m-10 mb-32">

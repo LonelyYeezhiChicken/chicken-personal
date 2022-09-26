@@ -9,11 +9,11 @@ const pageList: PageData[] = [
     text: "[Day2]C# 雞礎觀念- 與C#開發千里來相見",
     goPath: LinkMap.D2no13,
   },
-  // {
-  //   id: 3,
-  //   text: "[Day3]C# 雞礎觀念- 核心的數據成員~變數(一)",
-  //   goPath: LinkMap.D3no13,
-  // },
+  {
+    id: 3,
+    text: "[Day3]C# 雞礎觀念- 核心的數據成員~變數(一)",
+    goPath: LinkMap.D3no13,
+  },
   // {
   //   id: 4,
   //   text: "[Day4]C# 雞礎觀念- 核心的數據成員~變數(二)",
