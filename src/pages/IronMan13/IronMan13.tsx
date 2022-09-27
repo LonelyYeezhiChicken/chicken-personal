@@ -14,11 +14,11 @@ const pageList: PageData[] = [
     text: "[Day3]C# 雞礎觀念- 核心的數據成員~變數(一)",
     goPath: LinkMap.D3no13,
   },
-  // {
-  //   id: 4,
-  //   text: "[Day4]C# 雞礎觀念- 核心的數據成員~變數(二)",
-  //   goPath: LinkMap.D4no13,
-  // },
+  {
+    id: 4,
+    text: "[Day4]C# 雞礎觀念- 核心的數據成員~變數(二)",
+    goPath: LinkMap.D4no13,
+  },
   // {
   //   id: 5,
   //   text: "[Day5]C# 雞礎觀念- 讓變數學會七十二變的高手~運算子",
