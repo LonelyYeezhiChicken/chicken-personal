@@ -24,11 +24,11 @@ const pageList: PageData[] = [
     text: "[Day5]C# 雞礎觀念- 讓變數學會七十二變的高手~運算子",
     goPath: LinkMap.D5no13,
   },
-  // {
-  //   id: 6,
-  //   text: "[Day6]C# 雞礎觀念- 程式碼擁有判斷真假的能力~邏輯運算子",
-  //   goPath: LinkMap.D6no13,
-  // },
+  {
+    id: 6,
+    text: "[Day6]C# 雞礎觀念- 程式碼擁有判斷真假的能力~邏輯運算子",
+    goPath: LinkMap.D6no13,
+  },
   // {
   //   id: 7,
   //   text: "[Day7]C# 雞礎觀念- 你有選擇障礙嗎? 交給if陳述式解決吧!",
