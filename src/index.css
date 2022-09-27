@@ -16,12 +16,12 @@
     }
 
     .Md pre{
-        @apply bg-gray-100 rounded dark:bg-gray-600  p-3 leading-3;
+        @apply leading-3 rounded;
     }
 
-    .Md code{
+    /* .Md code{
         @apply bg-gray-100 rounded dark:bg-gray-600  p-1 text-sm;
-    }    
+    }     */
 
     ::-webkit-scrollbar {
         @apply w-2;

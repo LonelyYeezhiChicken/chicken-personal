@@ -2,6 +2,16 @@ import { PageBodyData } from "../../../models";
 import ReactMarkdown from "react-markdown";
 import { Link } from "react-router-dom";
 import remarkGfm from "remark-gfm";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import {
+  dracula,
+  duotoneLight,
+} from "react-syntax-highlighter/dist/esm/styles/prism";
+
+const them = {
+  dark: dracula,
+  light: duotoneLight,
+};
 
 export function PageBody({ backPath, title, text }: PageBodyData) {
   return (
@@ -15,6 +25,28 @@ export function PageBody({ backPath, title, text }: PageBodyData) {
       <ReactMarkdown
         className="leading-9 text-gray-500 dark:text-white Md"
         remarkPlugins={[remarkGfm]}
+        components={{
+          code({ node, inline, className, children, ...props }) {
+            const match = /language-(\w+)/.exec(className || "");
+            console.log(match);
+            return !inline && match ? (
+              <SyntaxHighlighter
+                showLineNumbers={true}
+                /* @ts-ignore */
+                style={dracula}
+                language={match[1]}
+                PreTag="div"
+                {...props}
+              >
+                {String(children).replace(/\n$/, "")}
+              </SyntaxHighlighter>
+            ) : (
+              <code className={className} {...props}>
+                {children}
+              </code>
+            );
+          },
+        }}
       >
         {text}
       </ReactMarkdown>

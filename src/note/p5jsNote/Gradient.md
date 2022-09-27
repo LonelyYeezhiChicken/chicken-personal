@@ -7,12 +7,12 @@
 ### 1. 簡易作法
 1. 首先將寬度除以五，來獲得五個區塊
 
-```javaScript
+```javascript
 let linePosition = width / 5;
 ```
 2. 開始畫第一塊
 
-```javaScript
+```javascript
     for (let i = 0; i < height; i++) {
         let resAmount = map(i, 0, height, 0, 255);
         stroke(resAmount, 100, 200);
@@ -26,7 +26,7 @@ let linePosition = width / 5;
     - 由於隨著區塊增長要轉換的三原色起始位置需要越來越大
     - 因此將他乘以30的倍數
 
-```javaScript
+```javascript
 //區塊1
     let resAmount = map(i, 0, height, 0, 255);
 
@@ -47,7 +47,7 @@ let linePosition = width / 5;
     - 由於紅色隨著迴圈，數字會越來越大
     - 因此顏色會越來越偏紫色，藉此達到漸層效果
 
-```javaScript
+```javascript
 stroke(resAmount, 100, 200);
 ```
 5. 畫線
@@ -56,7 +56,7 @@ stroke(resAmount, 100, 200);
     - 所以我們用了剛剛算好的區塊(linePosition)
     - 例如: 第一塊就是要從0~第一塊的終點，第二塊則是需要從第一塊終點到第二塊起點
 
-```javaScript
+```javascript
  //第一塊 (0 ~ 第一塊)
     line(0, i, linePosition, i);
 
@@ -80,12 +80,12 @@ stroke(resAmount, 100, 200);
     - 由於RGB的範圍每次都是30的倍數
     - 因此我們將他*30
 
-```javaScript
+```javascript
 let resAmount = map(i, 0, height, position * 30, 255);
 ```
 2. 並將劃線的點到點使用運算的方式
 
-```javaScript
+```javascript
 line(linePosition * position, i, linePosition * (position + 1), i);
 ```
 

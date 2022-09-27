@@ -21,7 +21,7 @@
 
 ### OPEN 例:
 - OPEN : open semi-circle (半開圓形) -> 純粹弧線，並無閉鎖 
-```javaScript
+```javascript
 // 從點(100, 150) 開始，劃出 200 x 200 的開放式半圓
 arc(100, 150, 200, 200, 0, 10, OPEN);
 ```
@@ -31,7 +31,7 @@ arc(100, 150, 200, 200, 0, 10, OPEN);
 ### CHORD 例:
 - CHORD : closed semi-circle (閉鎖半圓) -> 封閉式半圓
 - 與開放式的差異只在半圓口是否有黑線
-```javaScript
+```javascript
 // 從點(100, 150) 開始，劃出 200 x 200 的封閉式式半圓
 arc(100, 150, 200, 200, 0, 10, CHORD);
 ```
@@ -40,7 +40,7 @@ arc(100, 150, 200, 200, 0, 10, CHORD);
 
 ### PIE 例:
 - PIE : a closed pie segment (圓餅圖) -> 封閉式圓餅圖
-```javaScript
+```javascript
 // 從點(100, 150) 開始，劃出 200 x 200 的圓餅圖
 arc(100, 150, 200, 200, 0, 10, PIE);
 ```

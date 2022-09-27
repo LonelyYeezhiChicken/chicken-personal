@@ -29,7 +29,7 @@
 | (6 / 2) != 3 | 假 
 
 ### 範例:我們來驗證上面的例子
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -79,7 +79,7 @@ False
 ![mdImg](https://ithelp.ithome.com.tw/upload/images/20210905/20097001UVjpqXfioN.png)
 
 ### 範例:x是大於10的偶數
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -119,7 +119,7 @@ P | Q |  P and Q
 ![mdImg](https://ithelp.ithome.com.tw/upload/images/20210905/20097001XrHDlQUZwh.png)
 
 ### 範例:x是負數或是 x 是3的倍數
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -168,7 +168,7 @@ x = 10 , False
 * 他的值只會有兩種，不是真就是假，從來不騙人
 
 ### 範例:我們輸入一個整數，讓電腦來告訴我們它是不是偶數
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;

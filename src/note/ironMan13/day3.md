@@ -20,7 +20,7 @@
 4. 但因為剛剛才出生，所以什麼都不會，就如同一張白紙一樣(默認預設值0)
 * 明白整數的身世之謎後我們來他玩玩吧!
 * 題目: 阿嬤到菜市場買菜，買了一根50元的蘿蔔跟70元的豬肉，請問阿嬤在未殺價的情況下給了攤主多少錢呢?
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -102,7 +102,7 @@ namespace CsharpDemo
 
 ### 我們馬上來練習看看吧
 * 題目:請分別用float與double來印出?。
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
