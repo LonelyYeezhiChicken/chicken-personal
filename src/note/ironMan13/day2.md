@@ -11,7 +11,7 @@
 記得幫專案命名，選擇路徑，命名方案，一個方案下可以包含多個專案
 
 2. 建立完成後就可以看到自動產生的程式碼啦
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,7 +39,7 @@ namespace CsharpDemo
 ### 實戰演練
 在說明完結構後想必各位也手癢癢想來寫寫看了
 * 我們就來寫個Hello world 讓程式來跟這世界打聲招呼吧!
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -87,7 +87,7 @@ namespace CsharpDemo
 #### 題目:
 * 請大家用C#來做個簡單自我介紹吧!介紹內容需有(姓名，年齡，血型，星座，自我介紹)
 **範例:**
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;

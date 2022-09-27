@@ -6,28 +6,28 @@
 - 分別宣告 ； 
     - 角度(用於y軸計算)
 
-    ```javaScript
+    ```javascript
      let angle = 0.0;
      ```
     - 圓的半徑為20
     
-    ```javaScript
+    ```javascript
      let radius = 20;
      ```
 ### 設定圓的模式
 - 半徑最後為半徑模式 `circle(x, y, 半徑) `
 
-    ```javaScript
+    ```javascript
      ellipseMode(RADIUS);
      ```
 - 半徑最後為直徑模式(預設模式) `circle(x, y, 直徑) `
 
-    ```javaScript
+    ```javascript
      ellipseMode(CENTER);
      ```
 ### 開始畫圓
 
-```javaScript
+```javascript
       //畫25個圓
     for (let i = 0; i < 25; i++) {
         //計算圓新的x軸(固定不變)

@@ -18,7 +18,7 @@
 |% | 取餘數 | a % b | 二元 |
 
 ### 範例:使用基姆拉爾森計算公式，來算出今天禮拜幾
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -60,7 +60,7 @@ namespace CsharpDemo
 * 在C#中的除法肯定跟你想像的有所差異
 * 在整數的除法中，小數點之後會自動被捨去
 ### 範例:試試看用3除以2吧(在我們觀念中應該答案是1.5)
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -92,7 +92,7 @@ namespace CsharpDemo
 * 除非做浮點數除法，結果才會變成浮點數
 
 ### 範例:驗證除法後再賦值給浮點數變數與直接做浮點數除法的差異
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -127,7 +127,7 @@ namespace CsharpDemo
 * 使用此運算子可以得到a/b的餘數
 * 與方法[Math.DivRem](https://docs.microsoft.com/zh-tw/dotnet/api/system.math.divrem?view=net-5.0) 會得到一樣的結果
 ### 範例:我們分別將20~25除以4來看看他們的餘數分別是多少
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -190,7 +190,7 @@ namespace CsharpDemo
 
 ### 隨堂小練習
 ### 題目:已知梯形面積公式為((上底+下底)X高/2)，目前知道上底是30，下底是52，高為46
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -229,7 +229,7 @@ namespace CsharpDemo
 * 他是屬於一元運算子
 * 增加的量為1
 ### 範例1(後置遞增運算子):我們來算算我今年48歲，明年我幾歲?
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -261,7 +261,7 @@ namespace CsharpDemo
 我明年49歲
 
 ### 範例2(前置遞增運算子):我們來比較看看前置跟後置的差異吧
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -308,7 +308,7 @@ namespace CsharpDemo
 
 ### 既然有遞增那必然有遞減運算子~--
 ### 範例:
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -354,7 +354,7 @@ namespace CsharpDemo
 |`%=`| x %= 100 |x = x % 100 | 二元 |
 
 ### 範例:來試試看加法指派運算子 += 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;

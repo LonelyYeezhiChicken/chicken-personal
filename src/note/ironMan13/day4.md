@@ -4,7 +4,7 @@
 * 在C#的世界中，我們要表明一個字串時都需要用`""`把他包起來
  
 ### 範例:我們來看看有`""`跟沒有`""`的差異吧!
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,7 +41,7 @@ namespace CsharpDemo
 * 他跟大家不一樣的地方在於，他使用的是單引號`''`，而不是雙引號`""`
 
 ### 範例:使用一個char型別變數來印出A B C三個字母吧
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -86,7 +86,7 @@ namespace CsharpDemo
 * 我們常常會需要讓用戶輸入一長串的資訊，或是我們需要顯示一些提示給用戶，他就是最佳人選
 
 ### 範例:我們讓電腦自己跟自己來個尬聊
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -126,7 +126,7 @@ namespace CsharpDemo
 * 在這邊我們會用到`Console.ReadLine()`這個函式
 * 我們來試著跟電腦對話吧
 ### 範例:我們來對電腦輸入自己的名字讓他回答
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -164,7 +164,7 @@ namespace CsharpDemo
 * 在這邊我們會用到`Console.Read()`這個函式
 * `注意:Console.Read()讀出來會是字元的ASCII，所以會是整數`
 ### 範例:我們來對電腦輸入一個字母，來查詢他ASCII編碼
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -212,7 +212,7 @@ The ASCII code is 65
 * `Convert.ToInt32()這函式的用途，就是將其他型別轉成整數型別，稱為"轉型"`
 * 就如同有人要移民來到美國，就必須到移民署辦理移民，而且要符合一些相關的規定，不然是辦理不成功的
 ### 範例:我們來對電腦輸入半徑，讓他自動算出圓面積
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -260,7 +260,7 @@ Ans:78.53981634
 * 字串會直接銜接，並不會合體
 * 就如同我將隔壁鄰居的地買下來，那塊地還是在那個地方，並不會跟我的土地融合
 ### 範例:我們來產生各種口味的孤獨動物吧
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
