@@ -42,7 +42,7 @@ namespace CsharpDemo
  結果:
  >5050
 
-### 隨堂小練習 ![/images/emoticon/emoticon14.gif](/images/emoticon/emoticon14.gif)
+### 隨堂小練習
 ### 範例:我們來用for迴圈實現數學公式的階乘，n!=1 X 2 X.....Xn
 ```csharp
 using System;

@@ -44,11 +44,11 @@ const pageList: PageData[] = [
     text: "[Day9]C# 雞礎觀念- 省去重複程式碼的好幫手~for迴圈",
     goPath: LinkMap.D9no13,
   },
-  // {
-  //   id: 10,
-  //   text: "[Day10]C# 雞礎觀念- 重播與停止 while迴圈與break",
-  //   goPath: LinkMap.D10no13,
-  // },
+  {
+    id: 10,
+    text: "[Day10]C# 雞礎觀念- 重播與停止 while迴圈與break",
+    goPath: LinkMap.D10no13,
+  },
   // {
   //   id: 11,
   //   text: "[Day11]C# 雞礎觀念- 把複雜的事情與關係簡單化~列舉與結構",
