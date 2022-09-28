@@ -29,21 +29,21 @@ const pageList: PageData[] = [
     text: "[Day6]C# 雞礎觀念- 程式碼擁有判斷真假的能力~邏輯運算子",
     goPath: LinkMap.D6no13,
   },
-  // {
-  //   id: 7,
-  //   text: "[Day7]C# 雞礎觀念- 你有選擇障礙嗎? 交給if陳述式解決吧!",
-  //   goPath: LinkMap.D7no13,
-  // },
-  // {
-  //   id: 8,
-  //   text: "[Day8]C# 雞礎觀念- 如果沒有如果，只有太多的如果switch陳述式",
-  //   goPath: LinkMap.D8no13,
-  // },
-  // {
-  //   id: 9,
-  //   text: "[Day9]C# 雞礎觀念- 省去重複程式碼的好幫手~for迴圈",
-  //   goPath: LinkMap.D9no13,
-  // },
+  {
+    id: 7,
+    text: "[Day7]C# 雞礎觀念- 你有選擇障礙嗎? 交給if陳述式解決吧!",
+    goPath: LinkMap.D7no13,
+  },
+  {
+    id: 8,
+    text: "[Day8]C# 雞礎觀念- 如果沒有如果，只有太多的如果switch陳述式",
+    goPath: LinkMap.D8no13,
+  },
+  {
+    id: 9,
+    text: "[Day9]C# 雞礎觀念- 省去重複程式碼的好幫手~for迴圈",
+    goPath: LinkMap.D9no13,
+  },
   // {
   //   id: 10,
   //   text: "[Day10]C# 雞礎觀念- 重播與停止 while迴圈與break",

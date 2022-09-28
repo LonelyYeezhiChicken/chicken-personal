@@ -33,30 +33,30 @@ export function Header() {
           <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex md:flex items-center hidden">
             <Link
               to={LinkMap.Home.toString()}
-              className="py-2 px-6 flex hover:text-black"
+              className="py-2 px-6 flex hover:text-gray-400"
             >
               雞舍
             </Link>
             <Link
               to={LinkMap.About.toString()}
-              className="py-2 px-6 flex hover:text-black"
+              className="py-2 px-6 flex hover:text-gray-400"
             >
               關於一隻雞
             </Link>
             <Link
               to={LinkMap.Find.toString()}
-              className="py-2 px-6 flex hover:text-black"
+              className="py-2 px-6 flex hover:text-gray-400"
             >
               尋找一隻雞
             </Link>
             <Link
               to={LinkMap.Portfolio.toString()}
-              className="py-2 px-6 flex hover:text-black"
+              className="py-2 px-6 flex hover:text-gray-400"
             >
               一隻雞的作品
             </Link>
             <button
-              className="py-2 px-6 flex hover:text-black "
+              className="py-2 px-6 flex hover:text-gray-400 "
               onClick={() => changDark()}
             >
               {getEmoji}
@@ -65,30 +65,30 @@ export function Header() {
           <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg sm:flex lg:hidden md:hidden items-center hidden">
             <Link
               to={LinkMap.Home.toString()}
-              className="py-2 px-6 flex hover:text-black"
+              className="py-2 px-6 flex hover:text-gray-400"
             >
               雞舍
             </Link>
             <Link
               to={LinkMap.About.toString()}
-              className="py-2 px-6 flex hover:text-black"
+              className="py-2 px-6 flex hover:text-gray-300"
             >
               關於
             </Link>
             <Link
               to={LinkMap.Find.toString()}
-              className="py-2 px-6 flex hover:text-black"
+              className="py-2 px-6 flex hover:text-gray-400"
             >
               尋找
             </Link>
             <Link
               to={LinkMap.Portfolio.toString()}
-              className="py-2 px-6 flex hover:text-black"
+              className="py-2 px-6 flex hover:text-gray-400"
             >
               作品
             </Link>
             <button
-              className="py-2 px-6 flex hover:text-black"
+              className="py-2 px-6 flex hover:text-gray-400"
               onClick={() => changDark()}
             >
               {getEmoji}
@@ -97,30 +97,30 @@ export function Header() {
           <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:hidden md:hidden sm:hidden  items-center flex">
             <Link
               to={LinkMap.Home.toString()}
-              className="py-2 px-6 flex hover:text-black"
+              className="py-2 px-6 flex hover:text-gray-400"
             >
               🏠
             </Link>
             <Link
               to={LinkMap.About.toString()}
-              className="py-2 px-6 flex hover:text-black"
+              className="py-2 px-6 flex hover:text-gray-400"
             >
               📋
             </Link>
             <Link
               to={LinkMap.Find.toString()}
-              className="py-2 px-6 flex hover:text-black"
+              className="py-2 px-6 flex hover:text-gray-400"
             >
               🔎
             </Link>
             <Link
               to={LinkMap.Portfolio.toString()}
-              className="py-2 px-6 flex hover:text-black"
+              className="py-2 px-6 flex hover:text-gray-400"
             >
               🎨
             </Link>
             <button
-              className="py-2 px-6 flex hover:text-black"
+              className="py-2 px-6 flex hover:text-gray-400"
               onClick={() => changDark()}
             >
               🌗
