@@ -79,26 +79,26 @@ const pageList: PageData[] = [
     text: "[Day16]C# 雞礎觀念- 虛擬代工廠~方法(function)",
     goPath: LinkMap.D16no13,
   },
-  // {
-  //   id: 17,
-  //   text: "[Day17]C# 雞礎觀念- 像個郵差一樣~值與址的傳遞",
-  //   goPath: LinkMap.D17no13,
-  // },
-  // {
-  //   id: 18,
-  //   text: "[Day18]C# 雞礎觀念- 回頭吧!孩子~ref 與 out 參數修飾詞",
-  //   goPath: LinkMap.D18no13,
-  // },
-  // {
-  //   id: 19,
-  //   text: "[Day19]C# 雞礎觀念- 讓時間倒轉吧~遞迴",
-  //   goPath: LinkMap.D19no13,
-  // },
-  // {
-  //   id: 20,
-  //   text: "[Day20]C# 雞礎觀念- 物件導向(oop)基本觀念",
-  //   goPath: LinkMap.D20no13,
-  // },
+  {
+    id: 17,
+    text: "[Day17]C# 雞礎觀念- 像個郵差一樣~值與址的傳遞",
+    goPath: LinkMap.D17no13,
+  },
+  {
+    id: 18,
+    text: "[Day18]C# 雞礎觀念- 回頭吧!孩子~ref 與 out 參數修飾詞",
+    goPath: LinkMap.D18no13,
+  },
+  {
+    id: 19,
+    text: "[Day19]C# 雞礎觀念- 讓時間倒轉吧~遞迴",
+    goPath: LinkMap.D19no13,
+  },
+  {
+    id: 20,
+    text: "[Day20]C# 雞礎觀念- 物件導向(oop)基本觀念",
+    goPath: LinkMap.D20no13,
+  },
   // {
   //   id: 21,
   //   text: "[Day21]C# 雞礎觀念- 物件導向(oop)~類別(class)",
