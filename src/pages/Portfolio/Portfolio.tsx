@@ -2,6 +2,7 @@ import { Footer, Title, Header, HorizontalCard } from "../../components";
 import phaserImg from "../../assets/phaser.jpg";
 import iron13 from "../../assets/iron13.png";
 import p5Img from "../../assets/p5.png";
+import csharpImg from "../../assets/csharp.png";
 import { useTitle } from "../../utils/PageTitle";
 
 type HCard = {
@@ -34,39 +35,56 @@ const ironMan13: HCard = {
   imgPath: iron13,
 };
 
+const CsharpEvent: HCard = {
+  id: 4,
+  title: "C# 委派與事件",
+  content: "C# 委派與事件，基礎範例",
+  imgPath: csharpImg,
+};
+
 function Portfolio() {
   useTitle("Chicken Say Hi | 作品集");
   return (
     <>
       <Header />
       <Title text={pageTitle} />
-      <section className="flex relative z-20 items-center mt-5 max-h-full overflow-auto">
-        <div className="container mx-auto px-6 flex-col justify-between items-center relative py-4 mt-5">
-          <div className="flex flex-col">
-            <HorizontalCard
-              pgId={ironMan13.id}
-              title={ironMan13.title}
-              content={ironMan13.content}
-              imgPath={ironMan13.imgPath}
-            />
+      <section className="max-h-full overflow-auto">
+        <div className="flex relative z-20 items-center mt-2">
+          <div className="container mx-auto px-6 flex-col justify-between items-center relative py-4 mt-5">
+            <div className="flex flex-col">
+              <HorizontalCard
+                pgId={ironMan13.id}
+                title={ironMan13.title}
+                content={ironMan13.content}
+                imgPath={ironMan13.imgPath}
+              />
+            </div>
+            <div className="flex flex-col">
+              <HorizontalCard
+                pgId={p5Js.id}
+                title={p5Js.title}
+                content={p5Js.content}
+                imgPath={p5Js.imgPath}
+              />
+            </div>
+            <div className="flex flex-col">
+              <HorizontalCard
+                pgId={phaserJs.id}
+                title={phaserJs.title}
+                content={phaserJs.content}
+                imgPath={phaserJs.imgPath}
+              />
+            </div>
+            <div className="flex flex-col">
+              <HorizontalCard
+                pgId={CsharpEvent.id}
+                title={CsharpEvent.title}
+                content={CsharpEvent.content}
+                imgPath={CsharpEvent.imgPath}
+              />
+            </div>
+            <div className="flex flex-col m-20"></div>
           </div>
-          <div className="flex flex-col">
-            <HorizontalCard
-              pgId={p5Js.id}
-              title={p5Js.title}
-              content={p5Js.content}
-              imgPath={p5Js.imgPath}
-            />
-          </div>
-          <div className="flex flex-col">
-            <HorizontalCard
-              pgId={phaserJs.id}
-              title={phaserJs.title}
-              content={phaserJs.content}
-              imgPath={phaserJs.imgPath}
-            />
-          </div>
-          <div className="flex flex-col m-20"></div>
         </div>
       </section>
       <Footer />
