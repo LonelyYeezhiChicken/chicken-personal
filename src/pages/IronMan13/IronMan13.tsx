@@ -64,21 +64,21 @@ const pageList: PageData[] = [
     text: "[Day13]C# 雞礎觀念- 來個輪迴吧~foreach迴圈",
     goPath: LinkMap.D13no13,
   },
-  // {
-  //   id: 14,
-  //   text: "[Day14]C# 雞礎觀念- 不同層次的陣列~二維陣列",
-  //   goPath: LinkMap.D14no13,
-  // },
-  // {
-  //   id: 15,
-  //   text: "[Day15]C# 雞礎觀念- 多筆資料的好朋友~List",
-  //   goPath: LinkMap.D15no13,
-  // },
-  // {
-  //   id: 16,
-  //   text: "[Day16]C# 雞礎觀念- 虛擬代工廠~方法(function)",
-  //   goPath: LinkMap.D16no13,
-  // },
+  {
+    id: 14,
+    text: "[Day14]C# 雞礎觀念- 不同層次的陣列~二維陣列",
+    goPath: LinkMap.D14no13,
+  },
+  {
+    id: 15,
+    text: "[Day15]C# 雞礎觀念- 多筆資料的好朋友~List",
+    goPath: LinkMap.D15no13,
+  },
+  {
+    id: 16,
+    text: "[Day16]C# 雞礎觀念- 虛擬代工廠~方法(function)",
+    goPath: LinkMap.D16no13,
+  },
   // {
   //   id: 17,
   //   text: "[Day17]C# 雞礎觀念- 像個郵差一樣~值與址的傳遞",
