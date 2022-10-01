@@ -2,6 +2,8 @@ import { Header } from "../../components/home";
 import build from "../../assets/Build.png";
 import { useNavigate } from "react-router-dom";
 import { LinkMap } from "../../models";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Continue() {
   const navigate = useNavigate();
@@ -26,7 +28,7 @@ function Continue() {
             </button>
           </div>
           <div className="block w-full mx-auto md:mt-0 relative max-w-md lg:max-w-2xl">
-            <img src={build} className="rounded-lg" />
+            <LazyLoadImage src={build} className="rounded-lg" effect="blur" />
           </div>
         </div>
       </div>
