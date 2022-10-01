@@ -19,16 +19,16 @@
         @apply leading-3 rounded;
     }
 
-    /* .Md code{
+    .Md code{
         @apply bg-gray-100 rounded dark:bg-gray-600  p-1 text-sm;
-    }     */
+    }    
 
     ::-webkit-scrollbar {
         @apply w-2;
       }
 
     img[alt="mdImg"] { 
-        @apply max-h-80  mt-3 mb-3 dark:bg-slate-500 rounded;
+        @apply max-h-80  mt-3 mb-3 dark:bg-slate-300 rounded;
     }
 
     .Md ul{
