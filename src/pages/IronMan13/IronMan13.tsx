@@ -99,21 +99,21 @@ const pageList: PageData[] = [
     text: "[Day20]C# 雞礎觀念- 物件導向(oop)基本觀念",
     goPath: LinkMap.D20no13,
   },
-  // {
-  //   id: 21,
-  //   text: "[Day21]C# 雞礎觀念- 物件導向(oop)~類別(class)",
-  //   goPath: LinkMap.D21no13,
-  // },
-  // {
-  //   id: 22,
-  //   text: "[Day22]C# 雞礎觀念- 物件導向(oop)~物件(Object)",
-  //   goPath: LinkMap.D22no13,
-  // },
-  // {
-  //   id: 23,
-  //   text: "[Day23]C# 雞礎觀念- 物件導向(oop)~屬性(Property)",
-  //   goPath: LinkMap.D23no13,
-  // },
+  {
+    id: 21,
+    text: "[Day21]C# 雞礎觀念- 物件導向(oop)~類別(class)",
+    goPath: LinkMap.D21no13,
+  },
+  {
+    id: 22,
+    text: "[Day22]C# 雞礎觀念- 物件導向(oop)~物件(Object)",
+    goPath: LinkMap.D22no13,
+  },
+  {
+    id: 23,
+    text: "[Day23]C# 雞礎觀念- 物件導向(oop)~屬性(Property)",
+    goPath: LinkMap.D23no13,
+  },
   // {
   //   id: 24,
   //   text: "[Day24]C# 雞礎觀念- 物件導向(oop)~建構方法(Constructor)",
