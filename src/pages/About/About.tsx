@@ -1,7 +1,9 @@
 import { Header, Footer } from "../../components/home";
 import chicken from "../../assets/chicken.jpg";
+import { useTitle } from "../../utils/PageTitle";
 
 function About() {
+  useTitle("Chicken Say Hi | About");
   return (
     <>
       <Header />

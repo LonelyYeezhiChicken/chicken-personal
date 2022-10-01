@@ -1,4 +1,4 @@
-import { Title, Header, HorizontalCard } from "../../components";
+import { Footer, Title, Header, HorizontalCard } from "../../components";
 import phaserImg from "../../assets/phaser.jpg";
 import iron13 from "../../assets/iron13.png";
 import p5Img from "../../assets/p5.png";
@@ -40,7 +40,7 @@ function Portfolio() {
     <>
       <Header />
       <Title text={pageTitle} />
-      <div className="flex relative z-20 items-center mt-5 max-h-full overflow-auto">
+      <section className="flex relative z-20 items-center mt-5 max-h-full overflow-auto">
         <div className="container mx-auto px-6 flex-col justify-between items-center relative py-4 mt-5">
           <div className="flex flex-col">
             <HorizontalCard
@@ -68,7 +68,8 @@ function Portfolio() {
           </div>
           <div className="flex flex-col m-20"></div>
         </div>
-      </div>
+      </section>
+      <Footer />
     </>
   );
 }

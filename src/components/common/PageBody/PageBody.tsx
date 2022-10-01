@@ -50,7 +50,7 @@ export function PageBody({ backPath, title, text }: PageBodyData) {
       >
         {text}
       </ReactMarkdown>
-      <footer className="m-10 mb-32">
+      <footer className="m-10 mb-10">
         <Link to={backPath} className="dark:text-yellow-50 text-gray-900">
           <b>👈 回目錄</b>
         </Link>
