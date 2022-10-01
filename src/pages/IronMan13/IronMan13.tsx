@@ -134,21 +134,21 @@ const pageList: PageData[] = [
     text: "[Day27]C# 雞礎觀念- 做錯事該怎麼辦呢?~錯誤處理",
     goPath: LinkMap.D27no13,
   },
-  // {
-  //   id: 28,
-  //   text: "[Day28]C# 雞礎觀念- 物件導向(oop)~ 繼承",
-  //   goPath: LinkMap.D28no13,
-  // },
-  // {
-  //   id: 29,
-  //   text: "[Day29]C# 雞礎觀念- 物件導向(oop)~介面(Interface)",
-  //   goPath: LinkMap.D29no13,
-  // },
-  // {
-  //   id: 30,
-  //   text: "[Day30]C# 不雞礎觀念- Install Tailwind Css with ASP.NET MVC5",
-  //   goPath: LinkMap.D30no13,
-  // },
+  {
+    id: 28,
+    text: "[Day28]C# 雞礎觀念- 物件導向(oop)~ 繼承",
+    goPath: LinkMap.D28no13,
+  },
+  {
+    id: 29,
+    text: "[Day29]C# 雞礎觀念- 物件導向(oop)~介面(Interface)",
+    goPath: LinkMap.D29no13,
+  },
+  {
+    id: 30,
+    text: "[Day30]C# 不雞礎觀念- Install Tailwind Css with ASP.NET MVC5",
+    goPath: LinkMap.D30no13,
+  },
   // { id: 31, text: "[Day31]C# 雞礎觀念- 結語", goPath: LinkMap.D31no13 },
 ];
 
