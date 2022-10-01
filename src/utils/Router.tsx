@@ -7,6 +7,7 @@ import {
   Portfolio,
   P5JsPage,
   RpgGameV1,
+  About,
   LineAndLoop,
   MapFunc,
   Gradient,
@@ -56,6 +57,10 @@ export function Router() {
       <Route path={LinkMap.Portfolio.toString()} element={<Main />}>
         {/* 作品集 */}
         <Route index element={<Portfolio />} />
+      </Route>
+      <Route path={LinkMap.About.toString()} element={<Main />}>
+        {/* 作品集 */}
+        <Route index element={<About />} />
       </Route>
       {/*------------- P5 Js --------------*/}
       <Route path={LinkMap.P5Js.toString()} element={<Main />}>

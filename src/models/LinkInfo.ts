@@ -1,6 +1,6 @@
 export enum LinkMap {
     Home = "/",
-    About = "/continue",
+    About = "/About",
     Find = "/continue",
     Portfolio = "/portfolio",
     Continue = "/continue",
