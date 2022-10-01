@@ -29,6 +29,9 @@ export function HorizontalCard({ pgId, title, content, imgPath }: Props) {
       case 3:
         path = LinkMap.IronMan13.toString();
         break;
+      case 4:
+        path = LinkMap.CsharpEventHome.toString();
+        break;
     }
     navigate(path);
   }

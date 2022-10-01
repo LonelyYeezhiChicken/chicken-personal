@@ -45,6 +45,14 @@ import {
   Day29,
   Day30,
   Day31,
+  CsharpEventHome,
+  CsDelegate1,
+  CsDelegate2,
+  CsDelegate3,
+  CsDelegate4,
+  CsDelegate5,
+  CsDelegate6,
+  CsDelegate7,
 } from "../pages";
 
 export function Router() {
@@ -229,6 +237,40 @@ export function Router() {
         <Route index element={<Day31 />} />
       </Route>
       {/*------------- 鐵人賽13 --------------*/}
+      {/*------------- C# 事件與委派 --------------*/}
+      <Route path={LinkMap.CsharpEventHome.toString()} element={<Main />}>
+        {/* C# 事件與委派 */}
+        <Route index element={<CsharpEventHome />} />
+      </Route>
+      <Route path={LinkMap.CsDelegate1.toString()} element={<Main />}>
+        {/* C# 事件與委派 */}
+        <Route index element={<CsDelegate1 />} />
+      </Route>
+      <Route path={LinkMap.CsDelegate2.toString()} element={<Main />}>
+        {/* C# 事件與委派 */}
+        <Route index element={<CsDelegate2 />} />
+      </Route>
+      <Route path={LinkMap.CsDelegate3.toString()} element={<Main />}>
+        {/* C# 事件與委派 */}
+        <Route index element={<CsDelegate3 />} />
+      </Route>
+      <Route path={LinkMap.CsDelegate4.toString()} element={<Main />}>
+        {/* C# 事件與委派 */}
+        <Route index element={<CsDelegate4 />} />
+      </Route>
+      <Route path={LinkMap.CsDelegate5.toString()} element={<Main />}>
+        {/* C# 事件與委派 */}
+        <Route index element={<CsDelegate5 />} />
+      </Route>
+      <Route path={LinkMap.CsDelegate6.toString()} element={<Main />}>
+        {/* C# 事件與委派 */}
+        <Route index element={<CsDelegate6 />} />
+      </Route>
+      <Route path={LinkMap.CsDelegate7.toString()} element={<Main />}>
+        {/* C# 事件與委派 */}
+        <Route index element={<CsDelegate7 />} />
+      </Route>
+      {/*------------- C# 事件與委派 --------------*/}
       <Route path={LinkMap.Continue.toString()} element={<Main />}>
         {/* 建設中 */}
         <Route index element={<Continue />} />

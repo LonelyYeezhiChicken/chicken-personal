@@ -42,5 +42,13 @@ export enum LinkMap {
     D28no13 = "/d28no13",
     D29no13 = "/d29no13",
     D30no13 = "/d30no13",
-    D31no13 = "/d31no13"
+    D31no13 = "/d31no13",
+    CsharpEventHome = "/csharpEventHome",
+    CsDelegate1 = "/csDelegate1",
+    CsDelegate2 = "/csDelegate2",
+    CsDelegate3 = "/csDelegate3",
+    CsDelegate4 = "/csDelegate4",
+    CsDelegate5 = "/csDelegate5",
+    CsDelegate6 = "/csDelegate6",
+    CsDelegate7 = "/csDelegate7",
 }
