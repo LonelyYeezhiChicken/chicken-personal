@@ -1,6 +1,8 @@
 import { Header, Footer } from "../../components/home";
 import chicken from "../../assets/chicken.jpg";
 import { useTitle } from "../../utils/PageTitle";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function About() {
   useTitle("Chicken Say Hi | About");
@@ -12,10 +14,11 @@ function About() {
           <div className="flex flex-wrap items-center">
             <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78">
               <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg dark:bg-amber-200  bg-amber-500">
-                <img
+                <LazyLoadImage
                   alt="..."
                   src={chicken}
                   className="w-full align-middle rounded-md max-h-62 p-5"
+                  effect="blur"
                 />
                 <blockquote className="relative p-8 mb-4">
                   <svg
