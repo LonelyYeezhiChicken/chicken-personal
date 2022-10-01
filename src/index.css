@@ -28,7 +28,7 @@
       }
 
     img[alt="mdImg"] { 
-        @apply max-h-80  mt-3 mb-3 dark:bg-slate-500 rounded;
+        @apply max-h-80  mt-3 mb-3 dark:bg-slate-300 rounded;
     }
 
     .Md ul{

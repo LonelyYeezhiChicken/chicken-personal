@@ -49,21 +49,21 @@ const pageList: PageData[] = [
     text: "[Day10]C# 雞礎觀念- 重播與停止 while迴圈與break",
     goPath: LinkMap.D10no13,
   },
-  // {
-  //   id: 11,
-  //   text: "[Day11]C# 雞礎觀念- 把複雜的事情與關係簡單化~列舉與結構",
-  //   goPath: LinkMap.D11no13,
-  // },
-  // {
-  //   id: 12,
-  //   text: "[Day12]C# 雞礎觀念- 當我們同在一起~陣列(Array)",
-  //   goPath: LinkMap.D12no13,
-  // },
-  // {
-  //   id: 13,
-  //   text: "[Day13]C# 雞礎觀念- 來個輪迴吧~foreach迴圈",
-  //   goPath: LinkMap.D13no13,
-  // },
+  {
+    id: 11,
+    text: "[Day11]C# 雞礎觀念- 把複雜的事情與關係簡單化~列舉與結構",
+    goPath: LinkMap.D11no13,
+  },
+  {
+    id: 12,
+    text: "[Day12]C# 雞礎觀念- 當我們同在一起~陣列(Array)",
+    goPath: LinkMap.D12no13,
+  },
+  {
+    id: 13,
+    text: "[Day13]C# 雞礎觀念- 來個輪迴吧~foreach迴圈",
+    goPath: LinkMap.D13no13,
+  },
   // {
   //   id: 14,
   //   text: "[Day14]C# 雞礎觀念- 不同層次的陣列~二維陣列",

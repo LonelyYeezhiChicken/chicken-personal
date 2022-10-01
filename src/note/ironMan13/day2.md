@@ -59,7 +59,7 @@ namespace CsharpDemo
     }
 }
 ```
-### 執行:我們可以按快捷鍵(Ctrl+F5)或是點選功能列的開始執行程式200970018OuGZq6jKU.png)
+### 執行:我們可以按快捷鍵(Ctrl+F5)或是點選功能列的開始執行程式
 * 結果我們會看到
 >Hello world
 
