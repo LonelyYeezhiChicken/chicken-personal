@@ -1,11 +1,14 @@
 import ga4 from 'react-ga4'
 
-const TRACKING_ID: string = 'G-23JXYZ7T1V'
-const isProduction: boolean = true;
 
-export const init = () => ga4.initialize(TRACKING_ID, {
-    testMode: !isProduction
-})
+const TRACKING_ID: string = import.meta.env.VITE_GA_KEY;
+const isProduction: boolean = import.meta.env.VITE_Is_Production;
+
+export const init = () => {
+    ga4.initialize(TRACKING_ID, {
+        testMode: !isProduction
+    })
+}
 
 export const sendEvent = (name: string) => {
     ga4.event('screen_view', {
