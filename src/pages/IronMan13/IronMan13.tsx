@@ -114,26 +114,26 @@ const pageList: PageData[] = [
     text: "[Day23]C# 雞礎觀念- 物件導向(oop)~屬性(Property)",
     goPath: LinkMap.D23no13,
   },
-  // {
-  //   id: 24,
-  //   text: "[Day24]C# 雞礎觀念- 物件導向(oop)~建構方法(Constructor)",
-  //   goPath: LinkMap.D24no13,
-  // },
-  // {
-  //   id: 25,
-  //   text: "[Day25]C# 雞礎觀念- 共產主義者~靜態成員",
-  //   goPath: LinkMap.D25no13,
-  // },
-  // {
-  //   id: 26,
-  //   text: "[Day26]C# 雞礎觀念- 物件導向(oop)~ 多載(Overload)",
-  //   goPath: LinkMap.D26no13,
-  // },
-  // {
-  //   id: 27,
-  //   text: "[Day27]C# 雞礎觀念- 做錯事該怎麼辦呢?~錯誤處理",
-  //   goPath: LinkMap.D27no13,
-  // },
+  {
+    id: 24,
+    text: "[Day24]C# 雞礎觀念- 物件導向(oop)~建構方法(Constructor)",
+    goPath: LinkMap.D24no13,
+  },
+  {
+    id: 25,
+    text: "[Day25]C# 雞礎觀念- 共產主義者~靜態成員",
+    goPath: LinkMap.D25no13,
+  },
+  {
+    id: 26,
+    text: "[Day26]C# 雞礎觀念- 物件導向(oop)~ 多載(Overload)",
+    goPath: LinkMap.D26no13,
+  },
+  {
+    id: 27,
+    text: "[Day27]C# 雞礎觀念- 做錯事該怎麼辦呢?~錯誤處理",
+    goPath: LinkMap.D27no13,
+  },
   // {
   //   id: 28,
   //   text: "[Day28]C# 雞礎觀念- 物件導向(oop)~ 繼承",
