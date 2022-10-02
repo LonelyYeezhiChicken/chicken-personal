@@ -49,7 +49,7 @@ function Portfolio() {
       <Header />
       <Title text={pageTitle} />
       <section className="max-h-full overflow-auto">
-        <div className="flex relative z-20 items-center mt-2">
+        <div className="sm:flex relative z-20 items-center mt-2">
           <div className="container mx-auto px-6 flex-col justify-between items-center relative py-4 mt-5">
             <div className="flex flex-col">
               <HorizontalCard
@@ -67,6 +67,9 @@ function Portfolio() {
                 imgPath={p5Js.imgPath}
               />
             </div>
+            <div className="flex flex-col sm:m-20"></div>
+          </div>
+          <div className="container mx-auto px-6 flex-col justify-between items-center relative sm:py-4 sm:mt-5">
             <div className="flex flex-col">
               <HorizontalCard
                 pgId={phaserJs.id}
