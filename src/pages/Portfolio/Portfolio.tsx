@@ -1,46 +1,8 @@
 import { Footer, Title, Header, HorizontalCard } from "../../components";
-import phaserImg from "../../assets/phaser.jpg";
-import iron13 from "../../assets/iron13.png";
-import p5Img from "../../assets/p5.png";
-import csharpImg from "../../assets/csharp.png";
+import { p5Js, phaserJs, ironMan13, CsharpEvent } from "./pageData";
 import { useTitle } from "../../utils/PageTitle";
 
-type HCard = {
-  id: number;
-  title: string;
-  content: string;
-  imgPath: string;
-};
-
 const pageTitle: string = "🎨 一隻雞的作品";
-
-const p5Js: HCard = {
-  id: 1,
-  title: "P5 Js",
-  content: "主要為美術用途的JS",
-  imgPath: p5Img,
-};
-
-const phaserJs: HCard = {
-  id: 2,
-  title: "phaser Js",
-  content: "基於Js的遊戲引擎",
-  imgPath: phaserImg,
-};
-
-const ironMan13: HCard = {
-  id: 3,
-  title: "第十三屆鐵人賽",
-  content: "C# 雞礎觀念",
-  imgPath: iron13,
-};
-
-const CsharpEvent: HCard = {
-  id: 4,
-  title: "C# 委派與事件",
-  content: "C# 委派與事件，基礎範例",
-  imgPath: csharpImg,
-};
 
 function Portfolio() {
   useTitle("Chicken Say Hi | 作品集");
