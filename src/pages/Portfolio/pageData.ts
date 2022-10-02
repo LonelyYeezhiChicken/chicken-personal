@@ -2,6 +2,8 @@ import phaserImg from "../../assets/phaser.jpg";
 import iron13 from "../../assets/iron13.png";
 import p5Img from "../../assets/p5.png";
 import csharpImg from "../../assets/csharp.png";
+import oauth2Img from "../../assets/oauth2.png";
+import nunitImg from "../../assets/nunit.png";
 
 type HCard = {
     id: number;
@@ -37,4 +39,18 @@ export const CsharpEvent: HCard = {
     title: "C# 委派與事件",
     content: "C# 委派與事件，基礎範例",
     imgPath: csharpImg,
+};
+
+export const OAuthNote: HCard = {
+    id: 5,
+    title: "OAuth 筆記",
+    content: "<OAuth2實戰> 閱讀筆記",
+    imgPath: oauth2Img,
+};
+
+export const NunitTest: HCard = {
+    id: 6,
+    title: "單元測試 筆記",
+    content: "<單元測試的藝術> 閱讀筆記",
+    imgPath: nunitImg,
 };

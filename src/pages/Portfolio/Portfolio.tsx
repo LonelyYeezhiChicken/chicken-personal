@@ -1,5 +1,12 @@
 import { Footer, Title, Header, HorizontalCard } from "../../components";
-import { p5Js, phaserJs, ironMan13, CsharpEvent } from "./pageData";
+import {
+  p5Js,
+  phaserJs,
+  ironMan13,
+  CsharpEvent,
+  OAuthNote,
+  NunitTest,
+} from "./pageData";
 import { useTitle } from "../../utils/PageTitle";
 
 const pageTitle: string = "🎨 一隻雞的作品";
@@ -29,6 +36,14 @@ function Portfolio() {
                 imgPath={p5Js.imgPath}
               />
             </div>
+            <div className="flex flex-col">
+              <HorizontalCard
+                pgId={OAuthNote.id}
+                title={OAuthNote.title}
+                content={OAuthNote.content}
+                imgPath={OAuthNote.imgPath}
+              />
+            </div>
             <div className="flex flex-col sm:m-20"></div>
           </div>
           <div className="container mx-auto px-6 flex-col justify-between items-center relative sm:py-4 sm:mt-5">
@@ -46,6 +61,14 @@ function Portfolio() {
                 title={CsharpEvent.title}
                 content={CsharpEvent.content}
                 imgPath={CsharpEvent.imgPath}
+              />
+            </div>
+            <div className="flex flex-col">
+              <HorizontalCard
+                pgId={NunitTest.id}
+                title={NunitTest.title}
+                content={NunitTest.content}
+                imgPath={NunitTest.imgPath}
               />
             </div>
             <div className="flex flex-col m-20"></div>

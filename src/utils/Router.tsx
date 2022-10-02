@@ -53,6 +53,10 @@ import {
   CsDelegate5,
   CsDelegate6,
   CsDelegate7,
+  OAuthNote,
+  OAuthNote1,
+  UnitNote,
+  UnitNote1,
 } from "../pages";
 
 export function Router() {
@@ -271,6 +275,26 @@ export function Router() {
         <Route index element={<CsDelegate7 />} />
       </Route>
       {/*------------- C# 事件與委派 --------------*/}
+      {/*------------- OAuth 2.0 --------------*/}
+      <Route path={LinkMap.OAuthNote.toString()} element={<Main />}>
+        {/* C# 事件與委派 */}
+        <Route index element={<OAuthNote />} />
+      </Route>
+      <Route path={LinkMap.OAuthNote1.toString()} element={<Main />}>
+        {/* C# 事件與委派 */}
+        <Route index element={<OAuthNote1 />} />
+      </Route>
+      {/*------------- OAuth 2.0 --------------*/}
+      {/*------------- 單元測試 --------------*/}
+      <Route path={LinkMap.UnitNote.toString()} element={<Main />}>
+        {/* C# 事件與委派 */}
+        <Route index element={<UnitNote />} />
+      </Route>
+      <Route path={LinkMap.UnitNote1.toString()} element={<Main />}>
+        {/* C# 事件與委派 */}
+        <Route index element={<UnitNote1 />} />
+      </Route>
+      {/*------------- 單元測試 --------------*/}
       <Route path={LinkMap.Continue.toString()} element={<Main />}>
         {/* 建設中 */}
         <Route index element={<Continue />} />

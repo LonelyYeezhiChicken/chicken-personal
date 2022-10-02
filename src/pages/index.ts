@@ -6,3 +6,5 @@ export * from './PhaserJs';
 export * from './IronMan13';
 export * from './About';
 export * from "./CsharpEventHome";
+export * from "./OAuthNote";
+export * from "./UnitNote";

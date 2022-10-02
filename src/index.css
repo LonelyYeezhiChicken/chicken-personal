@@ -58,4 +58,8 @@
     .Md td  {
         @apply border p-4 dark:border-stone-500;
     }
+
+    .Md li  {
+        @apply ml-5;
+    }
 }
