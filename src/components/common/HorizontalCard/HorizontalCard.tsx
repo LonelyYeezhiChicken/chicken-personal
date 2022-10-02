@@ -40,6 +40,7 @@ export function HorizontalCard({ pgId, title, content, imgPath }: Props) {
     <div className="flex max-w-md bg-white shadow-lg rounded-lg overflow-hidden m-5">
       <div className="w-1/3 bg-cover bg-landscape ">
         <LazyLoadImage
+          alt=""
           src={imgPath}
           className="w-90 sm:h-40 h-32"
           effect="blur"
