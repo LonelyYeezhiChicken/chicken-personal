@@ -59,6 +59,9 @@ import {
   UnitNote1,
   DesignPattern,
   DPOverview1,
+  DPOverview2,
+  DPOverview3,
+  DPOopOverview,
 } from "../pages";
 
 export function Router() {
@@ -305,6 +308,18 @@ export function Router() {
       <Route path={LinkMap.DPOverview1.toString()} element={<Main />}>
         {/* 設計模式 */}
         <Route index element={<DPOverview1 />} />
+      </Route>
+      <Route path={LinkMap.DPOverview2.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<DPOverview2 />} />
+      </Route>
+      <Route path={LinkMap.DPOverview3.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<DPOverview3 />} />
+      </Route>
+      <Route path={LinkMap.DPOopOverview.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<DPOopOverview />} />
       </Route>
       {/*------------- 設計模式 --------------*/}
       <Route path={LinkMap.Continue.toString()} element={<Main />}>

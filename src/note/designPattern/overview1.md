@@ -6,9 +6,9 @@
 - Christopher Alexander與其團隊用了將近20年的時間，調查住宅周邊環境
 - 他們發現人們對舒適的住宅與城市環境之間存在著一些共同的認同定律
 - Christopher Alexander在著作A Pattern Language: Towns, Buildings, Construction中把這些認同規律歸納為253个模式
-- 每個模式都是從
-		1. Context(前提條件)
-		2. Theme或Problem（目標問題）
+- 每個模式都是從\
+		1. Context(前提條件)\
+		2. Theme或Problem（目標問題）\
 		3.  Solution（解決方案）
 
 後來Christopher Alexander給出了一個建議:
@@ -27,4 +27,4 @@ A pattern is a successful or efficient solution to a recurring  problem within a
 
 軟體模式(Software Patterns)就此誕生，軟體開發的生命週期上都存在著一些被認同的模式
 軟體模式示圖:
-![軟體模式示圖](../img/orverviewP1.png)
+![mdImg](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/designPattern/orverviewP1.png?raw=true)
