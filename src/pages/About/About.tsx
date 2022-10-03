@@ -29,6 +29,10 @@ function About() {
                   </p>
                   <p className="text-md font-light mt-2 text-gray-100 dark:text-gray-800">
                     我就是一隻平凡無奇的雞，每天過著平凡無奇的生活
+                    <br />
+                    <a href="mailto:lonelyyeezhichicken@gmail.com">
+                      e-mail: lonelyyeezhichicken@gmail.com
+                    </a>
                   </p>
                 </blockquote>
               </div>
