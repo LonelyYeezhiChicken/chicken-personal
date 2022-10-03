@@ -43,12 +43,12 @@ export function Header() {
             >
               關於一隻雞
             </Link>
-            <Link
+            {/* <Link
               to={LinkMap.Find.toString()}
               className="py-2 px-6 flex hover:text-gray-400"
             >
               尋找一隻雞
-            </Link>
+            </Link> */}
             <Link
               to={LinkMap.Portfolio.toString()}
               className="py-2 px-6 flex hover:text-gray-400"
@@ -75,12 +75,12 @@ export function Header() {
             >
               關於
             </Link>
-            <Link
+            {/* <Link
               to={LinkMap.Find.toString()}
               className="py-2 px-6 flex hover:text-gray-400"
             >
               尋找
-            </Link>
+            </Link> */}
             <Link
               to={LinkMap.Portfolio.toString()}
               className="py-2 px-6 flex hover:text-gray-400"
@@ -107,12 +107,12 @@ export function Header() {
             >
               📋
             </Link>
-            <Link
+            {/* <Link
               to={LinkMap.Find.toString()}
               className="py-2 px-6 flex hover:text-gray-400"
             >
               🔎
-            </Link>
+            </Link> */}
             <Link
               to={LinkMap.Portfolio.toString()}
               className="py-2 px-6 flex hover:text-gray-400"
