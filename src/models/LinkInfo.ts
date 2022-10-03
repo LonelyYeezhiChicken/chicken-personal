@@ -67,4 +67,7 @@ export enum LinkMap {
     //設計模式
     DesignPattern = "/designPattern",
     DPOverview1 = "/dPOverview1",
+    DPOverview2 = "/dPOverview2",
+    DPOverview3 = "/dPOverview3",
+    DPOopOverview = "/dPOopOverview",
 }
