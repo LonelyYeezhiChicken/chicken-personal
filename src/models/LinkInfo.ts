@@ -11,6 +11,8 @@ export enum LinkMap {
     Gradient = "/gradient",
     Wave = "/wave",
     MethodArc = "/methodArc",
+
+    // 鐵人賽
     IronMan13 = "/ironMan13",
     D1no13 = "/d1no13",
     D2no13 = "/d2no13",
@@ -43,6 +45,8 @@ export enum LinkMap {
     D29no13 = "/d29no13",
     D30no13 = "/d30no13",
     D31no13 = "/d31no13",
+
+    //事件與委派
     CsharpEventHome = "/csharpEventHome",
     CsDelegate1 = "/csDelegate1",
     CsDelegate2 = "/csDelegate2",
@@ -51,4 +55,16 @@ export enum LinkMap {
     CsDelegate5 = "/csDelegate5",
     CsDelegate6 = "/csDelegate6",
     CsDelegate7 = "/csDelegate7",
+
+    //OAuth2.0
+    OAuthNote = "/oAuthNote",
+    OAuthNote1 = "/oAuthNote1",
+
+    //單元測試
+    UnitNote = "/unitNote",
+    UnitNote1 = "/unitNote1",
+
+    //設計模式
+    DesignPattern = "/designPattern",
+    DPOverview1 = "/dPOverview1",
 }

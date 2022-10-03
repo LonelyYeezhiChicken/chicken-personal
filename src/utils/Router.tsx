@@ -53,6 +53,12 @@ import {
   CsDelegate5,
   CsDelegate6,
   CsDelegate7,
+  OAuthNote,
+  OAuthNote1,
+  UnitNote,
+  UnitNote1,
+  DesignPattern,
+  DPOverview1,
 } from "../pages";
 
 export function Router() {
@@ -271,6 +277,36 @@ export function Router() {
         <Route index element={<CsDelegate7 />} />
       </Route>
       {/*------------- C# 事件與委派 --------------*/}
+      {/*------------- OAuth 2.0 --------------*/}
+      <Route path={LinkMap.OAuthNote.toString()} element={<Main />}>
+        {/* C# 事件與委派 */}
+        <Route index element={<OAuthNote />} />
+      </Route>
+      <Route path={LinkMap.OAuthNote1.toString()} element={<Main />}>
+        {/* C# 事件與委派 */}
+        <Route index element={<OAuthNote1 />} />
+      </Route>
+      {/*------------- OAuth 2.0 --------------*/}
+      {/*------------- 單元測試 --------------*/}
+      <Route path={LinkMap.UnitNote.toString()} element={<Main />}>
+        {/* C# 單元測試 */}
+        <Route index element={<UnitNote />} />
+      </Route>
+      <Route path={LinkMap.UnitNote1.toString()} element={<Main />}>
+        {/* C# 單元測試 */}
+        <Route index element={<UnitNote1 />} />
+      </Route>
+      {/*------------- 單元測試 --------------*/}
+      {/*------------- 設計模式 --------------*/}
+      <Route path={LinkMap.DesignPattern.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<DesignPattern />} />
+      </Route>
+      <Route path={LinkMap.DPOverview1.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<DPOverview1 />} />
+      </Route>
+      {/*------------- 設計模式 --------------*/}
       <Route path={LinkMap.Continue.toString()} element={<Main />}>
         {/* 建設中 */}
         <Route index element={<Continue />} />
