@@ -6,6 +6,7 @@ import {
   CsharpEvent,
   OAuthNote,
   NunitTest,
+  DesignPattern,
 } from "./pageData";
 import { useTitle } from "../../utils/PageTitle";
 
@@ -63,12 +64,20 @@ function Portfolio() {
                 imgPath={CsharpEvent.imgPath}
               />
             </div>
-            <div className="flex flex-col">
+            {/* <div className="flex flex-col">
               <HorizontalCard
                 pgId={NunitTest.id}
                 title={NunitTest.title}
                 content={NunitTest.content}
                 imgPath={NunitTest.imgPath}
+              />
+            </div> */}
+            <div className="flex flex-col">
+              <HorizontalCard
+                pgId={DesignPattern.id}
+                title={DesignPattern.title}
+                content={DesignPattern.content}
+                imgPath={DesignPattern.imgPath}
               />
             </div>
             <div className="flex flex-col m-20"></div>

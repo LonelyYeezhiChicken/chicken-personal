@@ -38,6 +38,9 @@ export function HorizontalCard({ pgId, title, content, imgPath }: Props) {
       case 6:
         path = LinkMap.UnitNote.toString();
         break;
+      case 7:
+        path = LinkMap.DesignPattern.toString();
+        break;
     }
     navigate(path);
   }

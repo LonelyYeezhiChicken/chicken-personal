@@ -4,6 +4,7 @@ import p5Img from "../../assets/p5.png";
 import csharpImg from "../../assets/csharp.png";
 import oauth2Img from "../../assets/oauth2.png";
 import nunitImg from "../../assets/nunit.png";
+import designPatternImg from "../../assets/designPattern.jpg";
 
 type HCard = {
     id: number;
@@ -53,4 +54,11 @@ export const NunitTest: HCard = {
     title: "單元測試 筆記",
     content: "<單元測試的藝術> 閱讀筆記",
     imgPath: nunitImg,
+};
+
+export const DesignPattern: HCard = {
+    id: 7,
+    title: "設計模式 筆記",
+    content: "設計模式 閱讀筆記",
+    imgPath: designPatternImg,
 };

@@ -63,4 +63,8 @@ export enum LinkMap {
     //單元測試
     UnitNote = "/unitNote",
     UnitNote1 = "/unitNote1",
+
+    //設計模式
+    DesignPattern = "/designPattern",
+    DPOverview1 = "/dPOverview1",
 }
