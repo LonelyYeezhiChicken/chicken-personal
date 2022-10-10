@@ -10,7 +10,11 @@ function RpgGameV1() {
   return (
     <>
       <Header />
-      <Portfolio backPath={LinkMap.Portfolio} title={pageTitle} text={testMd} />
+      <Portfolio
+        backPath={LinkMap.PhaserPage}
+        title={pageTitle}
+        text={testMd}
+      />
     </>
   );
 }

@@ -7,6 +7,7 @@ import {
   Portfolio,
   P5JsPage,
   RpgGameV1,
+  PhaserPage,
   About,
   LineAndLoop,
   MapFunc,
@@ -108,6 +109,10 @@ export function Router() {
       </Route>
       {/*------------- P5 Js --------------*/}
       {/*------------- RpgGameV1 --------------*/}
+      <Route path={LinkMap.PhaserPage.toString()} element={<Main />}>
+        {/* RpgGameV1 */}
+        <Route index element={<PhaserPage />} />
+      </Route>
       <Route path={LinkMap.RpgGameV1.toString()} element={<Main />}>
         {/* RpgGameV1 */}
         <Route index element={<RpgGameV1 />} />
