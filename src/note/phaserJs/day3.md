@@ -39,7 +39,7 @@ function preload(){
 }
 ```
 
-  ![背景圖](../assets/backgrounds/bg_1.webp)
+  ![mdImg](https://raw.githubusercontent.com/LonelyYeezhiChicken/chicken-personal/main/src/assets/mdImgs/phaser/note/backgrounds/bg_1.webp)
 
 ### 載入資源 - 角色圖
 1.  在 `assets` 裡面建立一個 `roles` 的資料夾
@@ -54,7 +54,7 @@ function preload(){
   this.load.image('player1', '../assets/roles/alpaca.png');
 }
 ```
-  ![草泥馬圖](../assets/roles/alpaca.png)
+  ![草泥馬圖](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/roles/alpaca.png?raw=true)
 
 ### 載入資源 - 音樂
 1.  在 `assets` 裡面建立一個 `music` 的資料夾
