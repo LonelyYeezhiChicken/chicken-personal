@@ -62,6 +62,7 @@ import {
   DPOverview2,
   DPOverview3,
   DPOopOverview,
+  SRP,
 } from "../pages";
 
 export function Router() {
@@ -320,6 +321,10 @@ export function Router() {
       <Route path={LinkMap.DPOopOverview.toString()} element={<Main />}>
         {/* 設計模式 */}
         <Route index element={<DPOopOverview />} />
+      </Route>
+      <Route path={LinkMap.SRP.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<SRP />} />
       </Route>
       {/*------------- 設計模式 --------------*/}
       <Route path={LinkMap.Continue.toString()} element={<Main />}>
