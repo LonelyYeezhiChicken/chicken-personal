@@ -8,6 +8,8 @@ import {
   P5JsPage,
   RpgGameV1,
   PhaserPage,
+  D1Ph3,
+  D2Ph3,
   About,
   LineAndLoop,
   MapFunc,
@@ -116,6 +118,14 @@ export function Router() {
       <Route path={LinkMap.RpgGameV1.toString()} element={<Main />}>
         {/* RpgGameV1 */}
         <Route index element={<RpgGameV1 />} />
+      </Route>
+      <Route path={LinkMap.D1Ph3.toString()} element={<Main />}>
+        {/* RpgGameV1 */}
+        <Route index element={<D1Ph3 />} />
+      </Route>
+      <Route path={LinkMap.D2Ph3.toString()} element={<Main />}>
+        {/* RpgGameV1 */}
+        <Route index element={<D2Ph3 />} />
       </Route>
       {/*------------- RpgGameV1 --------------*/}
       {/*------------- 鐵人賽13 --------------*/}

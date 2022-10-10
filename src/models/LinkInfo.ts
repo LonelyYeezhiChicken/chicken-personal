@@ -15,6 +15,16 @@ export enum LinkMap {
     // phaser js
     RpgGameV1 = "/rpgGameV1",
     PhaserPage = "/phaserPage",
+    D1Ph3 = "/D1Ph3",
+    D2Ph3 = "/D2Ph3",
+    D3Ph3 = "/D3Ph3",
+    D4Ph3 = "/D4Ph3",
+    D5Ph3 = "/D5Ph3",
+    D6Ph3 = "/D6Ph3",
+    D7Ph3 = "/D7Ph3",
+    D8Ph3 = "/D8Ph3",
+    D9Ph3 = "/D9Ph3",
+    D10Ph3 = "/D10Ph3",
 
     // 鐵人賽
     IronMan13 = "/ironMan13",

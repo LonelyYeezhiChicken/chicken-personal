@@ -40,7 +40,7 @@
     }
 
     .Md a{
-        @apply underline-offset-4;
+        @apply underline-offset-4 dark:hover:text-sky-300 hover:text-sky-500;
     }
 
     .Md blockquote{

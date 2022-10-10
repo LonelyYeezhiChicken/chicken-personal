@@ -8,22 +8,22 @@ export const pageList: PageData[] = [
     },
     {
         id: 2,
-        text: "2. map 函式",
-        goPath: LinkMap.MapFunc,
+        text: "2. 前言",
+        goPath: LinkMap.D1Ph3,
     },
     {
         id: 3,
-        text: "3. 區塊漸層",
-        goPath: LinkMap.Gradient,
+        text: "3. 環境",
+        goPath: LinkMap.D2Ph3,
     },
     {
         id: 4,
         text: "4. 聲波",
-        goPath: LinkMap.Wave,
+        goPath: LinkMap.D3Ph3,
     },
     {
         id: 5,
         text: "5. arc 函式",
-        goPath: LinkMap.MethodArc,
+        goPath: LinkMap.D4Ph3,
     },
 ];
