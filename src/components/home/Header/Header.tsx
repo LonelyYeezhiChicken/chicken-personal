@@ -53,7 +53,7 @@ export function Header() {
               to={LinkMap.Portfolio.toString()}
               className="py-2 px-6 flex hover:text-gray-400"
             >
-              一隻雞的作品
+              一隻雞的筆記
             </Link>
             <button
               className="py-2 px-6 flex hover:text-gray-400 "
@@ -85,7 +85,7 @@ export function Header() {
               to={LinkMap.Portfolio.toString()}
               className="py-2 px-6 flex hover:text-gray-400"
             >
-              作品
+              筆記
             </Link>
             <button
               className="py-2 px-6 flex hover:text-gray-400"

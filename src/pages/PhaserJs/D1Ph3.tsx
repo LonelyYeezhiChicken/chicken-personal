@@ -1,12 +1,12 @@
 import { Header, Portfolio } from "../../components";
 import { LinkMap } from "../../models";
-import testMd from "../../note/phaserJs/RpgGame/RpgGame.md";
+import testMd from "../../note/phaserJs/day1.md";
 import { useTitle } from "../../utils/PageTitle";
 
-const pageTitle: string = "🎮 RPG Game v1";
+const pageTitle: string = "🎮 前言";
 
-function RpgGameV1() {
-  useTitle("Chicken Say Hi | RPG Game");
+function D1Ph3() {
+  useTitle("Chicken Say Hi | phaser3 前言");
   return (
     <>
       <Header />
@@ -19,4 +19,4 @@ function RpgGameV1() {
   );
 }
 
-export default RpgGameV1;
+export default D1Ph3;
