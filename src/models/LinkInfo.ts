@@ -70,4 +70,6 @@ export enum LinkMap {
     DPOverview2 = "/dPOverview2",
     DPOverview3 = "/dPOverview3",
     DPOopOverview = "/dPOopOverview",
+    SRP = "/sRP",
+    OCP = "/oCP",
 }

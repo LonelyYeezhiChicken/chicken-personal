@@ -1,4 +1,4 @@
-# [設計模式] 2-1 物件導向設計原則-單一責任原則 (single repository principle)
+### [設計模式] 2-1 物件導向設計原則-單一責任原則 (single repository principle)
 
 ## 單一責任原則:
 - 責任(Responsibility)
