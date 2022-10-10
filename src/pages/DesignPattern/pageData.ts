@@ -25,5 +25,10 @@ export const pageList: PageData[] = [
         id: 5,
         text: "2-1. 單一責任原則(SRP)",
         goPath: LinkMap.SRP,
+    },
+    {
+        id: 6,
+        text: "2-2. 開閉原則 (OCP)",
+        goPath: LinkMap.OCP,
     }
 ];
