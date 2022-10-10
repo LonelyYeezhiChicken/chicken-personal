@@ -66,7 +66,6 @@ npm install phaser@3.55.2
 ### 今天介紹了基本的開發環境與開發的起手式，明天就要開始練習 Phaser 了喔
 
 ---
----
 ### 程式原碼
 
 ``` javascript

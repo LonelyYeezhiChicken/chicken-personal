@@ -10,6 +10,7 @@ import {
   PhaserPage,
   D1Ph3,
   D2Ph3,
+  D3Ph3,
   About,
   LineAndLoop,
   MapFunc,
@@ -126,6 +127,10 @@ export function Router() {
       <Route path={LinkMap.D2Ph3.toString()} element={<Main />}>
         {/* RpgGameV1 */}
         <Route index element={<D2Ph3 />} />
+      </Route>
+      <Route path={LinkMap.D3Ph3.toString()} element={<Main />}>
+        {/* RpgGameV1 */}
+        <Route index element={<D3Ph3 />} />
       </Route>
       {/*------------- RpgGameV1 --------------*/}
       {/*------------- 鐵人賽13 --------------*/}

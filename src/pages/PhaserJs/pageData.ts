@@ -18,7 +18,7 @@ export const pageList: PageData[] = [
     },
     {
         id: 4,
-        text: "4. 聲波",
+        text: "4. 基本語法(一) - 靜態資源",
         goPath: LinkMap.D3Ph3,
     },
     {
