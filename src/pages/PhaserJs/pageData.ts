@@ -23,7 +23,7 @@ export const pageList: PageData[] = [
     },
     {
         id: 5,
-        text: "5. arc 函式",
+        text: "5. 基本語法(二) - 圖片",
         goPath: LinkMap.D4Ph3,
     },
 ];
