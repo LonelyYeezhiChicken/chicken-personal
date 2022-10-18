@@ -1,13 +1,16 @@
 {
   "name": "chicken-personal",
   "private": true,
+  "homepage": "https://blog.lychicken.com/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "serve": "serve -s dist -p 3000"
+    "serve": "serve -s dist -p 3000",
+    "predeploy": "yarn build",
+    "deploy":"^1.4.1"
   },
   "dependencies": {
     "react": "^18.2.0",

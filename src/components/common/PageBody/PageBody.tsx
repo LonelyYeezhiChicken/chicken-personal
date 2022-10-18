@@ -23,7 +23,7 @@ export function PageBody({ backPath, title, text }: PageBodyData) {
         <b>👈 回目錄</b>
       </Link>
       <ReactMarkdown
-        className="leading-9 text-gray-500 dark:text-white Md"
+        className="leading-9 text-gray-700 dark:text-white Md"
         remarkPlugins={[remarkGfm]}
         components={{
           code({ node, inline, className, children, ...props }) {
