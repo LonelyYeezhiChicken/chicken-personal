@@ -1,4 +1,4 @@
-import{c as N}from"./react-dom.6093bb13.js";import{L as h,H as G}from"./react-router-dom.dd0e15e7.js";import{j as n,F as s,a as t,R as $}from"./react-markdown.7bf3d9a7.js";import{O,a as M,d as H,e,N as j,b as q}from"./react-router.d62c1e10.js";import{R as w}from"./react.190e4860.js";import{b as T}from"./react-lazy-load-image-component.52e7b256.js";import{r as K}from"./remark-gfm.08b713de.js";import{S as V,d as z}from"./react-syntax-highlighter.11e8ee03.js";import{g as I}from"./react-ga4.ac29b200.js";import"./scheduler.6cb12cf2.js";import"./@remix-run.0f90e68c.js";import"./remark-parse.00dd2888.js";import"./mdast-util-from-markdown.c8b8893b.js";import"./mdast-util-to-string.8bc2e9c1.js";import"./micromark.5019e94c.js";import"./micromark-util-combine-extensions.3e12e0b8.js";import"./micromark-util-chunked.d678dd6d.js";import"./micromark-factory-space.cd167e39.js";import"./micromark-util-character.472f60a0.js";import"./micromark-core-commonmark.dc633a3e.js";import"./micromark-util-classify-character.93e0b164.js";import"./micromark-util-resolve-all.11047968.js";import"./decode-named-character-reference.706ddea9.js";import"./micromark-util-subtokenize.6d5e7083.js";import"./micromark-factory-destination.0e7bb721.js";import"./micromark-factory-label.2e9c4966.js";import"./micromark-factory-title.aa9185af.js";import"./micromark-factory-whitespace.3e261dbf.js";import"./micromark-util-normalize-identifier.f257cb72.js";import"./micromark-util-html-tag-name.5207f868.js";import"./micromark-util-decode-numeric-character-reference.9eaaae1c.js";import"./micromark-util-decode-string.d7d7e948.js";import"./unist-util-stringify-position.e39b5eb6.js";import"./prop-types.35640cc6.js";import"./property-information.1f74bece.js";import"./unist-util-visit.a7a81adc.js";import"./unist-util-visit-parents.62f12f83.js";import"./unist-util-is.8abf3982.js";import"./react-is.86684602.js";import"./@babel.75ac2d5c.js";import"./hast-util-whitespace.8f8023d5.js";import"./space-separated-tokens.9ca30725.js";import"./comma-separated-tokens.e44b482b.js";import"./style-to-object.0c02c56a.js";import"./inline-style-parser.6dc90e75.js";import"./unified.72277873.js";import"./bail.26bb36c7.js";import"./is-buffer.19a6d344.js";import"./extend.57c43b10.js";import"./is-plain-obj.c90db913.js";import"./trough.f22441a1.js";import"./vfile.1aead541.js";import"./vfile-message.61c5e3c2.js";import"./remark-rehype.aa0b5315.js";import"./mdast-util-to-hast.2a683211.js";import"./unist-builder.25c4ba97.js";import"./unist-util-position.4cd18ce8.js";import"./unist-util-generated.8f78f123.js";import"./mdast-util-definitions.00f4c50f.js";import"./micromark-util-sanitize-uri.77a0706b.js";import"./micromark-util-encode.df910363.js";import"./mdurl.d391f11c.js";import"./trim-lines.7e841c49.js";import"./micromark-extension-gfm.d9294311.js";import"./micromark-extension-gfm-autolink-literal.917e39e7.js";import"./micromark-extension-gfm-footnote.302a264f.js";import"./micromark-extension-gfm-strikethrough.fac6750f.js";import"./micromark-extension-gfm-table.8780247c.js";import"./micromark-extension-gfm-task-list-item.ac480246.js";import"./mdast-util-gfm.9ad3ff77.js";import"./mdast-util-gfm-autolink-literal.44a03ca8.js";import"./ccount.9f5e0ed9.js";import"./mdast-util-find-and-replace.75ec4cdc.js";import"./mdast-util-gfm-footnote.5af08c84.js";import"./mdast-util-to-markdown.dff2b3a8.js";import"./mdast-util-gfm-strikethrough.a6e485a4.js";import"./mdast-util-gfm-task-list-item.2e82fe4a.js";import"./mdast-util-gfm-table.9b33e91f.js";import"./markdown-table.238e00e3.js";import"./refractor.e8537c6f.js";import"./hastscript.1dccabeb.js";import"./xtend.45b7f156.js";import"./hast-util-parse-selector.8c727e52.js";import"./parse-entities.f4af6d03.js";import"./character-entities-legacy.af741f7d.js";import"./character-reference-invalid.93d522b8.js";import"./is-decimal.0d4f2058.js";import"./is-hexadecimal.d90235b6.js";import"./is-alphanumerical.944fb900.js";import"./is-alphabetical.8e6a3b93.js";(function(){const m=document.createElement("link").relList;if(m&&m.supports&&m.supports("modulepreload"))return;for(const c of document.querySelectorAll('link[rel="modulepreload"]'))x(c);new MutationObserver(c=>{for(const g of c)if(g.type==="childList")for(const p of g.addedNodes)p.tagName==="LINK"&&p.rel==="modulepreload"&&x(p)}).observe(document,{childList:!0,subtree:!0});function C(c){const g={};return c.integrity&&(g.integrity=c.integrity),c.referrerpolicy&&(g.referrerPolicy=c.referrerpolicy),c.crossorigin==="use-credentials"?g.credentials="include":c.crossorigin==="anonymous"?g.credentials="omit":g.credentials="same-origin",g}function x(c){if(c.ep)return;c.ep=!0;const g=C(c);fetch(c.href,g)}})();function a(){return n(s,{children:n("main",{className:"dark:bg-gray-800 font-mono bg-amber-100 relative overflow-hidden h-screen",children:n(O,{})})})}var r=(i=>(i.Home="/",i.About="/About",i.Find="/continue",i.Portfolio="/portfolio",i.Continue="/continue",i.P5Js="/p5js",i.LineAndLoop="/lineAndLoop",i.MapFunc="/mapFunc",i.Gradient="/gradient",i.Wave="/wave",i.MethodArc="/methodArc",i.RpgGameV1="/rpgGameV1",i.PhaserPage="/phaserPage",i.D1Ph3="/D1Ph3",i.D2Ph3="/D2Ph3",i.D3Ph3="/D3Ph3",i.D4Ph3="/D4Ph3",i.D5Ph3="/D5Ph3",i.D6Ph3="/D6Ph3",i.D7Ph3="/D7Ph3",i.D8Ph3="/D8Ph3",i.D9Ph3="/D9Ph3",i.D10Ph3="/D10Ph3",i.IronMan13="/ironMan13",i.D1no13="/d1no13",i.D2no13="/d2no13",i.D3no13="/d3no13",i.D4no13="/d4no13",i.D5no13="/d5no13",i.D6no13="/d6no13",i.D7no13="/d7no13",i.D8no13="/d8no13",i.D9no13="/d9no13",i.D10no13="/d10no13",i.D11no13="/d11no13",i.D12no13="/d12no13",i.D13no13="/d13no13",i.D14no13="/d14no13",i.D15no13="/d15no13",i.D16no13="/d16no13",i.D17no13="/d17no13",i.D18no13="/d18no13",i.D19no13="/d19no13",i.D20no13="/d20no13",i.D21no13="/d21no13",i.D22no13="/d22no13",i.D23no13="/d23no13",i.D24no13="/d24no13",i.D25no13="/d25no13",i.D26no13="/d26no13",i.D27no13="/d27no13",i.D28no13="/d28no13",i.D29no13="/d29no13",i.D30no13="/d30no13",i.D31no13="/d31no13",i.CsharpEventHome="/csharpEventHome",i.CsDelegate1="/csDelegate1",i.CsDelegate2="/csDelegate2",i.CsDelegate3="/csDelegate3",i.CsDelegate4="/csDelegate4",i.CsDelegate5="/csDelegate5",i.CsDelegate6="/csDelegate6",i.CsDelegate7="/csDelegate7",i.OAuthNote="/oAuthNote",i.OAuthNote1="/oAuthNote1",i.UnitNote="/unitNote",i.UnitNote1="/unitNote1",i.DesignPattern="/designPattern",i.DPOverview1="/dPOverview1",i.DPOverview2="/dPOverview2",i.DPOverview3="/dPOverview3",i.DPOopOverview="/dPOopOverview",i.SRP="/sRP",i.OCP="/oCP",i))(r||{});function J(){return t("div",{className:"hidden md:block absolute -bottom-32 -left-32 w-96 h-96",children:[t("div",{className:"absolute text-extrabold text-xl right-12 z-20 text-start top-1/4",children:[n("span",{className:"text-7xl",children:"\u{1F423}"}),n("p",{children:"Go to my Github"}),n("a",{href:"https://github.com/LonelyYeezhiChicken",className:"underline",children:"Let's go \u{1F413}"})]}),n("svg",{viewBox:"0 0 200 200",className:"absolute w-full h-full",xmlns:"http://www.w3.org/2000/svg",children:n("path",{fill:"#FFDBB9",d:"M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,74.1,43.2C66.7,57.2,57.6,70.6,45,78.1C32.4,85.6,16.2,87.1,0.7,85.9C-14.8,84.7,-29.6,80.9,-43.9,74.4C-58.3,67.9,-72,58.7,-79.8,45.9C-87.7,33,-89.5,16.5,-88.9,0.3C-88.4,-15.9,-85.4,-31.7,-78.1,-45.4C-70.8,-59.1,-59.1,-70.6,-45.3,-77.9C-31.6,-85.3,-15.8,-88.5,-0.3,-88.1C15.3,-87.6,30.5,-83.5,44.7,-76.4Z",transform:"translate(100 100)"})})]})}let F=document.getElementById("root"),B="\u{1F31B}/\u{1F31E}";function L(){F!==null&&(F.className.includes("dark")?F.classList.remove("dark"):F.classList.add("dark"))}function o(){return n("header",{className:"h-24 sm:h-32 flex items-center z-30 w-full",children:t("div",{className:"container mx-auto px-6 flex items-center justify-between",children:[n("div",{className:"uppercase text-gray-800 dark:text-white font-black text-3xl flex items-center"}),t("div",{className:"flex items-center",children:[t("nav",{className:"font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex md:flex items-center hidden",children:[n(h,{to:r.Home.toString(),className:"py-2 px-6 flex hover:text-gray-400",children:"\u96DE\u820D"}),n(h,{to:r.About.toString(),className:"py-2 px-6 flex hover:text-gray-400",children:"\u95DC\u65BC\u4E00\u96BB\u96DE"}),n(h,{to:r.Portfolio.toString(),className:"py-2 px-6 flex hover:text-gray-400",children:"\u4E00\u96BB\u96DE\u7684\u7B46\u8A18"}),n("button",{className:"py-2 px-6 flex hover:text-gray-400 ",onClick:()=>L(),children:B})]}),t("nav",{className:"font-sen text-gray-800 dark:text-white uppercase text-lg sm:flex lg:hidden md:hidden items-center hidden",children:[n(h,{to:r.Home.toString(),className:"py-2 px-6 flex hover:text-gray-400",children:"\u96DE\u820D"}),n(h,{to:r.About.toString(),className:"py-2 px-6 flex hover:text-gray-300",children:"\u95DC\u65BC"}),n(h,{to:r.Portfolio.toString(),className:"py-2 px-6 flex hover:text-gray-400",children:"\u7B46\u8A18"}),n("button",{className:"py-2 px-6 flex hover:text-gray-400",onClick:()=>L(),children:B})]}),t("nav",{className:"font-sen text-gray-800 dark:text-white uppercase text-lg lg:hidden md:hidden sm:hidden  items-center flex",children:[n(h,{to:r.Home.toString(),className:"py-2 px-6 flex hover:text-gray-400",children:"\u{1F3E0}"}),n(h,{to:r.About.toString(),className:"py-2 px-6 flex hover:text-gray-400",children:"\u{1F4CB}"}),n(h,{to:r.Portfolio.toString(),className:"py-2 px-6 flex hover:text-gray-400",children:"\u{1F3A8}"}),n("button",{className:"py-2 px-6 flex hover:text-gray-400",onClick:()=>L(),children:"\u{1F317}"})]})]})]})})}const R="/assets/chicken.71d85fc0.jpg";function U(){return n("div",{className:"flex relative z-20 items-center",children:n("div",{className:"container mx-auto px-6 flex flex-col justify-between items-center relative py-4",children:t("div",{className:"flex flex-col",children:[n("img",{src:R,className:"rounded-full w-28 mx-auto"}),n("p",{className:"text-3xl my-6 text-center dark:text-white",children:"Hi, I'm Chicken \u{1F414}"}),t("h2",{className:"max-w-3xl text-5xl md:text-6xl font-bold mx-auto dark:text-white text-gray-800 text-center py-2",children:["\u9019\u662F\u5B64\u7368\u4E00\u96BB\u96DE\u7684",n("br",{}),"\u6545\u4E8B\u5C0F\u5929\u5730"]})]})})})}function A(){return n("footer",{className:"relative bg-blueGray-50 pt-8 pb-6 mt-2 dark:text-gray-300 text-gray-800",children:n("div",{className:"container mx-auto px-4",children:n("div",{className:"flex flex-wrap items-center md:justify-between justify-center",children:n("div",{className:"w-full md:w-6/12 px-4 mx-auto text-center",children:n("div",{className:"text-sm text-blueGray-500 font-semibold py-1",children:"@BY Lonely Yeezhi Chicken"})})})})})}function u(i){w.useEffect(()=>{const m=document.title;return document.title=i,()=>{document.title=m}})}function X(){return u("Chicken Say Hi | Home"),t("div",{className:"h-screen",children:[n(J,{}),n(o,{}),n(U,{})]})}const _="/assets/Build.96fa5c94.png";function Y(){const i=M();return t(s,{children:[n(o,{}),n("div",{className:"container mx-auto h-screen pt-32 md:pt-0 px-6 z-10 flex items-center justify-between",children:t("div",{className:"container mx-auto px-6 flex flex-col-reverse lg:flex-row justify-between items-center relative",children:[t("div",{className:"w-full mb-16 md:mb-8 text-center lg:text-left",children:[n("h1",{className:"font-light font-sans text-center lg:text-left text-5xl lg:text-8xl mt-12 md:mt-0 text-gray-700 dark:text-white",children:"Sorry, \u6B64\u529F\u80FD\u9084\u5728\u65BD\u5DE5\u4E2D\u5594!"}),n("button",{className:"px-2 py-2 w-36 mt-16 font-light transition ease-in duration-200 hover:bg-yellow-400 border-2 text-lg border-gray-700 bg-yellow-300 focus:outline-none rounded",onClick:()=>{i(r.Home.toString())},children:"\u5148\u56DE\u96DE\u820D\u7B49"})]}),n("div",{className:"block w-full mx-auto md:mt-0 relative max-w-md lg:max-w-2xl",children:n(T.exports.LazyLoadImage,{src:_,className:"rounded-lg",effect:"blur"})})]})})]})}function Q({text:i}){return n("h1",{className:"uppercase text-gray-800 dark:text-white font-black text-2xl sm:text-3xl flex items-center ml-5",children:i})}function D({pgId:i,title:m,content:C,imgPath:x}){const c=M();function g(p){let d="/";switch(p){case 1:d=r.P5Js.toString();break;case 2:d=r.PhaserPage.toString();break;case 3:d=r.IronMan13.toString();break;case 4:d=r.CsharpEventHome.toString();break;case 5:d=r.OAuthNote.toString();break;case 6:d=r.UnitNote.toString();break;case 7:d=r.DesignPattern.toString();break}c(d)}return t("div",{className:"flex max-w-md bg-white shadow-lg rounded-lg overflow-hidden m-5",children:[n("div",{className:"w-1/3 bg-cover bg-landscape ",children:n(T.exports.LazyLoadImage,{alt:"",src:x,className:"w-90 sm:h-40 h-32",effect:"blur"})}),t("div",{className:"w-2/3 p-4",children:[n("h1",{className:"text-gray-900 font-bold text-3xl",children:m}),n("p",{className:"mt-2 text-gray-600 text-md",children:C}),n("div",{className:"flex item-center justify-end mt-3",children:n("button",{className:"px-3 py-2 bg-gray-800 text-white text-md font-bold uppercase rounded ",onClick:()=>g(i),children:"Go"})})]})]})}function Z({backPath:i,title:m,text:C}){return t("div",{className:"max-w-screen-xl mx-auto p-8 ",children:[n("h2",{className:"text-3xl font-extrabold leading-9 border-b-2 border-gray-600 dark:border-gray-100 text-gray-800 dark:text-white mb-12",children:m}),n(h,{to:i,className:"dark:text-yellow-50 text-gray-900 mb-10",children:n("b",{children:"\u{1F448} \u56DE\u76EE\u9304"})}),n($,{className:"leading-9 text-gray-700 dark:text-white Md",remarkPlugins:[K],components:{code({node:x,inline:c,className:g,children:p,...d}){const k=/language-(\w+)/.exec(g||"");return!c&&k?n(V,{showLineNumbers:!0,style:z,language:k[1],PreTag:"div",...d,children:String(p).replace(/\n$/,"")}):n("code",{className:g,...d,children:p})}},children:C}),n("footer",{className:"m-10 mb-10",children:n(h,{to:i,className:"dark:text-yellow-50 text-gray-900",children:n("b",{children:"\u{1F448} \u56DE\u76EE\u9304"})})})]})}function y({list:i}){return t("section",{className:"overflow-auto max-h-screen relative bg-white dark:bg-gray-900 rounded-lg",children:[n("div",{className:"flex flex-col sm:flex-row",children:t("div",{className:"mb-10",children:[n("h2",{className:"ml-5 mt-10 text-3xl font-extrabold leading-9 border-b-2 border-gray-600 dark:border-gray-100 text-gray-800 dark:text-white mb-12",children:"\u76EE\u9304:"}),n("nav",{className:"mt-10 px-6 ",children:i.map(m=>t(h,{to:m.goPath,className:"hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-6 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200  text-gray-600 dark:text-gray-400 rounded-lg ",children:[t("span",{className:"mx-1 sm:mx-4 text-lg font-normal",children:[m.text," \u{1F449}"]}),n("span",{className:"flex-grow text-right"})]},m.id.toString()))})]})}),n(A,{})]})}function l({backPath:i,title:m,text:C}){return n(s,{children:t("section",{className:"container max-h-full overflow-auto pb-10",children:[n("div",{className:"sm:flex",children:n(Z,{backPath:i,title:m,text:C})}),n(A,{})]})})}const nn="/assets/phaser.a01d1b4c.jpg",rn="/assets/iron13.713574ec.png",en="/assets/p5.a9d4ae48.png",tn="/assets/csharp.b60e1f75.png",sn="/assets/oauth2.9bf9d399.png",an="/assets/designPattern.c2656f4e.jpg",S={id:1,title:"P5 Js",content:"\u4E3B\u8981\u70BA\u7F8E\u8853\u7528\u9014\u7684JS",imgPath:en},b={id:2,title:"phaser Js",content:"\u57FA\u65BCJs\u7684\u904A\u6232\u5F15\u64CE",imgPath:nn},E={id:3,title:"\u7B2C\u5341\u4E09\u5C46\u9435\u4EBA\u8CFD",content:"C# \u96DE\u790E\u89C0\u5FF5",imgPath:rn},v={id:4,title:"C# \u59D4\u6D3E\u8207\u4E8B\u4EF6",content:"C# \u59D4\u6D3E\u8207\u4E8B\u4EF6\uFF0C\u57FA\u790E\u7BC4\u4F8B",imgPath:tn},f={id:5,title:"OAuth \u7B46\u8A18",content:"<OAuth2\u5BE6\u6230> \u95B1\u8B80\u7B46\u8A18",imgPath:sn},P={id:7,title:"\u8A2D\u8A08\u6A21\u5F0F \u7B46\u8A18",content:"\u8A2D\u8A08\u6A21\u5F0F \u95B1\u8B80\u7B46\u8A18",imgPath:an},on="\u{1F3A8} \u4E00\u96BB\u96DE\u7684\u4F5C\u54C1";function un(){return u("Chicken Say Hi | \u4F5C\u54C1\u96C6"),t(s,{children:[n(o,{}),n(Q,{text:on}),n("section",{className:"max-h-full overflow-auto",children:t("div",{className:"sm:flex relative z-20 items-center mt-2",children:[t("div",{className:"container mx-auto px-6 flex-col justify-between items-center relative py-4 mt-5",children:[n("div",{className:"flex flex-col",children:n(D,{pgId:E.id,title:E.title,content:E.content,imgPath:E.imgPath})}),n("div",{className:"flex flex-col",children:n(D,{pgId:S.id,title:S.title,content:S.content,imgPath:S.imgPath})}),n("div",{className:"flex flex-col",children:n(D,{pgId:f.id,title:f.title,content:f.content,imgPath:f.imgPath})}),n("div",{className:"flex flex-col sm:m-20"})]}),t("div",{className:"container mx-auto px-6 flex-col justify-between items-center relative sm:py-4 sm:mt-5",children:[n("div",{className:"flex flex-col",children:n(D,{pgId:b.id,title:b.title,content:b.content,imgPath:b.imgPath})}),n("div",{className:"flex flex-col",children:n(D,{pgId:v.id,title:v.title,content:v.content,imgPath:v.imgPath})}),n("div",{className:"flex flex-col",children:n(D,{pgId:P.id,title:P.title,content:P.content,imgPath:P.imgPath})}),n("div",{className:"flex flex-col m-20"})]})]})}),n(A,{})]})}const ln=[{id:1,text:"1. \u7DDA\u8207\u8FF4\u5708",goPath:r.LineAndLoop},{id:2,text:"2. map \u51FD\u5F0F",goPath:r.MapFunc},{id:3,text:"3. \u5340\u584A\u6F38\u5C64",goPath:r.Gradient},{id:4,text:"4. \u8072\u6CE2",goPath:r.Wave},{id:5,text:"5. arc \u51FD\u5F0F",goPath:r.MethodArc}];function cn(){return u("Chicken Say Hi | P5 js"),t(s,{children:[n(o,{}),n(y,{list:ln})]})}const mn=`# 1. \u7DDA\u689D\u8207\u8FF4\u5708\r
+import{c as N}from"./react-dom.6093bb13.js";import{L as g,H as G}from"./react-router-dom.dd0e15e7.js";import{j as n,F as s,a as t,R as j}from"./react-markdown.7bf3d9a7.js";import{O as $,a as I,d as O,e,N as H,b as q}from"./react-router.d62c1e10.js";import{R as L}from"./react.190e4860.js";import{b as k}from"./react-lazy-load-image-component.52e7b256.js";import{r as K}from"./remark-gfm.08b713de.js";import{S as V,d as U}from"./react-syntax-highlighter.11e8ee03.js";import{g as M}from"./react-ga4.ac29b200.js";import"./scheduler.6cb12cf2.js";import"./@remix-run.0f90e68c.js";import"./remark-parse.00dd2888.js";import"./mdast-util-from-markdown.c8b8893b.js";import"./mdast-util-to-string.8bc2e9c1.js";import"./micromark.5019e94c.js";import"./micromark-util-combine-extensions.3e12e0b8.js";import"./micromark-util-chunked.d678dd6d.js";import"./micromark-factory-space.cd167e39.js";import"./micromark-util-character.472f60a0.js";import"./micromark-core-commonmark.dc633a3e.js";import"./micromark-util-classify-character.93e0b164.js";import"./micromark-util-resolve-all.11047968.js";import"./decode-named-character-reference.706ddea9.js";import"./micromark-util-subtokenize.6d5e7083.js";import"./micromark-factory-destination.0e7bb721.js";import"./micromark-factory-label.2e9c4966.js";import"./micromark-factory-title.aa9185af.js";import"./micromark-factory-whitespace.3e261dbf.js";import"./micromark-util-normalize-identifier.f257cb72.js";import"./micromark-util-html-tag-name.5207f868.js";import"./micromark-util-decode-numeric-character-reference.9eaaae1c.js";import"./micromark-util-decode-string.d7d7e948.js";import"./unist-util-stringify-position.e39b5eb6.js";import"./prop-types.35640cc6.js";import"./property-information.1f74bece.js";import"./unist-util-visit.a7a81adc.js";import"./unist-util-visit-parents.62f12f83.js";import"./unist-util-is.8abf3982.js";import"./react-is.86684602.js";import"./@babel.75ac2d5c.js";import"./hast-util-whitespace.8f8023d5.js";import"./space-separated-tokens.9ca30725.js";import"./comma-separated-tokens.e44b482b.js";import"./style-to-object.0c02c56a.js";import"./inline-style-parser.6dc90e75.js";import"./unified.72277873.js";import"./bail.26bb36c7.js";import"./is-buffer.19a6d344.js";import"./extend.57c43b10.js";import"./is-plain-obj.c90db913.js";import"./trough.f22441a1.js";import"./vfile.1aead541.js";import"./vfile-message.61c5e3c2.js";import"./remark-rehype.aa0b5315.js";import"./mdast-util-to-hast.2a683211.js";import"./unist-builder.25c4ba97.js";import"./unist-util-position.4cd18ce8.js";import"./unist-util-generated.8f78f123.js";import"./mdast-util-definitions.00f4c50f.js";import"./micromark-util-sanitize-uri.77a0706b.js";import"./micromark-util-encode.df910363.js";import"./mdurl.d391f11c.js";import"./trim-lines.7e841c49.js";import"./micromark-extension-gfm.d9294311.js";import"./micromark-extension-gfm-autolink-literal.917e39e7.js";import"./micromark-extension-gfm-footnote.302a264f.js";import"./micromark-extension-gfm-strikethrough.fac6750f.js";import"./micromark-extension-gfm-table.8780247c.js";import"./micromark-extension-gfm-task-list-item.ac480246.js";import"./mdast-util-gfm.9ad3ff77.js";import"./mdast-util-gfm-autolink-literal.44a03ca8.js";import"./ccount.9f5e0ed9.js";import"./mdast-util-find-and-replace.75ec4cdc.js";import"./mdast-util-gfm-footnote.5af08c84.js";import"./mdast-util-to-markdown.dff2b3a8.js";import"./mdast-util-gfm-strikethrough.a6e485a4.js";import"./mdast-util-gfm-task-list-item.2e82fe4a.js";import"./mdast-util-gfm-table.9b33e91f.js";import"./markdown-table.238e00e3.js";import"./refractor.e8537c6f.js";import"./hastscript.1dccabeb.js";import"./xtend.45b7f156.js";import"./hast-util-parse-selector.8c727e52.js";import"./parse-entities.f4af6d03.js";import"./character-entities-legacy.af741f7d.js";import"./character-reference-invalid.93d522b8.js";import"./is-decimal.0d4f2058.js";import"./is-hexadecimal.d90235b6.js";import"./is-alphanumerical.944fb900.js";import"./is-alphabetical.8e6a3b93.js";(function(){const m=document.createElement("link").relList;if(m&&m.supports&&m.supports("modulepreload"))return;for(const c of document.querySelectorAll('link[rel="modulepreload"]'))D(c);new MutationObserver(c=>{for(const h of c)if(h.type==="childList")for(const p of h.addedNodes)p.tagName==="LINK"&&p.rel==="modulepreload"&&D(p)}).observe(document,{childList:!0,subtree:!0});function C(c){const h={};return c.integrity&&(h.integrity=c.integrity),c.referrerpolicy&&(h.referrerPolicy=c.referrerpolicy),c.crossorigin==="use-credentials"?h.credentials="include":c.crossorigin==="anonymous"?h.credentials="omit":h.credentials="same-origin",h}function D(c){if(c.ep)return;c.ep=!0;const h=C(c);fetch(c.href,h)}})();function a(){return n(s,{children:n("main",{className:"dark:bg-gray-800 font-mono bg-amber-100 relative overflow-hidden h-screen",children:n($,{})})})}var r=(i=>(i.Home="/",i.About="/About",i.Find="/continue",i.Portfolio="/portfolio",i.Continue="/continue",i.P5Js="/p5js",i.LineAndLoop="/lineAndLoop",i.MapFunc="/mapFunc",i.Gradient="/gradient",i.Wave="/wave",i.MethodArc="/methodArc",i.RpgGameV1="/rpgGameV1",i.PhaserPage="/phaserPage",i.D1Ph3="/D1Ph3",i.D2Ph3="/D2Ph3",i.D3Ph3="/D3Ph3",i.D4Ph3="/D4Ph3",i.D5Ph3="/D5Ph3",i.D6Ph3="/D6Ph3",i.D7Ph3="/D7Ph3",i.D8Ph3="/D8Ph3",i.D9Ph3="/D9Ph3",i.D10Ph3="/D10Ph3",i.IronMan13="/ironMan13",i.D1no13="/d1no13",i.D2no13="/d2no13",i.D3no13="/d3no13",i.D4no13="/d4no13",i.D5no13="/d5no13",i.D6no13="/d6no13",i.D7no13="/d7no13",i.D8no13="/d8no13",i.D9no13="/d9no13",i.D10no13="/d10no13",i.D11no13="/d11no13",i.D12no13="/d12no13",i.D13no13="/d13no13",i.D14no13="/d14no13",i.D15no13="/d15no13",i.D16no13="/d16no13",i.D17no13="/d17no13",i.D18no13="/d18no13",i.D19no13="/d19no13",i.D20no13="/d20no13",i.D21no13="/d21no13",i.D22no13="/d22no13",i.D23no13="/d23no13",i.D24no13="/d24no13",i.D25no13="/d25no13",i.D26no13="/d26no13",i.D27no13="/d27no13",i.D28no13="/d28no13",i.D29no13="/d29no13",i.D30no13="/d30no13",i.D31no13="/d31no13",i.CsharpEventHome="/csharpEventHome",i.CsDelegate1="/csDelegate1",i.CsDelegate2="/csDelegate2",i.CsDelegate3="/csDelegate3",i.CsDelegate4="/csDelegate4",i.CsDelegate5="/csDelegate5",i.CsDelegate6="/csDelegate6",i.CsDelegate7="/csDelegate7",i.OAuthNote="/oAuthNote",i.OAuthNote1="/oAuthNote1",i.UnitNote="/unitNote",i.UnitNote1="/unitNote1",i.DesignPattern="/designPattern",i.DPOverview1="/dPOverview1",i.DPOverview2="/dPOverview2",i.DPOverview3="/dPOverview3",i.DPOopOverview="/dPOopOverview",i.SRP="/sRP",i.OCP="/oCP",i))(r||{});function z(){return t("div",{className:"hidden md:block absolute -bottom-32 -left-32 w-96 h-96",children:[t("div",{className:"absolute text-extrabold text-xl right-12 z-20 text-start top-1/4",children:[n("span",{className:"text-7xl",children:"\u{1F423}"}),n("p",{children:"Go to my Github"}),n("a",{href:"https://github.com/LonelyYeezhiChicken",className:"underline",children:"Let's go \u{1F413}"})]}),n("svg",{viewBox:"0 0 200 200",className:"absolute w-full h-full",xmlns:"http://www.w3.org/2000/svg",children:n("path",{fill:"#FFDBB9",d:"M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,74.1,43.2C66.7,57.2,57.6,70.6,45,78.1C32.4,85.6,16.2,87.1,0.7,85.9C-14.8,84.7,-29.6,80.9,-43.9,74.4C-58.3,67.9,-72,58.7,-79.8,45.9C-87.7,33,-89.5,16.5,-88.9,0.3C-88.4,-15.9,-85.4,-31.7,-78.1,-45.4C-70.8,-59.1,-59.1,-70.6,-45.3,-77.9C-31.6,-85.3,-15.8,-88.5,-0.3,-88.1C15.3,-87.6,30.5,-83.5,44.7,-76.4Z",transform:"translate(100 100)"})})]})}let b=document.getElementById("root"),B="\u{1F31B}/\u{1F31E}";function w(){b!==null&&(b.className.includes("dark")?b.classList.remove("dark"):b.classList.add("dark"))}function o(){return n("header",{className:"h-24 sm:h-32 flex items-center z-30 w-full",children:t("div",{className:"container mx-auto px-6 flex items-center justify-between",children:[n("div",{className:"uppercase text-gray-800 dark:text-white font-black text-3xl flex items-center"}),t("div",{className:"flex items-center",children:[t("nav",{className:"font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex md:flex items-center hidden",children:[n(g,{to:r.Home.toString(),className:"py-2 px-6 flex hover:text-gray-400",children:"\u96DE\u820D"}),n(g,{to:r.About.toString(),className:"py-2 px-6 flex hover:text-gray-400",children:"\u95DC\u65BC\u4E00\u96BB\u96DE"}),n(g,{to:r.Portfolio.toString(),className:"py-2 px-6 flex hover:text-gray-400",children:"\u4E00\u96BB\u96DE\u7684\u7B46\u8A18"}),n("button",{className:"py-2 px-6 flex hover:text-gray-400 ",onClick:()=>w(),children:B})]}),t("nav",{className:"font-sen text-gray-800 dark:text-white uppercase text-lg sm:flex lg:hidden md:hidden items-center hidden",children:[n(g,{to:r.Home.toString(),className:"py-2 px-6 flex hover:text-gray-400",children:"\u96DE\u820D"}),n(g,{to:r.About.toString(),className:"py-2 px-6 flex hover:text-gray-300",children:"\u95DC\u65BC"}),n(g,{to:r.Portfolio.toString(),className:"py-2 px-6 flex hover:text-gray-400",children:"\u7B46\u8A18"}),n("button",{className:"py-2 px-6 flex hover:text-gray-400",onClick:()=>w(),children:B})]}),t("nav",{className:"font-sen text-gray-800 dark:text-white uppercase text-lg lg:hidden md:hidden sm:hidden  items-center flex",children:[n(g,{to:r.Home.toString(),className:"py-2 px-6 flex hover:text-gray-400",children:"\u{1F3E0}"}),n(g,{to:r.About.toString(),className:"py-2 px-6 flex hover:text-gray-400",children:"\u{1F4CB}"}),n(g,{to:r.Portfolio.toString(),className:"py-2 px-6 flex hover:text-gray-400",children:"\u{1F3A8}"}),n("button",{className:"py-2 px-6 flex hover:text-gray-400",onClick:()=>w(),children:"\u{1F317}"})]})]})]})})}const R="/assets/chicken.71d85fc0.jpg";function _(){return n("div",{className:"flex relative z-20 items-center",children:n("div",{className:"container mx-auto px-6 flex flex-col justify-between items-center relative py-4",children:t("div",{className:"flex flex-col",children:[n("img",{src:R,className:"rounded-full w-28 mx-auto"}),n("p",{className:"text-3xl my-6 text-center dark:text-white",children:"Hi, I'm Chicken \u{1F414}"}),t("h2",{className:"max-w-3xl text-5xl md:text-6xl font-bold mx-auto dark:text-white text-gray-800 text-center py-2",children:["\u9019\u662F\u5B64\u7368\u4E00\u96BB\u96DE\u7684",n("br",{}),"\u6545\u4E8B\u5C0F\u5929\u5730"]})]})})})}function A(){return n("footer",{className:"relative bg-blueGray-50 pt-8 pb-6 mt-2 dark:text-gray-300 text-gray-800",children:n("div",{className:"container mx-auto px-4",children:n("div",{className:"flex flex-wrap items-center md:justify-between justify-center",children:n("div",{className:"w-full md:w-6/12 px-4 mx-auto text-center",children:n("div",{className:"text-sm text-blueGray-500 font-semibold py-1",children:"@BY Lonely Yeezhi Chicken"})})})})})}function u(i){L.useEffect(()=>{const m=document.title;return document.title=i,()=>{document.title=m}})}function J(){return u("Chicken Say Hi | Home"),t("div",{className:"h-screen",children:[n(z,{}),n(o,{}),n(_,{})]})}const X="/assets/Build.96fa5c94.png";function Y(){const i=I();return t(s,{children:[n(o,{}),n("div",{className:"container mx-auto h-screen pt-32 md:pt-0 px-6 z-10 flex items-center justify-between",children:t("div",{className:"container mx-auto px-6 flex flex-col-reverse lg:flex-row justify-between items-center relative",children:[t("div",{className:"w-full mb-16 md:mb-8 text-center lg:text-left",children:[n("h1",{className:"font-light font-sans text-center lg:text-left text-5xl lg:text-8xl mt-12 md:mt-0 text-gray-700 dark:text-white",children:"Sorry, \u6B64\u529F\u80FD\u9084\u5728\u65BD\u5DE5\u4E2D\u5594!"}),n("button",{className:"px-2 py-2 w-36 mt-16 font-light transition ease-in duration-200 hover:bg-yellow-400 border-2 text-lg border-gray-700 bg-yellow-300 focus:outline-none rounded",onClick:()=>{i(r.Home.toString())},children:"\u5148\u56DE\u96DE\u820D\u7B49"})]}),n("div",{className:"block w-full mx-auto md:mt-0 relative max-w-md lg:max-w-2xl",children:n(k.exports.LazyLoadImage,{src:X,className:"rounded-lg",effect:"blur"})})]})})]})}function Q({text:i}){return n("h1",{className:"uppercase text-gray-800 dark:text-white font-black text-2xl sm:text-3xl flex items-center ml-5",children:i})}function x({pgId:i,title:m,content:C,imgPath:D}){const c=I();function h(p){let d="/";switch(p){case 1:d=r.P5Js.toString();break;case 2:d=r.PhaserPage.toString();break;case 3:d=r.IronMan13.toString();break;case 4:d=r.CsharpEventHome.toString();break;case 5:d=r.OAuthNote.toString();break;case 6:d=r.UnitNote.toString();break;case 7:d=r.DesignPattern.toString();break}c(d)}return t("div",{className:"flex max-w-md bg-white shadow-lg rounded-lg overflow-hidden m-5",children:[n("div",{className:"w-1/3 bg-cover bg-landscape ",children:n(k.exports.LazyLoadImage,{alt:"",src:D,className:"w-90 sm:h-40 h-32",effect:"blur"})}),t("div",{className:"w-2/3 p-4",children:[n("h1",{className:"text-gray-900 font-bold text-3xl",children:m}),n("p",{className:"mt-2 text-gray-600 text-md",children:C}),n("div",{className:"flex item-center justify-end mt-3",children:n("button",{className:"px-3 py-2 bg-gray-800 text-white text-md font-bold uppercase rounded ",onClick:()=>h(i),children:"Go"})})]})]})}function Z({backPath:i,title:m,text:C}){return t("div",{className:"max-w-screen-xl mx-auto p-8 ",children:[n("h2",{className:"text-3xl font-extrabold leading-9 border-b-2 border-gray-600 dark:border-gray-100 text-gray-800 dark:text-white mb-12",children:m}),n(g,{to:i,className:"dark:text-yellow-50 text-gray-900 mb-10",children:n("b",{children:"\u{1F448} \u56DE\u76EE\u9304"})}),n(j,{className:"leading-9 text-gray-700 dark:text-white Md",remarkPlugins:[K],components:{code({node:D,inline:c,className:h,children:p,...d}){const T=/language-(\w+)/.exec(h||"");return!c&&T?n(V,{showLineNumbers:!0,style:U,language:T[1],PreTag:"div",...d,children:String(p).replace(/\n$/,"")}):n("code",{className:h,...d,children:p})}},children:C}),n("footer",{className:"m-10 mb-10",children:n(g,{to:i,className:"dark:text-yellow-50 text-gray-900",children:n("b",{children:"\u{1F448} \u56DE\u76EE\u9304"})})})]})}function y({list:i}){return t("section",{className:"overflow-auto max-h-screen relative bg-white dark:bg-gray-900 rounded-lg",children:[n("div",{className:"flex flex-col sm:flex-row",children:t("div",{className:"mb-10",children:[n("h2",{className:"ml-5 mt-10 text-3xl font-extrabold leading-9 border-b-2 border-gray-600 dark:border-gray-100 text-gray-800 dark:text-white mb-12",children:"\u76EE\u9304:"}),n("nav",{className:"mt-10 px-6 ",children:i.map(m=>t(g,{to:m.goPath,className:"hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-6 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200  text-gray-600 dark:text-gray-400 rounded-lg ",children:[t("span",{className:"mx-1 sm:mx-4 text-lg font-normal",children:[m.text," \u{1F449}"]}),n("span",{className:"flex-grow text-right"})]},m.id.toString()))})]})}),n(A,{})]})}function l({backPath:i,title:m,text:C}){return n(s,{children:t("section",{className:"container max-h-full overflow-auto pb-10",children:[n("div",{className:"sm:flex",children:n(Z,{backPath:i,title:m,text:C})}),n(A,{})]})})}const nn="/assets/phaser.a01d1b4c.jpg",rn="/assets/iron13.713574ec.png",en="/assets/p5.a9d4ae48.png",tn="/assets/csharp.b60e1f75.png",sn="/assets/oauth2.9bf9d399.png",an="/assets/designPattern.c2656f4e.jpg",S={id:1,title:"P5 Js",content:"\u4E3B\u8981\u70BA\u7F8E\u8853\u7528\u9014\u7684JS",imgPath:en},f={id:2,title:"phaser Js",content:"\u57FA\u65BCJs\u7684\u904A\u6232\u5F15\u64CE",imgPath:nn},F={id:3,title:"\u7B2C\u5341\u4E09\u5C46\u9435\u4EBA\u8CFD",content:"C# \u96DE\u790E\u89C0\u5FF5",imgPath:rn},v={id:4,title:"C# \u59D4\u6D3E\u8207\u4E8B\u4EF6",content:"C# \u59D4\u6D3E\u8207\u4E8B\u4EF6\uFF0C\u57FA\u790E\u7BC4\u4F8B",imgPath:tn},E={id:5,title:"OAuth \u7B46\u8A18",content:"<OAuth2\u5BE6\u6230> \u95B1\u8B80\u7B46\u8A18",imgPath:sn},P={id:7,title:"\u8A2D\u8A08\u6A21\u5F0F \u7B46\u8A18",content:"\u8A2D\u8A08\u6A21\u5F0F \u95B1\u8B80\u7B46\u8A18",imgPath:an},on="\u{1F3A8} \u4E00\u96BB\u96DE\u7684\u4F5C\u54C1";function un(){return u("Chicken Say Hi | \u4F5C\u54C1\u96C6"),t(s,{children:[n(o,{}),n(Q,{text:on}),n("section",{className:"max-h-full overflow-auto",children:t("div",{className:"sm:flex relative z-20 items-center mt-2",children:[t("div",{className:"container mx-auto px-6 flex-col justify-between items-center relative py-4 mt-5",children:[n("div",{className:"flex flex-col",children:n(x,{pgId:F.id,title:F.title,content:F.content,imgPath:F.imgPath})}),n("div",{className:"flex flex-col",children:n(x,{pgId:S.id,title:S.title,content:S.content,imgPath:S.imgPath})}),n("div",{className:"flex flex-col",children:n(x,{pgId:E.id,title:E.title,content:E.content,imgPath:E.imgPath})}),n("div",{className:"flex flex-col sm:m-20"})]}),t("div",{className:"container mx-auto px-6 flex-col justify-between items-center relative sm:py-4 sm:mt-5",children:[n("div",{className:"flex flex-col",children:n(x,{pgId:f.id,title:f.title,content:f.content,imgPath:f.imgPath})}),n("div",{className:"flex flex-col",children:n(x,{pgId:v.id,title:v.title,content:v.content,imgPath:v.imgPath})}),n("div",{className:"flex flex-col",children:n(x,{pgId:P.id,title:P.title,content:P.content,imgPath:P.imgPath})}),n("div",{className:"flex flex-col m-20"})]})]})}),n(A,{})]})}const ln=[{id:1,text:"1. \u7DDA\u8207\u8FF4\u5708",goPath:r.LineAndLoop},{id:2,text:"2. map \u51FD\u5F0F",goPath:r.MapFunc},{id:3,text:"3. \u5340\u584A\u6F38\u5C64",goPath:r.Gradient},{id:4,text:"4. \u8072\u6CE2",goPath:r.Wave},{id:5,text:"5. arc \u51FD\u5F0F",goPath:r.MethodArc}];function cn(){return u("Chicken Say Hi | P5 js"),t(s,{children:[n(o,{}),n(y,{list:ln})]})}const mn=`# 1. \u7DDA\u689D\u8207\u8FF4\u5708\r
 \u4F7F\u7528\u56DB\u500B\u8FF4\u5708\u5206\u5225\u756B\u51FA\u56DB\u500B\u5340\u584A\u7684\u6A6B\u7DDA\u8207\u76F4\u7DDA\r
 \r
 ### \u6700\u7D42\u7D50\u679C\r
@@ -81,7 +81,7 @@ import{c as N}from"./react-dom.6093bb13.js";import{L as h,H as G}from"./react-ro
       }\r
 \`\`\`\r
 \r
-`,gn="\u{1F3A8} P5 - \u7DDA\u8207\u8FF4\u5708";function hn(){return u("Chicken Say Hi | P5 \u7DDA\u8207\u8FF4\u5708"),t(s,{children:[n(o,{}),n(l,{backPath:r.P5Js,title:gn,text:mn})]})}const dn="### \u8AAA\u660E:\r\n- map \u9996\u5148\u9700\u8981\u8A2D\u5B9A\u539F\u59CB\u53C3\u6578\u7684\u7BC4\u570D\r\n- \u4E26\u8A2D\u5B9A\u8981\u8A2D\u5B9A\u7684\u6BD4\u4F8B\u7BC4\u570D\r\n- \u4E26\u8F38\u5165\u9700\u8981\u7E2E\u653E\u7684\u53C3\u6578\r\n- \u900F\u904E map \u51FD\u5F0F\u6703\u5C07\u8F38\u5165\u7684\u53C3\u6578\u505A\u7B49\u6BD4\u4F8B\u7E2E\u653E\r\n\r\n` map(\u8F38\u5165\u7684\u53C3\u6578 , \u539F\u59CB\u53C3\u6578\u8D77\u59CB\u7BC4\u570D, \u539F\u59CB\u53C3\u6578\u7D50\u675F\u7BC4\u570D, \u7E2E\u653E\u8D77\u59CB\u7BC4\u570D, \u7E2E\u653E\u7D50\u675F\u7BC4\u570D)`\r\n\r\n### \u4F8B:\r\n- \u6211\u5011\u4EE5 `map(1,0,10,0,100)` \u70BA\u4F8B\r\n- \u539F\u59CB\u7684\u7BC4\u570D\u662F `0~10`\r\n- \u6211\u5011\u8981\u5C07\u5B83\u8B8A\u6210 `0~100`\r\n- `0~10` \u8B8A\u6210 `0~100` \u5247\u9700\u8981\u4E58\u4EE510\u500D\r\n- \u56E0\u6B64\u6211\u5011\u9700\u8981\u7E2E\u653E\u7684 `1` \u901A\u904Emap\u51FD\u5F0F\u7684\u8A08\u7B97\u5F8C\uFF0C\u6703\u8B8A\u6210 `10`\r\n\r\n[\u7DDA\u4E0A\u6E2C\u8A66](https://lonelyyeezhichicken.github.io/p5Js-Demo/Method-map/MapDemo.html)",pn="\u{1F3A8} P5 - map \u51FD\u5F0F";function Cn(){return u("Chicken Say Hi | P5 map \u51FD\u5F0F"),t(s,{children:[n(o,{}),n(l,{backPath:r.P5Js,title:pn,text:dn})]})}const yn=`# 3. \u5340\u584A\u6F38\u5C64 \r
+`,hn="\u{1F3A8} P5 - \u7DDA\u8207\u8FF4\u5708";function gn(){return u("Chicken Say Hi | P5 \u7DDA\u8207\u8FF4\u5708"),t(s,{children:[n(o,{}),n(l,{backPath:r.P5Js,title:hn,text:mn})]})}const dn="### \u8AAA\u660E:\r\n- map \u9996\u5148\u9700\u8981\u8A2D\u5B9A\u539F\u59CB\u53C3\u6578\u7684\u7BC4\u570D\r\n- \u4E26\u8A2D\u5B9A\u8981\u8A2D\u5B9A\u7684\u6BD4\u4F8B\u7BC4\u570D\r\n- \u4E26\u8F38\u5165\u9700\u8981\u7E2E\u653E\u7684\u53C3\u6578\r\n- \u900F\u904E map \u51FD\u5F0F\u6703\u5C07\u8F38\u5165\u7684\u53C3\u6578\u505A\u7B49\u6BD4\u4F8B\u7E2E\u653E\r\n\r\n` map(\u8F38\u5165\u7684\u53C3\u6578 , \u539F\u59CB\u53C3\u6578\u8D77\u59CB\u7BC4\u570D, \u539F\u59CB\u53C3\u6578\u7D50\u675F\u7BC4\u570D, \u7E2E\u653E\u8D77\u59CB\u7BC4\u570D, \u7E2E\u653E\u7D50\u675F\u7BC4\u570D)`\r\n\r\n### \u4F8B:\r\n- \u6211\u5011\u4EE5 `map(1,0,10,0,100)` \u70BA\u4F8B\r\n- \u539F\u59CB\u7684\u7BC4\u570D\u662F `0~10`\r\n- \u6211\u5011\u8981\u5C07\u5B83\u8B8A\u6210 `0~100`\r\n- `0~10` \u8B8A\u6210 `0~100` \u5247\u9700\u8981\u4E58\u4EE510\u500D\r\n- \u56E0\u6B64\u6211\u5011\u9700\u8981\u7E2E\u653E\u7684 `1` \u901A\u904Emap\u51FD\u5F0F\u7684\u8A08\u7B97\u5F8C\uFF0C\u6703\u8B8A\u6210 `10`\r\n\r\n[\u7DDA\u4E0A\u6E2C\u8A66](https://lonelyyeezhichicken.github.io/p5Js-Demo/Method-map/MapDemo.html)",pn="\u{1F3A8} P5 - map \u51FD\u5F0F";function Cn(){return u("Chicken Say Hi | P5 map \u51FD\u5F0F"),t(s,{children:[n(o,{}),n(l,{backPath:r.P5Js,title:pn,text:dn})]})}const yn=`# 3. \u5340\u584A\u6F38\u5C64 \r
 \r
 ### \u6700\u7D42\u7D50\u679C\r
 ![mdImg](https://github.com/LonelyYeezhiChicken/p5Js-Demo/raw/main/Gradient/Gradient.png)\r
@@ -172,7 +172,7 @@ let resAmount = map(i, 0, height, position * 30, 255);\r
 line(linePosition * position, i, linePosition * (position + 1), i);\r
 \`\`\`\r
 \r
-`,Dn="\u{1F3A8} P5 - \u5340\u584A\u6F38\u5C64";function xn(){return u("Chicken Say Hi | P5 Gradient"),t(s,{children:[n(o,{}),n(l,{backPath:r.P5Js,title:Dn,text:yn})]})}const Fn=`# 4. \u8072\u6CE2\r
+`,xn="\u{1F3A8} P5 - \u5340\u584A\u6F38\u5C64";function Dn(){return u("Chicken Say Hi | P5 Gradient"),t(s,{children:[n(o,{}),n(l,{backPath:r.P5Js,title:xn,text:yn})]})}const bn=`# 4. \u8072\u6CE2\r
 \u4F7F\u7528\u5713\u578B\uFF0Cx\u8EF8\u4E0D\u8B8A\uFF0Cy\u8EF8\u4E0A\u4E0B\u79FB\u52D5\u7D44\u6210\u8072\u6CE2\r
 \r
 \r
@@ -215,7 +215,7 @@ line(linePosition * position, i, linePosition * (position + 1), i);\r
         angle += TWO_PI / 8.75;\r
     }\r
 \`\`\`\r
-`,Sn="\u{1F3A8} P5 - \u8072\u6CE2";function bn(){return u("Chicken Say Hi | P5 \u8072\u6CE2"),t(s,{children:[n(o,{}),n(l,{backPath:r.P5Js,title:Sn,text:Fn})]})}const En=`# 5. arc \u51FD\u5F0F \r
+`,Sn="\u{1F3A8} P5 - \u8072\u6CE2";function fn(){return u("Chicken Say Hi | P5 \u8072\u6CE2"),t(s,{children:[n(o,{}),n(l,{backPath:r.P5Js,title:Sn,text:bn})]})}const Fn=`# 5. arc \u51FD\u5F0F \r
 \r
 ### \u8AAA\u660E:\r
 - \u7528\u9014 : \u5728\u87A2\u5E55\u4E0A\u756B\u4E00\u689D \`\u5F27\u7DDA\`\r
@@ -262,7 +262,7 @@ arc(100, 150, 200, 200, 0, 10, CHORD);\r
 arc(100, 150, 200, 200, 0, 10, PIE);\r
 \`\`\`\r
 - \u7D50\u679C : \r
-![mdImg](https://github.com/LINDuke-Lin/p5Js-Demo/raw/main/Method-arc/img/pie.png)`,vn="\u{1F3A8} P5 - arc \u51FD\u5F0F";function fn(){return u("Chicken Say Hi | P5 arc \u51FD\u5F0F"),t(s,{children:[n(o,{}),n(l,{backPath:r.P5Js,title:vn,text:En})]})}const Pn=[{id:1,text:"1. RPG Game v1 (\u4F5C\u54C1)",goPath:r.RpgGameV1},{id:2,text:"2. \u524D\u8A00",goPath:r.D1Ph3},{id:3,text:"3. \u74B0\u5883",goPath:r.D2Ph3},{id:4,text:"4. \u57FA\u672C\u8A9E\u6CD5(\u4E00) - \u975C\u614B\u8CC7\u6E90",goPath:r.D3Ph3},{id:5,text:"5. \u57FA\u672C\u8A9E\u6CD5(\u4E8C) - \u5716\u7247",goPath:r.D4Ph3}];function An(){return u("Chicken Say Hi | Phaser js"),t(s,{children:[n(o,{}),n(y,{list:Pn})]})}const Ln=`### \u95DC\u65BC Phaser 3\r
+![mdImg](https://github.com/LINDuke-Lin/p5Js-Demo/raw/main/Method-arc/img/pie.png)`,vn="\u{1F3A8} P5 - arc \u51FD\u5F0F";function En(){return u("Chicken Say Hi | P5 arc \u51FD\u5F0F"),t(s,{children:[n(o,{}),n(l,{backPath:r.P5Js,title:vn,text:Fn})]})}const Pn=[{id:1,text:"1. RPG Game v1 (\u4F5C\u54C1)",goPath:r.RpgGameV1},{id:2,text:"2. \u524D\u8A00",goPath:r.D1Ph3},{id:3,text:"3. \u74B0\u5883",goPath:r.D2Ph3},{id:4,text:"4. \u57FA\u672C\u8A9E\u6CD5(\u4E00) - \u975C\u614B\u8CC7\u6E90",goPath:r.D3Ph3},{id:5,text:"5. \u57FA\u672C\u8A9E\u6CD5(\u4E8C) - \u5716\u7247",goPath:r.D4Ph3},{id:6,text:"6. \u57FA\u672C\u8A9E\u6CD5(\u4E09) - \u5716\u7247\u4E32\u806F",goPath:r.D5Ph3},{id:7,text:"7. \u57FA\u672C\u8A9E\u6CD5(\u56DB) - \u64CD\u4F5C",goPath:r.D6Ph3},{id:8,text:"8. \u57FA\u672C\u8A9E\u6CD5(\u4E94) - \u5834\u666F\u5207\u63DB",goPath:r.D7Ph3}];function An(){return u("Chicken Say Hi | Phaser js"),t(s,{children:[n(o,{}),n(y,{list:Pn})]})}const wn=`### \u95DC\u65BC Phaser 3\r
 - \u4EC0\u9EBC\u662FPhaserjs\u5462?\r
   1. \u4ED6\u662F\u4E00\u500B Game Framework\r
 - \u70BA\u4EC0\u9EBC\u8981\u9078\u64C7\u5B83\u5462?\r
@@ -281,7 +281,7 @@ arc(100, 150, 200, 200, 0, 10, PIE);\r
 - \u6CD5\u5E2B\r
 ![mdImg](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/RpgGame/m.png?raw=true)\r
 \r
-### [\u904A\u6232\u9023\u7D50](https://lonelyyeezhichicken.github.io/rpg-game-v1/)`,wn="\u{1F3AE} RPG Game v1";function Tn(){return u("Chicken Say Hi | RPG Game"),t(s,{children:[n(o,{}),n(l,{backPath:r.PhaserPage,title:wn,text:Ln})]})}const kn=`### \u7528\u4E86 Phaser 3 \u5BEB\u51FA\u5C6C\u65BC\u81EA\u5DF1\u7684\u7CDE Game\u5C07\u4E0D\u662F\u5922\r
+### [\u904A\u6232\u9023\u7D50](https://lonelyyeezhichicken.github.io/rpg-game-v1/)`,Ln="\u{1F3AE} RPG Game v1";function kn(){return u("Chicken Say Hi | RPG Game"),t(s,{children:[n(o,{}),n(l,{backPath:r.PhaserPage,title:Ln,text:wn})]})}const Tn=`### \u7528\u4E86 Phaser 3 \u5BEB\u51FA\u5C6C\u65BC\u81EA\u5DF1\u7684\u7CDE Game\u5C07\u4E0D\u662F\u5922\r
  \u5728\u8A31\u4E45\u4E4B\u524D\u5C31\u4E00\u76F4\u60F3\u5617\u8A66\u5BEB\u904A\u6232\uFF0C\u5BEB\u51FA\u4E00\u6B3E\u5C6C\u65BC\u81EA\u5DF1\u7684\u7CDEGame\uFF0C\r
  \u53EA\u662F\u6BCF\u6B21\u90FD\u5FC3\u6709\u9918\u529B\u4E0D\u8DB3\uFF0C\u56E0\u6B64\u6C7A\u5B9A\u85C9\u7531\u9019\u6B21\u9435\u4EBA\u8CFD\uFF0C\u908A\u5B78\u908A\u5BEB\u6311\u6230\u770B\u770B\u505A\u51FA\u5C6C\u65BC\u81EA\u5DF1\u7684\u7CDEGame\r
 \r
@@ -299,7 +299,7 @@ arc(100, 150, 200, 200, 0, 10, PIE);\r
 - \u5E0C\u671B\u5404\u4F4D\u8B80\u8005\u5C0D\u904A\u6232\u6210\u54C1\u5225\u6709\u592A\u9AD8\u7684\u671F\u671B\uFF0C\u56E0\u70BA\u4E00\u5207\u90FD\u662F\u4EE5 \`\u7CDEGame\` \u70BA\u51FA\u767C\u9EDE\r
 - \u672C\u7CFB\u5217\u6587\u7AE0\u539F\u672C\u662F\u8981\u5728\u7B2C14\u5C46\u9435\u4EBA\u8CFD\u73FE\u5B78\u73FE\u8CE3\u7684\uFF0C\u4F46\u56E0\u70BA\u6642\u9593\u8207\u5176\u4ED6\u4E00\u4E9B\u56E0\u7D20\uFF0C\u5C31\u6C92\u5C07\u4ED6\u767C\u5E03\u51FA\u53BB\u4E86\r
 \r
-### \u63A5\u4E0B\u4F86\u5C31\u8B93\u6211\u5011\u752830\u5929\u4F86\u898B\u8B58\u7CDEGame\u7684\u5A01\u529B\u5427!!`,Bn="\u{1F3AE} \u524D\u8A00";function Wn(){return u("Chicken Say Hi | phaser3 \u524D\u8A00"),t(s,{children:[n(o,{}),n(l,{backPath:r.PhaserPage,title:Bn,text:kn})]})}const Mn=`### [\u5B98\u7DB2](https://phaser.io/)\r
+### \u63A5\u4E0B\u4F86\u5C31\u8B93\u6211\u5011\u752830\u5929\u4F86\u898B\u8B58\u7CDEGame\u7684\u5A01\u529B\u5427!!`,Bn="\u{1F3AE} \u524D\u8A00";function Wn(){return u("Chicken Say Hi | phaser3 \u524D\u8A00"),t(s,{children:[n(o,{}),n(l,{backPath:r.PhaserPage,title:Bn,text:Tn})]})}const In=`### [\u5B98\u7DB2](https://phaser.io/)\r
 - \u5B98\u7DB2\u5716\u6587\u8C50\u5BCC\r
 - \u5167\u5BB9\u975E\u5E38\u8A73\u7D30\r
 \r
@@ -401,7 +401,7 @@ npm install phaser@3.55.2\r
 </body>\r
 \r
 </html>\r
-\`\`\``,In="\u{1F3AE} \u74B0\u5883";function Rn(){return u("Chicken Say Hi | phaser3 \u74B0\u5883"),t(s,{children:[n(o,{}),n(l,{backPath:r.PhaserPage,title:In,text:Mn})]})}const Nn=`### \u4ECA\u5929\u958B\u59CB\u4F86\u628A\u80CC\u666F\u8207\u89D2\u8272\u52A0\u8F09\u5230\u904A\u6232\u8CC7\u6E90\u88E1\u9762\u5427!\r
+\`\`\``,Mn="\u{1F3AE} \u74B0\u5883";function Rn(){return u("Chicken Say Hi | phaser3 \u74B0\u5883"),t(s,{children:[n(o,{}),n(l,{backPath:r.PhaserPage,title:Mn,text:In})]})}const Nn=`### \u4ECA\u5929\u958B\u59CB\u4F86\u628A\u80CC\u666F\u8207\u89D2\u8272\u52A0\u8F09\u5230\u904A\u6232\u8CC7\u6E90\u88E1\u9762\u5427!\r
 \r
 ## \u57FA\u672C phaser.js \u529F\u80FD - \u52A0\u8F09\u7D20\u6750\r
 ### \u4F7F\u7528 \`preload\`\r
@@ -523,7 +523,7 @@ function preload() {\r
 </body>\r
 \r
 </html>\r
-\`\`\``,Gn="\u{1F3AE} \u57FA\u672C\u8A9E\u6CD5(\u4E00) - \u975C\u614B\u8CC7\u6E90";function $n(){return u("Chicken Say Hi | phaser3 - \u975C\u614B\u8CC7\u6E90"),t(s,{children:[n(o,{}),n(l,{backPath:r.PhaserPage,title:Gn,text:Nn})]})}const On=`### \u4ECA\u5929\u4F86\u628A\u80CC\u666F\u8207\u89D2\u8272\u986F\u793A\u51FA\u4F86\u5427!\r
+\`\`\``,Gn="\u{1F3AE} \u57FA\u672C\u8A9E\u6CD5(\u4E00) - \u975C\u614B\u8CC7\u6E90";function jn(){return u("Chicken Say Hi | phaser3 - \u975C\u614B\u8CC7\u6E90"),t(s,{children:[n(o,{}),n(l,{backPath:r.PhaserPage,title:Gn,text:Nn})]})}const $n=`### \u4ECA\u5929\u4F86\u628A\u80CC\u666F\u8207\u89D2\u8272\u986F\u793A\u51FA\u4F86\u5427!\r
 \r
 ## \u57FA\u672C phaser.js \u529F\u80FD - \u751F\u6210\u7269\u4EF6\r
 ### \u4F7F\u7528 \`create\`\r
@@ -673,7 +673,1184 @@ this.music.play();\r
 </body>\r
 \r
 </html>\r
-\`\`\` `,Hn="\u{1F3AE} \u57FA\u672C\u8A9E\u6CD5(\u4E8C) - \u5716\u7247";function jn(){return u("Chicken Say Hi | phaser3 - \u5716\u7247"),t(s,{children:[n(o,{}),n(l,{backPath:r.PhaserPage,title:Hn,text:On})]})}const qn=[{id:1,text:"[Day1]C# \u96DE\u790E\u89C0\u5FF5- C#\u7C21\u4ECB",goPath:r.D1no13},{id:2,text:"[Day2]C# \u96DE\u790E\u89C0\u5FF5- \u8207C#\u958B\u767C\u5343\u91CC\u4F86\u76F8\u898B",goPath:r.D2no13},{id:3,text:"[Day3]C# \u96DE\u790E\u89C0\u5FF5- \u6838\u5FC3\u7684\u6578\u64DA\u6210\u54E1~\u8B8A\u6578(\u4E00)",goPath:r.D3no13},{id:4,text:"[Day4]C# \u96DE\u790E\u89C0\u5FF5- \u6838\u5FC3\u7684\u6578\u64DA\u6210\u54E1~\u8B8A\u6578(\u4E8C)",goPath:r.D4no13},{id:5,text:"[Day5]C# \u96DE\u790E\u89C0\u5FF5- \u8B93\u8B8A\u6578\u5B78\u6703\u4E03\u5341\u4E8C\u8B8A\u7684\u9AD8\u624B~\u904B\u7B97\u5B50",goPath:r.D5no13},{id:6,text:"[Day6]C# \u96DE\u790E\u89C0\u5FF5- \u7A0B\u5F0F\u78BC\u64C1\u6709\u5224\u65B7\u771F\u5047\u7684\u80FD\u529B~\u908F\u8F2F\u904B\u7B97\u5B50",goPath:r.D6no13},{id:7,text:"[Day7]C# \u96DE\u790E\u89C0\u5FF5- \u4F60\u6709\u9078\u64C7\u969C\u7919\u55CE? \u4EA4\u7D66if\u9673\u8FF0\u5F0F\u89E3\u6C7A\u5427!",goPath:r.D7no13},{id:8,text:"[Day8]C# \u96DE\u790E\u89C0\u5FF5- \u5982\u679C\u6C92\u6709\u5982\u679C\uFF0C\u53EA\u6709\u592A\u591A\u7684\u5982\u679Cswitch\u9673\u8FF0\u5F0F",goPath:r.D8no13},{id:9,text:"[Day9]C# \u96DE\u790E\u89C0\u5FF5- \u7701\u53BB\u91CD\u8907\u7A0B\u5F0F\u78BC\u7684\u597D\u5E6B\u624B~for\u8FF4\u5708",goPath:r.D9no13},{id:10,text:"[Day10]C# \u96DE\u790E\u89C0\u5FF5- \u91CD\u64AD\u8207\u505C\u6B62 while\u8FF4\u5708\u8207break",goPath:r.D10no13},{id:11,text:"[Day11]C# \u96DE\u790E\u89C0\u5FF5- \u628A\u8907\u96DC\u7684\u4E8B\u60C5\u8207\u95DC\u4FC2\u7C21\u55AE\u5316~\u5217\u8209\u8207\u7D50\u69CB",goPath:r.D11no13},{id:12,text:"[Day12]C# \u96DE\u790E\u89C0\u5FF5- \u7576\u6211\u5011\u540C\u5728\u4E00\u8D77~\u9663\u5217(Array)",goPath:r.D12no13},{id:13,text:"[Day13]C# \u96DE\u790E\u89C0\u5FF5- \u4F86\u500B\u8F2A\u8FF4\u5427~foreach\u8FF4\u5708",goPath:r.D13no13},{id:14,text:"[Day14]C# \u96DE\u790E\u89C0\u5FF5- \u4E0D\u540C\u5C64\u6B21\u7684\u9663\u5217~\u4E8C\u7DAD\u9663\u5217",goPath:r.D14no13},{id:15,text:"[Day15]C# \u96DE\u790E\u89C0\u5FF5- \u591A\u7B46\u8CC7\u6599\u7684\u597D\u670B\u53CB~List",goPath:r.D15no13},{id:16,text:"[Day16]C# \u96DE\u790E\u89C0\u5FF5- \u865B\u64EC\u4EE3\u5DE5\u5EE0~\u65B9\u6CD5(function)",goPath:r.D16no13},{id:17,text:"[Day17]C# \u96DE\u790E\u89C0\u5FF5- \u50CF\u500B\u90F5\u5DEE\u4E00\u6A23~\u503C\u8207\u5740\u7684\u50B3\u905E",goPath:r.D17no13},{id:18,text:"[Day18]C# \u96DE\u790E\u89C0\u5FF5- \u56DE\u982D\u5427!\u5B69\u5B50~ref \u8207 out \u53C3\u6578\u4FEE\u98FE\u8A5E",goPath:r.D18no13},{id:19,text:"[Day19]C# \u96DE\u790E\u89C0\u5FF5- \u8B93\u6642\u9593\u5012\u8F49\u5427~\u905E\u8FF4",goPath:r.D19no13},{id:20,text:"[Day20]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)\u57FA\u672C\u89C0\u5FF5",goPath:r.D20no13},{id:21,text:"[Day21]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u985E\u5225(class)",goPath:r.D21no13},{id:22,text:"[Day22]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u7269\u4EF6(Object)",goPath:r.D22no13},{id:23,text:"[Day23]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u5C6C\u6027(Property)",goPath:r.D23no13},{id:24,text:"[Day24]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u5EFA\u69CB\u65B9\u6CD5(Constructor)",goPath:r.D24no13},{id:25,text:"[Day25]C# \u96DE\u790E\u89C0\u5FF5- \u5171\u7522\u4E3B\u7FA9\u8005~\u975C\u614B\u6210\u54E1",goPath:r.D25no13},{id:26,text:"[Day26]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~ \u591A\u8F09(Overload)",goPath:r.D26no13},{id:27,text:"[Day27]C# \u96DE\u790E\u89C0\u5FF5- \u505A\u932F\u4E8B\u8A72\u600E\u9EBC\u8FA6\u5462?~\u932F\u8AA4\u8655\u7406",goPath:r.D27no13},{id:28,text:"[Day28]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~ \u7E7C\u627F",goPath:r.D28no13},{id:29,text:"[Day29]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u4ECB\u9762(Interface)",goPath:r.D29no13},{id:30,text:"[Day30]C# \u4E0D\u96DE\u790E\u89C0\u5FF5- Install Tailwind Css with ASP.NET MVC5",goPath:r.D30no13},{id:31,text:"[Day31]C# \u96DE\u790E\u89C0\u5FF5- \u7D50\u8A9E",goPath:r.D31no13}];function Kn(){return u("Chicken Say Hi | \u9435\u4EBA 13"),t(s,{children:[n(o,{}),n(y,{list:qn})]})}const Vn=`### \u6545\u4E8B\u6642\u9593\r
+\`\`\` `,On="\u{1F3AE} \u57FA\u672C\u8A9E\u6CD5(\u4E8C) - \u5716\u7247";function Hn(){return u("Chicken Say Hi | phaser3 - \u5716\u7247"),t(s,{children:[n(o,{}),n(l,{backPath:r.PhaserPage,title:On,text:$n})]})}const qn=`### \u4ECA\u5929\u5C31\u4F86\u8B93\u5716\u7247\u52D5\u8D77\u4F86\u5427!\r
+- \u9996\u5148\u6211\u5011\u4ECA\u5929\u6703\u65B0\u589E\u4E00\u500B\u884C\u661F\u7684\u7269\u4EF6\r
+- \u53EF\u4EE5\u53C3\u8003\u524D\u5E7E\u7BC7\u4F86\u7F6E\u5165\u884C\u661F\u9019\u908A\u5C31\u4E0D\u518D\u591A\u505A\u8D05\u8FF0\r
+\r
+![mdImg1](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/backgrounds/planet.png?raw=true)\r
+\r
+\`\`\`javascript\r
+//\u8F09\u5165\u7D20\u6750 \r
+function preload() {\r
+    // \u8F09\u5165\u7D20\u6750   \r
+    // bg1 -> \u5716\u7247\u8F09\u5165\u5F8C\u7684\u7269\u4EF6\u540D\u7A31(key)\r
+    this.load.image('bg1', '../assets/backgrounds/bg_1.webp');\r
+    this.load.image('planet1', '../assets/backgrounds/planet.png');// \u884C\u661F\r
+    this.load.image('player1', '../assets/roles/alpaca.png');\r
+    this.load.image('player2', '../assets/roles/pinkAlpaca.png');\r
+    this.load.audio('music1', '../assets/music/crrect_answer3.mp3');\r
+}\r
+\r
+//\u751F\u6210\u7269\u4EF6\r
+function create() {\r
+    // 1. \u80CC\u666F\r
+    let bg = this.add.sprite(0, 0, "bg1");\r
+\r
+    //\u53D6\u5F97\u5BEC\u9AD8\r
+    let width = this.sys.game.config.width / 2;\r
+    let height = this.sys.game.config.height / 2;\r
+\r
+    //\u8A2D\u5B9A\u4F4D\u7F6E\r
+    bg.setPosition(width, height);\r
+\r
+    // 2. \u89D2\u8272\r
+    this.player = this.add.sprite(450, 105, "player1");\r
+\r
+    // 3. \u884C\u661F\r
+    this.planet1 = this.add.sprite(-100, 40, "planet1");\r
+\r
+    // 4. \u97F3\u6A02\r
+    this.music = this.sound.add('music1', {\r
+        volume: 0.2, //\u97F3\u91CF\r
+        loop: true // \u662F\u5426\u8F2A\u64AD\r
+    });\r
+\r
+    this.music.play();\r
+}\r
+\`\`\`\r
+\r
+\r
+## \u57FA\u672C phaser.js \u529F\u80FD - \u521D\u59CB\u5316\r
+### \u4F7F\u7528 \`init\`\r
+1. \u5148\u5230config\u7D81\u5B9A\u4E8B\u4EF6\r
+\`\`\`javascript\r
+ // \u5BA3\u544A\u5834\u666F\u7684\u57FA\u672C\u8CC7\u8A0A\r
+let config = {\r
+    type: Phaser.AUTO,\r
+    width: 600, // \u5BEC\r
+    height: 300, // \u9AD8\r
+    // \u7D81\u5B9A\u5BA3\u544A\u7684\u5834\u666F\r
+    scene: {\r
+        preload: preload,\r
+        create: create,\r
+        init: init\r
+    }\r
+}\r
+\`\`\`\r
+2. \`init()\` \u5C31\u8207init\u7684\u4E8B\u4EF6\u7D81\u5B9A\u4E86\r
+\`\`\`javascript\r
+function init() {\r
+ // \u8F09\u5165\u7D20\u6750   \r
+}\r
+\`\`\`\r
+\r
+### \u521D\u59CB\u5316\u7269\u4EF6\r
+1. \u52A0\u5165\u884C\u661F\u7684\u79FB\u52D5\u901F\u5EA6 - \u6211\u5011\u7B49\u7B49\u8981\u8B93\u884C\u661F\u79FB\u52D5\u8D77\u4F86\r
+\`\`\`javascript\r
+// \u521D\u59CB\u5316\r
+function init() {\r
+    // \u8A2D\u5B9A \u884C\u661F \u7684\u901F\u5EA6\r
+    this.planet1Speed = 3;\r
+}\r
+\`\`\`\r
+2. \u8349\u6CE5\u99AC\u9663\u5217 - \u9019\u662F\u70BA\u4E86\u8B93\u8349\u6CE5\u99AC\u8B8A\u8EAB\u6E96\u5099\u7684\r
+\`\`\`javascript\r
+// \u521D\u59CB\u5316\r
+function init() {\r
+    // \u8A2D\u5B9A \u884C\u661F \u7684\u901F\u5EA6\r
+    this.planet1Speed = 3;\r
+    //\u8349\u6CE5\u99AC\u9663\u5217\r
+    this.allPlayer = ['player1', 'player2'];\r
+}\r
+\`\`\`\r
+3. \u8A08\u7B97\u6642\u9593\u8EF8 - \u7528\u4F86\u571F\u70AE\u6642\u9593\u8EF8\u8B8A\u5316\u4F7F\u7528\u7684\uFF0C\u7A0D\u5F8C\u7684\u6587\u7AE0\u6703\u8AAA\u660E\u7528\u9014\r
+\`\`\`javascript\r
+// \u521D\u59CB\u5316\r
+function init() {\r
+    // \u8A2D\u5B9A \u884C\u661F \u7684\u901F\u5EA6\r
+    this.planet1Speed = 3;\r
+    //\u8349\u6CE5\u99AC\u9663\u5217\r
+    this.allPlayer = ['player1', 'player2'];\r
+    //\u8A08\u7B97\u6642\u9593\u8EF8\r
+    this.index = 0;\r
+}\r
+\`\`\`\r
+\r
+## \u57FA\u672C phaser.js \u529F\u80FD - \u756B\u9762\u66F4\u65B0\r
+### \u4F7F\u7528 \`update\`\r
+- \u5B83\u5C6C\u65BC\u4E00\u500B\u5075\u807D\u5668\r
+- \u9810\u8A2D\u6BCF\u4E00\u5E40\u662F\u4EE5\u6BEB\u79D2\u70BA\u55AE\u4F4D\u5728\u505A\u66F4\u65B0\r
+1. \u5148\u5230config\u7D81\u5B9A\u4E8B\u4EF6\r
+\`\`\`javascript\r
+ // \u5BA3\u544A\u5834\u666F\u7684\u57FA\u672C\u8CC7\u8A0A\r
+let config = {\r
+    type: Phaser.AUTO,\r
+    width: 600, // \u5BEC\r
+    height: 300, // \u9AD8\r
+    // \u7D81\u5B9A\u5BA3\u544A\u7684\u5834\u666F\r
+    scene: {\r
+        preload: preload,\r
+        create: create,\r
+        init: init,\r
+        update: update\r
+    }\r
+}\r
+\`\`\`\r
+2. \`init()\` \u5C31\u8207init\u7684\u4E8B\u4EF6\u7D81\u8A02\u4E86\r
+\`\`\`javascript\r
+function update() {\r
+ // \u76E3\u807D\u4E8B\u4EF6\r
+}\r
+\`\`\`\r
+\r
+### \u66F4\u65B0\u756B\u9762\r
+- \u6211\u5011\u9019\u908A\u5148\u571F\u70AE\u7528 \`this.index\` \u4F86\u7576\u6642\u9593\u57FA\u6E96\u9EDE\r
+- \u5728 \`this.index\` \u4F86\u5230 \`50\` \u4E4B\u524D\uFF0C\u8B93\u884C\u661F\u5F80\u53F3\u79FB\u52D5\r
+- \u56E0\u6B64\u5728\u9700\u8981\u5C0D\u884C\u661F\u7684 \`x\` \u8EF8\u505A\u589E\u91CF\r
+  \r
+\`\`\`javascript\r
+ //\u66F4\u65B0\u756B\u9762\r
+function update() {\r
+    // \u884C\u661F\u51FA\u73FE\r
+    if (this.index < 50)\r
+        this.planet1.x += this.planet1Speed;\r
+\r
+    this.index++;\r
+}\r
+\`\`\`\r
+\r
+- \u63A5\u4E0B\u4F86\u884C\u661F\u5230\u5B9A\u4F4D\u5F8C\r
+- \u8349\u6CE5\u99AC\u8981\u8B8A\u8EAB\r
+- \u8349\u6CE5\u99AC\u8B8A\u8EAB\u5230 \`this.index < 200\` \u6642\u5C31\u5B8C\u5168\u8B8A\u8EAB\r
+- \u9019\u908A\u4F7F\u7528 \`setTexture\` \u4F86\u5207\u63DB\u5716\u7247\r
+- \u7531\u65BC\u8349\u6CE5\u99AC\u5716\u7247\u6709\u5169\u5F35\uFF0C\u6211\u5011\u5C31\u5229\u7528\u53D6\u9918\u904B\u7B97\u5B50 \`%\`\r
+- \u91DD\u5C0D\u9663\u5217 \`this.allPlayer\` \u7684 \`0,1\` \u5207\u63DB\r
+\`\`\`javascript\r
+//\u66F4\u65B0\u756B\u9762\r
+function update() {\r
+    // \u884C\u661F\u51FA\u73FE\r
+    if (this.index < 50)\r
+        this.planet1.x += this.planet1Speed\r
+    //\u8349\u6CE5\u99AC\u8B8A\u8EAB\r
+    if (this.index % 5 === 0 && this.index > 80 && this.index < 200)\r
+        this.player.setTexture(this.allPlayer[this.index % 2])\r
+ \r
+    this.index++;\r
+}\r
+\`\`\`\r
+\r
+### \u9019\u6A23\u5C31\u5B8C\u6210\u6211\u5011\u4ECA\u5929\u7684 \`\u82B1\u597D\u6708\u5713\uFF0C\u8349\u6CE5\u99AC\u5927\u8B8A\u8EAB\u7684\` \u529F\u80FD\u4E86!\r
+\r
+---\r
+### \u7A0B\u5F0F\u539F\u78BC\r
+\`\`\` javascript\r
+<!DOCTYPE html>\r
+<html lang="en">\r
+\r
+<head>\r
+    <meta charset="UTF-8">\r
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">\r
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r
+    <title>Game-day5</title>\r
+</head>\r
+\r
+<body>\r
+    <div id="app"></div>\r
+\r
+    <script src="../lib/phaser.min.js"><\/script>\r
+    <script>\r
+        // \u5BA3\u544A\u4E00\u500B\u5834\u666F\r
+        let scene = new Phaser.Scene('Game');\r
+        // \u5BA3\u544A\u5834\u666F\u7684\u57FA\u672C\u8CC7\u8A0A\r
+        let config = {\r
+            type: Phaser.AUTO,\r
+            width: 600, // \u5BEC\r
+            height: 300, // \u9AD8\r
+            // \u7D81\u5B9A\u5BA3\u544A\u7684\u5834\u666F\r
+            scene: {\r
+                preload: preload,\r
+                create: create,\r
+                init: init,\r
+                update: update\r
+            }\r
+        }\r
+\r
+        //\u555F\u52D5\u904A\u6232\r
+        let game = new Phaser.Game(config)\r
+\r
+        //\u8F09\u5165\u7D20\u6750 \r
+        function preload() {\r
+            // \u8F09\u5165\u7D20\u6750   \r
+            // bg1 -> \u5716\u7247\u8F09\u5165\u5F8C\u7684\u7269\u4EF6\u540D\u7A31(key)\r
+            this.load.image('bg1', '../assets/backgrounds/bg_1.webp');\r
+            this.load.image('planet1', '../assets/backgrounds/planet.png');\r
+            this.load.image('player1', '../assets/roles/alpaca.png');\r
+            this.load.image('player2', '../assets/roles/pinkAlpaca.png');\r
+            this.load.audio('music1', '../assets/music/crrect_answer3.mp3');\r
+        }\r
+\r
+        //\u751F\u6210\u7269\u4EF6\r
+        function create() {\r
+            // 1. \u80CC\u666F\r
+            let bg = this.add.sprite(0, 0, "bg1");\r
+\r
+            //\u53D6\u5F97\u5BEC\u9AD8\r
+            let width = this.sys.game.config.width / 2;\r
+            let height = this.sys.game.config.height / 2;\r
+\r
+            //\u8A2D\u5B9A\u4F4D\u7F6E\r
+            bg.setPosition(width, height);\r
+\r
+            // 2. \u89D2\u8272\r
+            this.player = this.add.sprite(450, 105, "player1");\r
+\r
+            // 3. \u884C\u661F\r
+            this.planet1 = this.add.sprite(-100, 40, "planet1");\r
+\r
+            // 4. \u97F3\u6A02\r
+            this.music = this.sound.add('music1', {\r
+                volume: 0.2, //\u97F3\u91CF\r
+                loop: true // \u662F\u5426\u8F2A\u64AD\r
+            });\r
+\r
+            this.music.play();\r
+        }\r
+\r
+        // \u521D\u59CB\u5316\r
+        function init() {\r
+            // \u8A2D\u5B9A \u884C\u661F \u7684\u901F\u5EA6\r
+            this.planet1Speed = 3;\r
+            //\u8349\u6CE5\u99AC\u9663\u5217\r
+            this.allPlayer = ['player1', 'player2'];\r
+            //\u8A08\u7B97\u6642\u9593\u8EF8\r
+            this.index = 0;\r
+        }\r
+\r
+        //\u66F4\u65B0\u756B\u9762\r
+        function update() {\r
+            // \u884C\u661F\u51FA\u73FE\r
+            if (this.index < 50)\r
+                this.planet1.x += this.planet1Speed;\r
+\r
+            //\u8349\u6CE5\u99AC\u8B8A\u8EAB\r
+            if (this.index % 5 === 0 && this.index > 80 && this.index < 200)\r
+                this.player.setTexture(this.allPlayer[this.index % 2]);\r
+\r
+            this.index++;\r
+        }\r
+    <\/script>\r
+\r
+</body>\r
+\r
+</html>\r
+\`\`\``,Kn="\u{1F3AE} \u57FA\u672C\u8A9E\u6CD5(\u4E09) - \u5716\u7247\u4E32\u806F";function Vn(){return u("Chicken Say Hi | phaser3 - \u5716\u7247\u4E32\u806F"),t(s,{children:[n(o,{}),n(l,{backPath:r.PhaserPage,title:Kn,text:qn})]})}const Un=`# \u57FA\u672C\u8A9E\u6CD5(\u56DB) - \u64CD\u4F5C\r
+\r
+### \u4ECA\u5929\u958B\u59CB\u8981\u4F86\u64CD\u4F5C\u756B\u9762\u4E86\r
+- \u4ECA\u5929\u7684\u4EFB\u52D9\u662F\u8981\u8B93\u8B8A\u8EAB\u5F8C\u7684\u8349\u6CE5\u99AC\u5674\u706B\r
+- \u56E0\u6B64\u8981\u5148\u653E\u9032\u5674\u706B\u7684\u7269\u4EF6\uFF0C\u9019\u6B21\u4F7F\u7528\u7167\u7247\u4E32\u6D41\u7684\u65B9\u5F0F\r
+- \u4E4B\u5F8C\u9084\u6703\u6709\u53E6\u4E00\u7A2E\u52D5\u756B\u7684\u4F7F\u7528\u65B9\u5F0F\r
+\r
+![\u5674\u706B](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/skills/fire/file-1.png?raw=true)\r
+![\u5674\u706B](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/skills/fire/file-2.png?raw=true)\r
+![\u5674\u706B](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/skills/fire/file-3.png?raw=true)\r
+![\u5674\u706B](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/skills/fire/file-4.png?raw=true)\r
+![\u5674\u706B](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/skills/fire/file-5.png?raw=true)\r
+![\u5674\u706B](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/skills/fire/file-6.png?raw=true)\r
+![\u5674\u706B](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/skills/fire/file-7.png?raw=true)\r
+![\u5674\u706B](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/skills/fire/file-8.png?raw=true)\r
+\r
+\r
+\`\`\`javascript\r
+//\u8F09\u5165\u7D20\u6750 \r
+function preload() {\r
+    // \u8F09\u5165\u7D20\u6750   \r
+    // bg1 -> \u5716\u7247\u8F09\u5165\u5F8C\u7684\u7269\u4EF6\u540D\u7A31(key)\r
+    this.load.image('bg1', '../assets/backgrounds/bg_1.webp');\r
+    this.load.image('planet1', '../assets/backgrounds/planet.png');\r
+    this.load.image('player1', '../assets/roles/alpaca.png');\r
+    this.load.image('player2', '../assets/roles/pinkAlpaca.png');\r
+    this.load.audio('music1', '../assets/music/crrect_answer3.mp3')\r
+    //\u8F09\u5165\u6280\u80FD,\u4F7F\u7528\u8FF4\u5708\u8F09\u5165\r
+    for (let i = 1; i < 9; i++) {\r
+        this.load.image("file" + i, \`../assets/skills/fire/file-\${i}.png\`);\r
+    }\r
+}\r
+\r
+//\u751F\u6210\u7269\u4EF6\r
+function create() {\r
+     // 1. \u80CC\u666F\r
+    let bg = this.add.sprite(0, 0, "bg1");\r
+\r
+    //\u53D6\u5F97\u5BEC\u9AD8\r
+    let width = this.sys.game.config.width / 2;\r
+    let height = this.sys.game.config.height / 2;\r
+\r
+    //\u8A2D\u5B9A\u4F4D\u7F6E\r
+    bg.setPosition(width, height);\r
+\r
+    // 2. \u89D2\u8272\r
+    this.player = this.add.sprite(450, 105, "player1");\r
+\r
+    // 3. \u884C\u661F\r
+    this.planet1 = this.add.sprite(-100, 40, "planet1");\r
+\r
+    // 4. \u97F3\u6A02\r
+    this.music = this.sound.add('music1', {\r
+        volume: 0.2, //\u97F3\u91CF\r
+        loop: true // \u662F\u5426\u8F2A\u64AD\r
+    });\r
+\r
+    this.music.play();\r
+\r
+    // 5. \u6280\u80FD\r
+    this.file = this.add.sprite(360, 65, "file1");\r
+    this.file.alpha = 0; //\u900F\u660E\u5EA6\u8A2D\u70BA0\r
+}\r
+\`\`\`\r
+\r
+### \u521D\u59CB\u5316\u7269\u4EF6\r
+- \u6211\u5011\u4F86\u521D\u59CB\u5316\u5674\u706B\u7684\u9663\u5217\r
+\r
+\`\`\`javascript\r
+// \u521D\u59CB\u5316\r
+function init() {\r
+    // \u8A2D\u5B9A \u884C\u661F \u7684\u901F\u5EA6\r
+    this.planet1Speed = 3;\r
+    //\u8349\u6CE5\u99AC\u9663\u5217\r
+    this.allPlayer = ['player1', 'player2'];\r
+    //\u8A08\u7B97\u6642\u9593\u8EF8\r
+    this.index = 0; \r
+    //\u5674\u706B\r
+    this.fileArr = ['file1', 'file2', 'file3', 'file4', 'file5', 'file6', 'file7', 'file8'];\r
+}\r
+\`\`\`\r
+\r
+## \u57FA\u672C phaser.js \u529F\u80FD - \u9EDE\u64CA\r
+### \u4F7F\u7528 \`input.activePointer.isDown\`\r
+- \u5728\u6ED1\u9F20\u6216\u624B\u6A5F\u756B\u9762\u88AB\u6309\u4F4F\u6642\uFF0C\u4ED6\u6703\u662F \`true\`\r
+- \u56E0\u6B64\u6211\u5011\u53EF\u4EE5\u5229\u7528 \`update\` \u4E00\u76F4\u66F4\u65B0\u7684\u7279\u6027\r
+\r
+1. \u9996\u5148\u5148\u505A\u500B\u5224\u65B7\r
+   - \u5224\u65B7\u8349\u6CE5\u99AC\u8B8A\u8EAB\u5F8C\u624D\u80FD\u5674\u706B\r
+\`\`\`javascript\r
+// \u521D\u59CB\u5316\r
+function init() {\r
+    // \u884C\u661F\u51FA\u73FE\r
+    if (this.index < 50)\r
+        this.planet1.x += this.planet1Speed;\r
+\r
+    //\u8349\u6CE5\u99AC\u8B8A\u8EAB\r
+    if (this.index % 5 === 0 && this.index > 80 && this.index < 200)\r
+        this.player.setTexture(this.allPlayer[this.index % 2]);\r
+\r
+    //\u8349\u5C3C\u99AC\u5674\u706B\r
+    if (this.index > 200) {\r
+      console.log('\u8349\u6CE5\u99AC\u8B8A\u8EAB\u4E86!');\r
+    }\r
+\r
+    this.index++;\r
+}\r
+\`\`\`\r
+\r
+2. \u5224\u65B7\u662F\u4E0D\u662F\u6709\u88AB\u9EDE\u64CA\r
+   - \u4F7F\u7528 \`input.activePointer.isDown\`\r
+   - \u642D\u914D \`if\` \u5224\u65B7\u5F0F\r
+\`\`\`javascript\r
+// \u521D\u59CB\u5316\r
+function init() {\r
+    // \u884C\u661F\u51FA\u73FE\r
+    if (this.index < 50)\r
+        this.planet1.x += this.planet1Speed;\r
+\r
+    //\u8349\u6CE5\u99AC\u8B8A\u8EAB\r
+    if (this.index % 5 === 0 && this.index > 80 && this.index < 200)\r
+        this.player.setTexture(this.allPlayer[this.index % 2]);\r
+\r
+    //\u8349\u5C3C\u99AC\u5674\u706B\r
+    if (this.index > 200) {\r
+        if (this.input.activePointer.isDown) {          \r
+        } else {\r
+        }\r
+    }\r
+\r
+    this.index++;\r
+}\r
+\`\`\`\r
+3. \u986F\u793A\u8207\u4E0D\u986F\u793A\u7269\u4EF6\r
+   - \u5229\u7528\u7269\u4EF6\u7684\u900F\u660E\u5EA6\u4F86\u8B93\u5B83\u986F\u793A\u8207\u4E0D\u986F\u793A\r
+   - \`alpha\` \u70BA\u900F\u660E\u5EA6\u7684\u5C6C\u6027\r
+   - \`alpha = 0 \` \u8868\u793A\u5168\u900F\u660E\r
+   - \`alpha = 100 \` \u8868\u793A\u4E0D\u900F\u660E\r
+\`\`\`javascript\r
+// \u521D\u59CB\u5316\r
+function init() {\r
+    // \u884C\u661F\u51FA\u73FE\r
+    if (this.index < 50)\r
+        this.planet1.x += this.planet1Speed;\r
+\r
+    //\u8349\u6CE5\u99AC\u8B8A\u8EAB\r
+    if (this.index % 5 === 0 && this.index > 80 && this.index < 200)\r
+        this.player.setTexture(this.allPlayer[this.index % 2]);\r
+\r
+    //\u8349\u5C3C\u99AC\u5674\u706B\r
+    if (this.index > 200) {\r
+        if (this.input.activePointer.isDown) {\r
+            this.file.alpha = 100; //\u900F\u660E\u5EA6\u8A2D\u70BA100\r
+        } else {\r
+            this.file.alpha = 0;//\u900F\u660E\u5EA6\u8A2D\u70BA0\r
+        }\r
+    }\r
+\r
+    this.index++;\r
+}\r
+\`\`\`\r
+4. \u5674\u706B\u52D5\u756B\r
+    - \u6700\u5F8C\u5229\u7528 \`update\` \u4E00\u76F4\u66F4\u65B0\u7684\u7279\u6027\r
+    - \u4F86\u5207\u63DB\u5716\u7247\u8B93\u706B\u7130\u52D5\u756B\u5448\u73FE\r
+\`\`\`javascript\r
+// \u521D\u59CB\u5316\r
+function init() {\r
+    // \u884C\u661F\u51FA\u73FE\r
+    if (this.index < 50)\r
+        this.planet1.x += this.planet1Speed;\r
+\r
+    //\u8349\u6CE5\u99AC\u8B8A\u8EAB\r
+    if (this.index % 5 === 0 && this.index > 80 && this.index < 200)\r
+        this.player.setTexture(this.allPlayer[this.index % 2]);\r
+\r
+    //\u8349\u5C3C\u99AC\u5674\u706B\r
+    if (this.index > 200) {\r
+        if (this.input.activePointer.isDown) {\r
+            this.file.alpha = 100; //\u900F\u660E\u5EA6\u8A2D\u70BA100\r
+            this.file.setTexture(this.fileArr[this.index % 8]);\r
+        } else {\r
+            this.file.alpha = 0;//\u900F\u660E\u5EA6\u8A2D\u70BA0\r
+        }\r
+    }\r
+\r
+    this.index++;\r
+}\r
+\`\`\`\r
+### \u4EE5\u4E0A\u5C31\u662F\u4ECA\u5929\u7684\u64CD\u4F5C\u5566!\r
+---\r
+### \u7A0B\u5F0F\u539F\u78BC\r
+\`\`\` javascript\r
+<!DOCTYPE html>\r
+<html lang="en">\r
+\r
+<head>\r
+    <meta charset="UTF-8">\r
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">\r
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r
+    <title>Game-day6</title>\r
+</head>\r
+\r
+<body>\r
+    <div id="app"></div>\r
+\r
+    <script src="../lib/phaser.min.js"><\/script>\r
+    <script>\r
+        // \u5BA3\u544A\u4E00\u500B\u5834\u666F\r
+        let scene = new Phaser.Scene('Game');\r
+        // \u5BA3\u544A\u5834\u666F\u7684\u57FA\u672C\u8CC7\u8A0A\r
+        let config = {\r
+            type: Phaser.AUTO,\r
+            width: 600, // \u5BEC\r
+            height: 300, // \u9AD8\r
+            // \u7D81\u5B9A\u5BA3\u544A\u7684\u5834\u666F\r
+            scene: {\r
+                preload: preload,\r
+                create: create,\r
+                init: init,\r
+                update: update\r
+            }\r
+        }\r
+\r
+        //\u555F\u52D5\u904A\u6232\r
+        let game = new Phaser.Game(config)\r
+\r
+        //\u8F09\u5165\u7D20\u6750 \r
+        function preload() {\r
+            // \u8F09\u5165\u7D20\u6750   \r
+            // bg1 -> \u5716\u7247\u8F09\u5165\u5F8C\u7684\u7269\u4EF6\u540D\u7A31(key)\r
+            this.load.image('bg1', '../assets/backgrounds/bg_1.webp');\r
+            this.load.image('planet1', '../assets/backgrounds/planet.png');\r
+            this.load.image('player1', '../assets/roles/alpaca.png');\r
+            this.load.image('player2', '../assets/roles/pinkAlpaca.png');\r
+            this.load.audio('music1', '../assets/music/crrect_answer3.mp3');\r
+\r
+            //\u8F09\u5165\u6280\u80FD,\u4F7F\u7528\u8FF4\u5708\u8F09\u5165\r
+            for (let i = 1; i < 9; i++) {\r
+                this.load.image("file" + i, \`../assets/skills/fire/file-\${i}.png\`);\r
+            }\r
+        }\r
+\r
+\r
+        //\u751F\u6210\u7269\u4EF6\r
+        function create() {\r
+            // 1. \u80CC\u666F\r
+            let bg = this.add.sprite(0, 0, "bg1");\r
+\r
+            //\u53D6\u5F97\u5BEC\u9AD8\r
+            let width = this.sys.game.config.width / 2;\r
+            let height = this.sys.game.config.height / 2;\r
+\r
+            //\u8A2D\u5B9A\u4F4D\u7F6E\r
+            bg.setPosition(width, height);\r
+\r
+            // 2. \u89D2\u8272\r
+            this.player = this.add.sprite(450, 105, "player1");\r
+\r
+            // 3. \u884C\u661F\r
+            this.planet1 = this.add.sprite(-100, 40, "planet1");\r
+\r
+            // 4. \u97F3\u6A02\r
+            this.music = this.sound.add('music1', {\r
+                volume: 0.2, //\u97F3\u91CF\r
+                loop: true // \u662F\u5426\u8F2A\u64AD\r
+            });\r
+\r
+            this.music.play();\r
+\r
+            // 5. \u6280\u80FD\r
+            this.file = this.add.sprite(360, 65, "file1");\r
+            this.file.alpha = 0; //\u900F\u660E\u5EA6\u8A2D\u70BA0\r
+        }\r
+\r
+        // \u521D\u59CB\u5316\r
+        function init() {\r
+            // \u8A2D\u5B9A \u884C\u661F \u7684\u901F\u5EA6\r
+            this.planet1Speed = 3;\r
+            //\u8349\u6CE5\u99AC\u9663\u5217\r
+            this.allPlayer = ['player1', 'player2'];\r
+            //\u8A08\u7B97\u6642\u9593\u8EF8\r
+            this.index = 0;\r
+            //\u5674\u706B\r
+            this.fileArr = ['file1', 'file2', 'file3', 'file4', 'file5', 'file6', 'file7', 'file8'];\r
+        }\r
+\r
+        function update() {\r
+            // \u884C\u661F\u51FA\u73FE\r
+            if (this.index < 50)\r
+                this.planet1.x += this.planet1Speed;\r
+\r
+            //\u8349\u6CE5\u99AC\u8B8A\u8EAB\r
+            if (this.index % 5 === 0 && this.index > 80 && this.index < 200)\r
+                this.player.setTexture(this.allPlayer[this.index % 2]);\r
+\r
+            //\u8349\u5C3C\u99AC\u5674\u706B\r
+            if (this.index > 200) {\r
+                if (this.input.activePointer.isDown) {\r
+                    this.file.alpha = 100; //\u900F\u660E\u5EA6\u8A2D\u70BA100\r
+                    this.file.setTexture(this.fileArr[this.index % 8]);\r
+                } else {\r
+                    this.file.alpha = 0;//\u900F\u660E\u5EA6\u8A2D\u70BA0\r
+                }\r
+            }\r
+\r
+            this.index++;\r
+        }\r
+\r
+    <\/script>\r
+\r
+</body>\r
+\r
+</html>\r
+\`\`\`\r
+`,zn="\u{1F3AE} \u57FA\u672C\u8A9E\u6CD5(\u56DB) - \u64CD\u4F5C";function _n(){return u("Chicken Say Hi | phaser3 - \u64CD\u4F5C"),t(s,{children:[n(o,{}),n(l,{backPath:r.PhaserPage,title:zn,text:Un})]})}const Jn=`# \u57FA\u672C\u8A9E\u6CD5(\u4E94) - \u5834\u666F\u5207\u63DB\r
+\r
+### \u6211\u5011\u4ECA\u5929\u4F86\u5C07\u5834\u666F\u6A21\u7D44\u5316\uFF0C\u8B93\u4ED6\u96A8\u6642\u53EF\u4EE5\u5207\u63DB\r
+\r
+### \u4F7F\u7528 \`class\` \u5305\u88DD\u5834\u666F\r
+1. \u9996\u5148\u6211\u5011\u5728\u8207 \`index.html\` \u540C\u5C64\u5EFA\u7ACB \`scenes\` \u8CC7\u6599\u593E\r
+2. \u5728\u8CC7\u6599\u593E\u4E2D\u5EFA\u7ACB\u8D77\u59CB\u5834\u666F\u7684\u6A94\u6848 \`gameStart.js\`\r
+3. \u4E26\u4E14\u7E7C\u627F \`Phaser.Scene\`\r
+\r
+\`\`\`javascript\r
+class GameStart extends Phaser.Scene {\r
+    // do something\r
+}\r
+\`\`\`\r
+\r
+### \u8A3B\u518A\u5834\u666F\r
+1. \u5229\u7528 \`constructor\` \u7684 \`super()\` \u8A3B\u518A\u5834\u666FKey\r
+\`\`\`javascript\r
+class GameStart extends Phaser.Scene {\r
+  constructor() {\r
+    super({ key: "gameStart" });\r
+  }\r
+    // do something\r
+}\r
+\`\`\`\r
+\r
+### \u8F09\u5165\u7D20\u6750\r
+- \u7531\u65BC\u7E7C\u627F\u4E86 \`Phaser.Scene\` \r
+- \u56E0\u6B64\u6211\u5011\u76F4\u63A5\u53EF\u4EE5\u4F7F\u7528 \`preload()\`\r
+- \u5C31\u53EF\u4EE5\u8F09\u5165\u7D20\u6750\u4E86\r
+\`\`\`javascript\r
+class GameStart extends Phaser.Scene {\r
+  constructor() {\r
+    super({ key: "gameStart" });\r
+  }\r
+  /**\r
+   * \u8F09\u5165\u7D20\u6750\r
+   */\r
+  preload() {\r
+    this.load.image("bg", "../assets/backgrounds/bg_1.webp");\r
+    this.load.image("start1", "../assets/others/start/start1.png");\r
+    this.load.image(\r
+      "gameName",\r
+      "../assets/others/gameName/alpacaSceneName.png"\r
+    );\r
+  }\r
+}\r
+\`\`\`\r
+\r
+### \u751F\u6210\u7269\u4EF6\r
+- \u8DDF \`preload()\` \u539F\u7406\u76F8\u540C\r
+- \u76F4\u63A5\u4F7F\u7528 \`create()\` \u5373\u53EF\r
+- \u6211\u5011\u5728\u9019\u908A\u5148\u8F09\u5165\u80CC\u666F\u8DDF\u904A\u6232\u6A19\u984C\r
+\`\`\`javascript\r
+class GameStart extends Phaser.Scene {\r
+  constructor() {\r
+    super({ key: "gameStart" });\r
+  }\r
+  /**\r
+   * \u8F09\u5165\u7D20\u6750\r
+   */\r
+  preload() {\r
+    this.load.image("bg", "../assets/backgrounds/bg_1.webp");\r
+    this.load.image("start1", "../assets/others/start/start1.png");\r
+    this.load.image(\r
+      "gameName",\r
+      "../assets/others/gameName/alpacaSceneName.png"\r
+    );\r
+  }\r
+\r
+   /**\r
+   * \u751F\u6210\u7269\u4EF6\r
+   */\r
+  create() {\r
+    // 1. \u80CC\u666F\r
+    let bg = this.add.sprite(0, 0, "bg");\r
+\r
+    //\u53D6\u5F97\u5BEC\u9AD8\r
+    let width = this.sys.game.config.width / 2;\r
+    let height = this.sys.game.config.height / 2;\r
+\r
+    //\u8A2D\u5B9A\u4F4D\u7F6E\r
+    bg.setPosition(width, height);\r
+\r
+    // 2. \u904A\u6232\u6A19\u984C\r
+    let gameName = this.add.sprite(width, height - 50, "gameName", 0);\r
+\r
+  }\r
+}\r
+\`\`\`\r
+\r
+### \u9EDE\u64CA\u4E8B\u4EF6\r
+- \u63A5\u4E0B\u4F86\u6211\u5011\u8981\u505A\u904A\u6232\u958B\u59CB\u6309\u9215\r
+- \u56E0\u6B64\u9700\u8981\u5C0D\u6309\u9215\u7269\u4EF6\u4E0B \`setInteractive()\` \u8868\u793A\u4ED6\u53EF\u4EE5\u8DDF\u73A9\u5BB6\u4E92\u52D5\r
+- \u4E26\u4E14\u52A0\u4E0A\u4E00\u500B \`pointerdown\` \u7684\u4E8B\u4EF6\r
+- \u53EA\u6709\u624B\u6A5F\u6216\u6ED1\u9F20\u9EDE\u64CA\u4ED6\u90FD\u6703\u88AB\u89F8\u767C\r
+\`\`\`javascript\r
+class GameStart extends Phaser.Scene {\r
+  constructor() {\r
+    super({ key: "gameStart" });\r
+  }\r
+  /**\r
+   * \u8F09\u5165\u7D20\u6750\r
+   */\r
+  preload() {\r
+    this.load.image("bg", "../assets/backgrounds/bg_1.webp");\r
+    this.load.image("start1", "../assets/others/start/start1.png");\r
+    this.load.image(\r
+      "gameName",\r
+      "../assets/others/gameName/alpacaSceneName.png"\r
+    );\r
+  }\r
+\r
+   /**\r
+   * \u751F\u6210\u7269\u4EF6\r
+   */\r
+  create() {\r
+    // 1. \u80CC\u666F\r
+    let bg = this.add.sprite(0, 0, "bg");\r
+\r
+    //\u53D6\u5F97\u5BEC\u9AD8\r
+    let width = this.sys.game.config.width / 2;\r
+    let height = this.sys.game.config.height / 2;\r
+\r
+    //\u8A2D\u5B9A\u4F4D\u7F6E\r
+    bg.setPosition(width, height);\r
+\r
+    // 2. \u904A\u6232\u6A19\u984C\r
+    let gameName = this.add.sprite(width, height - 50, "gameName", 0);\r
+\r
+    // 3. \u958B\u59CB\u6309\u9215\r
+    this.start1 = this.add\r
+      .sprite(width, height + 50, "start1", 0)\r
+      .setInteractive();\r
+\r
+    this.start1.on("pointerdown", () => {\r
+      console.log('\u6211\u88AB\u9EDE\u4E86!');\r
+    });\r
+  }\r
+}\r
+\`\`\`\r
+\r
+### \u52A0\u5165\u7B2C\u4E8C\u5834\u666F\r
+- \u7B2C\u4E8C\u5834\u666F\u662F\u5C07day6\u7684 js\u5206\u96E2\u51FA\u4F86\uFF0C\u56E0\u6B64\u9019\u908A\u4E0D\u5728\u505A\u8A73\u7D30\u7684\u63CF\u8FF0\r
+- \u5148\u5728 \`scenes\` \u8CC7\u6599\u593E\u4E2D\u5EFA\u52A0\u5165\u5834\u666F\u7684\u6A94\u6848 \`alpacaScene.js\`\r
+- \u4E26\u653E\u5165\u4EE5\u4E0B\u7A0B\u5F0F\u78BC\r
+\`\`\`javascript\r
+class AlpacaScene extends Phaser.Scene {\r
+  constructor() {\r
+    super({ key: "alpacaScene" });\r
+  }\r
+\r
+  /**\r
+   * \u8F09\u5165\u7D20\u6750\r
+   */\r
+  preload() {\r
+    // \u8F09\u5165\u7D20\u6750\r
+    // bg1 -> \u5716\u7247\u8F09\u5165\u5F8C\u7684\u7269\u4EF6\u540D\u7A31(key)\r
+    this.load.image("bg1", "../assets/backgrounds/bg_1.webp");\r
+    this.load.image("planet1", "../assets/backgrounds/planet.png");\r
+    this.load.image("player1", "../assets/roles/alpaca.png");\r
+    this.load.image("player2", "../assets/roles/pinkAlpaca.png");\r
+    this.load.audio("music1", "../assets/music/crrect_answer3.mp3");\r
+\r
+    //\u8F09\u5165\u6280\u80FD,\u4F7F\u7528\u8FF4\u5708\u8F09\u5165\r
+    for (let i = 1; i < 9; i++) {\r
+      this.load.image("file" + i, \`../assets/skills/fire/file-\${i}.png\`);\r
+    }\r
+  }\r
+\r
+  /**\r
+   * \u751F\u6210\u7269\u4EF6\r
+   */\r
+  create() {\r
+    // 1. \u80CC\u666F\r
+    let bg = this.add.sprite(0, 0, "bg1");\r
+\r
+    //\u53D6\u5F97\u5BEC\u9AD8\r
+    let width = this.sys.game.config.width / 2;\r
+    let height = this.sys.game.config.height / 2;\r
+\r
+    //\u8A2D\u5B9A\u4F4D\u7F6E\r
+    bg.setPosition(width, height);\r
+\r
+    // 2. \u89D2\u8272\r
+    this.player = this.add.sprite(450, 105, "player1");\r
+\r
+    // 3. \u884C\u661F\r
+    this.planet1 = this.add.sprite(-100, 40, "planet1");\r
+\r
+    // 4. \u97F3\u6A02\r
+    this.music = this.sound.add("music1", {\r
+      volume: 0.2, //\u97F3\u91CF\r
+      loop: true, // \u662F\u5426\u8F2A\u64AD\r
+    });\r
+\r
+    this.music.play();\r
+\r
+    // 5. \u6280\u80FD\r
+    this.file = this.add.sprite(360, 65, "file1");\r
+    this.file.alpha = 0; //\u900F\u660E\u5EA6\u8A2D\u70BA0\r
+  }\r
+\r
+  /**\r
+   * \u521D\u59CB\u5316\r
+   */\r
+  init() {\r
+    // \u8A2D\u5B9A \u884C\u661F \u7684\u901F\u5EA6\r
+    this.planet1Speed = 3;\r
+    //\u8349\u6CE5\u99AC\u9663\u5217\r
+    this.allPlayer = ["player1", "player2"];\r
+    //\u8A08\u7B97\u6642\u9593\u8EF8\r
+    this.index = 0;\r
+    //\u5674\u706B\r
+    this.fileArr = [\r
+      "file1",\r
+      "file2",\r
+      "file3",\r
+      "file4",\r
+      "file5",\r
+      "file6",\r
+      "file7",\r
+      "file8",\r
+    ];\r
+  }\r
+\r
+  /**\r
+   * \u66F4\u65B0\u756B\u9762\r
+   */\r
+  update() {\r
+    // \u884C\u661F\u51FA\u73FE\r
+    if (this.index < 50) this.planet1.x += this.planet1Speed;\r
+\r
+    //\u8349\u6CE5\u99AC\u8B8A\u8EAB\r
+    if (this.index % 5 === 0 && this.index > 80 && this.index < 200)\r
+      this.player.setTexture(this.allPlayer[this.index % 2]);\r
+\r
+    //\u8349\u5C3C\u99AC\u5674\u706B\r
+    if (this.index > 200) {\r
+      if (this.input.activePointer.isDown) {\r
+        this.file.alpha = 100; //\u900F\u660E\u5EA6\u8A2D\u70BA100\r
+        this.file.setTexture(this.fileArr[this.index % 8]);\r
+      } else {\r
+        this.file.alpha = 0; //\u900F\u660E\u5EA6\u8A2D\u70BA0\r
+      }\r
+    }\r
+\r
+    this.index++;\r
+  }\r
+}\r
+\`\`\`\r
+\r
+### \u5C07\u5834\u666F\u52A0\u5165\u904A\u6232\u4E2D\r
+- \u6211\u5011\u5C07\u7126\u9EDE\u79FB\u56DE \`index.html\` \u4E2D\r
+- \u9996\u5148\u8981\u5148\u5F15\u7528\u525B\u525B\u5EFA\u7ACB\u7684\u5169\u500B\u5834\u666F\r
+\`\`\`html\r
+<body>\r
+    <div id="app"></div>\r
+\r
+    <script src="../lib/phaser.min.js"><\/script>\r
+    <script src="./scenes/gameStart.js"><\/script>\r
+    <script src="./scenes/alpacaScene.js"><\/script>\r
+</body>\r
+\`\`\`\r
+\r
+### \u5BA3\u544A\u5834\u666F\r
+- \u56E0\u70BA\u525B\u525B\u5DF2\u7D93\u5C07\u5834\u666F\u5305\u88DD\u6210 \`class\`\r
+- \u56E0\u6B64\u6211\u5011\u9019\u908A\u4F7F\u7528 \`new\` \u95DC\u9375\u5B57\u4F86\u5BE6\u4F8B\u5316\u5B83\r
+\`\`\`html\r
+<body>\r
+    <div id="app"></div>\r
+    <script src="../lib/phaser.min.js"><\/script>\r
+    <script src="./scenes/gameStart.js"><\/script>\r
+    <script src="./scenes/alpacaScene.js"><\/script>\r
+    <script>\r
+        // \u5BA3\u544A\u4E00\u500B\u5834\u666F\r
+        let scene = new AlpacaScene();\r
+        let sceneStart = new GameStart();       \r
+    <\/script>\r
+</body>\r
+\`\`\`\r
+\r
+### \u52A0\u5165\u904A\u6232\u57FA\u672C\u8A2D\u5B9A\u8207\u5834\u666F\r
+- \u5148\u65B0\u589E\u4E00\u500B\u904A\u6232\r
+- \u63A5\u4E0B\u4F86\u5728\u65B0\u589E\u5834\u666F\r
+- \u6700\u5F8C\u555F\u52D5\u5834\u666F\r
+\`\`\`html\r
+<body>\r
+    <div id="app"></div>\r
+\r
+    <script src="../lib/phaser.min.js"><\/script>\r
+    <script src="./scenes/gameStart.js"><\/script>\r
+    <script src="./scenes/alpacaScene.js"><\/script>\r
+    <script>\r
+        // \u5BA3\u544A\u4E00\u500B\u5834\u666F\r
+        let scene = new AlpacaScene();\r
+        let sceneStart = new GameStart();\r
+        // \u5BA3\u544A\u904A\u6232\u7684\u57FA\u672C\u8CC7\u8A0A\r
+        let config = {\r
+            type: Phaser.AUTO,\r
+            width: 600, // \u5BEC\r
+            height: 300, // \u9AD8\r
+        }\r
+\r
+        //\u555F\u52D5\u904A\u6232\r
+        let game = new Phaser.Game(config)\r
+\r
+        //\u52A0\u8F09\u5834\u666F\r
+        game.scene.add('gameStart', sceneStart);\r
+        game.scene.add('alpacaScene', scene);\r
+        //\u555F\u52D5\u5834\u666F\r
+        game.scene.start('gameStart');\r
+    <\/script>\r
+\r
+</body>\r
+\`\`\`\r
+\r
+### \u5834\u666F\u5207\u63DB\r
+- \u9019\u6642\u6211\u5011\u56DE\u5230 \`gameStart.js\`\r
+- \u52A0\u5165\u4E00\u500B\u5834\u666F\u8DF3\u8F49( \`startGame()\` ) \u7684function\r
+- \u4E26\u4E14\u79FB\u9664\u6389\u76EE\u524D\u986F\u793A\u7684\u5834\u666F\r
+- \u5982\u679C\u6C92\u6709\u79FB\u9664\u5834\u666F\u6703\u91CD\u758A\r
+- \u6700\u5F8C\u5728 \`pointerdown\` \u4E8B\u4EF6\u4E2D\u89F8\u767C\u5B83\r
+- \u56E0\u70BA\u5728class\u547C\u53EB\u81EA\u5DF1\u7684function \u56E0\u6B64\u9019\u908A\u9700\u8981\u7528 \`this\`\r
+\`\`\`javascript\r
+/**\r
+ * \u8D77\u59CB\u5834\u666F\r
+ */\r
+class GameStart extends Phaser.Scene {\r
+  constructor() {\r
+    super({ key: "gameStart" });\r
+  }\r
+  /**\r
+   * \u8F09\u5165\u7D20\u6750\r
+   */\r
+  preload() {\r
+    this.load.image("bg", "../assets/backgrounds/bg_1.webp");\r
+    this.load.image("start1", "../assets/others/start/start1.png");\r
+    this.load.image(\r
+      "gameName",\r
+      "../assets/others/gameName/alpacaSceneName.png"\r
+    );\r
+  }\r
+\r
+  /**\r
+   * \u751F\u6210\u7269\u4EF6\r
+   */\r
+  create() {\r
+    // 1. \u80CC\u666F\r
+    let bg = this.add.sprite(0, 0, "bg");\r
+\r
+    //\u53D6\u5F97\u5BEC\u9AD8\r
+    let width = this.sys.game.config.width / 2;\r
+    let height = this.sys.game.config.height / 2;\r
+\r
+    //\u8A2D\u5B9A\u4F4D\u7F6E\r
+    bg.setPosition(width, height);\r
+\r
+    // 2. \u904A\u6232\u6A19\u984C\r
+    let gameName = this.add.sprite(width, height - 50, "gameName", 0);\r
+\r
+    // 3. \u958B\u59CB\u6309\u9215\r
+    this.start1 = this.add\r
+      .sprite(width, height + 50, "start1", 0)\r
+      .setInteractive();\r
+\r
+    this.start1.on("pointerdown", () => {\r
+      this.startGame();\r
+    });\r
+  }\r
+\r
+  /**\r
+   * \u5834\u666F\u8DF3\u8F49\r
+   */\r
+  startGame() {\r
+    game.scene.start("alpacaScene");\r
+    game.scene.remove("gameStart");\r
+  }\r
+}\r
+\r
+\`\`\`\r
+\r
+### \u4ECA\u5929\u6211\u5011\u5B78\u5230\u4E86\u5982\u4F55\u5229\u7528JS\u7684class\u4F86\u6A21\u7D44\u5316\u5834\u666F\uFF0C\u4E26\u4E14\u5982\u4F55\u53BB\u5207\u63DB\u5B83\uFF0C\u660E\u5929\u6211\u5011\u4F86\u7DF4\u7FD2\u7269\u4EF6\u7684\u8907\u88FD\u5427!\r
+---\r
+### \u7A0B\u5F0F\u539F\u78BC\r
+### AlpacaScene \u5834\u666F\r
+\`\`\` javascript\r
+class AlpacaScene extends Phaser.Scene {\r
+  constructor() {\r
+    super({ key: "alpacaScene" });\r
+  }\r
+\r
+  /**\r
+   * \u8F09\u5165\u7D20\u6750\r
+   */\r
+  preload() {\r
+    // \u8F09\u5165\u7D20\u6750\r
+    // bg1 -> \u5716\u7247\u8F09\u5165\u5F8C\u7684\u7269\u4EF6\u540D\u7A31(key)\r
+    this.load.image("bg1", "../assets/backgrounds/bg_1.webp");\r
+    this.load.image("planet1", "../assets/backgrounds/planet.png");\r
+    this.load.image("player1", "../assets/roles/alpaca.png");\r
+    this.load.image("player2", "../assets/roles/pinkAlpaca.png");\r
+    this.load.audio("music1", "../assets/music/crrect_answer3.mp3");\r
+\r
+    //\u8F09\u5165\u6280\u80FD,\u4F7F\u7528\u8FF4\u5708\u8F09\u5165\r
+    for (let i = 1; i < 9; i++) {\r
+      this.load.image("file" + i, \`../assets/skills/fire/file-\${i}.png\`);\r
+    }\r
+  }\r
+\r
+  /**\r
+   * \u751F\u6210\u7269\u4EF6\r
+   */\r
+  create() {\r
+    // 1. \u80CC\u666F\r
+    let bg = this.add.sprite(0, 0, "bg1");\r
+\r
+    //\u53D6\u5F97\u5BEC\u9AD8\r
+    let width = this.sys.game.config.width / 2;\r
+    let height = this.sys.game.config.height / 2;\r
+\r
+    //\u8A2D\u5B9A\u4F4D\u7F6E\r
+    bg.setPosition(width, height);\r
+\r
+    // 2. \u89D2\u8272\r
+    this.player = this.add.sprite(450, 105, "player1");\r
+\r
+    // 3. \u884C\u661F\r
+    this.planet1 = this.add.sprite(-100, 40, "planet1");\r
+\r
+    // 4. \u97F3\u6A02\r
+    this.music = this.sound.add("music1", {\r
+      volume: 0.2, //\u97F3\u91CF\r
+      loop: true, // \u662F\u5426\u8F2A\u64AD\r
+    });\r
+\r
+    this.music.play();\r
+\r
+    // 5. \u6280\u80FD\r
+    this.file = this.add.sprite(360, 65, "file1");\r
+    this.file.alpha = 0; //\u900F\u660E\u5EA6\u8A2D\u70BA0\r
+  }\r
+\r
+  /**\r
+   * \u521D\u59CB\u5316\r
+   */\r
+  init() {\r
+    // \u8A2D\u5B9A \u884C\u661F \u7684\u901F\u5EA6\r
+    this.planet1Speed = 3;\r
+    //\u8349\u6CE5\u99AC\u9663\u5217\r
+    this.allPlayer = ["player1", "player2"];\r
+    //\u8A08\u7B97\u6642\u9593\u8EF8\r
+    this.index = 0;\r
+    //\u5674\u706B\r
+    this.fileArr = [\r
+      "file1",\r
+      "file2",\r
+      "file3",\r
+      "file4",\r
+      "file5",\r
+      "file6",\r
+      "file7",\r
+      "file8",\r
+    ];\r
+  }\r
+\r
+  /**\r
+   * \u66F4\u65B0\u756B\u9762\r
+   */\r
+  update() {\r
+    // \u884C\u661F\u51FA\u73FE\r
+    if (this.index < 50) this.planet1.x += this.planet1Speed;\r
+\r
+    //\u8349\u6CE5\u99AC\u8B8A\u8EAB\r
+    if (this.index % 5 === 0 && this.index > 80 && this.index < 200)\r
+      this.player.setTexture(this.allPlayer[this.index % 2]);\r
+\r
+    //\u8349\u5C3C\u99AC\u5674\u706B\r
+    if (this.index > 200) {\r
+      if (this.input.activePointer.isDown) {\r
+        this.file.alpha = 100; //\u900F\u660E\u5EA6\u8A2D\u70BA100\r
+        this.file.setTexture(this.fileArr[this.index % 8]);\r
+      } else {\r
+        this.file.alpha = 0; //\u900F\u660E\u5EA6\u8A2D\u70BA0\r
+      }\r
+    }\r
+\r
+    this.index++;\r
+  }\r
+}\r
+\r
+\`\`\`\r
+### GameStart \u5834\u666F\r
+\`\`\` javascript\r
+/**\r
+ * \u8D77\u59CB\u5834\u666F\r
+ */\r
+class GameStart extends Phaser.Scene {\r
+  constructor() {\r
+    super({ key: "gameStart" });\r
+  }\r
+  /**\r
+   * \u8F09\u5165\u7D20\u6750\r
+   */\r
+  preload() {\r
+    this.load.image("bg", "../assets/backgrounds/bg_1.webp");\r
+    this.load.image("start1", "../assets/others/start/start1.png");\r
+    this.load.image(\r
+      "gameName",\r
+      "../assets/others/gameName/alpacaSceneName.png"\r
+    );\r
+  }\r
+\r
+  /**\r
+   * \u751F\u6210\u7269\u4EF6\r
+   */\r
+  create() {\r
+    // 1. \u80CC\u666F\r
+    let bg = this.add.sprite(0, 0, "bg");\r
+\r
+    //\u53D6\u5F97\u5BEC\u9AD8\r
+    let width = this.sys.game.config.width / 2;\r
+    let height = this.sys.game.config.height / 2;\r
+\r
+    //\u8A2D\u5B9A\u4F4D\u7F6E\r
+    bg.setPosition(width, height);\r
+\r
+    // 2. \u904A\u6232\u6A19\u984C\r
+    let gameName = this.add.sprite(width, height - 50, "gameName", 0);\r
+\r
+    // 3. \u958B\u59CB\u6309\u9215\r
+    this.start1 = this.add\r
+      .sprite(width, height + 50, "start1", 0)\r
+      .setInteractive();\r
+\r
+    this.start1.on("pointerdown", () => {\r
+      this.startGame();\r
+    });\r
+  }\r
+\r
+  /**\r
+   * \u5834\u666F\u8DF3\u8F49\r
+   */\r
+  startGame() {\r
+    game.scene.start("alpacaScene");\r
+    game.scene.remove("gameStart");\r
+  }\r
+}\r
+\r
+\`\`\`\r
+### \u4E3B\u7A0B\u5F0F \u5834\u666F\r
+\`\`\` javascript\r
+<!DOCTYPE html>\r
+<html lang="en">\r
+\r
+<head>\r
+    <meta charset="UTF-8">\r
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">\r
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r
+    <title>Game-day7</title>\r
+</head>\r
+\r
+<body>\r
+    <div id="app"></div>\r
+\r
+    <script src="../lib/phaser.min.js"><\/script>\r
+    <script src="./scenes/gameStart.js"><\/script>\r
+    <script src="./scenes/alpacaScene.js"><\/script>\r
+    <script>\r
+        // \u5BA3\u544A\u4E00\u500B\u5834\u666F\r
+        let scene = new AlpacaScene();\r
+        let sceneStart = new GameStart();\r
+        // \u5BA3\u544A\u904A\u6232\u7684\u57FA\u672C\u8CC7\u8A0A\r
+        let config = {\r
+            type: Phaser.AUTO,\r
+            width: 600, // \u5BEC\r
+            height: 300, // \u9AD8\r
+        }\r
+\r
+        //\u555F\u52D5\u904A\u6232\r
+        let game = new Phaser.Game(config)\r
+\r
+        //\u52A0\u8F09\u5834\u666F\r
+        game.scene.add('gameStart', sceneStart);\r
+        game.scene.add('alpacaScene', scene);\r
+        //\u555F\u52D5\u5834\u666F\r
+        game.scene.start('gameStart');\r
+    <\/script>\r
+\r
+</body>\r
+\r
+</html>\r
+\`\`\`\r
+`,Xn="\u{1F3AE} \u57FA\u672C\u8A9E\u6CD5(\u4E94) - \u5834\u666F\u5207\u63DB";function Yn(){return u("Chicken Say Hi | phaser3 - \u5834\u666F\u5207\u63DB"),t(s,{children:[n(o,{}),n(l,{backPath:r.PhaserPage,title:Xn,text:Jn})]})}const Qn=[{id:1,text:"[Day1]C# \u96DE\u790E\u89C0\u5FF5- C#\u7C21\u4ECB",goPath:r.D1no13},{id:2,text:"[Day2]C# \u96DE\u790E\u89C0\u5FF5- \u8207C#\u958B\u767C\u5343\u91CC\u4F86\u76F8\u898B",goPath:r.D2no13},{id:3,text:"[Day3]C# \u96DE\u790E\u89C0\u5FF5- \u6838\u5FC3\u7684\u6578\u64DA\u6210\u54E1~\u8B8A\u6578(\u4E00)",goPath:r.D3no13},{id:4,text:"[Day4]C# \u96DE\u790E\u89C0\u5FF5- \u6838\u5FC3\u7684\u6578\u64DA\u6210\u54E1~\u8B8A\u6578(\u4E8C)",goPath:r.D4no13},{id:5,text:"[Day5]C# \u96DE\u790E\u89C0\u5FF5- \u8B93\u8B8A\u6578\u5B78\u6703\u4E03\u5341\u4E8C\u8B8A\u7684\u9AD8\u624B~\u904B\u7B97\u5B50",goPath:r.D5no13},{id:6,text:"[Day6]C# \u96DE\u790E\u89C0\u5FF5- \u7A0B\u5F0F\u78BC\u64C1\u6709\u5224\u65B7\u771F\u5047\u7684\u80FD\u529B~\u908F\u8F2F\u904B\u7B97\u5B50",goPath:r.D6no13},{id:7,text:"[Day7]C# \u96DE\u790E\u89C0\u5FF5- \u4F60\u6709\u9078\u64C7\u969C\u7919\u55CE? \u4EA4\u7D66if\u9673\u8FF0\u5F0F\u89E3\u6C7A\u5427!",goPath:r.D7no13},{id:8,text:"[Day8]C# \u96DE\u790E\u89C0\u5FF5- \u5982\u679C\u6C92\u6709\u5982\u679C\uFF0C\u53EA\u6709\u592A\u591A\u7684\u5982\u679Cswitch\u9673\u8FF0\u5F0F",goPath:r.D8no13},{id:9,text:"[Day9]C# \u96DE\u790E\u89C0\u5FF5- \u7701\u53BB\u91CD\u8907\u7A0B\u5F0F\u78BC\u7684\u597D\u5E6B\u624B~for\u8FF4\u5708",goPath:r.D9no13},{id:10,text:"[Day10]C# \u96DE\u790E\u89C0\u5FF5- \u91CD\u64AD\u8207\u505C\u6B62 while\u8FF4\u5708\u8207break",goPath:r.D10no13},{id:11,text:"[Day11]C# \u96DE\u790E\u89C0\u5FF5- \u628A\u8907\u96DC\u7684\u4E8B\u60C5\u8207\u95DC\u4FC2\u7C21\u55AE\u5316~\u5217\u8209\u8207\u7D50\u69CB",goPath:r.D11no13},{id:12,text:"[Day12]C# \u96DE\u790E\u89C0\u5FF5- \u7576\u6211\u5011\u540C\u5728\u4E00\u8D77~\u9663\u5217(Array)",goPath:r.D12no13},{id:13,text:"[Day13]C# \u96DE\u790E\u89C0\u5FF5- \u4F86\u500B\u8F2A\u8FF4\u5427~foreach\u8FF4\u5708",goPath:r.D13no13},{id:14,text:"[Day14]C# \u96DE\u790E\u89C0\u5FF5- \u4E0D\u540C\u5C64\u6B21\u7684\u9663\u5217~\u4E8C\u7DAD\u9663\u5217",goPath:r.D14no13},{id:15,text:"[Day15]C# \u96DE\u790E\u89C0\u5FF5- \u591A\u7B46\u8CC7\u6599\u7684\u597D\u670B\u53CB~List",goPath:r.D15no13},{id:16,text:"[Day16]C# \u96DE\u790E\u89C0\u5FF5- \u865B\u64EC\u4EE3\u5DE5\u5EE0~\u65B9\u6CD5(function)",goPath:r.D16no13},{id:17,text:"[Day17]C# \u96DE\u790E\u89C0\u5FF5- \u50CF\u500B\u90F5\u5DEE\u4E00\u6A23~\u503C\u8207\u5740\u7684\u50B3\u905E",goPath:r.D17no13},{id:18,text:"[Day18]C# \u96DE\u790E\u89C0\u5FF5- \u56DE\u982D\u5427!\u5B69\u5B50~ref \u8207 out \u53C3\u6578\u4FEE\u98FE\u8A5E",goPath:r.D18no13},{id:19,text:"[Day19]C# \u96DE\u790E\u89C0\u5FF5- \u8B93\u6642\u9593\u5012\u8F49\u5427~\u905E\u8FF4",goPath:r.D19no13},{id:20,text:"[Day20]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)\u57FA\u672C\u89C0\u5FF5",goPath:r.D20no13},{id:21,text:"[Day21]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u985E\u5225(class)",goPath:r.D21no13},{id:22,text:"[Day22]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u7269\u4EF6(Object)",goPath:r.D22no13},{id:23,text:"[Day23]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u5C6C\u6027(Property)",goPath:r.D23no13},{id:24,text:"[Day24]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u5EFA\u69CB\u65B9\u6CD5(Constructor)",goPath:r.D24no13},{id:25,text:"[Day25]C# \u96DE\u790E\u89C0\u5FF5- \u5171\u7522\u4E3B\u7FA9\u8005~\u975C\u614B\u6210\u54E1",goPath:r.D25no13},{id:26,text:"[Day26]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~ \u591A\u8F09(Overload)",goPath:r.D26no13},{id:27,text:"[Day27]C# \u96DE\u790E\u89C0\u5FF5- \u505A\u932F\u4E8B\u8A72\u600E\u9EBC\u8FA6\u5462?~\u932F\u8AA4\u8655\u7406",goPath:r.D27no13},{id:28,text:"[Day28]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~ \u7E7C\u627F",goPath:r.D28no13},{id:29,text:"[Day29]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u4ECB\u9762(Interface)",goPath:r.D29no13},{id:30,text:"[Day30]C# \u4E0D\u96DE\u790E\u89C0\u5FF5- Install Tailwind Css with ASP.NET MVC5",goPath:r.D30no13},{id:31,text:"[Day31]C# \u96DE\u790E\u89C0\u5FF5- \u7D50\u8A9E",goPath:r.D31no13}];function Zn(){return u("Chicken Say Hi | \u9435\u4EBA 13"),t(s,{children:[n(o,{}),n(y,{list:Qn})]})}const nr=`### \u6545\u4E8B\u6642\u9593\r
    \u5728\u5F88\u4E45\u5F88\u4E45\u4EE5\u524D\u4E16\u754C\u4E0A\u8A95\u751F\u4E86C\u8A9E\u8A00\uFF0C\\\r
    \u9019\u662F\u500B\u975E\u5E38\u9748\u6D3B\u53C8\u9AD8\u6548\u7684\u8A9E\u8A00\uFF0C\r
    \r
@@ -708,7 +1885,7 @@ this.music.play();\r
     * \u5783\u573E\u56DE\u6536\u6A5F\u5236 => \u64C1\u6709\u81EA\u52D5\u56DE\u6536\u7121\u7528\u7684\u7269\u4EF6\u6240\u5360\u7528\u7684\u5167\u5B58\r
     * \u7570\u5E38\u8207\u4F8B\u5916\u8655\u7406 => \u63D0\u4F9B\u7570\u5E38\u975E\u5E38\u6709\u7D50\u69CB\u6027\u53C8\u53EF\u64F4\u5145\u7684\u932F\u8AA4\u6AA2\u6E2C\u8207\u8655\u7406\r
 \r
-> \u5728\u5B78\u7FD2C#\u7684\u904E\u7A0B\u4E2D\u6703\u767C\u73FE\u5230\uFF0C\u4ED6\u64C1\u6709\u5404\u5F0F\u5404\u6A23\u7684\u6846\u67B6\uFF0C\u4E5F\u8A31\u9019\u662F\u500B\u7F3A\u9EDE\uFF0C\u4F46\u4E5F\u662F\u500B\u512A\u9EDE\uFF0C\u6211\u5011\u4E0D\u9700\u8981\u523B\u610F\u53BB\u5B78\u7FD2\u5176\u4ED6\u5F8C\u7AEF\u8A9E\u8A00\u5C31\u80FD\u5BEB\u51FA\u5404\u5F0F\u5404\u6A23\u7684\u4F5C\u54C1\u4E86`,zn="\u{1F916}[Day1]C# \u96DE\u790E\u89C0\u5FF5- C#\u7C21\u4ECB";function W(){return u("Chicken Say Hi | \u{1F916} C#\u7C21\u4ECB"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:zn,text:Vn})]})}const Jn=`### \u958B\u767C\u5DE5\u5177:\r
+> \u5728\u5B78\u7FD2C#\u7684\u904E\u7A0B\u4E2D\u6703\u767C\u73FE\u5230\uFF0C\u4ED6\u64C1\u6709\u5404\u5F0F\u5404\u6A23\u7684\u6846\u67B6\uFF0C\u4E5F\u8A31\u9019\u662F\u500B\u7F3A\u9EDE\uFF0C\u4F46\u4E5F\u662F\u500B\u512A\u9EDE\uFF0C\u6211\u5011\u4E0D\u9700\u8981\u523B\u610F\u53BB\u5B78\u7FD2\u5176\u4ED6\u5F8C\u7AEF\u8A9E\u8A00\u5C31\u80FD\u5BEB\u51FA\u5404\u5F0F\u5404\u6A23\u7684\u4F5C\u54C1\u4E86`,rr="\u{1F916}[Day1]C# \u96DE\u790E\u89C0\u5FF5- C#\u7C21\u4ECB";function W(){return u("Chicken Say Hi | \u{1F916} C#\u7C21\u4ECB"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:rr,text:nr})]})}const er=`### \u958B\u767C\u5DE5\u5177:\r
 \u6211\u5011\u9019\u908A\u4F7F\u7528Visual Studio 2017\u4F86\u505A\u70BA\u7A0B\u5F0F\u7684\u7DE8\u8B6F\u5DE5\u5177\uFF0C\\\r
 \u5176\u4ED6\u7248\u672C\u4F86\u505A\u7DF4\u7FD2\u4E5F\u662F\u6C92\u6709\u554F\u984C\u7684\u3002\r
 \r
@@ -830,7 +2007,7 @@ namespace CsharpDemo\r
 >\u661F\u5EA7 : \u91D1\u725B\u5EA7\\\r
 >\u81EA\u6211\u4ECB\u7D39 : \u6211\u50CF\u662F\u4E00\u96BB\u4F60\u53EF\u6709\u53EF\u7121\u7684\u5C0F\u96DE\r
 \r
-### \u6211\u5011\u4ECA\u5929\u6545\u4E8B\u5C31\u544A\u4E00\u6BB5\u843D\u4E86\uFF0C\u656C\u8ACB\u671F\u5F85\u660E\u5929\u7684\u6545\u4E8B~ \u6211\u5011\u660E\u5929\u518D\u898B!`,Un="\u{1F916}[Day2]C# \u96DE\u790E\u89C0\u5FF5- \u8207C#\u958B\u767C\u5343\u91CC\u4F86\u76F8\u898B";function Xn(){return u("Chicken Say Hi | \u{1F916} \u8207C#\u958B\u767C\u5343\u91CC\u4F86\u76F8\u898B"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Un,text:Jn})]})}const _n=`### \u8B8A\u6578\u7684\u4E16\u754C\r
+### \u6211\u5011\u4ECA\u5929\u6545\u4E8B\u5C31\u544A\u4E00\u6BB5\u843D\u4E86\uFF0C\u656C\u8ACB\u671F\u5F85\u660E\u5929\u7684\u6545\u4E8B~ \u6211\u5011\u660E\u5929\u518D\u898B!`,tr="\u{1F916}[Day2]C# \u96DE\u790E\u89C0\u5FF5- \u8207C#\u958B\u767C\u5343\u91CC\u4F86\u76F8\u898B";function ir(){return u("Chicken Say Hi | \u{1F916} \u8207C#\u958B\u767C\u5343\u91CC\u4F86\u76F8\u898B"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:tr,text:er})]})}const sr=`### \u8B8A\u6578\u7684\u4E16\u754C\r
 \u5728C#\u4E16\u754C\u4E2D\uFF0C\u57FA\u672C\u4E0A\u5927\u5BB6\u90FD\u5E0C\u671B\u6709\u81EA\u5DF1\u7684\u6B78\u5C6C\u611F\uFF0C\u6240\u4EE5\u4ED6\u5011\u90FD\u6703\u88AB\u8CE6\u4E88\u4E00\u500B\u7684\u7A2E\u65CF\uFF0C\\\r
 \u9019\u4E5F\u662F\u6240\u8B02\u7684\u5F37\u578B\u5225\u8A9E\u8A00\u64C1\u6709\u7684\u7279\u6027\u3002\\\r
 \u6211\u5011\u5F85\u6703\u6703\u8DDF\u5404\u4F4D\u4ECB\u7D39\u5E38\u898B\u7684\u7A2E\u65CF\uFF0C\u6B63\u662F\u6240\u8B02\u7684**\u8B8A\u6578\u578B\u5225**\u3002\r
@@ -968,7 +2145,7 @@ pi_d = 3.1415926535879\r
 \r
 * \u7531\u6B64\u6211\u5011\u5C31\u53EF\u4EE5\u770B\u5F97\u51FA\uFF0C\u4ED6\u5011\u578B\u5225\u4E4B\u9593\u7684\u5DEE\u7570\uFF0C\u9019\u6A23\u5728\u4F7F\u7528\u4E4B\u524D\uFF0C\u6211\u5011\u53EF\u4EE5\u512A\u5148\u8003\u616E\uFF0C\u61C9\u8A72\u8981\u7528\u54EA\u500B\u578B\u5225\r
 \r
-### \u6B61\u6A02\u7684\u6642\u5149\u7E3D\u662F\u904E\u5F97\u7279\u5225\u7684\u5FEB\uFF0C\u4EE5\u4E0A\u5C31\u662F\u6211\u5011\u4ECA\u5929\u7684\u8B8A\u6578\uFF0C\u8ACB\u5927\u5BB6\u8ACB\u671F\u5F85\u660E\u5929\u7684\u5B57\u4E32\u8B8A\u6578`,Yn="\u{1F916}[Day3]C# \u96DE\u790E\u89C0\u5FF5- \u6838\u5FC3\u7684\u6578\u64DA\u6210\u54E1~\u8B8A\u6578(\u4E00)";function Qn(){return u("Chicken Say Hi | \u{1F916} \u6838\u5FC3\u7684\u6578\u64DA\u6210\u54E1~\u8B8A\u6578(\u4E00)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Yn,text:_n})]})}const Zn=`### \u5343\u8B8A\u842C\u5316\u7684\u5B57\u4E32\u8B8A\u6578\r
+### \u6B61\u6A02\u7684\u6642\u5149\u7E3D\u662F\u904E\u5F97\u7279\u5225\u7684\u5FEB\uFF0C\u4EE5\u4E0A\u5C31\u662F\u6211\u5011\u4ECA\u5929\u7684\u8B8A\u6578\uFF0C\u8ACB\u5927\u5BB6\u8ACB\u671F\u5F85\u660E\u5929\u7684\u5B57\u4E32\u8B8A\u6578`,ar="\u{1F916}[Day3]C# \u96DE\u790E\u89C0\u5FF5- \u6838\u5FC3\u7684\u6578\u64DA\u6210\u54E1~\u8B8A\u6578(\u4E00)";function or(){return u("Chicken Say Hi | \u{1F916} \u6838\u5FC3\u7684\u6578\u64DA\u6210\u54E1~\u8B8A\u6578(\u4E00)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:ar,text:sr})]})}const ur=`### \u5343\u8B8A\u842C\u5316\u7684\u5B57\u4E32\u8B8A\u6578\r
 * \u4ED6\u70BA\u4EC0\u9EBC\u5343\u8B8A\u842C\u5316\u5462?\u56E0\u70BA\u5B57\u4E32\u9019\u7A2E\u578B\u5225\uFF0C\u5225\u4EBA\u7D66\u4ED6\u4EC0\u9EBC\u4ED6\u5C31\u662F\u4EC0\u9EBC\r
 * \u5C31\u5982\u540C\u4E00\u4F4D\u8A8D\u771F\u5411\u5B78\u7684\u5C0F\u670B\u53CB\uFF0C\u4ED6\u5982\u6B64\u5929\u771F\u7121\u90AA\uFF0C\u8001\u5E2B\u6559\u7684\u90FD\u6703\u8A8D\u771F\u8A18\u4F4F\r
 * \u5728C#\u7684\u4E16\u754C\u4E2D\uFF0C\u6211\u5011\u8981\u8868\u660E\u4E00\u500B\u5B57\u4E32\u6642\u90FD\u9700\u8981\u7528\`""\`\u628A\u4ED6\u5305\u8D77\u4F86\r
@@ -1289,7 +2466,7 @@ float\xA0\xA0 \xA0\xA0 \xA0 \xA0 \xA0 \xA0\xA0 //\u4E0D\u80FD\u548C\u95DC\u9375\
 \r
 \`\u6CE8\u610F: C#\u5340\u5206\u5927\u5C0F\u5BEB\uFF0C\u6BD4\u5982name\u548CName\u662F\u4E0D\u540C\u7684\u8B8A\u6578\uFF0C\u5728\u70BA\u8B8A\u6578\u547D\u540D\u6642\uFF0C\u76E1\u91CF\u9078\u64C7\u6709\u610F\u7FA9\u7684\u540D\u7A31\u3002\`\r
 \r
-### \u95DC\u65BC\u8B8A\u6578\u7684\u6DD2\u7F8E\u611B\u60C5\u6545\u4E8B\uFF0C\u6211\u5011\u5C31\u4ECB\u7D39\u5230\u9019\u908A\u4E86\uFF0C\u5927\u5BB6\u660E\u5929\u898B!`,nr="\u{1F916}[Day4]C# \u96DE\u790E\u89C0\u5FF5- \u6838\u5FC3\u7684\u6578\u64DA\u6210\u54E1~\u8B8A\u6578(\u4E8C)";function rr(){return u("Chicken Say Hi | \u{1F916} \u6838\u5FC3\u7684\u6578\u64DA\u6210\u54E1~\u8B8A\u6578(\u4E8C)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:nr,text:Zn})]})}const er=`### \u904B\u7B97\u5B50\r
+### \u95DC\u65BC\u8B8A\u6578\u7684\u6DD2\u7F8E\u611B\u60C5\u6545\u4E8B\uFF0C\u6211\u5011\u5C31\u4ECB\u7D39\u5230\u9019\u908A\u4E86\uFF0C\u5927\u5BB6\u660E\u5929\u898B!`,lr="\u{1F916}[Day4]C# \u96DE\u790E\u89C0\u5FF5- \u6838\u5FC3\u7684\u6578\u64DA\u6210\u54E1~\u8B8A\u6578(\u4E8C)";function cr(){return u("Chicken Say Hi | \u{1F916} \u6838\u5FC3\u7684\u6578\u64DA\u6210\u54E1~\u8B8A\u6578(\u4E8C)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:lr,text:ur})]})}const mr=`### \u904B\u7B97\u5B50\r
 \u7A0B\u5F0F\u7684\u4E16\u754C\u4E2D\uFF0C\u8B8A\u6578\u662F\u7121\u6642\u7121\u523B\u4E00\u76F4\u5728\u8B8A\u5316\u7684\uFF0C\\\r
 \u8B8A\u6578\u7684\u8B8A\u5316\u4E5F\u6210\u70BA\u7A0B\u5F0F\u7684\u7CBE\u96A8\u6240\u5728\uFF0C\\\r
 \u4F46\u70BA\u751A\u9EBC\u8B8A\u6578\u6703\u4E00\u76F4\u8B8A\u5316\u5462?\\\r
@@ -1688,7 +2865,7 @@ namespace CsharpDemo\r
 ![mdImg](https://ithelp.ithome.com.tw/upload/images/20210905/20097001WtB02pvpAV.png)\r
 \r
 ### \u7576\u5927\u5BB6\u5B78\u6703\u9019\u4E9B\u904B\u7B97\u4E4B\u5F8C\u5462?\u5C31\u53EF\u4EE5\u8A66\u8457\u53BB\u7DF4\u7FD2\u505A\u4E00\u4E9B\u7C21\u6613\u7684\u52A0\u6E1B\u4E58\u9664\u5566!\r
-### \u90A3\u6211\u5011\u4ECA\u5929\u7684\u904B\u7B97\u5B50\u6545\u4E8B\u5C31\u5230\u9019\u908A\u4E86\uFF0C\u5927\u5BB6\u660E\u5929\u898B`,tr="\u{1F916}[Day5]C# \u96DE\u790E\u89C0\u5FF5- \u8B93\u8B8A\u6578\u5B78\u6703\u4E03\u5341\u4E8C\u8B8A\u7684\u9AD8\u624B~\u904B\u7B97\u5B50";function ir(){return u("Chicken Say Hi | \u{1F916} \u8B93\u8B8A\u6578\u5B78\u6703\u4E03\u5341\u4E8C\u8B8A\u7684\u9AD8\u624B~\u904B\u7B97\u5B50"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:tr,text:er})]})}const sr=`\u5728\u771F\u5BE6\u4E16\u754C\u4E2D\uFF0C\u5927\u5BB6\u90FD\u5F88\u611B\u6BD4\u8F03\uFF0C\u6211\u6BD4\u4F60\u6709\u9322\uFF0C\\\r
+### \u90A3\u6211\u5011\u4ECA\u5929\u7684\u904B\u7B97\u5B50\u6545\u4E8B\u5C31\u5230\u9019\u908A\u4E86\uFF0C\u5927\u5BB6\u660E\u5929\u898B`,hr="\u{1F916}[Day5]C# \u96DE\u790E\u89C0\u5FF5- \u8B93\u8B8A\u6578\u5B78\u6703\u4E03\u5341\u4E8C\u8B8A\u7684\u9AD8\u624B~\u904B\u7B97\u5B50";function gr(){return u("Chicken Say Hi | \u{1F916} \u8B93\u8B8A\u6578\u5B78\u6703\u4E03\u5341\u4E8C\u8B8A\u7684\u9AD8\u624B~\u904B\u7B97\u5B50"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:hr,text:mr})]})}const dr=`\u5728\u771F\u5BE6\u4E16\u754C\u4E2D\uFF0C\u5927\u5BB6\u90FD\u5F88\u611B\u6BD4\u8F03\uFF0C\u6211\u6BD4\u4F60\u6709\u9322\uFF0C\\\r
 \u6211\u9577\u5F97\u6BD4\u4F60\u9AD8\uFF0C\u6211\u6BD4\u4F60\u5E25\uFF0C\\\r
 \u6211\u6BD4\u4F60\u6F02\u4EAE\uFF0CC#\u4E16\u754C\u4E5F\u662F\u975E\u5E38\u611B\u6BD4\u8F03\u7684\r
 \r
@@ -1905,7 +3082,7 @@ namespace CsharpDemo\r
 1\\\r
 \u8ACB\u554F\u795E\u5947\u4E00\u96BB\u96DE\uFF0C1\u662F\u5076\u6578\u55CE ? False\r
 \r
-### \u5C31\u8AAA\u96FB\u8166\u4E0D\u6703\u9A19\u4EBA\u5427\uFF0C\u5C0D\u5C31\u5C0D\uFF0C\u4E0D\u5C0D\u5C31\u4E0D\u5C0D\uFF0C\u6211\u5011\u73FE\u5728\u5DF2\u7D93\u53EF\u4EE5\u8B93\u96FB\u8166\u7B97\u6578\u5B78\uFF0C\u4E5F\u8B93\u96FB\u8166\u64C1\u6709\u660E\u8FA8\u662F\u975E\u7684\u80FD\u529B\u4E86\uFF0C\u8ACB\u5927\u5BB6\u671F\u5F85\u4E4B\u5F8C\u7684\u6587\u7AE0\uFF0C\u96FB\u8166\u6703\u8D8A\u4F86\u8D8A\u8070\u660E\u7684`,ar="\u{1F916}[Day6]C# \u96DE\u790E\u89C0\u5FF5- \u7A0B\u5F0F\u78BC\u64C1\u6709\u5224\u65B7\u771F\u5047\u7684\u80FD\u529B~\u908F\u8F2F\u904B\u7B97\u5B50";function or(){return u("Chicken Say Hi | \u{1F916} \u7A0B\u5F0F\u78BC\u64C1\u6709\u5224\u65B7\u771F\u5047\u7684\u80FD\u529B~\u908F\u8F2F\u904B\u7B97\u5B50"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:ar,text:sr})]})}const ur=`\u5728\u751F\u6D3B\u4E2D\uFF0C\u6211\u5011\u5E38\u5E38\u9762\u81E8\u9078\u64C7\uFF0C\\\r
+### \u5C31\u8AAA\u96FB\u8166\u4E0D\u6703\u9A19\u4EBA\u5427\uFF0C\u5C0D\u5C31\u5C0D\uFF0C\u4E0D\u5C0D\u5C31\u4E0D\u5C0D\uFF0C\u6211\u5011\u73FE\u5728\u5DF2\u7D93\u53EF\u4EE5\u8B93\u96FB\u8166\u7B97\u6578\u5B78\uFF0C\u4E5F\u8B93\u96FB\u8166\u64C1\u6709\u660E\u8FA8\u662F\u975E\u7684\u80FD\u529B\u4E86\uFF0C\u8ACB\u5927\u5BB6\u671F\u5F85\u4E4B\u5F8C\u7684\u6587\u7AE0\uFF0C\u96FB\u8166\u6703\u8D8A\u4F86\u8D8A\u8070\u660E\u7684`,pr="\u{1F916}[Day6]C# \u96DE\u790E\u89C0\u5FF5- \u7A0B\u5F0F\u78BC\u64C1\u6709\u5224\u65B7\u771F\u5047\u7684\u80FD\u529B~\u908F\u8F2F\u904B\u7B97\u5B50";function Cr(){return u("Chicken Say Hi | \u{1F916} \u7A0B\u5F0F\u78BC\u64C1\u6709\u5224\u65B7\u771F\u5047\u7684\u80FD\u529B~\u908F\u8F2F\u904B\u7B97\u5B50"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:pr,text:dr})]})}const yr=`\u5728\u751F\u6D3B\u4E2D\uFF0C\u6211\u5011\u5E38\u5E38\u9762\u81E8\u9078\u64C7\uFF0C\\\r
 \u4ECA\u5929\u5348\u9910\u5403\u4EC0\u9EBC\u597D\u5462?\u98EF\u9084\u662F\u9EB5\u5462?\\\r
 \u660E\u5929\u8981\u53BB\u54EA\u88E1\u73A9?\u5C71\u4E0A\u9084\u662F\u6D77\u908A\u5462?\\\r
 \u90A3\u9019\u4E9B\u9078\u64C7\u7684\u908F\u8F2F\u7D50\u69CB\u5728C#\u4E2D\u6211\u5011\u7A31\u70BA\`\u9078\u53D6\u7BC4\u570D\u8A9E\u53E5\`\r
@@ -2171,7 +3348,7 @@ namespace CsharpDemo\r
 \u9670\u5929\\\r
 \u4ECA\u5929\u661F\u671F\u4E00\uFF0C\u6240\u4EE5\u8981\u4E0A\u8AB2\r
 \r
-### \u81EA\u5F9E\u5B78\u6703if\u4E4B\u5F8C\u518D\u4E5F\u6C92\u6709\u9078\u64C7\u969C\u7919\u4E86\uFF0C\u4ECA\u5929\u7684\u6545\u4E8B\u5C31\u5230\u9019\u908A\u4E86\uFF0C\u8B1D\u8B1D\u5927\u5BB6\uFF0C\u6211\u5011\u660E\u5929\u518D\u898B`,lr="\u{1F916}[Day7]C# \u96DE\u790E\u89C0\u5FF5- \u4F60\u6709\u9078\u64C7\u969C\u7919\u55CE? \u4EA4\u7D66if\u9673\u8FF0\u5F0F\u89E3\u6C7A\u5427!";function cr(){return u("Chicken Say Hi | \u{1F916} \u4EA4\u7D66if\u9673\u8FF0\u5F0F\u89E3\u6C7A\u5427!"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:lr,text:ur})]})}const mr=`\u4F60\u662F\u5426\u66FE\u7D93\u5167\u5FC3\u5145\u6EFF\u5404\u7A2E\u5982\u679C\u5462?\\\r
+### \u81EA\u5F9E\u5B78\u6703if\u4E4B\u5F8C\u518D\u4E5F\u6C92\u6709\u9078\u64C7\u969C\u7919\u4E86\uFF0C\u4ECA\u5929\u7684\u6545\u4E8B\u5C31\u5230\u9019\u908A\u4E86\uFF0C\u8B1D\u8B1D\u5927\u5BB6\uFF0C\u6211\u5011\u660E\u5929\u518D\u898B`,xr="\u{1F916}[Day7]C# \u96DE\u790E\u89C0\u5FF5- \u4F60\u6709\u9078\u64C7\u969C\u7919\u55CE? \u4EA4\u7D66if\u9673\u8FF0\u5F0F\u89E3\u6C7A\u5427!";function Dr(){return u("Chicken Say Hi | \u{1F916} \u4EA4\u7D66if\u9673\u8FF0\u5F0F\u89E3\u6C7A\u5427!"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:xr,text:yr})]})}const br=`\u4F60\u662F\u5426\u66FE\u7D93\u5167\u5FC3\u5145\u6EFF\u5404\u7A2E\u5982\u679C\u5462?\\\r
 \u5982\u679C....\u6211\u5C31....\uFF0C\\\r
 \u4E00\u7D44\`if\`\u5DF2\u7D93\u6EFF\u8DB3\u4E0D\u4E86\u4F60\u6642\uFF0C\\\r
 \u90A3\u8A72\u5982\u4F55\u662F\u597D\u5462?\r
@@ -2339,7 +3516,7 @@ namespace CsharpDemo\r
 \`go to \u53EF\u4EE5\u6307\u5B9A\u8981\u53BB\u7684\u689D\u4EF6\uFF0C\u5982\u679C\u4E00\u500B\u689D\u4EF6\u4E4B\u4E0B\u8981\u8DD1\u597D\u5E7E\u500B\u5206\u652F\u5C31\u53EF\u4EE5\u62FF\u4F86\u505A\u4F7F\u7528\`\r
 \`\u5728switch\u4E2D\u7684else\uFF0C\u5BEB\u4F5Cdefault\`\r
 \r
-### \u4E00\u5343\u500B\u5982\u679C...\u5C31...\uFF0C\u53EA\u8981\u4E00\u500Bswitch\u5C31\u80FD\u628A\u7A0B\u5F0F\u78BC\u6392\u7684\u6574\u6574\u9F4A\u9F4A\u7684\u4E86\uFF0C\u597D\u5566\u5927\u5BB6\u660E\u5929\u898B\u55BD!`,gr="\u{1F916}[Day8]C# \u96DE\u790E\u89C0\u5FF5- \u5982\u679C\u6C92\u6709\u5982\u679C\uFF0C\u53EA\u6709\u592A\u591A\u7684\u5982\u679Cswitch\u9673\u8FF0\u5F0F";function hr(){return u("Chicken Say Hi | \u{1F916} \u5982\u679C\u6C92\u6709\u5982\u679C\uFF0C\u53EA\u6709\u592A\u591A\u7684\u5982\u679Cswitch\u9673\u8FF0\u5F0F"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:gr,text:mr})]})}const dr=`\u597D\u7169\u597D\u7169\uFF0C\u6709\u6642\u5019\u5C31\u70BA\u4E861+2+..+100\uFF0C\\\r
+### \u4E00\u5343\u500B\u5982\u679C...\u5C31...\uFF0C\u53EA\u8981\u4E00\u500Bswitch\u5C31\u80FD\u628A\u7A0B\u5F0F\u78BC\u6392\u7684\u6574\u6574\u9F4A\u9F4A\u7684\u4E86\uFF0C\u597D\u5566\u5927\u5BB6\u660E\u5929\u898B\u55BD!`,Sr="\u{1F916}[Day8]C# \u96DE\u790E\u89C0\u5FF5- \u5982\u679C\u6C92\u6709\u5982\u679C\uFF0C\u53EA\u6709\u592A\u591A\u7684\u5982\u679Cswitch\u9673\u8FF0\u5F0F";function fr(){return u("Chicken Say Hi | \u{1F916} \u5982\u679C\u6C92\u6709\u5982\u679C\uFF0C\u53EA\u6709\u592A\u591A\u7684\u5982\u679Cswitch\u9673\u8FF0\u5F0F"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Sr,text:br})]})}const Fr=`\u597D\u7169\u597D\u7169\uFF0C\u6709\u6642\u5019\u5C31\u70BA\u4E861+2+..+100\uFF0C\\\r
 \u5BEB\u4E86\u8D85\u9577\u7A0B\u5F0F\uFF0C\\\r
 \u90A3\u53C8\u81ED\u53C8\u9577\u7684\u7A0B\u5EA6\u582A\u6BD4\u88F9\u8173\u5E03\u554A\u3002\r
 \r
@@ -2422,7 +3599,7 @@ namespace CsharpDemo\r
  >20\\\r
 20! = 2432902008176640000\r
 \r
-### \u4EE5\u4E0A\u5C31\u662F\u6211\u5011\u4ECA\u5929\u7684for\u8FF4\u5708\uFF0C\u532F\u4E86\u8FF4\u5708\u4E4B\u5F8C\u53EF\u4EE5\u5927\u5927\u7684\u964D\u4F4E\u7A0B\u5F0F\u7684\u91CD\u8907\u6027\uFF0C\u6211\u5011\u5C31\u660E\u5929\u518D\u898B\u5566!`,pr="\u{1F916}[Day9]C# \u96DE\u790E\u89C0\u5FF5- \u7701\u53BB\u91CD\u8907\u7A0B\u5F0F\u78BC\u7684\u597D\u5E6B\u624B~for\u8FF4\u5708";function Cr(){return u("Chicken Say Hi | \u{1F916} \u7701\u53BB\u91CD\u8907\u7A0B\u5F0F\u78BC\u7684\u597D\u5E6B\u624B~for\u8FF4\u5708"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:pr,text:dr})]})}const yr=`\u65E5\u5B50\u4E00\u5929\u4E00\u5929\u904E\uFF0C\\\r
+### \u4EE5\u4E0A\u5C31\u662F\u6211\u5011\u4ECA\u5929\u7684for\u8FF4\u5708\uFF0C\u532F\u4E86\u8FF4\u5708\u4E4B\u5F8C\u53EF\u4EE5\u5927\u5927\u7684\u964D\u4F4E\u7A0B\u5F0F\u7684\u91CD\u8907\u6027\uFF0C\u6211\u5011\u5C31\u660E\u5929\u518D\u898B\u5566!`,vr="\u{1F916}[Day9]C# \u96DE\u790E\u89C0\u5FF5- \u7701\u53BB\u91CD\u8907\u7A0B\u5F0F\u78BC\u7684\u597D\u5E6B\u624B~for\u8FF4\u5708";function Er(){return u("Chicken Say Hi | \u{1F916} \u7701\u53BB\u91CD\u8907\u7A0B\u5F0F\u78BC\u7684\u597D\u5E6B\u624B~for\u8FF4\u5708"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:vr,text:Fr})]})}const Pr=`\u65E5\u5B50\u4E00\u5929\u4E00\u5929\u904E\uFF0C\\\r
 \u5468\u800C\u5FA9\u59CB\uFF0C\u7121\u9650\u5FAA\u74B0\\\r
 C#\u88E1\u9762\u4E5F\u6709\u91CD\u8907\u4E0D\u65B7\u7684\u8A9E\u53E5\uFF0Cwhile\r
 \r
@@ -2603,7 +3780,7 @@ namespace CsharpDemo\r
 \r
 \`\u6211\u5011\u5C31\u53EF\u4EE5\u767C\u73FE\uFF0C\u7576\u57FA\u6578\u7684\u6642\u5019\u8FF4\u5708\u5C31\u6C92\u5F80\u4E0B\u57F7\u884C\u4E86\uFF0C\u5076\u6578\u624D\u6703\u57F7\u884C\`\r
 \r
-### \u6211\u5011\u4ECA\u5929\u7684\u6545\u4E8B\u5C31\u5230\u9019\u908A\uFF0CTo be continue....`,Dr="\u{1F916}[Day10]C# \u96DE\u790E\u89C0\u5FF5- \u91CD\u64AD\u8207\u505C\u6B62 while\u8FF4\u5708\u8207break";function xr(){return u("Chicken Say Hi | \u{1F916} \u91CD\u64AD\u8207\u505C\u6B62 while\u8FF4\u5708\u8207break"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Dr,text:yr})]})}const Fr=`\u5728\u96FB\u8166\u4E16\u754C\u4E2D\uFF0C\u5F88\u591A\u7DE8\u78BC\u90FD\u662F\u8907\u96DC\u4E14\u770B\u4E0D\u61C2\u7684\uFF0C\\\r
+### \u6211\u5011\u4ECA\u5929\u7684\u6545\u4E8B\u5C31\u5230\u9019\u908A\uFF0CTo be continue....`,Ar="\u{1F916}[Day10]C# \u96DE\u790E\u89C0\u5FF5- \u91CD\u64AD\u8207\u505C\u6B62 while\u8FF4\u5708\u8207break";function wr(){return u("Chicken Say Hi | \u{1F916} \u91CD\u64AD\u8207\u505C\u6B62 while\u8FF4\u5708\u8207break"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Ar,text:Pr})]})}const Lr=`\u5728\u96FB\u8166\u4E16\u754C\u4E2D\uFF0C\u5F88\u591A\u7DE8\u78BC\u90FD\u662F\u8907\u96DC\u4E14\u770B\u4E0D\u61C2\u7684\uFF0C\\\r
 \u4F8B\u5982\u984F\u8272\u7DE8\u78BC\uFF0CFF0000\u4EE3\u8868\u7D05\u8272\uFF0C800080\u4EE3\u8868\u7DA0\u8272\uFF0C\\\r
 \u4F60\u4E0D\u8AAA\uFF0C\u6211\u4E0D\u8AAA\uFF0C\u6C92\u4EBA\u77E5\u9053\u9019\u7DE8\u78BC\u4EE3\u8868\u7684\u610F\u601D\uFF0C\\\r
 \u6211\u5011\u4ECA\u5929\u5C31\u4F86\u5C07\u7DE8\u78BC\u7C21\u5316\u5427\r
@@ -2764,7 +3941,7 @@ namespace CsharpDemo\r
 \u6027\u5225:\u6BCD\\\r
 \u751F\u65E5:9999.09.09\r
 \r
-### \u6709\u4E86\u5217\u8209\u8DDF\u7D50\u69CB\u9AD4\uFF0C\u8B93\u6211\u5011\u5BEB\u7A0B\u5F0F\u53EF\u4EE5\u66F4\u52A0\u660E\u78BA\u5730\u53BB\u8655\u7406\u8CC7\u6599\uFF0C\u4E5F\u8B93\u53EF\u8B80\u6027\u66F4\u597D`,Sr="\u{1F916}[Day11]C# \u96DE\u790E\u89C0\u5FF5- \u628A\u8907\u96DC\u7684\u4E8B\u60C5\u8207\u95DC\u4FC2\u7C21\u55AE\u5316~\u5217\u8209\u8207\u7D50\u69CB";function br(){return u("Chicken Say Hi | \u{1F916} \u628A\u8907\u96DC\u7684\u4E8B\u60C5\u8207\u95DC\u4FC2\u7C21\u55AE\u5316~\u5217\u8209\u8207\u7D50\u69CB"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Sr,text:Fr})]})}const Er=`\u6210\u7E3E\u55AE\u4E0A\u6709\u570B\uFF0C\u82F1\uFF0C\u6578\uFF0C\u7269\u7406\u56DB\u79D1\\\r
+### \u6709\u4E86\u5217\u8209\u8DDF\u7D50\u69CB\u9AD4\uFF0C\u8B93\u6211\u5011\u5BEB\u7A0B\u5F0F\u53EF\u4EE5\u66F4\u52A0\u660E\u78BA\u5730\u53BB\u8655\u7406\u8CC7\u6599\uFF0C\u4E5F\u8B93\u53EF\u8B80\u6027\u66F4\u597D`,kr="\u{1F916}[Day11]C# \u96DE\u790E\u89C0\u5FF5- \u628A\u8907\u96DC\u7684\u4E8B\u60C5\u8207\u95DC\u4FC2\u7C21\u55AE\u5316~\u5217\u8209\u8207\u7D50\u69CB";function Tr(){return u("Chicken Say Hi | \u{1F916} \u628A\u8907\u96DC\u7684\u4E8B\u60C5\u8207\u95DC\u4FC2\u7C21\u55AE\u5316~\u5217\u8209\u8207\u7D50\u69CB"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:kr,text:Lr})]})}const Br=`\u6210\u7E3E\u55AE\u4E0A\u6709\u570B\uFF0C\u82F1\uFF0C\u6578\uFF0C\u7269\u7406\u56DB\u79D1\\\r
 \u5206\u6578\u5206\u522570\u300189\u300172\u300193\\\r
 \u9019\u6642\u5019\u6211\u5011\u5C31\u53EF\u4EE5\u7528\u9663\u5217\u5C07\u4ED6\u5011\u7D81\u518D\u4E00\u8D77\r
 \r
@@ -2870,7 +4047,7 @@ namespace CsharpDemo\r
 \u7E3D\u5206324\\\r
 \u5E73\u5747\u503C81\r
 \r
-### \u4F7F\u7528\u9663\u5217\u4F86\u8655\u7406\u540C\u6A23\u985E\u578B\u4F46\u5F88\u591A\u7B46\u7684\u8CC7\u6599\u662F\u975E\u5E38\u65B9\u4FBF\u7684\uFF0C\u5C31\u8B93\u6211\u5011\u540C\u5728\u4E00\u8D77\u5427!`,vr="\u{1F916}[Day12]C# \u96DE\u790E\u89C0\u5FF5- \u7576\u6211\u5011\u540C\u5728\u4E00\u8D77~\u9663\u5217(Array)";function fr(){return u("Chicken Say Hi | \u{1F916} \u7576\u6211\u5011\u540C\u5728\u4E00\u8D77~\u9663\u5217(Array)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:vr,text:Er})]})}const Pr=`\u6211\u5011\u66FE\u7D93\u8A8D\u8B58\u904E for\uFF0C\\\r
+### \u4F7F\u7528\u9663\u5217\u4F86\u8655\u7406\u540C\u6A23\u985E\u578B\u4F46\u5F88\u591A\u7B46\u7684\u8CC7\u6599\u662F\u975E\u5E38\u65B9\u4FBF\u7684\uFF0C\u5C31\u8B93\u6211\u5011\u540C\u5728\u4E00\u8D77\u5427!`,Wr="\u{1F916}[Day12]C# \u96DE\u790E\u89C0\u5FF5- \u7576\u6211\u5011\u540C\u5728\u4E00\u8D77~\u9663\u5217(Array)";function Ir(){return u("Chicken Say Hi | \u{1F916} \u7576\u6211\u5011\u540C\u5728\u4E00\u8D77~\u9663\u5217(Array)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Wr,text:Br})]})}const Mr=`\u6211\u5011\u66FE\u7D93\u8A8D\u8B58\u904E for\uFF0C\\\r
 \u5F8C\u4F86\u4E5F\u9047\u5230 While\uFF0C\\\r
 \u5982\u4ECA\u53C8\u51FA\u73FE\u4E00\u500Bforeach\r
 \r
@@ -2922,7 +4099,7 @@ namespace CsharpDemo\r
 6.\u56E0\u70BA\u592A\u908A\u7DE3\u6240\u4EE5\u6C92\u4E0A\u5230\u8ECA\\\r
 7.\u5927\u5BB6\u4E00\u53BB\u5C31\u6C92\u56DE\u4F86\\\r
 8.\u6210\u70BA\u5B64\u7368\u4E00\u96BB\u96DE\r
-`,Ar="\u{1F916}[Day13]C# \u96DE\u790E\u89C0\u5FF5- \u4F86\u500B\u8F2A\u8FF4\u5427~foreach\u8FF4\u5708";function Lr(){return u("Chicken Say Hi | \u{1F916} \u4F86\u500B\u8F2A\u8FF4\u5427~foreach\u8FF4\u5708"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Ar,text:Pr})]})}const wr=`\u65E2\u7136\u7A7A\u9593\u6709\u7DAD\u5EA6\uFF0C\\\r
+`,Rr="\u{1F916}[Day13]C# \u96DE\u790E\u89C0\u5FF5- \u4F86\u500B\u8F2A\u8FF4\u5427~foreach\u8FF4\u5708";function Nr(){return u("Chicken Say Hi | \u{1F916} \u4F86\u500B\u8F2A\u8FF4\u5427~foreach\u8FF4\u5708"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Rr,text:Mr})]})}const Gr=`\u65E2\u7136\u7A7A\u9593\u6709\u7DAD\u5EA6\uFF0C\\\r
 \u9663\u5217\u4E5F\u50CF\u662F\u7A7A\u9593\u4E00\u6A23\uFF0C\\\r
 \u4ED6\u662F\u64C1\u6709\u7DAD\u5EA6\u7684\uFF0C\\\r
 \u5C31\u8B93\u6211\u5011\u63A2\u7D22\u770B\u770B\u5427\r
@@ -3021,7 +4198,7 @@ namespace CsharpDemo\r
 7 8 9\r
 \r
 ### \u4E8C\u7DAD\u9663\u5217\u53EF\u4EE5\u505A\u5230XY\u8EF8\u7684\u7DAD\u5EA6\uFF0C\u4F46\u4F7F\u7528\u4E0A\u4E5F\u76F8\u5C0D\u6BD4\u8F03\u9032\u968E\u4E86\uFF0C\u6240\u4EE5\u6709\u8208\u8DA3\u7684\u670B\u53CB\u5728\u6DF1\u5165\u7814\u7A76\r
-`,Tr="\u{1F916}[Day14]C# \u96DE\u790E\u89C0\u5FF5- \u4E0D\u540C\u5C64\u6B21\u7684\u9663\u5217~\u4E8C\u7DAD\u9663\u5217";function kr(){return u("Chicken Say Hi | \u{1F916} \u4E0D\u540C\u5C64\u6B21\u7684\u9663\u5217~\u4E8C\u7DAD\u9663\u5217"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Tr,text:wr})]})}const Br=`\u6211\u5011\u66FE\u7D93\u8A8D\u8B58\u904E\u9663\u5217(array)\uFF0C\\\r
+`,jr="\u{1F916}[Day14]C# \u96DE\u790E\u89C0\u5FF5- \u4E0D\u540C\u5C64\u6B21\u7684\u9663\u5217~\u4E8C\u7DAD\u9663\u5217";function $r(){return u("Chicken Say Hi | \u{1F916} \u4E0D\u540C\u5C64\u6B21\u7684\u9663\u5217~\u4E8C\u7DAD\u9663\u5217"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:jr,text:Gr})]})}const Or=`\u6211\u5011\u66FE\u7D93\u8A8D\u8B58\u904E\u9663\u5217(array)\uFF0C\\\r
 \u4ECA\u5929\u4F86\u4ECB\u7D39\u4ED6\u7684\u5144\u5F1FList\u5427\r
 \r
 ### List< T >\r
@@ -3360,7 +4537,7 @@ namespace CsharpDemo\r
 10\u6708 , \u5C6C :\u96DE\\\r
 11\u6708 , \u5C6C :\u72D7\\\r
 12\u6708 , \u5C6C :\u8C6C\r
-`,Wr="\u{1F916}[Day15]C# \u96DE\u790E\u89C0\u5FF5- \u591A\u7B46\u8CC7\u6599\u7684\u597D\u670B\u53CB~List";function Mr(){return u("Chicken Say Hi | \u{1F916} \u591A\u7B46\u8CC7\u6599\u7684\u597D\u670B\u53CB~List"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Wr,text:Br})]})}const Ir=`\u4EBA\u985E\u7684\u4E16\u754C\u6709\u8A31\u591A\u7684\u5DE5\u5EE0\uFF0C\\\r
+`,Hr="\u{1F916}[Day15]C# \u96DE\u790E\u89C0\u5FF5- \u591A\u7B46\u8CC7\u6599\u7684\u597D\u670B\u53CB~List";function qr(){return u("Chicken Say Hi | \u{1F916} \u591A\u7B46\u8CC7\u6599\u7684\u597D\u670B\u53CB~List"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Hr,text:Or})]})}const Kr=`\u4EBA\u985E\u7684\u4E16\u754C\u6709\u8A31\u591A\u7684\u5DE5\u5EE0\uFF0C\\\r
 \u5C07\u539F\u6599\u9001\u5165\u5F8C\u5C31\u6703\u8B8A\u6210\u5546\u54C1\uFF0C\\\r
 C#\u7684\u4E16\u754C\u88E1\u4E5F\u662F\uFF0C\\\r
 \u65B9\u6CD5\u5C31\u50CF\u4E00\u9593\u9593\u7684\u5DE5\u5EE0\u4E00\u6A23\uFF0C\\\r
@@ -3458,7 +4635,7 @@ namespace CsharpDemo\r
   > 1995\u5E74 4\u6708 9\u65E5\\\r
 2021\u5E74 9\u6708 17\u65E5\r
 \r
-### \u6709\u4E86\u65B9\u6CD5\uFF0C\u53EF\u4EE5\u5927\u5927\u964D\u4F4E\u7A0B\u5F0F\u78BC\u7684\u91CD\u8907\u7387\uFF0C\u4E5F\u53EF\u4EE5\u96A8\u8655\u547C\u53EB\u4ED6`,Rr="\u{1F916}[Day16]C# \u96DE\u790E\u89C0\u5FF5- \u865B\u64EC\u4EE3\u5DE5\u5EE0~\u65B9\u6CD5(function)";function Nr(){return u("Chicken Say Hi | \u{1F916} \u865B\u64EC\u4EE3\u5DE5\u5EE0~\u65B9\u6CD5(function)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Rr,text:Ir})]})}const Gr=`\u5728\u547C\u53EB\u65B9\u6CD5\u6642\uFF0C\u96E3\u514D\u6703\u9700\u8981\u50B3\u905E\u53C3\u6578\uFF0C\\\r
+### \u6709\u4E86\u65B9\u6CD5\uFF0C\u53EF\u4EE5\u5927\u5927\u964D\u4F4E\u7A0B\u5F0F\u78BC\u7684\u91CD\u8907\u7387\uFF0C\u4E5F\u53EF\u4EE5\u96A8\u8655\u547C\u53EB\u4ED6`,Vr="\u{1F916}[Day16]C# \u96DE\u790E\u89C0\u5FF5- \u865B\u64EC\u4EE3\u5DE5\u5EE0~\u65B9\u6CD5(function)";function Ur(){return u("Chicken Say Hi | \u{1F916} \u865B\u64EC\u4EE3\u5DE5\u5EE0~\u65B9\u6CD5(function)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Vr,text:Kr})]})}const zr=`\u5728\u547C\u53EB\u65B9\u6CD5\u6642\uFF0C\u96E3\u514D\u6703\u9700\u8981\u50B3\u905E\u53C3\u6578\uFF0C\\\r
 \u90A3\u9019\u4E9B\u53C3\u6578\u8A72\u5982\u4F55\u50B3\u905E\u5462?\\\r
 \u5728\u50B3\u905E\u7684\u904E\u7A0B\u4E2D\uFF0C\u7A76\u7ADF\u662F\u50B3\u503C\u9084\u662F\u50B3\u5740\u5462?\r
 \r
@@ -3588,7 +4765,7 @@ namespace CsharpDemo\r
 \`\u6211\u5011\u53EF\u4EE5\u767C\u73FE\uFF0C\u6211\u5011\u660E\u660E\u5728\u65B0\u7684\u65B9\u6CD5\uFF0C\u65B0\u7684List\u53BB\u4FEE\u6539List\uFF0C\u7D50\u679C\u539F\u4F86\u7684List\u537B\u53D7\u5230\u5F71\u97FF\uFF0C\u9019\u5C31\u662F\u56E0\u70BA\u4ED6\u5011\u6307\u5411\u7684\u8A18\u61B6\u9AD4\u4F4D\u7F6E\u662F\u540C\u4E00\u500B\u5730\u65B9\uFF0C\u6240\u4EE5\u53EA\u8981\u4E00\u6709\u8B8A\u52D5\u6240\u6709\u8CC7\u6599\u90FD\u6703\u53D7\u5230\u5F71\u97FF\`\r
 \r
 ### \u4EE5\u4E0A\u5C31\u662F\u6211\u5011\u4ECA\u5929\u5C0F\u90F5\u5DEE\u7684\u6545\u4E8B\uFF0C\u6211\u5011\u660E\u5929\u898B\u55BD! \r
-`,$r="\u{1F916}[Day17]C# \u96DE\u790E\u89C0\u5FF5- \u50CF\u500B\u90F5\u5DEE\u4E00\u6A23~\u503C\u8207\u5740\u7684\u50B3\u905E";function Or(){return u("Chicken Say Hi | \u{1F916} \u50CF\u500B\u90F5\u5DEE\u4E00\u6A23~\u503C\u8207\u5740\u7684\u50B3\u905E"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:$r,text:Gr})]})}const Hr=`\u9BAD\u9B5A\u51FA\u751F\u5F8C\u6703\u5F80\u4E0B\u6E38\u751F\u6D3B\uFF0C\\\r
+`,_r="\u{1F916}[Day17]C# \u96DE\u790E\u89C0\u5FF5- \u50CF\u500B\u90F5\u5DEE\u4E00\u6A23~\u503C\u8207\u5740\u7684\u50B3\u905E";function Jr(){return u("Chicken Say Hi | \u{1F916} \u50CF\u500B\u90F5\u5DEE\u4E00\u6A23~\u503C\u8207\u5740\u7684\u50B3\u905E"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:_r,text:zr})]})}const Xr=`\u9BAD\u9B5A\u51FA\u751F\u5F8C\u6703\u5F80\u4E0B\u6E38\u751F\u6D3B\uFF0C\\\r
 \u5230\u4E86\u7522\u5375\u5B63\u7BC0\uFF0C\u6703\u9006\u6E38\u800C\u4E0A\uFF0C\\\r
 \u56DE\u5230\u6700\u521D\u7684\u8D77\u9EDE\uFF0C\u9032\u884C\u7522\u5375\u7522\u5375\uFF0C\\\r
 C#\u4E5F\u6709\u50CF\u9BAD\u9B5A\u4E00\u6A23\u7684\u884C\u70BA\uFF0C\\\r
@@ -3697,7 +4874,7 @@ namespace CsharpDemo\r
 * Out : \u4F7F\u7528\u524D\u662F\u4E0D\u80FD\u8CE6\u503C\u7684\uFF0C\u5373\u4F7F\u8CE6\u503C\u4E5F\u6703\u88AB\u5FFD\u7565\r
 * \u56E0\u6B64Out\u7121\u6CD5\u62FF\u4F86\u505A\u6578\u64DA\u50B3\u905E\uFF0C\u53EA\u80FD\u53D6\u5F97\u8FD4\u56DE\u503C\r
 \r
-### \u4ECA\u5929\u7684\u6587\u7AE0\u5C31\u5230\u9019\u908A\uFF0C\u5927\u5BB6\u8A18\u5F97\u50CF\u9BAD\u9B5A\u4E00\u6A23\uFF0C\u660E\u5929\u8A18\u5F97\u56DE\u4F86\u770B\u6211\u7684\u6587\u7AE0\u54E6!`,jr="\u{1F916}[Day18]C# \u96DE\u790E\u89C0\u5FF5- \u56DE\u982D\u5427!\u5B69\u5B50~ref \u8207 out \u53C3\u6578\u4FEE\u98FE\u8A5E";function qr(){return u("Chicken Say Hi | \u{1F916} \u56DE\u982D\u5427!\u5B69\u5B50~ref \u8207 out \u53C3\u6578\u4FEE\u98FE\u8A5E"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:jr,text:Hr})]})}const Kr=`\u96FB\u8996\u53EF\u4EE5\u5012\u5E36\uFF0C\\\r
+### \u4ECA\u5929\u7684\u6587\u7AE0\u5C31\u5230\u9019\u908A\uFF0C\u5927\u5BB6\u8A18\u5F97\u50CF\u9BAD\u9B5A\u4E00\u6A23\uFF0C\u660E\u5929\u8A18\u5F97\u56DE\u4F86\u770B\u6211\u7684\u6587\u7AE0\u54E6!`,Yr="\u{1F916}[Day18]C# \u96DE\u790E\u89C0\u5FF5- \u56DE\u982D\u5427!\u5B69\u5B50~ref \u8207 out \u53C3\u6578\u4FEE\u98FE\u8A5E";function Qr(){return u("Chicken Say Hi | \u{1F916} \u56DE\u982D\u5427!\u5B69\u5B50~ref \u8207 out \u53C3\u6578\u4FEE\u98FE\u8A5E"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Yr,text:Xr})]})}const Zr=`\u96FB\u8996\u53EF\u4EE5\u5012\u5E36\uFF0C\\\r
 \u7136\u5F8C\u91CD\u64AD\uFF0C\\\r
 \u559C\u6B61\u770B\u5E7E\u6B21\u5C31\u770B\u5E7E\u6B21\uFF0C\\\r
 C#\u4E2D\u4E5F\u80FD\u8B93\u7A0B\u5F0F\u5012\u5E36\uFF0C\u91CD\u65B0\u57F7\u884C\uFF0C\\\r
@@ -3836,7 +5013,7 @@ namespace CsharpDemo\r
 121393  196418  317811  514229  832040\r
 \`\`\`\r
 \r
-### \u9019\u5C31\u4E00\u500BC#\u5012\u5E36\u6309\u9375\u7684\u6545\u4E8B~`,Vr="\u{1F916}[Day19]C# \u96DE\u790E\u89C0\u5FF5- \u8B93\u6642\u9593\u5012\u8F49\u5427~\u905E\u8FF4";function zr(){return u("Chicken Say Hi | \u{1F916} \u8B93\u6642\u9593\u5012\u8F49\u5427~\u905E\u8FF4"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Vr,text:Kr})]})}const Jr=`![mdImg](https://ithelp.ithome.com.tw/upload/images/20210920/20097001xizPMY5Y3v.png)\r
+### \u9019\u5C31\u4E00\u500BC#\u5012\u5E36\u6309\u9375\u7684\u6545\u4E8B~`,ne="\u{1F916}[Day19]C# \u96DE\u790E\u89C0\u5FF5- \u8B93\u6642\u9593\u5012\u8F49\u5427~\u905E\u8FF4";function re(){return u("Chicken Say Hi | \u{1F916} \u8B93\u6642\u9593\u5012\u8F49\u5427~\u905E\u8FF4"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:ne,text:Zr})]})}const ee=`![mdImg](https://ithelp.ithome.com.tw/upload/images/20210920/20097001xizPMY5Y3v.png)\r
 \u5728\u7A0B\u5F0F\u8A9E\u8A00\u4E2D\uFF0C\\\r
 \u6211\u5011\u4E0D\u53EA\u8981\u638C\u63E1\u57FA\u672C\u7684\u8A9E\u6CD5\uFF0C\\\r
 \u9084\u8981\u53BB\u878D\u6703\u8CAB\u901A\uFF0C\\\r
@@ -3871,7 +5048,7 @@ namespace CsharpDemo\r
 	- \u751F\u6D3B\u4E2D\u8655\u8655\u5145\u65A5\u7269\u4EF6\uFF0CEX:\u4E00\u68DF\u623F\u5B50\u3001\u4E00\u8F1B\u6C7D\u8ECA.....\r
 	- \u4ED6\u662F\u52D5\u614B\u7684\uFF0C\u72C0\u614B\u96A8\u6642\u90FD\u6703\u6539\u8B8A\uFF0C\u4F46\u6574\u9AD4\u7684\u7D50\u69CB\u8207\u884C\u70BA\u4E26\u4E0D\u6703\u56E0\u70BA\u4ED6\u7684\u52D5\u800C\u53D7\u5230\u5F71\u97FF\r
 \r
-### \u6211\u5011\u660E\u5929\u958B\u59CB\u5C31\u4F86\u5B78\u7FD2\u7269\u4EF6\u5C0E\u5411\u7684\u57FA\u790E\u77E5\u8B58\u5427`,Ur="\u{1F916}[Day20]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)\u57FA\u672C\u89C0\u5FF5";function Xr(){return u("Chicken Say Hi | \u{1F916} \u7269\u4EF6\u5C0E\u5411(oop)\u57FA\u672C\u89C0\u5FF5"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Ur,text:Jr})]})}const _r=`\u842C\u7269\u7686\u6709\u4ED6\u7684\u7D50\u69CB\uFF0C\\\r
+### \u6211\u5011\u660E\u5929\u958B\u59CB\u5C31\u4F86\u5B78\u7FD2\u7269\u4EF6\u5C0E\u5411\u7684\u57FA\u790E\u77E5\u8B58\u5427`,te="\u{1F916}[Day20]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)\u57FA\u672C\u89C0\u5FF5";function ie(){return u("Chicken Say Hi | \u{1F916} \u7269\u4EF6\u5C0E\u5411(oop)\u57FA\u672C\u89C0\u5FF5"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:te,text:ee})]})}const se=`\u842C\u7269\u7686\u6709\u4ED6\u7684\u7D50\u69CB\uFF0C\\\r
 \u5C31\u5982\u540C\u4E16\u754C\u4E0A\u6240\u6709\u6771\u897F\u7686\u7531\u5143\u7D20\u6240\u7D44\u6210\uFF0C\\\r
 \u800C\u5B9A\u7FA9\u9019\u4E9B\u7D50\u69CB\u5728C#\u4E2D\u7A31\u70BAclass\uFF0C\\\r
 \u4ED6\u662F\u4E00\u5207\u7684\u85CD\u5716\r
@@ -3994,7 +5171,7 @@ namespace CsharpDemo\r
 | private | \u5B58\u53D6\u9650\u65BC\u5305\u542B\u985E\u578B\u3002\r
 | private protected | \u5B58\u53D6\u9650\u65BC\u76EE\u524D\u7D44\u4EF6\u5167\u5305\u542B\u985E\u5225\u6216\u884D\u751F\u81EA\u5305\u542B\u985E\u5225\u7684\u985E\u578B\u3002 \u81EA C# 7.2 \u8D77\u53EF\u7528\u3002\r
 \r
-### \u5B78\u6703\u4E86\u985E\u5225\u4E4B\u5F8C\uFF0C\u6703\u767C\u73FE\u539F\u4F86\u7A0B\u5F0F\u78BC\uFF0C\u4E5F\u53EF\u4EE5\u9019\u6A23\u505A\u5206\u985E\u9D28!`,Yr="\u{1F916}[Day21]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u985E\u5225(class)";function Qr(){return u("Chicken Say Hi | \u{1F916} \u7269\u4EF6\u5C0E\u5411(oop)~\u985E\u5225(class)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Yr,text:_r})]})}const Zr=`\u5728\u7A0B\u5F0F\u8A9E\u8A00\u4E2D\u842C\u7269\u7686\u7269\u4EF6\uFF0C\\\r
+### \u5B78\u6703\u4E86\u985E\u5225\u4E4B\u5F8C\uFF0C\u6703\u767C\u73FE\u539F\u4F86\u7A0B\u5F0F\u78BC\uFF0C\u4E5F\u53EF\u4EE5\u9019\u6A23\u505A\u5206\u985E\u9D28!`,ae="\u{1F916}[Day21]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u985E\u5225(class)";function oe(){return u("Chicken Say Hi | \u{1F916} \u7269\u4EF6\u5C0E\u5411(oop)~\u985E\u5225(class)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:ae,text:se})]})}const ue=`\u5728\u7A0B\u5F0F\u8A9E\u8A00\u4E2D\u842C\u7269\u7686\u7269\u4EF6\uFF0C\\\r
 \u5C31\u5982\u540C\u771F\u5BE6\u4E16\u754C\u4E2D\uFF0C\\\r
 \u6240\u6709\u7269\u8CEA\u63A5\u7531\u5143\u7D20\u7D44\u6210\u4E00\u822C\r
 \r
@@ -4166,7 +5343,7 @@ namespace CsharpDemo\r
 \u59D3\u540D : \u615A\u6127\u4E00\u96BB\u8C93,\u5E74\u9F61 : 10,\u5171\u6293 2 \u96BB\u8001\u9F20\\\r
 \u59D3\u540D : \u7121\u6094\u4E00\u96BB\u8C93,\u5E74\u9F61 : 35,\u5171\u6293 1 \u96BB\u8001\u9F20\r
 \r
-### \u4EE5\u4E0A\u5C31\u662F\u7269\u4EF6\uFF0C\u6700\u57FA\u672C\u5143\u7D20\u7684\u7528\u6CD5\uFF0C\u6211\u5011\u660E\u5929\u898B\u55BD`,ne="\u{1F916}[Day22]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u7269\u4EF6(Object)";function re(){return u("Chicken Say Hi | \u{1F916} \u7269\u4EF6\u5C0E\u5411(oop)~\u7269\u4EF6(Object)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:ne,text:Zr})]})}const ee=`\u6BCF\u5929\u90FD\u5728\u601D\u8003\uFF0C\\\r
+### \u4EE5\u4E0A\u5C31\u662F\u7269\u4EF6\uFF0C\u6700\u57FA\u672C\u5143\u7D20\u7684\u7528\u6CD5\uFF0C\u6211\u5011\u660E\u5929\u898B\u55BD`,le="\u{1F916}[Day22]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u7269\u4EF6(Object)";function ce(){return u("Chicken Say Hi | \u{1F916} \u7269\u4EF6\u5C0E\u5411(oop)~\u7269\u4EF6(Object)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:le,text:ue})]})}const me=`\u6BCF\u5929\u90FD\u5728\u601D\u8003\uFF0C\\\r
 \u5982\u679C\u4E8B\u60C5\u81EA\u5DF1\u6703\u505A\u597D\u5C31\u597D\u4E86\uFF0C\\\r
 \u7A0B\u5F0F\u81EA\u5DF1\u6703\u81EA\u52D5\u6AA2\u67E5\u5C31\u597D\u4E86\uFF0C\\\r
 \u4ECA\u5929C#\u4E5F\u6709\u81EA\u52D5\u6AA2\u67E5\u8B8A\u6578\u662F\u5426\u7B26\u5408\u8981\u6C42\u7684\u529F\u80FD\uFF0C\\\r
@@ -4316,7 +5493,7 @@ namespace CsharpDemo\r
   >3\\\r
   >0\r
 \r
-### \u5C6C\u6027\u89E3\u6C7A\u4E86\u6211\u5011\u559C\u63DB\u7528\u8B8A\u6578\uFF0C\u53C8\u53EF\u4EE5\u81EA\u52D5\u6AA2\u67E5\uFF0C\u4E26\u4E14\u53C8\u5177\u6709\u5C01\u88DD\u6027\uFF0C\u4E00\u6B21\u89E3\u6C7A\u4E09\u7A2E\u554F\u984C`,te="\u{1F916}[Day23]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u5C6C\u6027(Property)";function ie(){return u("Chicken Say Hi | \u{1F916} \u7269\u4EF6\u5C0E\u5411(oop)~\u5C6C\u6027(Property)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:te,text:ee})]})}const se=`\u8001\u95C6\u6211\u8981\u4E00\u500B\u8C6C\u6392\u6F22\u5821\uFF0C\\\r
+### \u5C6C\u6027\u89E3\u6C7A\u4E86\u6211\u5011\u559C\u63DB\u7528\u8B8A\u6578\uFF0C\u53C8\u53EF\u4EE5\u81EA\u52D5\u6AA2\u67E5\uFF0C\u4E26\u4E14\u53C8\u5177\u6709\u5C01\u88DD\u6027\uFF0C\u4E00\u6B21\u89E3\u6C7A\u4E09\u7A2E\u554F\u984C`,he="\u{1F916}[Day23]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u5C6C\u6027(Property)";function ge(){return u("Chicken Say Hi | \u{1F916} \u7269\u4EF6\u5C0E\u5411(oop)~\u5C6C\u6027(Property)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:he,text:me})]})}const de=`\u8001\u95C6\u6211\u8981\u4E00\u500B\u8C6C\u6392\u6F22\u5821\uFF0C\\\r
 \u4E0D\u8981\u756A\u8304\uFF0C\u4E0D\u8981\u5C0F\u9EC3\u74DC\uFF0C\\\r
 \u6D0B\u8525\u52A0\u91CF\uFF0C\u52A0\u8D77\u53F8\uFF0C\\\r
 \u73FE\u5BE6\u751F\u6D3B\u4E2D\uFF0C\u6211\u5011\u5E38\u5E38\u6703\u5728\u9EDE\u9910\u6642\u8DDF\u8001\u95C6\u6307\u5B9A\u4E00\u4E9B\u914D\u6599\uFF0C\\\r
@@ -4472,7 +5649,7 @@ namespace CsharpDemo\r
    >name = \u80A5\u80A5\u4E00\u96BB\u8C6C\\\r
 age = 20\r
 \r
-### \u4EE5\u4E0A\u5C31\u662F\u6211\u5011\u4ECA\u5929\u7684\u5EFA\u69CB\u65B9\u6CD5\uFF0C\u671F\u5F85\u5927\u5BB6\u5728\u9EDE\u9910\u524D\u5C31\u80FD\u60F3\u597D\u81EA\u5DF1\u8981\u4EC0\u9EBC\u4E86`,ae="\u{1F916}[Day24]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u5EFA\u69CB\u65B9\u6CD5(Constructor)";function oe(){return u("Chicken Say Hi | \u{1F916} \u7269\u4EF6\u5C0E\u5411(oop)~\u5EFA\u69CB\u65B9\u6CD5(Constructor)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:ae,text:se})]})}const ue=`\u8FB2\u5834\u88E1\u7684\u96DE\u98FC\u6599\u90FD\u662F\u5927\u628A\u5927\u628A\u7684\u6492\u5728\u5730\u4E0A\uFF0C\\\r
+### \u4EE5\u4E0A\u5C31\u662F\u6211\u5011\u4ECA\u5929\u7684\u5EFA\u69CB\u65B9\u6CD5\uFF0C\u671F\u5F85\u5927\u5BB6\u5728\u9EDE\u9910\u524D\u5C31\u80FD\u60F3\u597D\u81EA\u5DF1\u8981\u4EC0\u9EBC\u4E86`,pe="\u{1F916}[Day24]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u5EFA\u69CB\u65B9\u6CD5(Constructor)";function Ce(){return u("Chicken Say Hi | \u{1F916} \u7269\u4EF6\u5C0E\u5411(oop)~\u5EFA\u69CB\u65B9\u6CD5(Constructor)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:pe,text:de})]})}const ye=`\u8FB2\u5834\u88E1\u7684\u96DE\u98FC\u6599\u90FD\u662F\u5927\u628A\u5927\u628A\u7684\u6492\u5728\u5730\u4E0A\uFF0C\\\r
 \u6BCF\u96BB\u96DE\u90FD\u53BB\u5403\u90A3\u4E9B\u98FC\u6599\uFF0C\u5403\u5B8C\u5C31\u6C92\u4E86\uFF0C\\\r
 \u800C\u4E0D\u50CF\u5176\u4ED6\u5BF5\u7269\u6709\u7368\u7ACB\u7684\u98FC\u990A\u7C60\uFF0C\\\r
 \u5C08\u7528\u7684\u98EF\u7897\uFF0C\u5403\u98EF\u6642\u90FD\u4E0D\u7528\u6436\u98DF\uFF0C\\\r
@@ -4604,7 +5781,7 @@ namespace CsharpDemo\r
 \r
 \` \u6700\u7D42\u96DE\u9084\u662F\u4F9B\u4E0D\u61C9\u6C42\u8CE3\u5149\u5149\u4E86!\u8FB2\u5834\u96E3\u9003\u5012\u9589\u5371\u6A5F!\`\r
 \r
-### \u975C\u614B\u8B8A\u6578\u53EA\u6709\u5728\u5275\u5EFA\u985E\u5225\u7684\u6642\u5019\u6703\u505A\u4E00\u6B21\u521D\u59CB\u5316\u800C\u5DF2\uFF0C\u9019\u9EDE\u662F\u5927\u5BB6\u9808\u7279\u5225\u6CE8\u610F\u7684\uFF0C\u6211\u5011\u5C31\u660E\u5929\u898B\u55BD`,le="\u{1F916}[Day25]C# \u96DE\u790E\u89C0\u5FF5- \u5171\u7522\u4E3B\u7FA9\u8005~\u975C\u614B\u6210\u54E1";function ce(){return u("Chicken Say Hi | \u{1F916} \u5171\u7522\u4E3B\u7FA9\u8005~\u975C\u614B\u6210\u54E1"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:le,text:ue})]})}const me=`\u5F88\u591A\u4FBF\u5229\u5546\u5E97\u90FD\u6709\u4ED6\u5011\u7684\u5236\u670D\uFF0C\\\r
+### \u975C\u614B\u8B8A\u6578\u53EA\u6709\u5728\u5275\u5EFA\u985E\u5225\u7684\u6642\u5019\u6703\u505A\u4E00\u6B21\u521D\u59CB\u5316\u800C\u5DF2\uFF0C\u9019\u9EDE\u662F\u5927\u5BB6\u9808\u7279\u5225\u6CE8\u610F\u7684\uFF0C\u6211\u5011\u5C31\u660E\u5929\u898B\u55BD`,xe="\u{1F916}[Day25]C# \u96DE\u790E\u89C0\u5FF5- \u5171\u7522\u4E3B\u7FA9\u8005~\u975C\u614B\u6210\u54E1";function De(){return u("Chicken Say Hi | \u{1F916} \u5171\u7522\u4E3B\u7FA9\u8005~\u975C\u614B\u6210\u54E1"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:xe,text:ye})]})}const be=`\u5F88\u591A\u4FBF\u5229\u5546\u5E97\u90FD\u6709\u4ED6\u5011\u7684\u5236\u670D\uFF0C\\\r
 \u7A7F\u8457\u4E00\u6A21\u4E00\u6A23\u7684\u5236\u670D\uFF0C\\\r
 \u5C31\u7B97\u96E2\u958B\u5E97\u9762\uFF0C\\\r
 \u5927\u5BB6\u90FD\u9084\u662F\u64C1\u6709\u6975\u9AD8\u7684\u8FA8\u8B58\u5EA6\uFF0C\\\r
@@ -4697,7 +5874,7 @@ Double : 204.4242\r
 \r
 \`\u5404\u4F4D\u53EF\u80FD\u6703\u7A81\u7136\u9813\u609F\uFF0C\u554A\u539F\u4F86\u591A\u8F09\u5C31\u662F\u4E00\u6A23\u540D\u5B57\u7684\u65B9\u6CD5\uFF0C\u537B\u53EF\u4EE5\u505A\u4E0D\u540C\u4E8B\u60C5\`\r
 \r
-### \u5E0C\u671B\u5927\u5BB6\u90FD\u5B78\u6703\u5E6B\u81EA\u5DF1\u7684\u7A0B\u5F0F\u7A7F\u4E0A\u4E00\u6A23\u7684\u5236\u670D\u5594\uFF0C\u6211\u5011\u660E\u5929\u898B`,ge="\u{1F916}[Day26]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~ \u591A\u8F09(Overload)";function he(){return u("Chicken Say Hi | \u{1F916} \u7269\u4EF6\u5C0E\u5411(oop)~ \u591A\u8F09(Overload)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:ge,text:me})]})}const de=`\u4EBA\u7E3D\u662F\u6703\u6709\u72AF\u932F\u7684\u4E00\u5929\uFF0C\\\r
+### \u5E0C\u671B\u5927\u5BB6\u90FD\u5B78\u6703\u5E6B\u81EA\u5DF1\u7684\u7A0B\u5F0F\u7A7F\u4E0A\u4E00\u6A23\u7684\u5236\u670D\u5594\uFF0C\u6211\u5011\u660E\u5929\u898B`,Se="\u{1F916}[Day26]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~ \u591A\u8F09(Overload)";function fe(){return u("Chicken Say Hi | \u{1F916} \u7269\u4EF6\u5C0E\u5411(oop)~ \u591A\u8F09(Overload)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Se,text:be})]})}const Fe=`\u4EBA\u7E3D\u662F\u6703\u6709\u72AF\u932F\u7684\u4E00\u5929\uFF0C\\\r
 \u7A0B\u5F0F\u60F3\u5FC5\u4E5F\u662F\u5982\u6B64\uFF0C\\\r
 \u4F46\u72AF\u932F\u4E4B\u5F8C\u8A72\u600E\u9EBC\u8FA6\u5462?\\\r
 \u6211\u5011\u4ECA\u5929\u4F86\u63A2\u8A0EC#\u7684\u932F\u8AA4\u8655\u7406\r
@@ -4921,7 +6098,7 @@ namespace CsharpDemo\r
 \u7D22\u5F15\u5728\u9663\u5217\u7684\u754C\u9650\u4E4B\u5916\u3002\\\r
 \u65E2\u7136\u90FD\u72AF\u932F\u4E86\uFF0C\u90A3\u5C31\u6536\u5DE5\u5403\u98EF\u5427!\r
 \r
-### \u4ECA\u5929\u5B78\u6703\u932F\u8AA4\u8655\u7406\u4E4B\u5F8C\uFF0C\u7A0B\u5F0F\u5C31\u4E0D\u6703\u56E0\u70BA\u4E00\u9EDE\u9EDE\u5C0F\u6BDB\u75C5\u5C31\u7576\u6389\u5566\uFF0C\u671F\u5F85\u6211\u5011\u660E\u5929\u518D\u6703\u5566`,pe="\u{1F916}[Day27]C# \u96DE\u790E\u89C0\u5FF5- \u505A\u932F\u4E8B\u8A72\u600E\u9EBC\u8FA6\u5462?~\u932F\u8AA4\u8655\u7406";function Ce(){return u("Chicken Say Hi | \u{1F916} \u505A\u932F\u4E8B\u8A72\u600E\u9EBC\u8FA6\u5462?~\u932F\u8AA4\u8655\u7406"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:pe,text:de})]})}const ye=`\u5728\u4EBA\u985E\u4E2D\uFF0C\u57FA\u56E0\u80AF\u5B9A\u662F\u4E16\u4E16\u4EE3\u4EE3\u5728\u50B3\u627F\uFF0C\\\r
+### \u4ECA\u5929\u5B78\u6703\u932F\u8AA4\u8655\u7406\u4E4B\u5F8C\uFF0C\u7A0B\u5F0F\u5C31\u4E0D\u6703\u56E0\u70BA\u4E00\u9EDE\u9EDE\u5C0F\u6BDB\u75C5\u5C31\u7576\u6389\u5566\uFF0C\u671F\u5F85\u6211\u5011\u660E\u5929\u518D\u6703\u5566`,ve="\u{1F916}[Day27]C# \u96DE\u790E\u89C0\u5FF5- \u505A\u932F\u4E8B\u8A72\u600E\u9EBC\u8FA6\u5462?~\u932F\u8AA4\u8655\u7406";function Ee(){return u("Chicken Say Hi | \u{1F916} \u505A\u932F\u4E8B\u8A72\u600E\u9EBC\u8FA6\u5462?~\u932F\u8AA4\u8655\u7406"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:ve,text:Fe})]})}const Pe=`\u5728\u4EBA\u985E\u4E2D\uFF0C\u57FA\u56E0\u80AF\u5B9A\u662F\u4E16\u4E16\u4EE3\u4EE3\u5728\u50B3\u627F\uFF0C\\\r
 \u4E0B\u4E00\u4EE3\u9664\u4E86\u63A5\u6536\u4E86\u4E0A\u4E00\u4EE3\u7684\u57FA\u56E0\u4E4B\u5916\uFF0C\\\r
 \u53EF\u80FD\u9084\u6703\u5077\u5077\u7684\u9032\u5316\uFF0C\\\r
 C#\u4E2D\u4E5F\u662F\u5982\u6B64\uFF0C\\\r
@@ -5233,7 +6410,7 @@ namespace CsharpDemo\r
 \u6211\u6709\u6709\u96DE\u51A0\\\r
 \u6211\u6703\u5495\u5495\u53EB\r
 \r
-### \u7E7C\u627F\u662F\u7269\u4EF6\u5C0E\u5411\u8A9E\u8A00\u7684\u8D85\u5F37\u529F\u80FD\uFF0C\u8981\u597D\u597D\u5229\u7528\u4ED6\uFF0C\u80FD\u66F4\u7CBE\u7C21\u7A0B\u5F0F\u78BC\uFF0C\u660E\u5929\u898B\u55BD`,De="\u{1F916}[Day28]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~ \u7E7C\u627F";function xe(){return u("Chicken Say Hi | \u{1F916} \u505A\u932F\u4E8B\u8A72\u600E\u9EBC\u8FA6\u5462?~\u932F\u8AA4\u8655\u7406"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:De,text:ye})]})}const Fe=`\u66F8\u540C\u6587\uFF0C\u8ECA\u540C\u8ECC\uFF0C\\\r
+### \u7E7C\u627F\u662F\u7269\u4EF6\u5C0E\u5411\u8A9E\u8A00\u7684\u8D85\u5F37\u529F\u80FD\uFF0C\u8981\u597D\u597D\u5229\u7528\u4ED6\uFF0C\u80FD\u66F4\u7CBE\u7C21\u7A0B\u5F0F\u78BC\uFF0C\u660E\u5929\u898B\u55BD`,Ae="\u{1F916}[Day28]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~ \u7E7C\u627F";function we(){return u("Chicken Say Hi | \u{1F916} \u505A\u932F\u4E8B\u8A72\u600E\u9EBC\u8FA6\u5462?~\u932F\u8AA4\u8655\u7406"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Ae,text:Pe})]})}const Le=`\u66F8\u540C\u6587\uFF0C\u8ECA\u540C\u8ECC\uFF0C\\\r
 \u807D\u8AAA\u53EC\u559A\u60E1\u9B54\u6642\uFF0C\u9700\u8981\u8207\u60E1\u9B54\u7C3D\u8A02\u5951\u7D04\uFF0C\\\r
 \u5951\u7D04\u5167\u5BB9\u96D9\u65B9\u90FD\u5F97\u9075\u5B88\uFF0C\\\r
 C#\u4E5F\u64C1\u6709\u8DDF\u985E\u5225\u7C3D\u8A02\u5951\u7D04\u7684\u529F\u80FD\r
@@ -5432,7 +6609,7 @@ namespace CsharpDemo\r
 >\u8ACB\u9078\u64C7\u9700\u8981\u6A21\u5F0F\\\r
 \u5B58\u6B3E\u8ACB\u63091\uFF0C\u9818\u6B3E\u8ACB\u63092\r
 \r
-### \u4EE5\u4E0A\u5C31\u662F\u6211\u5011\u7684\u4ECB\u9762\uFF0C\u4ED6\u4E3B\u8981\u7528\u9014\u662F\u5728\u7D71\u4E00\u5929\u4E0B\u7684\uFF0C\u6211\u5011\u660E\u5929\u518D\u898B\u4E86\u9D28`,Se="\u{1F916}[Day29]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u4ECB\u9762(Interface)";function be(){return u("Chicken Say Hi | \u{1F916} \u7269\u4EF6\u5C0E\u5411(oop)~\u4ECB\u9762(Interface)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Se,text:Fe})]})}const Ee=`![mdImg](https://ithelp.ithome.com.tw/upload/images/20210930/20097001lFLnXlnoY5.png)\r
+### \u4EE5\u4E0A\u5C31\u662F\u6211\u5011\u7684\u4ECB\u9762\uFF0C\u4ED6\u4E3B\u8981\u7528\u9014\u662F\u5728\u7D71\u4E00\u5929\u4E0B\u7684\uFF0C\u6211\u5011\u660E\u5929\u518D\u898B\u4E86\u9D28`,ke="\u{1F916}[Day29]C# \u96DE\u790E\u89C0\u5FF5- \u7269\u4EF6\u5C0E\u5411(oop)~\u4ECB\u9762(Interface)";function Te(){return u("Chicken Say Hi | \u{1F916} \u7269\u4EF6\u5C0E\u5411(oop)~\u4ECB\u9762(Interface)"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:ke,text:Le})]})}const Be=`![mdImg](https://ithelp.ithome.com.tw/upload/images/20210930/20097001lFLnXlnoY5.png)\r
 \r
 \u4ECA\u5929\u662F\u9435\u4EBA\u8CFD\u6700\u5F8C\u4E00\u5929\uFF0C\\\r
 \u6211\u5011\u4F86\u9EDE\u4E0D\u4E00\u6A23\u7684\uFF0C\\\r
@@ -5502,7 +6679,7 @@ namespace CsharpDemo\r
 \r
 ### \u6700\u5F8C\u6700\u5F8C\uFF0C\u6211\u5011\u8B1D\u8B1D\u5154\u5154\u7576\u6642\u82B1\u5F88\u591A\u6642\u9593\u5728\u5E6B\u6211\u6821\u9019\u4EFD\u7A3F\r
 ### \u5982\u679C\u5927\u5BB6\u5C0DTailwind Css\u4E0D\u719F\uFF0C\u4F46\u5F88\u60F3\u5165\u9580\uFF0C\u6B61\u8FCE\u53BB\u770B\u4ED6\u7684\u6587\u7AE0\r
-### [\u5154\u5154\u50B3\u9001\u9580 (\u9EDE\u6211\u4F86\u53BB\u627E\u5154\u5154)](https://ithelp.ithome.com.tw/users/20138853/ironman/3928)`,ve="\u{1F916}[Day30]C# \u4E0D\u96DE\u790E\u89C0\u5FF5- Install Tailwind Css with ASP.NET MVC5";function fe(){return u("Chicken Say Hi | \u{1F916} Install Tailwind Css with ASP.NET MVC5"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:ve,text:Ee})]})}const Pe=`### \u70BA\u4EC0\u9EBC\u6703\u60F3\u5831\u540D\u9D28?\r
+### [\u5154\u5154\u50B3\u9001\u9580 (\u9EDE\u6211\u4F86\u53BB\u627E\u5154\u5154)](https://ithelp.ithome.com.tw/users/20138853/ironman/3928)`,We="\u{1F916}[Day30]C# \u4E0D\u96DE\u790E\u89C0\u5FF5- Install Tailwind Css with ASP.NET MVC5";function Ie(){return u("Chicken Say Hi | \u{1F916} Install Tailwind Css with ASP.NET MVC5"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:We,text:Be})]})}const Me=`### \u70BA\u4EC0\u9EBC\u6703\u60F3\u5831\u540D\u9D28?\r
 \u9019\u662F\u7B2C\u4E00\u6B21\u53C3\u52A0\u9435\u4EBA\u8CFD\uFF0C\\\r
 \u6703\u53C3\u52A0\u7684\u539F\u56E0\u90FD\u662F\u4E00\u6642\u885D\u52D5\uFF0C\u771F\u7684\u662F\u4E00\u6642\u885D\u52D5\uFF0C\u5C31\u5831\u540D\u4E0B\u53BB\u4E86\uFF0C\\\r
 \u5F8C\u4F86\u60F3\u8AAA\u96A8\u4FBF\u5BEB\u500B\u50CF\u662F\u7B46\u8A18\u7684\u6771\u897F\u89E3\u9396\u500B\u6210\u5C31\uFF0C\\\r
@@ -5531,7 +6708,7 @@ namespace CsharpDemo\r
 #### \u7F8E\u98DF\u5C08\u5BB6 -\u96EA\u502B\r
 [\u96EA\u502B\u768430\u5929\u62DC\u8A17\u51B0\u7BB1](https://ithelp.ithome.com.tw/users/20140547/ironman/4622)\r
 \r
-### \u9019\u6B21\u9435\u4EBA\u8CFD\u7684\u6545\u4E8B\u5C31\u5230\u9019\u908A\u544A\u4E00\u6BB5\u843D\u4E86\uFF0C\u6211\u5011\u6709\u7DE3\u4E0B\u6B21\u898B`,Ae="\u{1F916}[Day31]C# \u96DE\u790E\u89C0\u5FF5- \u7D50\u8A9E";function Le(){return u("Chicken Say Hi | \u{1F916} \u7D50\u8A9E"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Ae,text:Pe})]})}function we(){return u("Chicken Say Hi | About"),t(s,{children:[n(o,{}),t("section",{className:"relative pt-16 bg-blueGray-50 max-h-full overflow-auto ",children:[n("div",{className:"container mx-auto",children:t("div",{className:"flex flex-wrap items-center",children:[n("div",{className:"w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78",children:t("div",{className:"relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg dark:bg-amber-200  bg-amber-500",children:[n(T.exports.LazyLoadImage,{alt:"...",src:R,className:"w-full align-middle rounded-md max-h-62 p-5",effect:"blur"}),t("blockquote",{className:"relative p-8 mb-4",children:[n("h4",{className:"text-xl font-bold text-white dark:text-gray-700 mb-6",children:"\u5B64\u7368\u4E00\u96BB\u96DE"}),n("p",{className:"text-xl font-bold text-white dark:text-gray-700 mb-6",children:"I'm a backend developer."}),t("p",{className:"text-md font-light mt-2 text-gray-100 dark:text-gray-800",children:["\u6211\u5C31\u662F\u4E00\u96BB\u5E73\u51E1\u7121\u5947\u7684\u96DE\uFF0C\u6BCF\u5929\u904E\u8457\u5E73\u51E1\u7121\u5947\u7684\u751F\u6D3B",n("br",{}),n("a",{href:"mailto:lonelyyeezhichicken@gmail.com",children:"e-mail: lonelyyeezhichicken@gmail.com"})]})]})]})}),n("div",{className:"w-full md:w-6/12 px-4 dark:text-gray-300 text-gray-600",children:t("div",{className:"flex flex-wrap",children:[t("div",{className:"w-full md:w-6/12 px-4",children:[n("div",{className:"relative flex flex-col mt-4",children:t("div",{className:"px-4 py-5 flex-auto",children:[n("div",{className:"text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full  bg-pink-300 text-4xl text-gray-800",children:"\u{1F5BC}"}),n("h6",{className:"text-xl mb-1 font-semibold ",children:"Front-end"}),t("ul",{className:"mb-4 text-blueGray-500 list-decimal list-inside",children:[n("li",{children:"Vue JS"}),n("li",{children:"Vanilla JS"}),n("li",{children:"TypeScript"}),n("li",{children:"React JS"}),n("li",{children:"Knockout JS"}),n("li",{children:"Tailwind Css"})]})]})}),n("div",{className:"relative flex flex-col min-w-0",children:t("div",{className:"px-4 py-5 flex-auto",children:[n("div",{className:"text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-cyan-300 text-4xl text-gray-800",children:"\u{1F6E0}"}),n("h6",{className:"text-xl mb-1 font-semibold",children:"Framework"}),t("ul",{className:"mb-4 text-blueGray-500 list-decimal list-inside",children:[n("li",{children:"Asp.net5"}),n("li",{children:".NET 6"}),n("li",{children:"Spring Boot"}),n("li",{children:"Flask"}),n("li",{children:"Phaser 3"}),n("li",{children:"Laravel"})]})]})})]}),t("div",{className:"w-full md:w-6/12 px-4",children:[n("div",{className:"relative flex flex-col min-w-0 mt-4",children:t("div",{className:"px-4 py-5 flex-auto",children:[n("div",{className:"text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-purple-300 text-2xl text-gray-800",children:"\u{1F527}"}),n("h6",{className:"text-xl mb-1 font-semibold",children:"Back-end"}),t("ul",{className:"mb-4 text-blueGray-500 list-decimal list-inside",children:[n("li",{children:"C#"}),n("li",{children:"Java"}),n("li",{children:"Python"}),n("li",{children:"PHP"}),n("li",{children:"MATLAB"}),n("li",{children:"..."})]})]})}),n("div",{className:"relative flex flex-col min-w-0",children:t("div",{className:"px-4 py-5 flex-auto",children:[n("div",{className:"text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-gray-300 text-2xl text-gray-800",children:"\u{1F4D7}"}),n("h6",{className:"text-xl mb-1 font-semibold",children:"DB & Others"}),t("ul",{className:"mb-4 text-blueGray-500 list-decimal list-inside",children:[n("li",{children:"MSSQL"}),n("li",{children:"MySQL"}),n("li",{children:"Oracle"}),n("li",{children:"Docker"}),n("li",{children:"Message Queue"}),n("li",{children:"PLC"})]})]})})]})]})})]})}),n(A,{})]})]})}const Te=[{id:1,text:"[\u4E00.] \u59D4\u6D3E (Delegate) - \u99AC\u6232\u5718",goPath:r.CsDelegate1},{id:2,text:"[\u4E8C.] \u59D4\u6D3E (Delegate) - \u99AC\u6232\u5718(\u591A\u96BB\u52D5\u7269\u7248)",goPath:r.CsDelegate2},{id:3,text:"[\u4E09.] \u59D4\u6D3E (Delegate(\u591A\u9EDE\u50B3\u9001\u59D4\u6D3E) - \u99AC\u6232\u5718(\u591A\u96BB\u52D5\u7269\u7248)",goPath:r.CsDelegate3},{id:4,text:"[\u56DB.] \u59D4\u6D3E (Delegate)(Action \u59D4\u6D3E) - \u99AC\u6232\u5718",goPath:r.CsDelegate4},{id:5,text:"[\u4E94.] \u59D4\u6D3E (Delegate)(Action \u59D4\u6D3E(\u50B3\u53C3\u6578)) - \u99AC\u6232\u5718",goPath:r.CsDelegate5},{id:6,text:"[\u516D.] \u59D4\u6D3E (Delegate)(Func \u59D4\u6D3E) - \u99AC\u6232\u5718",goPath:r.CsDelegate6},{id:7,text:"[\u4E03.] \u59D4\u6D3E (Delegate)(Func \u59D4\u6D3E(\u50B3\u53C3\u6578)) - \u99AC\u6232\u5718",goPath:r.CsDelegate7}];function ke(){return u("Chicken Say Hi | \u9435\u4EBA 13"),t(s,{children:[n(o,{}),n(y,{list:Te})]})}const Be=`## \u59D4\u6D3E\u7DF4\u7FD21\r
+### \u9019\u6B21\u9435\u4EBA\u8CFD\u7684\u6545\u4E8B\u5C31\u5230\u9019\u908A\u544A\u4E00\u6BB5\u843D\u4E86\uFF0C\u6211\u5011\u6709\u7DE3\u4E0B\u6B21\u898B`,Re="\u{1F916}[Day31]C# \u96DE\u790E\u89C0\u5FF5- \u7D50\u8A9E";function Ne(){return u("Chicken Say Hi | \u{1F916} \u7D50\u8A9E"),t(s,{children:[n(o,{}),n(l,{backPath:r.IronMan13,title:Re,text:Me})]})}function Ge(){return u("Chicken Say Hi | About"),t(s,{children:[n(o,{}),t("section",{className:"relative pt-16 bg-blueGray-50 max-h-full overflow-auto ",children:[n("div",{className:"container mx-auto",children:t("div",{className:"flex flex-wrap items-center",children:[n("div",{className:"w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78",children:t("div",{className:"relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg dark:bg-amber-200  bg-amber-500",children:[n(k.exports.LazyLoadImage,{alt:"...",src:R,className:"w-full align-middle rounded-md max-h-62 p-5",effect:"blur"}),t("blockquote",{className:"relative p-8 mb-4",children:[n("h4",{className:"text-xl font-bold text-white dark:text-gray-700 mb-6",children:"\u5B64\u7368\u4E00\u96BB\u96DE"}),n("p",{className:"text-xl font-bold text-white dark:text-gray-700 mb-6",children:"I'm a backend developer."}),t("p",{className:"text-md font-light mt-2 text-gray-100 dark:text-gray-800",children:["\u6211\u5C31\u662F\u4E00\u96BB\u5E73\u51E1\u7121\u5947\u7684\u96DE\uFF0C\u6BCF\u5929\u904E\u8457\u5E73\u51E1\u7121\u5947\u7684\u751F\u6D3B",n("br",{}),n("a",{href:"mailto:lonelyyeezhichicken@gmail.com",children:"e-mail: lonelyyeezhichicken@gmail.com"})]})]})]})}),n("div",{className:"w-full md:w-6/12 px-4 dark:text-gray-300 text-gray-600",children:t("div",{className:"flex flex-wrap",children:[t("div",{className:"w-full md:w-6/12 px-4",children:[n("div",{className:"relative flex flex-col mt-4",children:t("div",{className:"px-4 py-5 flex-auto",children:[n("div",{className:"text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full  bg-pink-300 text-4xl text-gray-800",children:"\u{1F5BC}"}),n("h6",{className:"text-xl mb-1 font-semibold ",children:"Front-end"}),t("ul",{className:"mb-4 text-blueGray-500 list-decimal list-inside",children:[n("li",{children:"Vue JS"}),n("li",{children:"Vanilla JS"}),n("li",{children:"TypeScript"}),n("li",{children:"React JS"}),n("li",{children:"Knockout JS"}),n("li",{children:"Tailwind Css"})]})]})}),n("div",{className:"relative flex flex-col min-w-0",children:t("div",{className:"px-4 py-5 flex-auto",children:[n("div",{className:"text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-cyan-300 text-4xl text-gray-800",children:"\u{1F6E0}"}),n("h6",{className:"text-xl mb-1 font-semibold",children:"Framework"}),t("ul",{className:"mb-4 text-blueGray-500 list-decimal list-inside",children:[n("li",{children:"Asp.net5"}),n("li",{children:".NET 6"}),n("li",{children:"Spring Boot"}),n("li",{children:"Flask"}),n("li",{children:"Phaser 3"}),n("li",{children:"Laravel"})]})]})})]}),t("div",{className:"w-full md:w-6/12 px-4",children:[n("div",{className:"relative flex flex-col min-w-0 mt-4",children:t("div",{className:"px-4 py-5 flex-auto",children:[n("div",{className:"text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-purple-300 text-2xl text-gray-800",children:"\u{1F527}"}),n("h6",{className:"text-xl mb-1 font-semibold",children:"Back-end"}),t("ul",{className:"mb-4 text-blueGray-500 list-decimal list-inside",children:[n("li",{children:"C#"}),n("li",{children:"Java"}),n("li",{children:"Python"}),n("li",{children:"PHP"}),n("li",{children:"MATLAB"}),n("li",{children:"..."})]})]})}),n("div",{className:"relative flex flex-col min-w-0",children:t("div",{className:"px-4 py-5 flex-auto",children:[n("div",{className:"text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-gray-300 text-2xl text-gray-800",children:"\u{1F4D7}"}),n("h6",{className:"text-xl mb-1 font-semibold",children:"DB & Others"}),t("ul",{className:"mb-4 text-blueGray-500 list-decimal list-inside",children:[n("li",{children:"MSSQL"}),n("li",{children:"MySQL"}),n("li",{children:"Oracle"}),n("li",{children:"Docker"}),n("li",{children:"Message Queue"}),n("li",{children:"PLC"})]})]})})]})]})})]})}),n(A,{})]})]})}const je=[{id:1,text:"[\u4E00.] \u59D4\u6D3E (Delegate) - \u99AC\u6232\u5718",goPath:r.CsDelegate1},{id:2,text:"[\u4E8C.] \u59D4\u6D3E (Delegate) - \u99AC\u6232\u5718(\u591A\u96BB\u52D5\u7269\u7248)",goPath:r.CsDelegate2},{id:3,text:"[\u4E09.] \u59D4\u6D3E (Delegate(\u591A\u9EDE\u50B3\u9001\u59D4\u6D3E) - \u99AC\u6232\u5718(\u591A\u96BB\u52D5\u7269\u7248)",goPath:r.CsDelegate3},{id:4,text:"[\u56DB.] \u59D4\u6D3E (Delegate)(Action \u59D4\u6D3E) - \u99AC\u6232\u5718",goPath:r.CsDelegate4},{id:5,text:"[\u4E94.] \u59D4\u6D3E (Delegate)(Action \u59D4\u6D3E(\u50B3\u53C3\u6578)) - \u99AC\u6232\u5718",goPath:r.CsDelegate5},{id:6,text:"[\u516D.] \u59D4\u6D3E (Delegate)(Func \u59D4\u6D3E) - \u99AC\u6232\u5718",goPath:r.CsDelegate6},{id:7,text:"[\u4E03.] \u59D4\u6D3E (Delegate)(Func \u59D4\u6D3E(\u50B3\u53C3\u6578)) - \u99AC\u6232\u5718",goPath:r.CsDelegate7}];function $e(){return u("Chicken Say Hi | \u9435\u4EBA 13"),t(s,{children:[n(o,{}),n(y,{list:je})]})}const Oe=`## \u59D4\u6D3E\u7DF4\u7FD21\r
 - [\u7A0B\u5F0F\u78BC](https://github.com/LINDuke-Lin/csharp-Exercise/blob/main/csharpExercise/DelegateExercise/delegateExercise1.cs)\r
 \r
 1. \u5B9A\u7FA9\u8981\u4F7F\u7528\u7684\u59D4\u6D3E\r
@@ -5638,7 +6815,7 @@ namespace CSharpExercise.EventDemo\r
 \r
     }\r
 }\r
-\`\`\``,We="\u{1F4EA} [\u4E00.] \u59D4\u6D3E (Delegate) - \u99AC\u6232\u5718";function Me(){return u("Chicken Say Hi | \u{1F4EA} [\u4E00.] \u59D4\u6D3E (Delegate)"),t(s,{children:[n(o,{}),n(l,{backPath:r.CsharpEventHome,title:We,text:Be})]})}const Ie=`\r
+\`\`\``,He="\u{1F4EA} [\u4E00.] \u59D4\u6D3E (Delegate) - \u99AC\u6232\u5718";function qe(){return u("Chicken Say Hi | \u{1F4EA} [\u4E00.] \u59D4\u6D3E (Delegate)"),t(s,{children:[n(o,{}),n(l,{backPath:r.CsharpEventHome,title:He,text:Oe})]})}const Ke=`\r
 1. \u65B0\u589E\u5404\u7A2E\u52D5\u7269\r
 \`\`\`csharp\r
   \r
@@ -5786,7 +6963,7 @@ namespace csharpExercise.DelegateExercise\r
 }\r
 \r
 \`\`\`\r
-`,Re="\u{1F4EA} [\u4E8C.] \u59D4\u6D3E (Delegate) - \u99AC\u6232\u5718(\u591A\u96BB\u52D5\u7269\u7248)";function Ne(){return u("Chicken Say Hi | \u{1F4EA} [\u4E8C.] \u59D4\u6D3E (Delegate)"),t(s,{children:[n(o,{}),n(l,{backPath:r.CsharpEventHome,title:Re,text:Ie})]})}const Ge=`### \u591A\u9EDE\u50B3\u9001\u59D4\u6D3E(MulticastDelegate)\r
+`,Ve="\u{1F4EA} [\u4E8C.] \u59D4\u6D3E (Delegate) - \u99AC\u6232\u5718(\u591A\u96BB\u52D5\u7269\u7248)";function Ue(){return u("Chicken Say Hi | \u{1F4EA} [\u4E8C.] \u59D4\u6D3E (Delegate)"),t(s,{children:[n(o,{}),n(l,{backPath:r.CsharpEventHome,title:Ve,text:Ke})]})}const ze=`### \u591A\u9EDE\u50B3\u9001\u59D4\u6D3E(MulticastDelegate)\r
 \r
 1. \u4F7F\u7528\`+=\`\u9032\u884C\u8A3B\u518A\r
 \`\`\`csharp\r
@@ -5871,7 +7048,7 @@ namespace csharpExercise.DelegateExercise\r
         }\r
     }\r
 }\r
-\`\`\``,$e="\u{1F4EA} [\u4E09.] \u59D4\u6D3E (Delegate)(\u591A\u9EDE\u50B3\u9001\u59D4\u6D3E) - \u99AC\u6232\u5718(\u591A\u96BB\u52D5\u7269\u7248)";function Oe(){return u("Chicken Say Hi | \u{1F4EA} [\u4E09.] \u59D4\u6D3E (Delegate)"),t(s,{children:[n(o,{}),n(l,{backPath:r.CsharpEventHome,title:$e,text:Ge})]})}const He=`### Acton \u6CDB\u578B\u59D4\u6D3E\r
+\`\`\``,_e="\u{1F4EA} [\u4E09.] \u59D4\u6D3E (Delegate)(\u591A\u9EDE\u50B3\u9001\u59D4\u6D3E) - \u99AC\u6232\u5718(\u591A\u96BB\u52D5\u7269\u7248)";function Je(){return u("Chicken Say Hi | \u{1F4EA} [\u4E09.] \u59D4\u6D3E (Delegate)"),t(s,{children:[n(o,{}),n(l,{backPath:r.CsharpEventHome,title:_e,text:ze})]})}const Xe=`### Acton \u6CDB\u578B\u59D4\u6D3E\r
 \r
 1. \u5B9A\u7FA9\u51FD\u5F0F\r
 - \u50B3\u5165\u503C\u8A2D\u5B9A\u70BA Action\r
@@ -5932,7 +7109,7 @@ namespace csharpExercise.DelegateExercise\r
         }\r
     }\r
 }\r
-\`\`\``,je="\u{1F4EA} [\u56DB.] \u59D4\u6D3E (Delegate)(Action \u59D4\u6D3E) - \u99AC\u6232\u5718";function qe(){return u("Chicken Say Hi | \u{1F4EA} [\u56DB.] \u59D4\u6D3E (Delegate)"),t(s,{children:[n(o,{}),n(l,{backPath:r.CsharpEventHome,title:je,text:He})]})}const Ke=`### Acton \u6CDB\u578B\u59D4\u6D3E - \u50B3\u53C3\u6578\r
+\`\`\``,Ye="\u{1F4EA} [\u56DB.] \u59D4\u6D3E (Delegate)(Action \u59D4\u6D3E) - \u99AC\u6232\u5718";function Qe(){return u("Chicken Say Hi | \u{1F4EA} [\u56DB.] \u59D4\u6D3E (Delegate)"),t(s,{children:[n(o,{}),n(l,{backPath:r.CsharpEventHome,title:Ye,text:Xe})]})}const Ze=`### Acton \u6CDB\u578B\u59D4\u6D3E - \u50B3\u53C3\u6578\r
 - [\u7A0B\u5F0F\u78BC](https://github.com/LINDuke-Lin/csharp-Exercise/blob/main/csharpExercise/DelegateExercise/DelegateExercise5.cs)\r
 \r
 1. \u5B9A\u7FA9\u51FD\u5F0F\r
@@ -5995,7 +7172,7 @@ namespace CSharpExercise.DelegateExercise\r
     }\r
 }\r
 \r
-\`\`\``,Ve="\u{1F4EA} [\u4E94.] \u59D4\u6D3E (Delegate)(Action \u59D4\u6D3E(\u50B3\u53C3\u6578)) - \u99AC\u6232\u5718";function ze(){return u("Chicken Say Hi | \u{1F4EA} [\u4E94.] \u59D4\u6D3E (Delegate)"),t(s,{children:[n(o,{}),n(l,{backPath:r.CsharpEventHome,title:Ve,text:Ke})]})}const Je=`### Func<T> \u6CDB\u578B\u59D4\u6D3E -> \u6709\u56DE\u50B3\u503C\r
+\`\`\``,nt="\u{1F4EA} [\u4E94.] \u59D4\u6D3E (Delegate)(Action \u59D4\u6D3E(\u50B3\u53C3\u6578)) - \u99AC\u6232\u5718";function rt(){return u("Chicken Say Hi | \u{1F4EA} [\u4E94.] \u59D4\u6D3E (Delegate)"),t(s,{children:[n(o,{}),n(l,{backPath:r.CsharpEventHome,title:nt,text:Ze})]})}const et=`### Func<T> \u6CDB\u578B\u59D4\u6D3E -> \u6709\u56DE\u50B3\u503C\r
 \r
 \r
 1. \u5B9A\u7FA9\u51FD\u5F0F\r
@@ -6060,7 +7237,7 @@ namespace csharpExercise.DelegateExercise\r
     }\r
 }\r
 \r
-\`\`\``,Ue="\u{1F4EA} [\u516D.] \u59D4\u6D3E (Delegate)(Func \u59D4\u6D3E) - \u99AC\u6232\u5718";function Xe(){return u("Chicken Say Hi | \u{1F4EA} [\u516D.] \u59D4\u6D3E (Delegate)"),t(s,{children:[n(o,{}),n(l,{backPath:r.CsharpEventHome,title:Ue,text:Je})]})}const _e=`### Func<T,TResult> \u6CDB\u578B\u59D4\u6D3E -> \u6709\u56DE\u50B3\u503C\r
+\`\`\``,tt="\u{1F4EA} [\u516D.] \u59D4\u6D3E (Delegate)(Func \u59D4\u6D3E) - \u99AC\u6232\u5718";function it(){return u("Chicken Say Hi | \u{1F4EA} [\u516D.] \u59D4\u6D3E (Delegate)"),t(s,{children:[n(o,{}),n(l,{backPath:r.CsharpEventHome,title:tt,text:et})]})}const st=`### Func<T,TResult> \u6CDB\u578B\u59D4\u6D3E -> \u6709\u56DE\u50B3\u503C\r
 \r
 1. \u5B9A\u7FA9\u51FD\u5F0F\r
 - \u50B3\u5165\u503C\u8A2D\u5B9A\u70BA \`Func<int, string>\`\r
@@ -6128,7 +7305,7 @@ namespace csharpExercise.DelegateExercise\r
     }\r
 }\r
 \r
-\`\`\``,Ye="\u{1F4EA} [\u4E03.] \u59D4\u6D3E (Delegate)(Func \u59D4\u6D3E(\u50B3\u53C3\u6578)) - \u99AC\u6232\u5718";function Qe(){return u("Chicken Say Hi | \u{1F4EA} [\u4E03.] \u59D4\u6D3E (Delegate)"),t(s,{children:[n(o,{}),n(l,{backPath:r.CsharpEventHome,title:Ye,text:_e})]})}const Ze=[{id:1,text:"\u7B2C\u4E00\u7AE0 OAuth2.0 \u662F\u4EC0\u9EBC?",goPath:r.OAuthNote1}];function nt(){return u("Chicken Say Hi | OAuth2.0"),t(s,{children:[n(o,{}),n(y,{list:Ze})]})}const rt=`## 1-1 OAuth2.0 \u662F\u4EC0\u9EBC?\r
+\`\`\``,at="\u{1F4EA} [\u4E03.] \u59D4\u6D3E (Delegate)(Func \u59D4\u6D3E(\u50B3\u53C3\u6578)) - \u99AC\u6232\u5718";function ot(){return u("Chicken Say Hi | \u{1F4EA} [\u4E03.] \u59D4\u6D3E (Delegate)"),t(s,{children:[n(o,{}),n(l,{backPath:r.CsharpEventHome,title:at,text:st})]})}const ut=[{id:1,text:"\u7B2C\u4E00\u7AE0 OAuth2.0 \u662F\u4EC0\u9EBC?",goPath:r.OAuthNote1}];function lt(){return u("Chicken Say Hi | OAuth2.0"),t(s,{children:[n(o,{}),n(y,{list:ut})]})}const ct=`## 1-1 OAuth2.0 \u662F\u4EC0\u9EBC?\r
 - \u662F\u4E00\u500B\u5B89\u5168\u5354\u8B70\r
 - \u4F7F\u7528\u8005\u50CF\u64C1\u6709\u8005\u8ACB\u6C42\u6388\u6B0A\r
 - \u64C1\u6709\u8005\u767Ctoken\u7D66\u4E88\u4F7F\u7528\u8005\r
@@ -6168,7 +7345,7 @@ namespace csharpExercise.DelegateExercise\r
 \r
 \r
 \r
-### (\u6301\u7E8C\u66F4\u65B0\u4E2D ....)`,et="\u{1F511} \u7B2C\u4E00\u7AE0 OAuth2.0 \u662F\u4EC0\u9EBC?";function tt(){return u("Chicken Say Hi | \u{1F511} OAuth2.0 (\u4E00)"),t(s,{children:[n(o,{}),n(l,{backPath:r.OAuthNote,title:et,text:rt})]})}const it=[{id:1,text:"\u7B2C\u4E00\u7AE0 \u55AE\u5143\u6E2C\u8A66\u7684\u57FA\u790E",goPath:r.UnitNote1}];function st(){return u("Chicken Say Hi | Unit test"),t(s,{children:[n(o,{}),n(y,{list:it})]})}const at=`- \u5B9A\u7FA9\u4E00\u500B\u55AE\u5143\u6E2C\u8A66\r
+### (\u6301\u7E8C\u66F4\u65B0\u4E2D ....)`,mt="\u{1F511} \u7B2C\u4E00\u7AE0 OAuth2.0 \u662F\u4EC0\u9EBC?";function ht(){return u("Chicken Say Hi | \u{1F511} OAuth2.0 (\u4E00)"),t(s,{children:[n(o,{}),n(l,{backPath:r.OAuthNote,title:mt,text:ct})]})}const gt=[{id:1,text:"\u7B2C\u4E00\u7AE0 \u55AE\u5143\u6E2C\u8A66\u7684\u57FA\u790E",goPath:r.UnitNote1}];function dt(){return u("Chicken Say Hi | Unit test"),t(s,{children:[n(o,{}),n(y,{list:gt})]})}const pt=`- \u5B9A\u7FA9\u4E00\u500B\u55AE\u5143\u6E2C\u8A66\r
 - \u5C0D\u6BD4\u55AE\u5143\u6E2C\u8A66\u8207\u96C6\u6210\u6E2C\u8A66\r
 - \u63A2\u7D22\u4E00\u500B\u7C21\u55AE\u7684\u55AE\u5143\u6E2C\u8A66\u793A\u4F8B\r
 - \u7406\u89E3\u6E2C\u8A66\u9A45\u52D5\u958B\u767C\r
@@ -6281,7 +7458,7 @@ public class SimpleParser \r
 ### 1.6\u6E2C\u8A66\u9A45\u52D5\u958B\u767C\r
 \r
 - \u6709\u4E00\u500B class (SimpleParser)\u9700\u8981\u88AB\u6E2C\u8A66\uFF0C\u88E1\u9762\u6709\u4E00\u500B\u65B9\u6CD5(ParseAndSum)\r
-`,ot="\u{1F4CB} \u7B2C\u4E00\u7AE0 \u55AE\u5143\u6E2C\u8A66\u7684\u57FA\u790E";function ut(){return u("Chicken Say Hi | \u{1F4CB} Unit test (\u4E00)"),t(s,{children:[n(o,{}),n(l,{backPath:r.UnitNote,title:ot,text:at})]})}const lt=[{id:1,text:"1-1. \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E00)",goPath:r.DPOverview1},{id:2,text:"1-2. \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E8C)",goPath:r.DPOverview2},{id:3,text:"1-3. \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E09)",goPath:r.DPOverview3},{id:4,text:"1-4. \u7269\u4EF6\u5C0E\u5411\u8A2D\u8A08\u539F\u5247\u6982\u8FF0",goPath:r.DPOopOverview},{id:5,text:"2-1. \u55AE\u4E00\u8CAC\u4EFB\u539F\u5247(SRP)",goPath:r.SRP},{id:6,text:"2-2. \u958B\u9589\u539F\u5247 (OCP)",goPath:r.OCP}];function ct(){return u("Chicken Say Hi | OAuth2.0"),t(s,{children:[n(o,{}),n(y,{list:lt})]})}const mt=`# [\u8A2D\u8A08\u6A21\u5F0F] 1-1 \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E00)\r
+`,Ct="\u{1F4CB} \u7B2C\u4E00\u7AE0 \u55AE\u5143\u6E2C\u8A66\u7684\u57FA\u790E";function yt(){return u("Chicken Say Hi | \u{1F4CB} Unit test (\u4E00)"),t(s,{children:[n(o,{}),n(l,{backPath:r.UnitNote,title:Ct,text:pt})]})}const xt=[{id:1,text:"1-1. \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E00)",goPath:r.DPOverview1},{id:2,text:"1-2. \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E8C)",goPath:r.DPOverview2},{id:3,text:"1-3. \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E09)",goPath:r.DPOverview3},{id:4,text:"1-4. \u7269\u4EF6\u5C0E\u5411\u8A2D\u8A08\u539F\u5247\u6982\u8FF0",goPath:r.DPOopOverview},{id:5,text:"2-1. \u55AE\u4E00\u8CAC\u4EFB\u539F\u5247(SRP)",goPath:r.SRP},{id:6,text:"2-2. \u958B\u9589\u539F\u5247 (OCP)",goPath:r.OCP}];function Dt(){return u("Chicken Say Hi | OAuth2.0"),t(s,{children:[n(o,{}),n(y,{list:xt})]})}const bt=`# [\u8A2D\u8A08\u6A21\u5F0F] 1-1 \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E00)\r
 \r
 ### \u8A2D\u8A08\u6A21\u5F0F\u7684\u8D77\u6E90:\r
 \r
@@ -6311,7 +7488,7 @@ A pattern is a successful or efficient solution to a recurring  problem within a
 \u8EDF\u9AD4\u6A21\u5F0F(Software Patterns)\u5C31\u6B64\u8A95\u751F\uFF0C\u8EDF\u9AD4\u958B\u767C\u7684\u751F\u547D\u9031\u671F\u4E0A\u90FD\u5B58\u5728\u8457\u4E00\u4E9B\u88AB\u8A8D\u540C\u7684\u6A21\u5F0F\r
 \u8EDF\u9AD4\u6A21\u5F0F\u793A\u5716:\r
 ![mdImg](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/designPattern/orverviewP1.png?raw=true)\r
-`,gt="\u{1F4A1}1. \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E00)";function ht(){return u("Chicken Say Hi | \u{1F4A1} 1. \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E00)"),t(s,{children:[n(o,{}),n(l,{backPath:r.DesignPattern,title:gt,text:mt})]})}const dt=`# [\u8A2D\u8A08\u6A21\u5F0F] 1-2 \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E8C)\r
+`,St="\u{1F4A1}1. \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E00)";function ft(){return u("Chicken Say Hi | \u{1F4A1} 1. \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E00)"),t(s,{children:[n(o,{}),n(l,{backPath:r.DesignPattern,title:St,text:bt})]})}const Ft=`# [\u8A2D\u8A08\u6A21\u5F0F] 1-2 \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E8C)\r
 ### \u8A2D\u8A08\u6A21\u5F0F\u662F\u4EC0\u9EBC\uFF1F\r
 \r
 - \u8A2D\u8A08\u6A21\u5F0F\uFF08Design Pattern\uFF09\u662F\u4E00\u5957\r
@@ -6381,14 +7558,14 @@ A pattern is a successful or efficient solution to a recurring  problem within a
 | \u7B56\u7565\u6A21\u5F0F Strategy  Pattern |\r
 | \u6A21\u677F\u65B9\u6CD5\u6A21\u5F0F Template  Method Pattern |\r
 | \u8A2A\u554F\u8005\u6A21\u5F0F Visitor  Pattern |\r
-`,pt="\u{1F4A1}2. \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E8C)";function Ct(){return u("Chicken Say Hi | \u{1F4A1} 2. \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E8C)"),t(s,{children:[n(o,{}),n(l,{backPath:r.DesignPattern,title:pt,text:dt})]})}const yt=`# [\u8A2D\u8A08\u6A21\u5F0F] 1-3 \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E09)\r
+`,vt="\u{1F4A1}2. \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E8C)";function Et(){return u("Chicken Say Hi | \u{1F4A1} 2. \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E8C)"),t(s,{children:[n(o,{}),n(l,{backPath:r.DesignPattern,title:vt,text:Ft})]})}const Pt=`# [\u8A2D\u8A08\u6A21\u5F0F] 1-3 \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E09)\r
 \r
 ### \u8A2D\u8A08\u6A21\u5F0F\u7684\u7528\u9014:\r
 1. \u63D0\u9AD8\u53EF\u8907\u7528\u8207\u7DAD\u8B77\u6027 : \u8A2D\u8A08\u6A21\u5F0F\u7D93\u904E\u5404\u5C08\u5BB6\u7684\u7D93\u9A57\u8207\u667A\u6167\uFF0C\u8A2D\u8A08\u6A21\u5F0F\u53EF\u4EE5\u63D0\u9AD8\u6211\u5011\u7684\u958B\u767C\u8207\u6548\u7387\r
 2. \u65B9\u4FBF\u6E9D\u901A\u8207\u4EA4\u6D41 : \u7531\u65BC\u8A2D\u8A08\u6A21\u5F0F\u4E0A\u6709\u4E00\u5957\u901A\u7528\u7684\u8A2D\u8A08\u8A5E\u5F59\uFF0C\u56E0\u6B64\u5728\u6E9D\u901A\u4E0A\u53EF\u4EE5\u76F8\u4E92\u7406\u89E3\r
 3. \u63D0\u9AD8\u64F4\u5145\u6027 : \u5728\u7CFB\u7D71\u65E5\u76CA\u589E\u5927\uFF0C\u53EF\u64F4\u5145\u6027\u8207\u7DAD\u8B77\u6027\uFF0C\u589E\u52A0\u7CFB\u7D71\u7684\u9748\u6D3B\u6027\u8207\u64F4\u5145\u6027\r
 4. \u7D71\u4E00\u601D\u8DEF :\u5982\u679C\u5927\u5BB6\u90FD\u4EE5\u8A2D\u8A08\u6A21\u5F0F\u70BA\u4E3B\u8EF8\uFF0C\u90A3\u5C07\u6709\u52A9\u65BC\u5225\u4EBA\u66F4\u5FEB\u7684\u7406\u89E3\u7CFB\u7D71\r
-`,Dt="\u{1F4A1}3. \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E09)";function xt(){return u("Chicken Say Hi | \u{1F4A1} 3. \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E09)"),t(s,{children:[n(o,{}),n(l,{backPath:r.DesignPattern,title:Dt,text:yt})]})}const Ft=`# [\u8A2D\u8A08\u6A21\u5F0F] 1-4 \u7269\u4EF6\u5C0E\u5411\u8A2D\u8A08\u539F\u5247\u6982\u8FF0\r
+`,At="\u{1F4A1}3. \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E09)";function wt(){return u("Chicken Say Hi | \u{1F4A1} 3. \u8A2D\u8A08\u6A21\u5F0F\u6982\u8FF0(\u4E09)"),t(s,{children:[n(o,{}),n(l,{backPath:r.DesignPattern,title:At,text:Pt})]})}const Lt=`# [\u8A2D\u8A08\u6A21\u5F0F] 1-4 \u7269\u4EF6\u5C0E\u5411\u8A2D\u8A08\u539F\u5247\u6982\u8FF0\r
 \r
 ### \u7269\u4EF6\u5C0E\u5411\u8A2D\u8A08\r
 - \u7269\u4EF6\u5C0E\u5411\u8A2D\u8A08\u4E2D\u4E3B\u8981\u76EE\u6A19\u70BA\u589E\u52A0\u7CFB\u7D71\u7684\u53EF\u7DAD\u8B77\u6027\u8207\u8907\u7528\u6027\r
@@ -6401,7 +7578,7 @@ A pattern is a successful or efficient solution to a recurring  problem within a
 | \u91CC\u6C0F\u66FF\u63DB\u539F\u5247 (LSP) Liskov Substitution Principle| \u5B50\u578B\u5225\u5FC5\u9700\u53EF\u66FF\u63DB\u70BA\u4ED6\u7684\u57FA\u5E95\u578B\u5225 Subtypes must be substitutable for their base types |\r
 | \u4ECB\u9762\u9694\u96E2\u539F\u5247 (ISP) Interface Segregation Principle | \u591A\u500B\u7528\u6236\u7AEF\u5C08\u7528\u7684\u4ECB\u9762\u512A\u65BC\u4E00\u500B\u901A\u7528\u9700\u6C42\u4ECB\u9762 Many client specific interfaces are better than one general purpose interface |\r
 | \u76F8\u4F9D\u53CD\u8F49\u539F\u5247 (DIP) Dependency Inversion Principle | \u62BD\u8C61\u4E0D\u61C9\u8A72\u76F8\u4F9D\u65BC\u7D30\u7BC0\u3002\u800C\u7D30\u7BC0\u5247\u61C9\u8A72\u76F8\u4F9D\u65BC\u62BD\u8C61 Abstractions should not depend on details. Details should depend on abstractions |\r
-`,St="\u{1F4A1}4. \u7269\u4EF6\u5C0E\u5411\u8A2D\u8A08\u539F\u5247\u6982\u8FF0";function bt(){return u("Chicken Say Hi | \u{1F4A1} 4. \u7269\u4EF6\u5C0E\u5411\u8A2D\u8A08\u539F\u5247\u6982\u8FF0"),t(s,{children:[n(o,{}),n(l,{backPath:r.DesignPattern,title:St,text:Ft})]})}const Et=`### [\u8A2D\u8A08\u6A21\u5F0F] 2-1 \u7269\u4EF6\u5C0E\u5411\u8A2D\u8A08\u539F\u5247-\u55AE\u4E00\u8CAC\u4EFB\u539F\u5247 (single repository principle)\r
+`,kt="\u{1F4A1}4. \u7269\u4EF6\u5C0E\u5411\u8A2D\u8A08\u539F\u5247\u6982\u8FF0";function Tt(){return u("Chicken Say Hi | \u{1F4A1} 4. \u7269\u4EF6\u5C0E\u5411\u8A2D\u8A08\u539F\u5247\u6982\u8FF0"),t(s,{children:[n(o,{}),n(l,{backPath:r.DesignPattern,title:kt,text:Lt})]})}const Bt=`### [\u8A2D\u8A08\u6A21\u5F0F] 2-1 \u7269\u4EF6\u5C0E\u5411\u8A2D\u8A08\u539F\u5247-\u55AE\u4E00\u8CAC\u4EFB\u539F\u5247 (single repository principle)\r
 \r
 ## \u55AE\u4E00\u8CAC\u4EFB\u539F\u5247:\r
 - \u8CAC\u4EFB(Responsibility)\r
@@ -6504,7 +7681,7 @@ Public class CustomerDataChart\r
 2. \u7DAD\u8B77\u6216\u4FEE\u6539\u6642\u627E\u4E0D\u5230\u554F\u984C\r
 3. \u4F7F\u7528 class \u6642\u4E0D\u77E5\u9053\u8981\u547C\u53EB\u54EA\u500B function\r
 4. \u5207\u5206\u592A\u7D30\u6642\u6703\u9020\u6210\u9AD8\u8026\u5408\u5EA6\u7684\u554F\u984C\r
-`,vt="\u{1F4A1}1. \u55AE\u4E00\u8CAC\u4EFB\u539F\u5247 (SRP) (single repository principle)";function ft(){return u("Chicken Say Hi | \u{1F4A1} 1. \u55AE\u4E00\u8CAC\u4EFB\u539F\u5247(SRP)"),t(s,{children:[n(o,{}),n(l,{backPath:r.DesignPattern,title:vt,text:Et})]})}const Pt=`### [\u8A2D\u8A08\u6A21\u5F0F] 2-2 \u7269\u4EF6\u5C0E\u5411\u8A2D\u8A08\u539F\u5247-\u958B\u9589\u539F\u5247 (open closed principle)\r
+`,Wt="\u{1F4A1}1. \u55AE\u4E00\u8CAC\u4EFB\u539F\u5247 (SRP) (single repository principle)";function It(){return u("Chicken Say Hi | \u{1F4A1} 1. \u55AE\u4E00\u8CAC\u4EFB\u539F\u5247(SRP)"),t(s,{children:[n(o,{}),n(l,{backPath:r.DesignPattern,title:Wt,text:Bt})]})}const Mt=`### [\u8A2D\u8A08\u6A21\u5F0F] 2-2 \u7269\u4EF6\u5C0E\u5411\u8A2D\u8A08\u539F\u5247-\u958B\u9589\u539F\u5247 (open closed principle)\r
 \r
 ## \u958B\u9589\u539F\u5247:\r
 - \u7A0B\u5F0F\u78BC\u90FD\u6709\u53EF\u80FD\u56E0\u70BA\u9700\u6C42\u7684\u589E\u52A0\u9700\u8981\u64F4\u5145\r
@@ -6616,4 +7793,4 @@ public class ChartService  \r
     }\r
 }\r
 \`\`\`\r
-`,At="\u{1F4A1}2. \u958B\u9589\u539F\u5247 (OCP)  (open closed principle)";function Lt(){return u("Chicken Say Hi | \u{1F4A1} 2.\u958B\u9589\u539F\u5247 (OCP)"),t(s,{children:[n(o,{}),n(l,{backPath:r.DesignPattern,title:At,text:Pt})]})}function wt(){return t(H,{children:[n(e,{path:r.Home.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(X,{})})}),n(e,{path:r.Portfolio.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(un,{})})}),n(e,{path:r.About.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(we,{})})}),n(e,{path:r.P5Js.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(cn,{})})}),n(e,{path:r.LineAndLoop.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(hn,{})})}),n(e,{path:r.MapFunc.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Cn,{})})}),n(e,{path:r.Gradient.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(xn,{})})}),n(e,{path:r.Wave.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(bn,{})})}),n(e,{path:r.MethodArc.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(fn,{})})}),n(e,{path:r.PhaserPage.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(An,{})})}),n(e,{path:r.RpgGameV1.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Tn,{})})}),n(e,{path:r.D1Ph3.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Wn,{})})}),n(e,{path:r.D2Ph3.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Rn,{})})}),n(e,{path:r.D3Ph3.toString(),element:n(a,{}),children:n(e,{index:!0,element:n($n,{})})}),n(e,{path:r.D4Ph3.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(jn,{})})}),n(e,{path:r.IronMan13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Kn,{})})}),n(e,{path:r.D1no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(W,{})})}),n(e,{path:r.D1no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(W,{})})}),n(e,{path:r.D2no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Xn,{})})}),n(e,{path:r.D3no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Qn,{})})}),n(e,{path:r.D4no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(rr,{})})}),n(e,{path:r.D5no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(ir,{})})}),n(e,{path:r.D6no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(or,{})})}),n(e,{path:r.D7no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(cr,{})})}),n(e,{path:r.D8no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(hr,{})})}),n(e,{path:r.D9no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Cr,{})})}),n(e,{path:r.D10no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(xr,{})})}),n(e,{path:r.D11no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(br,{})})}),n(e,{path:r.D12no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(fr,{})})}),n(e,{path:r.D13no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Lr,{})})}),n(e,{path:r.D14no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(kr,{})})}),n(e,{path:r.D15no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Mr,{})})}),n(e,{path:r.D16no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Nr,{})})}),n(e,{path:r.D17no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Or,{})})}),n(e,{path:r.D18no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(qr,{})})}),n(e,{path:r.D19no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(zr,{})})}),n(e,{path:r.D20no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Xr,{})})}),n(e,{path:r.D21no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Qr,{})})}),n(e,{path:r.D22no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(re,{})})}),n(e,{path:r.D23no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(ie,{})})}),n(e,{path:r.D24no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(oe,{})})}),n(e,{path:r.D25no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(ce,{})})}),n(e,{path:r.D26no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(he,{})})}),n(e,{path:r.D27no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Ce,{})})}),n(e,{path:r.D28no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(xe,{})})}),n(e,{path:r.D29no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(be,{})})}),n(e,{path:r.D30no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(fe,{})})}),n(e,{path:r.D31no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Le,{})})}),n(e,{path:r.CsharpEventHome.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(ke,{})})}),n(e,{path:r.CsDelegate1.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Me,{})})}),n(e,{path:r.CsDelegate2.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Ne,{})})}),n(e,{path:r.CsDelegate3.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Oe,{})})}),n(e,{path:r.CsDelegate4.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(qe,{})})}),n(e,{path:r.CsDelegate5.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(ze,{})})}),n(e,{path:r.CsDelegate6.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Xe,{})})}),n(e,{path:r.CsDelegate7.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Qe,{})})}),n(e,{path:r.OAuthNote.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(nt,{})})}),n(e,{path:r.OAuthNote1.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(tt,{})})}),n(e,{path:r.UnitNote.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(st,{})})}),n(e,{path:r.UnitNote1.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(ut,{})})}),n(e,{path:r.DesignPattern.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(ct,{})})}),n(e,{path:r.DPOverview1.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(ht,{})})}),n(e,{path:r.DPOverview2.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Ct,{})})}),n(e,{path:r.DPOverview3.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(xt,{})})}),n(e,{path:r.DPOopOverview.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(bt,{})})}),n(e,{path:r.SRP.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(ft,{})})}),n(e,{path:r.OCP.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Lt,{})})}),n(e,{path:r.Continue.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Y,{})})}),n(e,{path:"*",element:n(j,{to:"/"})})]})}const Tt="G-23JXYZ7T1V",kt="true",Bt=()=>{I.initialize(Tt,{testMode:!kt})},Wt=i=>{I.send({hitType:"pageview",page:i})};function Mt(){const i=q();w.useEffect(()=>{Bt()},[]),w.useEffect(()=>{const m=i.pathname+i.search;Wt(m)},[i])}function It(){return Mt(),n(s,{children:n(wt,{})})}const Rt=N.createRoot(document.getElementById("root"));Rt.render(n(G,{children:n(It,{})}));
+`,Rt="\u{1F4A1}2. \u958B\u9589\u539F\u5247 (OCP)  (open closed principle)";function Nt(){return u("Chicken Say Hi | \u{1F4A1} 2.\u958B\u9589\u539F\u5247 (OCP)"),t(s,{children:[n(o,{}),n(l,{backPath:r.DesignPattern,title:Rt,text:Mt})]})}function Gt(){return t(O,{children:[n(e,{path:r.Home.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(J,{})})}),n(e,{path:r.Portfolio.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(un,{})})}),n(e,{path:r.About.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Ge,{})})}),n(e,{path:r.P5Js.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(cn,{})})}),n(e,{path:r.LineAndLoop.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(gn,{})})}),n(e,{path:r.MapFunc.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Cn,{})})}),n(e,{path:r.Gradient.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Dn,{})})}),n(e,{path:r.Wave.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(fn,{})})}),n(e,{path:r.MethodArc.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(En,{})})}),n(e,{path:r.PhaserPage.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(An,{})})}),n(e,{path:r.RpgGameV1.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(kn,{})})}),n(e,{path:r.D1Ph3.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Wn,{})})}),n(e,{path:r.D2Ph3.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Rn,{})})}),n(e,{path:r.D3Ph3.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(jn,{})})}),n(e,{path:r.D4Ph3.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Hn,{})})}),n(e,{path:r.D5Ph3.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Vn,{})})}),n(e,{path:r.D6Ph3.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(_n,{})})}),n(e,{path:r.D7Ph3.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Yn,{})})}),n(e,{path:r.IronMan13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Zn,{})})}),n(e,{path:r.D1no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(W,{})})}),n(e,{path:r.D1no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(W,{})})}),n(e,{path:r.D2no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(ir,{})})}),n(e,{path:r.D3no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(or,{})})}),n(e,{path:r.D4no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(cr,{})})}),n(e,{path:r.D5no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(gr,{})})}),n(e,{path:r.D6no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Cr,{})})}),n(e,{path:r.D7no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Dr,{})})}),n(e,{path:r.D8no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(fr,{})})}),n(e,{path:r.D9no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Er,{})})}),n(e,{path:r.D10no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(wr,{})})}),n(e,{path:r.D11no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Tr,{})})}),n(e,{path:r.D12no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Ir,{})})}),n(e,{path:r.D13no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Nr,{})})}),n(e,{path:r.D14no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n($r,{})})}),n(e,{path:r.D15no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(qr,{})})}),n(e,{path:r.D16no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Ur,{})})}),n(e,{path:r.D17no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Jr,{})})}),n(e,{path:r.D18no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Qr,{})})}),n(e,{path:r.D19no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(re,{})})}),n(e,{path:r.D20no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(ie,{})})}),n(e,{path:r.D21no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(oe,{})})}),n(e,{path:r.D22no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(ce,{})})}),n(e,{path:r.D23no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(ge,{})})}),n(e,{path:r.D24no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Ce,{})})}),n(e,{path:r.D25no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(De,{})})}),n(e,{path:r.D26no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(fe,{})})}),n(e,{path:r.D27no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Ee,{})})}),n(e,{path:r.D28no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(we,{})})}),n(e,{path:r.D29no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Te,{})})}),n(e,{path:r.D30no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Ie,{})})}),n(e,{path:r.D31no13.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Ne,{})})}),n(e,{path:r.CsharpEventHome.toString(),element:n(a,{}),children:n(e,{index:!0,element:n($e,{})})}),n(e,{path:r.CsDelegate1.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(qe,{})})}),n(e,{path:r.CsDelegate2.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Ue,{})})}),n(e,{path:r.CsDelegate3.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Je,{})})}),n(e,{path:r.CsDelegate4.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Qe,{})})}),n(e,{path:r.CsDelegate5.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(rt,{})})}),n(e,{path:r.CsDelegate6.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(it,{})})}),n(e,{path:r.CsDelegate7.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(ot,{})})}),n(e,{path:r.OAuthNote.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(lt,{})})}),n(e,{path:r.OAuthNote1.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(ht,{})})}),n(e,{path:r.UnitNote.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(dt,{})})}),n(e,{path:r.UnitNote1.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(yt,{})})}),n(e,{path:r.DesignPattern.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Dt,{})})}),n(e,{path:r.DPOverview1.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(ft,{})})}),n(e,{path:r.DPOverview2.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Et,{})})}),n(e,{path:r.DPOverview3.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(wt,{})})}),n(e,{path:r.DPOopOverview.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Tt,{})})}),n(e,{path:r.SRP.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(It,{})})}),n(e,{path:r.OCP.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Nt,{})})}),n(e,{path:r.Continue.toString(),element:n(a,{}),children:n(e,{index:!0,element:n(Y,{})})}),n(e,{path:"*",element:n(H,{to:"/"})})]})}const jt="G-23JXYZ7T1V",$t="true",Ot=()=>{M.initialize(jt,{testMode:!$t})},Ht=i=>{M.send({hitType:"pageview",page:i})};function qt(){const i=q();L.useEffect(()=>{Ot()},[]),L.useEffect(()=>{const m=i.pathname+i.search;Ht(m)},[i])}function Kt(){return qt(),n(s,{children:n(Gt,{})})}const Vt=N.createRoot(document.getElementById("root"));Vt.render(n(G,{children:n(Kt,{})}));
