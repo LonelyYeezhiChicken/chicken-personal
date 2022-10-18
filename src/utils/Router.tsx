@@ -12,6 +12,9 @@ import {
   D2Ph3,
   D3Ph3,
   D4Ph3,
+  D5Ph3,
+  D6Ph3,
+  D7Ph3,
   About,
   LineAndLoop,
   MapFunc,
@@ -136,6 +139,18 @@ export function Router() {
       <Route path={LinkMap.D4Ph3.toString()} element={<Main />}>
         {/* RpgGameV1 */}
         <Route index element={<D4Ph3 />} />
+      </Route>
+      <Route path={LinkMap.D5Ph3.toString()} element={<Main />}>
+        {/* RpgGameV1 */}
+        <Route index element={<D5Ph3 />} />
+      </Route>
+      <Route path={LinkMap.D6Ph3.toString()} element={<Main />}>
+        {/* RpgGameV1 */}
+        <Route index element={<D6Ph3 />} />
+      </Route>
+      <Route path={LinkMap.D7Ph3.toString()} element={<Main />}>
+        {/* RpgGameV1 */}
+        <Route index element={<D7Ph3 />} />
       </Route>
       {/*------------- RpgGameV1 --------------*/}
       {/*------------- 鐵人賽13 --------------*/}
