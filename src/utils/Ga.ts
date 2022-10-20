@@ -5,6 +5,7 @@ const TRACKING_ID: string = import.meta.env.VITE_GA_KEY;
 const isProduction: boolean = import.meta.env.VITE_Is_Production;
 
 export const init = () => {
+    console.log(isProduction)
     ga4.initialize(TRACKING_ID, {
         testMode: !isProduction
     })

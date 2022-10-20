@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "serve": "serve -s dist -p 3000",
     "predeploy": "yarn build",
-    "deploy":"^1.4.1"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",

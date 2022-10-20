@@ -30,5 +30,20 @@ export const pageList: PageData[] = [
         id: 6,
         text: "2-2. 開閉原則 (OCP)",
         goPath: LinkMap.OCP,
-    }
+    },
+    {
+        id: 7,
+        text: "2-3. 里氏替換原則 (Lsp)",
+        goPath: LinkMap.LSP,
+    },
+    {
+        id: 8,
+        text: "2-4. 介面隔離原則 (ISP)",
+        goPath: LinkMap.ISP,
+    },
+    {
+        id: 9,
+        text: "2-5. 依賴反轉原則 (DIP) ",
+        goPath: LinkMap.DIP,
+    },
 ];

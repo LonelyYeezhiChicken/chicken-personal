@@ -1,1 +1,0 @@
-# [設計模式] 2-4 物件導向設計原則-介面隔離原則 (interface segregation principle)
