@@ -46,4 +46,14 @@ export const pageList: PageData[] = [
         text: "2-5. 依賴反轉原則 (DIP) ",
         goPath: LinkMap.DIP,
     },
+    {
+        id: 10,
+        text: "3-1. 工廠方法 (Factory Method Pattern) ",
+        goPath: LinkMap.FMP,
+    },
+    {
+        id: 11,
+        text: "3-2. 簡單工廠 (Simple Factory Pattern) ",
+        goPath: LinkMap.SFP,
+    },
 ];
