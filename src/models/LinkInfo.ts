@@ -86,7 +86,9 @@ export enum LinkMap {
     DPOopOverview = "/dPOopOverview",
     SRP = "/sRP",
     OCP = "/oCP",
-    LSP = "/lsp",
+    LSP = "/lSP",
     ISP = "/iSP",
     DIP = "/dIP",
+    FMP = "/fMP",
+    SFP = "/sFP",
 }

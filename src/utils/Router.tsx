@@ -75,6 +75,8 @@ import {
   LSP,
   ISP,
   DIP,
+  FMP,
+  SFP,
 } from "../pages";
 
 export function Router() {
@@ -385,6 +387,14 @@ export function Router() {
       <Route path={LinkMap.DIP.toString()} element={<Main />}>
         {/* 設計模式 */}
         <Route index element={<DIP />} />
+      </Route>
+      <Route path={LinkMap.FMP.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<FMP />} />
+      </Route>
+      <Route path={LinkMap.SFP.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<SFP />} />
       </Route>
       {/*------------- 設計模式 --------------*/}
       <Route path={LinkMap.Continue.toString()} element={<Main />}>
