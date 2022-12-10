@@ -78,6 +78,8 @@ import {
   DIP,
   FMP,
   SFP,
+  MlNote,
+  KnnPython,
 } from "../pages";
 
 export function Router() {
@@ -402,6 +404,16 @@ export function Router() {
         <Route index element={<SFP />} />
       </Route>
       {/*------------- 設計模式 --------------*/}
+      {/*------------- ML --------------*/}
+      <Route path={LinkMap.MlNote.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<MlNote />} />
+      </Route>
+      <Route path={LinkMap.MlKnnPy.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<KnnPython />} />
+      </Route>
+      {/*------------- ML --------------*/}
       <Route path={LinkMap.Continue.toString()} element={<Main />}>
         {/* 建設中 */}
         <Route index element={<Continue />} />

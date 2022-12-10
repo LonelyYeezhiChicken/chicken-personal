@@ -91,4 +91,8 @@ export enum LinkMap {
     DIP = "/dIP",
     FMP = "/fMP",
     SFP = "/sFP",
+
+    //ML
+    MlNote = "/MlNote",
+    MlKnnPy = "/KnnPython"
 }
