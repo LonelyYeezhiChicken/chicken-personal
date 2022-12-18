@@ -10,5 +10,10 @@ export const pageList: PageData[] = [
         id: 2,
         text: "👩‍💻 [C#] 1.0.1 string to enum",
         goPath: LinkMap.CsharpString2Enum,
+    },
+    {
+        id: 3,
+        text: "👩‍💻 [C#] 1.0.2 千分位符",
+        goPath: LinkMap.CsharpThousandthPlace,
     }
 ];

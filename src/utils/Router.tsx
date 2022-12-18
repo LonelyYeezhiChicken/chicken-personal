@@ -83,6 +83,7 @@ import {
   DaylilyNote,
   CsharpListContains,
   CsharpString2Enum,
+  CsharpThousandthPlace,
 } from "../pages";
 
 export function Router() {
@@ -429,6 +430,10 @@ export function Router() {
       <Route path={LinkMap.CsharpString2Enum.toString()} element={<Main />}>
         {/* 設計模式 */}
         <Route index element={<CsharpString2Enum />} />
+      </Route>
+      <Route path={LinkMap.CsharpThousandthPlace.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<CsharpThousandthPlace />} />
       </Route>
       {/*------------- 雜記 --------------*/}
       <Route path={LinkMap.Continue.toString()} element={<Main />}>
