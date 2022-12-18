@@ -5,6 +5,8 @@ import csharpImg from "../../assets/csharp.png";
 import oauth2Img from "../../assets/oauth2.png";
 import nunitImg from "../../assets/nunit.png";
 import designPatternImg from "../../assets/designPattern.jpg";
+import mlImg from "../../assets/ml.png";
+import daylilyImg from "../../assets/daylily.jpg";
 
 type HCard = {
     id: number;
@@ -61,4 +63,18 @@ export const DesignPattern: HCard = {
     title: "設計模式 筆記",
     content: "設計模式 閱讀筆記",
     imgPath: designPatternImg,
+};
+
+export const Ml: HCard = {
+    id: 8,
+    title: "機器學習 筆記",
+    content: "機器學習 閱讀筆記",
+    imgPath: mlImg,
+};
+
+export const Daylily: HCard = {
+    id: 9,
+    title: "開發雜記",
+    content: "日常開發雜記",
+    imgPath: daylilyImg,
 };

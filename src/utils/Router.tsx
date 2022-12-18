@@ -78,6 +78,11 @@ import {
   DIP,
   FMP,
   SFP,
+  MlNote,
+  KnnPython,
+  DaylilyNote,
+  CsharpListContains,
+  String2Enum,
 } from "../pages";
 
 export function Router() {
@@ -402,6 +407,30 @@ export function Router() {
         <Route index element={<SFP />} />
       </Route>
       {/*------------- 設計模式 --------------*/}
+      {/*------------- ML --------------*/}
+      <Route path={LinkMap.MlNote.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<MlNote />} />
+      </Route>
+      <Route path={LinkMap.MlKnnPy.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<KnnPython />} />
+      </Route>
+      {/*------------- ML --------------*/}
+      {/*------------- 雜記 --------------*/}
+      <Route path={LinkMap.DaylilyNote.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<DaylilyNote />} />
+      </Route>
+      <Route path={LinkMap.CsharpListContains.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<CsharpListContains />} />
+      </Route>
+      <Route path={LinkMap.String2Enum.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<String2Enum />} />
+      </Route>
+      {/*------------- 雜記 --------------*/}
       <Route path={LinkMap.Continue.toString()} element={<Main />}>
         {/* 建設中 */}
         <Route index element={<Continue />} />

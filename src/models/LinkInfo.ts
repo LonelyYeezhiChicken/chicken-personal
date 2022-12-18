@@ -91,4 +91,13 @@ export enum LinkMap {
     DIP = "/dIP",
     FMP = "/fMP",
     SFP = "/sFP",
+
+    //ML
+    MlNote = "/MlNote",
+    MlKnnPy = "/KnnPython",
+
+    //雜記
+    DaylilyNote = "/DaylilyNote",
+    CsharpListContains = "/CsharpListContains",
+    String2Enum = "/String2Enum",
 }
