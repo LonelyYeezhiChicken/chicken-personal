@@ -15,5 +15,10 @@ export const pageList: PageData[] = [
         id: 3,
         text: "👩‍💻 [C#] 1.0.2 千分位符",
         goPath: LinkMap.CsharpThousandthPlace,
+    },
+    {
+        id: 4,
+        text: "👩‍💻 [C#] 1.0.3 聯集",
+        goPath: LinkMap.CsharpUnion,
     }
 ];

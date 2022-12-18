@@ -84,6 +84,7 @@ import {
   CsharpListContains,
   CsharpString2Enum,
   CsharpThousandthPlace,
+  CsharpUnion,
 } from "../pages";
 
 export function Router() {
@@ -420,20 +421,23 @@ export function Router() {
       {/*------------- ML --------------*/}
       {/*------------- 雜記 --------------*/}
       <Route path={LinkMap.DaylilyNote.toString()} element={<Main />}>
-        {/* 設計模式 */}
         <Route index element={<DaylilyNote />} />
       </Route>
       <Route path={LinkMap.CsharpListContains.toString()} element={<Main />}>
-        {/* 設計模式 */}
+        {/* list 比較 */}
         <Route index element={<CsharpListContains />} />
       </Route>
       <Route path={LinkMap.CsharpString2Enum.toString()} element={<Main />}>
-        {/* 設計模式 */}
+        {/* Csharp String to Enum */}
         <Route index element={<CsharpString2Enum />} />
       </Route>
       <Route path={LinkMap.CsharpThousandthPlace.toString()} element={<Main />}>
-        {/* 設計模式 */}
+        {/* 千分位 */}
         <Route index element={<CsharpThousandthPlace />} />
+      </Route>
+      <Route path={LinkMap.CsharpUnion.toString()} element={<Main />}>
+        {/* 聯集 */}
+        <Route index element={<CsharpUnion />} />
       </Route>
       {/*------------- 雜記 --------------*/}
       <Route path={LinkMap.Continue.toString()} element={<Main />}>
