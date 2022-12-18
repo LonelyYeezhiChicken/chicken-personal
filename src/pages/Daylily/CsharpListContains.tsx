@@ -1,6 +1,6 @@
 import { Header, Portfolio } from "../../components";
 import { LinkMap } from "../../models";
-import testMd from "../../note/oAuthNote/note1.md";
+import testMd from "../../note/daylily/csharpListContains.md";
 import { useTitle } from "../../utils/PageTitle";
 
 const pageTitle: string = "👩‍💻 [C#] 1.0.0 List 比較";

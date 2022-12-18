@@ -6,6 +6,7 @@ import oauth2Img from "../../assets/oauth2.png";
 import nunitImg from "../../assets/nunit.png";
 import designPatternImg from "../../assets/designPattern.jpg";
 import mlImg from "../../assets/ml.png";
+import daylilyImg from "../../assets/daylily.jpg";
 
 type HCard = {
     id: number;
@@ -75,5 +76,5 @@ export const Daylily: HCard = {
     id: 9,
     title: "開發雜記",
     content: "日常開發雜記",
-    imgPath: mlImg,
+    imgPath: daylilyImg,
 };
