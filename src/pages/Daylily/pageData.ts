@@ -20,5 +20,10 @@ export const pageList: PageData[] = [
         id: 4,
         text: "👩‍💻 [C#] 1.0.3 聯集",
         goPath: LinkMap.CsharpUnion,
+    },
+    {
+        id: 5,
+        text: "👩‍💻 [C#] 1.0.4 圖片處理",
+        goPath: LinkMap.CsharpImg,
     }
 ];

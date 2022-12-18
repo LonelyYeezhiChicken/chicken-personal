@@ -85,6 +85,7 @@ import {
   CsharpString2Enum,
   CsharpThousandthPlace,
   CsharpUnion,
+  CsharpImg,
 } from "../pages";
 
 export function Router() {
@@ -438,6 +439,10 @@ export function Router() {
       <Route path={LinkMap.CsharpUnion.toString()} element={<Main />}>
         {/* 聯集 */}
         <Route index element={<CsharpUnion />} />
+      </Route>
+      <Route path={LinkMap.CsharpImg.toString()} element={<Main />}>
+        {/* 聯集 */}
+        <Route index element={<CsharpImg />} />
       </Route>
       {/*------------- 雜記 --------------*/}
       <Route path={LinkMap.Continue.toString()} element={<Main />}>
