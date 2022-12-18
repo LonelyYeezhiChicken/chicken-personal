@@ -100,4 +100,6 @@ export enum LinkMap {
     DaylilyNote = "/DaylilyNote",
     CsharpListContains = "/CsharpListContains",
     CsharpString2Enum = "/CsharpString2Enum",
+    CsharpThousandthPlace = "/CsharpThousandthPlace",
+    CsharpUnion = "/CsharpUnion",
 }
