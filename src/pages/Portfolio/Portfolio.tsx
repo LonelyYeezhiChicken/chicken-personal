@@ -8,6 +8,7 @@ import {
   NunitTest,
   DesignPattern,
   Ml,
+  Daylily,
 } from "./pageData";
 import { useTitle } from "../../utils/PageTitle";
 
@@ -91,10 +92,10 @@ function Portfolio() {
             </div>
             <div className="flex flex-col">
               <HorizontalCard
-                pgId={Ml.id}
-                title={Ml.title}
-                content={Ml.content}
-                imgPath={Ml.imgPath}
+                pgId={Daylily.id}
+                title={Daylily.title}
+                content={Daylily.content}
+                imgPath={Daylily.imgPath}
               />
             </div>
             <div className="flex flex-col m-20"></div>

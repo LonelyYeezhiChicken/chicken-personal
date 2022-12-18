@@ -80,6 +80,8 @@ import {
   SFP,
   MlNote,
   KnnPython,
+  DaylilyNote,
+  CsharpListContains,
 } from "../pages";
 
 export function Router() {
@@ -414,6 +416,16 @@ export function Router() {
         <Route index element={<KnnPython />} />
       </Route>
       {/*------------- ML --------------*/}
+      {/*------------- 雜記 --------------*/}
+      <Route path={LinkMap.DaylilyNote.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<DaylilyNote />} />
+      </Route>
+      <Route path={LinkMap.CsharpListContains.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<CsharpListContains />} />
+      </Route>
+      {/*------------- 雜記 --------------*/}
       <Route path={LinkMap.Continue.toString()} element={<Main />}>
         {/* 建設中 */}
         <Route index element={<Continue />} />

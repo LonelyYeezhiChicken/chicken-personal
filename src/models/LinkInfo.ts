@@ -94,5 +94,9 @@ export enum LinkMap {
 
     //ML
     MlNote = "/MlNote",
-    MlKnnPy = "/KnnPython"
+    MlKnnPy = "/KnnPython",
+
+    //雜記
+    DaylilyNote = "/DaylilyNote",
+    CsharpListContains = "/CsharpListContains",
 }

@@ -70,3 +70,10 @@ export const Ml: HCard = {
     content: "機器學習 閱讀筆記",
     imgPath: mlImg,
 };
+
+export const Daylily: HCard = {
+    id: 9,
+    title: "開發雜記",
+    content: "日常開發雜記",
+    imgPath: mlImg,
+};
