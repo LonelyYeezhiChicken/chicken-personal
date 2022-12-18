@@ -82,7 +82,7 @@ import {
   KnnPython,
   DaylilyNote,
   CsharpListContains,
-  String2Enum,
+  CsharpString2Enum,
 } from "../pages";
 
 export function Router() {
@@ -426,9 +426,9 @@ export function Router() {
         {/* 設計模式 */}
         <Route index element={<CsharpListContains />} />
       </Route>
-      <Route path={LinkMap.String2Enum.toString()} element={<Main />}>
+      <Route path={LinkMap.CsharpString2Enum.toString()} element={<Main />}>
         {/* 設計模式 */}
-        <Route index element={<String2Enum />} />
+        <Route index element={<CsharpString2Enum />} />
       </Route>
       {/*------------- 雜記 --------------*/}
       <Route path={LinkMap.Continue.toString()} element={<Main />}>

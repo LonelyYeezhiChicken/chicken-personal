@@ -99,5 +99,5 @@ export enum LinkMap {
     //雜記
     DaylilyNote = "/DaylilyNote",
     CsharpListContains = "/CsharpListContains",
-    String2Enum = "/String2Enum",
+    CsharpString2Enum = "/CsharpString2Enum",
 }

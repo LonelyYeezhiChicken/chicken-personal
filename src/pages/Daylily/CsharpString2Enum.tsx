@@ -1,6 +1,6 @@
 import { Header, Portfolio } from "../../components";
 import { LinkMap } from "../../models";
-import testMd from "../../note/daylily/string2Enum.md";
+import testMd from "../../note/daylily/csharpString2Enum.md";
 import { useTitle } from "../../utils/PageTitle";
 
 const pageTitle: string = "👩‍💻 [C#] 1.0.1 string to enum";
