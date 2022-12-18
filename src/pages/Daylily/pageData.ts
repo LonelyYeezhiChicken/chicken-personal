@@ -25,5 +25,10 @@ export const pageList: PageData[] = [
         id: 5,
         text: "👩‍💻 [C#] 1.0.4 圖片處理",
         goPath: LinkMap.CsharpImg,
+    },
+    {
+        id: 6,
+        text: "👩‍💻 [C#] 1.0.5 List to string 加入分隔符號",
+        goPath: LinkMap.CsharpList2StringAddWord,
     }
 ];
