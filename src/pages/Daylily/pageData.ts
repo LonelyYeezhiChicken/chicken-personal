@@ -9,6 +9,6 @@ export const pageList: PageData[] = [
     {
         id: 2,
         text: "👩‍💻 [C#] 1.0.1 string to enum",
-        goPath: LinkMap.String2Enum,
+        goPath: LinkMap.CsharpString2Enum,
     }
 ];
