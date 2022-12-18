@@ -85,6 +85,8 @@ import {
   CsharpString2Enum,
   CsharpThousandthPlace,
   CsharpUnion,
+  CsharpImg,
+  CsharpList2StringAddWord,
 } from "../pages";
 
 export function Router() {
@@ -438,6 +440,17 @@ export function Router() {
       <Route path={LinkMap.CsharpUnion.toString()} element={<Main />}>
         {/* 聯集 */}
         <Route index element={<CsharpUnion />} />
+      </Route>
+      <Route path={LinkMap.CsharpImg.toString()} element={<Main />}>
+        {/* 聯集 */}
+        <Route index element={<CsharpImg />} />
+      </Route>
+      <Route
+        path={LinkMap.CsharpList2StringAddWord.toString()}
+        element={<Main />}
+      >
+        {/* List to string 加入分隔符號 */}
+        <Route index element={<CsharpList2StringAddWord />} />
       </Route>
       {/*------------- 雜記 --------------*/}
       <Route path={LinkMap.Continue.toString()} element={<Main />}>
