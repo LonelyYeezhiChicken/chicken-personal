@@ -30,5 +30,10 @@ export const pageList: PageData[] = [
         id: 6,
         text: "👩‍💻 [C#] 1.0.5 List to string 加入分隔符號",
         goPath: LinkMap.CsharpList2StringAddWord,
+    },
+    {
+        id: 7,
+        text: "👩‍💻 [C#] 1.0.6 委派與委派表達樹",
+        goPath: LinkMap.CsharpFunc2Expression,
     }
 ];

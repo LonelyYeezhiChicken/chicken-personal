@@ -87,6 +87,7 @@ import {
   CsharpUnion,
   CsharpImg,
   CsharpList2StringAddWord,
+  CsharpFunc2Expression,
 } from "../pages";
 
 export function Router() {
@@ -451,6 +452,10 @@ export function Router() {
       >
         {/* List to string 加入分隔符號 */}
         <Route index element={<CsharpList2StringAddWord />} />
+      </Route>
+      <Route path={LinkMap.CsharpFunc2Expression.toString()} element={<Main />}>
+        {/* 委派與委派表達樹 */}
+        <Route index element={<CsharpFunc2Expression />} />
       </Route>
       {/*------------- 雜記 --------------*/}
       <Route path={LinkMap.Continue.toString()} element={<Main />}>
