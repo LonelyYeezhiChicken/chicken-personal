@@ -46,4 +46,9 @@ export const pageList: PageData[] = [
         text: "9. 基本語法(六) - 群組化物件",
         goPath: LinkMap.D8Ph3,
     },
+    {
+        id: 10,
+        text: "10. 基本語法(七) - 動畫",
+        goPath: LinkMap.D9Ph3,
+    },
 ];
