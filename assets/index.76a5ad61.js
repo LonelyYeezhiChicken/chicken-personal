@@ -8515,7 +8515,58 @@ public class ChartService  \r
 1. \u5B8C\u5168\u5BE6\u4F5C\u7236\u985E\u7684\u65B9\u6CD5\r
 2. \u5B50\u985E\u5225\u53EF\u4EE5\u64C1\u6709\u4ED6\u81EA\u5DF1\u7684\u7279\u6027\r
 3. Overload \u6642\u8981\u6CE8\u610F\u50B3\u5165\u53C3\u6578\u578B\u5225\u7684\u7236\u5B50\u95DC\u4FC2\r
-4. \u8F38\u51FA\u7684\u7236\u5B50\u95DC\u4FC2\u4E5F\u9700\u8981\u6CE8\u610F`,Xt="\u{1F4A1}3. \u91CC\u6C0F\u66FF\u63DB\u539F\u5247(Lsp) (Liskov substitution principle)";function Jt(){return u("Chicken Say Hi | \u{1F4A1} 3. \u91CC\u6C0F\u66FF\u63DB\u539F\u5247 (Liskov substitution principle)"),t(s,{children:[n(o,{}),n(l,{backPath:r.DesignPattern,title:Xt,text:Yt})]})}const Qt="",Zt="\u{1F4A1}4. \u4ECB\u9762\u9694\u96E2\u539F\u5247 (ISP) (interface segregation principle)";function ni(){return u("Chicken Say Hi | \u{1F4A1} 4. \u4ECB\u9762\u9694\u96E2\u539F\u5247 (interface segregation principle)"),t(s,{children:[n(o,{}),n(l,{backPath:r.DesignPattern,title:Zt,text:Qt})]})}const ri=`## \u4F9D\u8CF4\u53CD\u8F49\u539F\u5247:\r
+4. \u8F38\u51FA\u7684\u7236\u5B50\u95DC\u4FC2\u4E5F\u9700\u8981\u6CE8\u610F`,Xt="\u{1F4A1}3. \u91CC\u6C0F\u66FF\u63DB\u539F\u5247(Lsp) (Liskov substitution principle)";function Jt(){return u("Chicken Say Hi | \u{1F4A1} 3. \u91CC\u6C0F\u66FF\u63DB\u539F\u5247 (Liskov substitution principle)"),t(s,{children:[n(o,{}),n(l,{backPath:r.DesignPattern,title:Xt,text:Yt})]})}const Qt=`# \u4ECB\u9762\u9694\u96E2\u539F\u5247\r
+- \u78BA\u4FDD\u6A21\u7D44\u4E4B\u9593\u7684\u8026\u5408\u5EA6\u4F4E\r
+- \u6240\u6709\u6A21\u7D44\u4E4B\u9593\u7684\u4F9D\u8CF4\u95DC\u4FC2\u61C9\u8A72\u8981\u4F9D\u8CF4\u4ED6\u5011\u6240\u9700\u8981\u7684interface\r
+- \u78BA\u4FDD\u5F8C\u7E8C\u7684\u7DAD\u8B77\u8207\u4FEE\u6539\u53EF\u4EE5\u66F4\u5BB9\u6613\u7684\u9032\u884C\r
+\r
+\r
+### \u7BC4\u4F8B:\r
+- \u52D5\u7269\u7684\u4ECB\u9762\r
+\r
+\`\`\`csharp\r
+public interface IAnimal\r
+{\r
+    //\u5403\r
+    void Eat();\r
+    //\u7761\u89BA\r
+    void Sleep();\r
+}\r
+\`\`\`\r
+\r
+- \u8C93\u54AA\u985E\u5225\r
+\r
+\`\`\`csharp\r
+public class Cat : IAnimal\r
+{\r
+    public void Eat()\r
+    {\r
+        // Eat implementation\r
+    }\r
+\r
+    public void Sleep()\r
+    {\r
+        // Sleep implementation\r
+    }\r
+}\r
+\`\`\`\r
+\r
+- \u72D7\u72D7\u985E\u5225\r
+\r
+\`\`\`csharp\r
+public class Dog : IAnimal\r
+{\r
+    public void Eat()\r
+    {\r
+        // Eat implementation\r
+    }\r
+\r
+    public void Sleep()\r
+    {\r
+        // Sleep implementation\r
+    }\r
+}\r
+\`\`\``,Zt="\u{1F4A1}4. \u4ECB\u9762\u9694\u96E2\u539F\u5247 (ISP) (interface segregation principle)";function ni(){return u("Chicken Say Hi | \u{1F4A1} 4. \u4ECB\u9762\u9694\u96E2\u539F\u5247 (interface segregation principle)"),t(s,{children:[n(o,{}),n(l,{backPath:r.DesignPattern,title:Zt,text:Qt})]})}const ri=`## \u4F9D\u8CF4\u53CD\u8F49\u539F\u5247:\r
 \r
 - \u62BD\u8C61\u4E0D\u61C9\u8A72\u4F9D\u8CF4\u65BC\u7D30\u7BC0\uFF0C\u7D30\u7BC0\u5247\u61C9\u8A72\u8981\u4F9D\u8CF4\u65BC\u62BD\u8C61\r
 - \u56E0\u6B64\u6211\u5011\u9700\u8981\u5148\u5BEB\u51FA\u62BD\u8C61\u4ECB\u9762\uFF0C\u5728\u5BE6\u4F5C\u529F\u80FD\r
