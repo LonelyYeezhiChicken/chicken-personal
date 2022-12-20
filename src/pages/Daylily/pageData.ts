@@ -35,5 +35,10 @@ export const pageList: PageData[] = [
         id: 7,
         text: "👩‍💻 [C#] 1.0.6 委派與委派表達樹",
         goPath: LinkMap.CsharpFunc2Expression,
+    },
+    {
+        id: 8,
+        text: "👩‍💻 [C#] 1.0.7 反射類別屬性，取值與改值",
+        goPath: LinkMap.CsharpReflectionClass,
     }
 ];
