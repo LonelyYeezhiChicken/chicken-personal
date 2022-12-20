@@ -104,4 +104,6 @@ export enum LinkMap {
     CsharpUnion = "/CsharpUnion",
     CsharpImg = "/CsharpImg",
     CsharpList2StringAddWord = "/CsharpList2StringAddWord",
+    CsharpFunc2Expression = "/CsharpFunc2Expression",
+    CsharpReflectionClass = "/CsharpReflectionClass",
 }
