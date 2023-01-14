@@ -106,4 +106,12 @@ export enum LinkMap {
     CsharpList2StringAddWord = "/CsharpList2StringAddWord",
     CsharpFunc2Expression = "/CsharpFunc2Expression",
     CsharpReflectionClass = "/CsharpReflectionClass",
+
+    // webapi
+    Webapi4Net = "/Webapi4Net",
+    Webapi4NetNote1 = "/Webapi4NetNote1",
+
+    // ThreeJs
+    ThreeJs = "/ThreeJs",
+    ThreeJsNote1 = "/ThreeJsNote1",
 }

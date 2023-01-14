@@ -7,6 +7,8 @@ import nunitImg from "../../assets/nunit.png";
 import designPatternImg from "../../assets/designPattern.jpg";
 import mlImg from "../../assets/ml.png";
 import daylilyImg from "../../assets/daylily.jpg";
+import threeJsImg from "../../assets/threejs.png";
+import dotNetWebAPI from "../../assets/dotNetWebAPI.jfif";
 
 type HCard = {
     id: number;
@@ -77,4 +79,18 @@ export const Daylily: HCard = {
     title: "開發雜記",
     content: "日常開發雜記",
     imgPath: daylilyImg,
+};
+
+export const Webapi4Net: HCard = {
+    id: 10,
+    title: "dotNet Web API",
+    content: "dot net Web API 閱讀筆記",
+    imgPath: dotNetWebAPI,
+};
+
+export const ThreeJs: HCard = {
+    id: 11,
+    title: "Three JS",
+    content: "Three JS 研究筆記",
+    imgPath: threeJsImg,
 };

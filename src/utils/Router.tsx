@@ -90,6 +90,10 @@ import {
   CsharpList2StringAddWord,
   CsharpFunc2Expression,
   CsharpReflectionClass,
+  Webapi4NetNote,
+  ThreeNote,
+  Webapi4NetNote1,
+  ThreeNote1,
 } from "../pages";
 
 export function Router() {
@@ -428,6 +432,26 @@ export function Router() {
         <Route index element={<KnnPython />} />
       </Route>
       {/*------------- ML --------------*/}
+      {/*------------- webapi --------------*/}
+      <Route path={LinkMap.Webapi4Net.toString()} element={<Main />}>
+        {/* 主頁 */}
+        <Route index element={<Webapi4NetNote />} />
+      </Route>
+      <Route path={LinkMap.Webapi4NetNote1.toString()} element={<Main />}>
+        {/* Webapi4NetNote1 */}
+        <Route index element={<Webapi4NetNote1 />} />
+      </Route>
+      {/*------------- webapi --------------*/}
+      {/*------------- ThreeJs --------------*/}
+      <Route path={LinkMap.ThreeJs.toString()} element={<Main />}>
+        {/* 主頁 */}
+        <Route index element={<ThreeNote />} />
+      </Route>
+      <Route path={LinkMap.ThreeJsNote1.toString()} element={<Main />}>
+        {/* 主頁 */}
+        <Route index element={<ThreeNote1 />} />
+      </Route>
+      {/*------------- ThreeJs --------------*/}
       {/*------------- 雜記 --------------*/}
       <Route path={LinkMap.DaylilyNote.toString()} element={<Main />}>
         <Route index element={<DaylilyNote />} />
