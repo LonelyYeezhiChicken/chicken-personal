@@ -56,4 +56,14 @@ export const pageList: PageData[] = [
         text: "3-2. 簡單工廠 (Simple Factory Pattern) ",
         goPath: LinkMap.SFP,
     },
+    {
+        id: 12,
+        text: "3-3. 抽象工廠 (Abstract Factory) ",
+        goPath: LinkMap.AbstractFactory,
+    },
+    {
+        id: 13,
+        text: "4-1. 原型模式 (Prototype Pattern) ",
+        goPath: LinkMap.Prototype,
+    },
 ];

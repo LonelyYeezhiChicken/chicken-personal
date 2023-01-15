@@ -91,6 +91,8 @@ export enum LinkMap {
     DIP = "/dIP",
     FMP = "/fMP",
     SFP = "/sFP",
+    AbstractFactory = "/AbstractFactory",
+    Prototype = "/Prototype",
 
     //ML
     MlNote = "/MlNote",
