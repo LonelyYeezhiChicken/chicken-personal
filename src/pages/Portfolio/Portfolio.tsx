@@ -9,6 +9,8 @@ import {
   DesignPattern,
   Ml,
   Daylily,
+  Webapi4Net,
+  ThreeJs,
 } from "./pageData";
 import { useTitle } from "../../utils/PageTitle";
 
@@ -55,6 +57,14 @@ function Portfolio() {
                 imgPath={Ml.imgPath}
               />
             </div>
+            <div className="flex flex-col">
+              <HorizontalCard
+                pgId={Webapi4Net.id}
+                title={Webapi4Net.title}
+                content={Webapi4Net.content}
+                imgPath={Webapi4Net.imgPath}
+              />
+            </div>
             <div className="flex flex-col sm:m-20"></div>
           </div>
           <div className="container mx-auto px-6 flex-col justify-between items-center relative sm:py-4 sm:mt-5">
@@ -96,6 +106,14 @@ function Portfolio() {
                 title={Daylily.title}
                 content={Daylily.content}
                 imgPath={Daylily.imgPath}
+              />
+            </div>
+            <div className="flex flex-col">
+              <HorizontalCard
+                pgId={ThreeJs.id}
+                title={ThreeJs.title}
+                content={ThreeJs.content}
+                imgPath={ThreeJs.imgPath}
               />
             </div>
             <div className="flex flex-col m-20"></div>
