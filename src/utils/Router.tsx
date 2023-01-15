@@ -79,6 +79,8 @@ import {
   DIP,
   FMP,
   SFP,
+  AbstractFactory,
+  Prototype,
   MlNote,
   KnnPython,
   DaylilyNote,
@@ -420,6 +422,14 @@ export function Router() {
       <Route path={LinkMap.SFP.toString()} element={<Main />}>
         {/* 設計模式 */}
         <Route index element={<SFP />} />
+      </Route>
+      <Route path={LinkMap.AbstractFactory.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<AbstractFactory />} />
+      </Route>
+      <Route path={LinkMap.Prototype.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<Prototype />} />
       </Route>
       {/*------------- 設計模式 --------------*/}
       {/*------------- ML --------------*/}
