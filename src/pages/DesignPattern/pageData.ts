@@ -66,4 +66,9 @@ export const pageList: PageData[] = [
         text: "4-1. 原型模式 (Prototype Pattern) ",
         goPath: LinkMap.Prototype,
     },
+    {
+        id: 14,
+        text: "5-1. 建造者模式 (Builder Pattern) ",
+        goPath: LinkMap.Builder,
+    },
 ];
