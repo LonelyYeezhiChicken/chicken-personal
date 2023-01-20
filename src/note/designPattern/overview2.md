@@ -46,7 +46,7 @@
 ### 結構行模式 - Structural Pattern
 | 模式名稱 |
 |-------------|
-| 適配器模式 Adapter Pattern |
+| 轉接器模式 Adapter Pattern |
 | 橋接模式 Bridge  Pattern |
 | 組合模式 Composite  Pattern |
 | 裝飾器模式 Decorator  Pattern |
