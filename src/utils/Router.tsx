@@ -82,6 +82,7 @@ import {
   AbstractFactory,
   Prototype,
   Builder,
+  Adapter,
   MlNote,
   KnnPython,
   DaylilyNote,
@@ -435,6 +436,10 @@ export function Router() {
       <Route path={LinkMap.Builder.toString()} element={<Main />}>
         {/* 設計模式 */}
         <Route index element={<Builder />} />
+      </Route>
+      <Route path={LinkMap.Adapter.toString()} element={<Main />}>
+        {/* 設計模式 */}
+        <Route index element={<Adapter />} />
       </Route>
       {/*------------- 設計模式 --------------*/}
       {/*------------- ML --------------*/}

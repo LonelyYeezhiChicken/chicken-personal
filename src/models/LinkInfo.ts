@@ -94,6 +94,7 @@ export enum LinkMap {
     AbstractFactory = "/AbstractFactory",
     Prototype = "/Prototype",
     Builder = "/Builder",
+    Adapter = "/Adapter",
 
     //ML
     MlNote = "/MlNote",
