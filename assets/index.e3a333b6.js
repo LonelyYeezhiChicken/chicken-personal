@@ -9146,7 +9146,7 @@ Console.WriteLine(house.ToString());\r
             {\r
                 "json" => new Adapter(new JsonFileWitter()),\r
                 "csv" => new Adapter(new CsvFileWitter()),\r
-                _ => throw new ArgumentException($"\u4E0A\u672A\u5BE6\u505A {fileType}"),\r
+                _ => throw new ArgumentException($"\u5C1A\u672A\u5BE6\u505A {fileType}"),\r
             };\r
         }\r
     }\r
