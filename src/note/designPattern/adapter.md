@@ -60,7 +60,7 @@
             {
                 "json" => new Adapter(new JsonFileWitter()),
                 "csv" => new Adapter(new CsvFileWitter()),
-                _ => throw new ArgumentException($"上未實做 {fileType}"),
+                _ => throw new ArgumentException($"尚未實做 {fileType}"),
             };
         }
     }
