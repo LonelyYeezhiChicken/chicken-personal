@@ -13,7 +13,7 @@ function About() {
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center">
             <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78">
-              <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg dark:bg-amber-200  bg-amber-500">
+              <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg dark:bg-amber-200 bg-amber-500">
                 <LazyLoadImage
                   alt="..."
                   src={chicken}

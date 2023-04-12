@@ -5,7 +5,7 @@ export function GoTo() {
         <span className="text-7xl">🐣</span>
         <p>Go to my Github</p>
         <a href="https://github.com/LonelyYeezhiChicken" className="underline">
-          Let&#x27;s go 🐓
+          Let's go 🐓
         </a>
       </div>
       <svg
