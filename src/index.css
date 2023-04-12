@@ -62,4 +62,72 @@
     .Md li  {
         @apply ml-5;
     }
+
+    .card-animation {
+        animation-name: cardAnimation; /* 动画名称 */
+        animation-duration: 1.5s; /* 动画持续时间 */
+        animation-timing-function: ease-in-out; /* 动画缓动函数 */
+        animation-fill-mode: both; /* 动画填充模式 */
+      }
+      
+      @keyframes cardAnimation {
+        0% {
+          opacity: 0; /* 初始透明度 */
+          transform: translateY(20px); /* 初始 Y 轴位移 */
+        }
+        100% {
+          opacity: 1; /* 结束透明度 */
+          transform: translateY(0); /* 结束 Y 轴位移 */
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      @keyframes zoomIn {
+        from {
+          opacity: 0;
+          transform: scale(0.5);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      
+      .animated {
+        animation-duration: 1s; /* 动画持续时间 */
+        animation-timing-function: ease-in-out; /* 动画缓动函数 */
+        animation-fill-mode: both; /* 动画填充模式 */
+      }
+      
+      .fadeInUp {
+        animation-name: fadeInUp; /* 淡入上移动画 */
+      }
+      
+      .zoomIn {
+        animation-name: zoomIn; /* 缩放动画 */
+      }
+      
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
+      .animate-fade-in {
+        animation: fade-in 1.5s ease-in-out; /* 調整動畫時間和過渡效果 */
+      }
+      
 }

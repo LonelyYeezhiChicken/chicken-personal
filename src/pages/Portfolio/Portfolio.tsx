@@ -18,6 +18,22 @@ const pageTitle: string = "🎨 一隻雞的作品";
 
 function Portfolio() {
   useTitle("Chicken Say Hi | 作品集");
+
+  const renderHorizontalCard = (cardData: any) => {
+    return (
+      <div className="flex flex-col">
+        <div className="card-animation">
+          <HorizontalCard
+            pgId={cardData.id}
+            title={cardData.title}
+            content={cardData.content}
+            imgPath={cardData.imgPath}
+          />
+        </div>
+      </div>
+    );
+  };
+
   return (
     <>
       <Header />
@@ -25,97 +41,20 @@ function Portfolio() {
       <section className="max-h-full overflow-auto">
         <div className="sm:flex relative z-20 items-center mt-2">
           <div className="container mx-auto px-6 flex-col justify-between items-center relative py-4 mt-5">
-            <div className="flex flex-col">
-              <HorizontalCard
-                pgId={ironMan13.id}
-                title={ironMan13.title}
-                content={ironMan13.content}
-                imgPath={ironMan13.imgPath}
-              />
-            </div>
-            <div className="flex flex-col">
-              <HorizontalCard
-                pgId={p5Js.id}
-                title={p5Js.title}
-                content={p5Js.content}
-                imgPath={p5Js.imgPath}
-              />
-            </div>
-            <div className="flex flex-col">
-              <HorizontalCard
-                pgId={OAuthNote.id}
-                title={OAuthNote.title}
-                content={OAuthNote.content}
-                imgPath={OAuthNote.imgPath}
-              />
-            </div>
-            <div className="flex flex-col">
-              <HorizontalCard
-                pgId={Ml.id}
-                title={Ml.title}
-                content={Ml.content}
-                imgPath={Ml.imgPath}
-              />
-            </div>
-            <div className="flex flex-col">
-              <HorizontalCard
-                pgId={Webapi4Net.id}
-                title={Webapi4Net.title}
-                content={Webapi4Net.content}
-                imgPath={Webapi4Net.imgPath}
-              />
-            </div>
+            {renderHorizontalCard(ironMan13)}
+            {renderHorizontalCard(p5Js)}
+            {renderHorizontalCard(OAuthNote)}
+            {renderHorizontalCard(Ml)}
+            {/* {renderHorizontalCard(NunitTest)} */}
+            {renderHorizontalCard(Webapi4Net)}
             <div className="flex flex-col sm:m-20"></div>
           </div>
           <div className="container mx-auto px-6 flex-col justify-between items-center relative sm:py-4 sm:mt-5">
-            <div className="flex flex-col">
-              <HorizontalCard
-                pgId={phaserJs.id}
-                title={phaserJs.title}
-                content={phaserJs.content}
-                imgPath={phaserJs.imgPath}
-              />
-            </div>
-            <div className="flex flex-col">
-              <HorizontalCard
-                pgId={CsharpEvent.id}
-                title={CsharpEvent.title}
-                content={CsharpEvent.content}
-                imgPath={CsharpEvent.imgPath}
-              />
-            </div>
-            {/* <div className="flex flex-col">
-              <HorizontalCard
-                pgId={NunitTest.id}
-                title={NunitTest.title}
-                content={NunitTest.content}
-                imgPath={NunitTest.imgPath}
-              />
-            </div> */}
-            <div className="flex flex-col">
-              <HorizontalCard
-                pgId={DesignPattern.id}
-                title={DesignPattern.title}
-                content={DesignPattern.content}
-                imgPath={DesignPattern.imgPath}
-              />
-            </div>
-            <div className="flex flex-col">
-              <HorizontalCard
-                pgId={Daylily.id}
-                title={Daylily.title}
-                content={Daylily.content}
-                imgPath={Daylily.imgPath}
-              />
-            </div>
-            <div className="flex flex-col">
-              <HorizontalCard
-                pgId={ThreeJs.id}
-                title={ThreeJs.title}
-                content={ThreeJs.content}
-                imgPath={ThreeJs.imgPath}
-              />
-            </div>
+            {renderHorizontalCard(phaserJs)}
+            {renderHorizontalCard(CsharpEvent)}
+            {renderHorizontalCard(DesignPattern)}
+            {renderHorizontalCard(Daylily)}
+            {renderHorizontalCard(ThreeJs)}
             <div className="flex flex-col m-20"></div>
           </div>
         </div>
