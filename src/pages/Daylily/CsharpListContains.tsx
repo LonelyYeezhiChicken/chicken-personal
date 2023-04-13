@@ -9,7 +9,6 @@ function CsharpListContains() {
   useTitle("Chicken Say Hi | 👩‍💻 [C#] 1.0.0 List 比較");
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.DaylilyNote}
         title={pageTitle}

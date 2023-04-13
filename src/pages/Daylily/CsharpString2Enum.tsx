@@ -9,7 +9,6 @@ function String2Enum() {
   useTitle("Chicken Say Hi | 👩‍💻 [C#] 1.0.1 string to enum");
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.DaylilyNote}
         title={pageTitle}

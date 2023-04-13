@@ -9,7 +9,6 @@ function MapFunc() {
   useTitle("Chicken Say Hi | P5 map 函式");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.P5Js} title={pageTitle} text={testMd} />
     </>
   );

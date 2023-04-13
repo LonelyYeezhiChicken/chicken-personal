@@ -9,7 +9,6 @@ function Day2() {
   useTitle("Chicken Say Hi | 🤖 與C#開發千里來相見");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.IronMan13} title={pageTitle} text={testMd} />
     </>
   );

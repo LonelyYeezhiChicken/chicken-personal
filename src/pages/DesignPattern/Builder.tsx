@@ -9,7 +9,6 @@ function Builder() {
   useTitle("Chicken Say Hi | 💡 1. 建造者模式 (Builder Pattern)");
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.DesignPattern}
         title={pageTitle}

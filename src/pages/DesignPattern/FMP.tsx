@@ -9,7 +9,6 @@ function FMP() {
   useTitle("Chicken Say Hi | 💡 1. 工廠方法 (Factory Method Pattern)");
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.DesignPattern}
         title={pageTitle}

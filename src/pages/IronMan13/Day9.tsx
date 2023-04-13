@@ -9,7 +9,6 @@ function Day9() {
   useTitle("Chicken Say Hi | 🤖 省去重複程式碼的好幫手~for迴圈");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.IronMan13} title={pageTitle} text={testMd} />
     </>
   );

@@ -10,7 +10,6 @@ function Day8() {
   useTitle("Chicken Say Hi | 🤖 如果沒有如果，只有太多的如果switch陳述式");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.IronMan13} title={pageTitle} text={testMd} />
     </>
   );

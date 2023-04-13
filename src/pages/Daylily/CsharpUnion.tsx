@@ -9,7 +9,6 @@ function CsharpUnion() {
   useTitle("Chicken Say Hi | 👩‍💻 [C#] 1.0.3 聯集");
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.DaylilyNote}
         title={pageTitle}

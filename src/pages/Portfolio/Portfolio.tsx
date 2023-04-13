@@ -36,7 +36,6 @@ function Portfolio() {
 
   return (
     <>
-      <Header />
       <Title text={pageTitle} />
       <section className="max-h-full overflow-auto">
         <div className="sm:flex relative z-20 items-center mt-2">
@@ -47,7 +46,7 @@ function Portfolio() {
             {renderHorizontalCard(Ml)}
             {/* {renderHorizontalCard(NunitTest)} */}
             {renderHorizontalCard(Webapi4Net)}
-            <div className="flex flex-col sm:m-20"></div>
+            <div className="flex flex-col mt-8 sm:mt-0"></div>
           </div>
           <div className="container mx-auto px-6 flex-col justify-between items-center relative sm:py-4 sm:mt-5">
             {renderHorizontalCard(phaserJs)}
@@ -55,7 +54,7 @@ function Portfolio() {
             {renderHorizontalCard(DesignPattern)}
             {renderHorizontalCard(Daylily)}
             {renderHorizontalCard(ThreeJs)}
-            <div className="flex flex-col m-20"></div>
+            <div className="flex flex-col mt-8 sm:mt-0"></div>
           </div>
         </div>
       </section>

@@ -6,7 +6,6 @@ function MlNote() {
   useTitle("Chicken Say Hi | 機器學習");
   return (
     <>
-      <Header />
       <PageSide list={pageList} />
     </>
   );

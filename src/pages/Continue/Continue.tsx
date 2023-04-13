@@ -13,7 +13,6 @@ function Continue() {
 
   return (
     <>
-      <Header />
       <div className="container mx-auto h-screen pt-32 md:pt-0 px-6 z-10 flex items-center justify-between">
         <div className="container mx-auto px-6 flex flex-col-reverse lg:flex-row justify-between items-center relative">
           <div className="w-full mb-16 md:mb-8 text-center lg:text-left">

@@ -9,7 +9,6 @@ function Day3() {
   useTitle("Chicken Say Hi | 🤖 核心的數據成員~變數(一)");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.IronMan13} title={pageTitle} text={testMd} />
     </>
   );

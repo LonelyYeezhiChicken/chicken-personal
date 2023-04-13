@@ -9,7 +9,6 @@ function Day27() {
   useTitle("Chicken Say Hi | 🤖 做錯事該怎麼辦呢?~錯誤處理");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.IronMan13} title={pageTitle} text={testMd} />
     </>
   );

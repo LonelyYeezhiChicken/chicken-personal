@@ -9,7 +9,6 @@ function Prototype() {
   useTitle("Chicken Say Hi | 💡 1. 原型模式 (Abstract Pattern)");
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.DesignPattern}
         title={pageTitle}

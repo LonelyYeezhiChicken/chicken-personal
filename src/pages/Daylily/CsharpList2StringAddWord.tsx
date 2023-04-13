@@ -9,7 +9,6 @@ function CsharpList2StringAddWord() {
   useTitle("Chicken Say Hi | 👩‍💻 [C#] 1.0.5 List to string 加入分隔符號");
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.DaylilyNote}
         title={pageTitle}

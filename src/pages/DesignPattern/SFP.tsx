@@ -9,7 +9,6 @@ function SFP() {
   useTitle("Chicken Say Hi | 💡 2. 簡單工廠 (Simple Factory Pattern)");
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.DesignPattern}
         title={pageTitle}

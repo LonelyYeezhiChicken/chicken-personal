@@ -6,7 +6,6 @@ function PhaserPage() {
   useTitle("Chicken Say Hi | Phaser js");
   return (
     <>
-      <Header />
       <PageSide list={pageList} />
     </>
   );

@@ -45,15 +45,30 @@ export function PageBody({ backPath, title, text }: PageBodyData) {
 
   return (
     <div
-      className={`max-w-screen-xl mx-auto p-8 ${
-        fadeIn ? "animate-fade-in" : "" // 加入淡入效果的 CSS 類名
+      className={`max-w-screen-xl mx-auto p-8 w-full ${
+        fadeIn ? "animate-fade-in" : ""
       }`}
     >
       <h2 className="text-3xl font-extrabold leading-9 border-b-2 border-gray-600 dark:border-gray-100 text-gray-800 dark:text-white mb-12">
         {title}
       </h2>
-      <Link to={backPath} className="dark:text-yellow-50 text-gray-900 mb-10">
-        <b>👈 回目錄</b>
+      <Link
+        to={backPath}
+        className="dark:text-yellow-50 text-gray-900 mb-10 inline-flex items-center hover:text-yellow-500 transition duration-200"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-5 w-5 mr-1"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fillRule="evenodd"
+            d="M10.707 3.293A1 1 0 0 1 12.121 4.707L6.414 10l5.707 5.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414z"
+            clipRule="evenodd"
+          />
+        </svg>
+        <span>回目錄</span>
       </Link>
       <ReactMarkdown
         className="leading-9 text-gray-700 dark:text-white Md"
@@ -65,8 +80,23 @@ export function PageBody({ backPath, title, text }: PageBodyData) {
         {text}
       </ReactMarkdown>
       <footer className="m-10 mb-10">
-        <Link to={backPath} className="dark:text-yellow-50 text-gray-900">
-          <b>👈 回目錄</b>
+        <Link
+          to={backPath}
+          className="inline-flex items-center text-gray-900 dark:text-yellow-50 hover:text-yellow-500 transition duration-200"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 mr-1"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fillRule="evenodd"
+              d="M10.707 3.293A1 1 0 0 1 12.121 4.707L6.414 10l5.707 5.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414z"
+              clipRule="evenodd"
+            />
+          </svg>
+          <span>回目錄</span>
         </Link>
       </footer>
     </div>

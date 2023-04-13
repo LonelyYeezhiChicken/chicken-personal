@@ -6,7 +6,6 @@ function OAuthNote() {
   useTitle("Chicken Say Hi | OAuth2.0");
   return (
     <>
-      <Header />
       <PageSide list={pageList} />
     </>
   );

@@ -9,7 +9,6 @@ function Webapi4NetNote1() {
   useTitle("Chicken Say Hi | 🛰 1.1 Web 結構");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.Webapi4Net} title={pageTitle} text={note1} />
     </>
   );

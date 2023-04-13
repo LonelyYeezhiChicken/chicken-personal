@@ -9,7 +9,6 @@ function DPOverview3() {
   useTitle("Chicken Say Hi | 💡 3. 設計模式概述(三)");
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.DesignPattern}
         title={pageTitle}

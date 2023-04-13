@@ -9,7 +9,6 @@ function Day25() {
   useTitle("Chicken Say Hi | 🤖 共產主義者~靜態成員");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.IronMan13} title={pageTitle} text={testMd} />
     </>
   );

@@ -6,7 +6,6 @@ function Webapi4NetNote() {
   useTitle("Chicken Say Hi | Web API 4 Net");
   return (
     <>
-      <Header />
       <PageSide list={pageList} />
     </>
   );

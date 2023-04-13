@@ -9,7 +9,6 @@ function Day14() {
   useTitle("Chicken Say Hi | 🤖 不同層次的陣列~二維陣列");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.IronMan13} title={pageTitle} text={testMd} />
     </>
   );

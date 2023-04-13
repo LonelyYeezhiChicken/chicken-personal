@@ -9,7 +9,6 @@ function Day10() {
   useTitle("Chicken Say Hi | 🤖 重播與停止 while迴圈與break");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.IronMan13} title={pageTitle} text={testMd} />
     </>
   );

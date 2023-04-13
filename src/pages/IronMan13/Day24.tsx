@@ -10,7 +10,6 @@ function Day24() {
   useTitle("Chicken Say Hi | 🤖 物件導向(oop)~建構方法(Constructor)");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.IronMan13} title={pageTitle} text={testMd} />
     </>
   );

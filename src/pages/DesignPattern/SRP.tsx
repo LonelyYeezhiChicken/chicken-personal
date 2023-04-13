@@ -10,7 +10,6 @@ function SRP() {
   useTitle("Chicken Say Hi | 💡 1. 單一責任原則(SRP)");
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.DesignPattern}
         title={pageTitle}

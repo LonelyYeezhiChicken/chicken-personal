@@ -3,131 +3,137 @@
 @tailwind utilities;
 
 @layer base {
-   .Md h1{
-        @apply text-4xl  mt-3 mb-3;
-    }
+  .Md h1 {
+    @apply text-3xl font-bold text-gray-800; 
+}
 
-    .Md h2{
-        @apply text-3xl  mt-3 mb-3;
-    }
-    
-    .Md h3 {
-      @apply text-2xl mt-3 mb-3;
-    }
+.Md blockquote {
+    @apply border-l-4 border-blue-500 pl-4 py-2 my-4; 
+}
 
-    .Md pre{
-        @apply leading-3 rounded;
-    }
+.Md h2{
+    @apply text-2xl  mt-4 mb-3;
+}
 
-    .Md code{
-        @apply bg-gray-100 rounded dark:bg-gray-600  p-1 text-sm;
-    }    
+.Md h3 {
+    @apply text-xl mt-3 mb-2;
+}
 
-    ::-webkit-scrollbar {
-        @apply w-2;
-      }
+.Md pre {
+    @apply leading-3 rounded;
+    @apply bg-gray-100 dark:bg-gray-700 p-2 text-sm; 
+    transition: background-color 0.3s ease; 
+}
 
-    img[alt="mdImg"] { 
-        @apply max-h-80  mt-3 mb-3 dark:bg-slate-300 rounded;
-    }
+.Md code {
+    @apply bg-gray-100 dark:bg-gray-700 p-2 text-sm rounded-md; 
+}
 
-    .Md ul{
-        @apply list-disc ml-5 mt-2 mb-2;
-    }
+.Md ul, .Md ol {
+    @apply list-disc ml-4;
+}
 
-    .Md ol{
-        @apply list-decimal ml-10 mt-2 mb-2;
-    }
+::-webkit-scrollbar {
+    @apply w-2;
+}
 
-    .Md a{
-        @apply underline-offset-4 dark:hover:text-sky-300 hover:text-sky-500;
-    }
+img[alt="mdImg"] { 
+    @apply max-h-80  mt-3 mb-3 dark:bg-slate-300 rounded;
+}
 
-    .Md blockquote{
-        @apply pt-2 pb-5 pl-5 ml-5 text-base border-l-4 dark:bg-slate-600 bg-gray-100;
-    }
-    
-    .Md table {
-        @apply table p-4 dark:bg-gray-600 bg-white shadow rounded-lg m-10;
-    }
+.Md ul{
+    @apply list-disc ml-5 mt-2 mb-2;
+}
 
-    .Md th  {
-        @apply border p-4 dark:border-stone-500 whitespace-nowrap font-normal;
-    }
+.Md ol{
+    @apply list-decimal ml-10 mt-2 mb-2;
+}
 
-    .Md td  {
-        @apply border p-4 dark:border-stone-500;
-    }
+.Md a{
+    @apply underline-offset-4 dark:hover:text-sky-300 hover:text-sky-500;
+}
 
-    .Md li  {
-        @apply ml-5;
-    }
+.Md table {
+    @apply table p-4 dark:bg-gray-600 bg-white shadow rounded-lg m-10;
+}
+
+.Md th  {
+    @apply border p-4 dark:border-stone-500 whitespace-nowrap font-normal;
+}
+
+.Md td  {
+    @apply border p-4 dark:border-stone-500;
+}
+
+.Md li  {
+    @apply ml-5;
+}
 
     .card-animation {
-        animation-name: cardAnimation; /* 动画名称 */
-        animation-duration: 1.5s; /* 动画持续时间 */
-        animation-timing-function: ease-in-out; /* 动画缓动函数 */
-        animation-fill-mode: both; /* 动画填充模式 */
-      }
+        animation-name: cardAnimation;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+    }
       
-      @keyframes cardAnimation {
+    @keyframes cardAnimation {
         0% {
-          opacity: 0; /* 初始透明度 */
-          transform: translateY(20px); /* 初始 Y 轴位移 */
+            opacity: 0;
+            transform: translateY(20px);
         }
         100% {
-          opacity: 1; /* 结束透明度 */
-          transform: translateY(0); /* 结束 Y 轴位移 */
+            opacity: 1;
+            transform: translateY(0);
         }
-      }
+    }
 
-      @keyframes fadeInUp {
+    @keyframes fadeInUp {
         from {
-          opacity: 0;
-          transform: translateY(20px);
+            opacity: 0;
+            transform: translateY(20px);
         }
         to {
-          opacity: 1;
-          transform: translateY(0);
+            opacity: 1;
+            transform: translateY(0);
         }
-      }
+    }
       
-      @keyframes zoomIn {
+    @keyframes zoomIn {
         from {
-          opacity: 0;
-          transform: scale(0.5);
+            opacity: 0;
+            transform: scale(0.5);
         }
         to {
-          opacity: 1;
-          transform: scale(1);
+            opacity: 1;
+            transform: scale(1);
         }
-      }
+    }
       
-      .animated {
-        animation-duration: 1s; /* 动画持续时间 */
-        animation-timing-function: ease-in-out; /* 动画缓动函数 */
-        animation-fill-mode: both; /* 动画填充模式 */
-      }
+    .animated {
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+    }
       
-      .fadeInUp {
-        animation-name: fadeInUp; /* 淡入上移动画 */
-      }
+    .fadeInUp {
+        animation-name: fadeInUp;
+    }
       
-      .zoomIn {
-        animation-name: zoomIn; /* 缩放动画 */
-      }
+    .zoomIn {
+        animation-name: zoomIn;
+    }
       
-      @keyframes fade-in {
+    @keyframes fade-in {
         from {
-          opacity: 0;
+            opacity: 0;
         }
         to {
-          opacity: 1;
+            opacity: 1;
         }
-      }
+    }
       
-      .animate-fade-in {
-        animation: fade-in 1.5s ease-in-out; /* 調整動畫時間和過渡效果 */
-      }
+    .animate-fade-in {
+        animation: fade-in 1.5s ease-in-out;
+    }
       
 }

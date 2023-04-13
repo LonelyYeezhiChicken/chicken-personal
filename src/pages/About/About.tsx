@@ -8,7 +8,6 @@ function About() {
   useTitle("Chicken Say Hi | About");
   return (
     <>
-      <Header />
       <section className="relative pt-16 bg-blueGray-50 max-h-full overflow-auto ">
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center">
