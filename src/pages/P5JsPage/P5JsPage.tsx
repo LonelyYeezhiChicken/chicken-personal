@@ -6,7 +6,6 @@ function P5JsPage() {
   useTitle("Chicken Say Hi | P5 js");
   return (
     <>
-      <Header />
       <PageSide list={pageList} />
     </>
   );

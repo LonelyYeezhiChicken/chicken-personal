@@ -10,7 +10,6 @@ function Day6() {
   useTitle("Chicken Say Hi | 🤖 程式碼擁有判斷真假的能力~邏輯運算子");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.IronMan13} title={pageTitle} text={testMd} />
     </>
   );

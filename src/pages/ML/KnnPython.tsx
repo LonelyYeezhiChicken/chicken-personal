@@ -9,7 +9,6 @@ function KnnPython() {
   useTitle("Chicken Say Hi | 🛸 1.1 knn 演算法 - python");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.MlNote} title={pageTitle} text={testMd} />
     </>
   );

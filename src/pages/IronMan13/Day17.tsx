@@ -9,7 +9,6 @@ function Day17() {
   useTitle("Chicken Say Hi | 🤖 像個郵差一樣~值與址的傳遞");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.IronMan13} title={pageTitle} text={testMd} />
     </>
   );

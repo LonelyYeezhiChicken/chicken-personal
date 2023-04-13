@@ -9,7 +9,6 @@ function Gradient() {
   useTitle("Chicken Say Hi | P5 Gradient");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.P5Js} title={pageTitle} text={testMd} />
     </>
   );

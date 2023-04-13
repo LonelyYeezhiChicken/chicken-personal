@@ -9,7 +9,6 @@ function Day26() {
   useTitle("Chicken Say Hi | 🤖 物件導向(oop)~ 多載(Overload)");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.IronMan13} title={pageTitle} text={testMd} />
     </>
   );

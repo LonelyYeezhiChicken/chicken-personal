@@ -9,7 +9,6 @@ function CsharpReflectionClass() {
   useTitle("Chicken Say Hi | 👩‍💻 [C#] 1.0.7 反射類別屬性，取值與改值");
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.DaylilyNote}
         title={pageTitle}

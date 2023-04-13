@@ -6,7 +6,6 @@ function ThreeNote() {
   useTitle("Chicken Say Hi | Three js");
   return (
     <>
-      <Header />
       <PageSide list={pageList} />
     </>
   );

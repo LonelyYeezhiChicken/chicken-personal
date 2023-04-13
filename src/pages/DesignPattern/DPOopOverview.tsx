@@ -9,7 +9,6 @@ function DPOopOverview() {
   useTitle("Chicken Say Hi | 💡 4. 物件導向設計原則概述");
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.DesignPattern}
         title={pageTitle}

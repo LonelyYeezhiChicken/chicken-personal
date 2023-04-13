@@ -6,7 +6,6 @@ function UnitNote() {
   useTitle("Chicken Say Hi | Unit test");
   return (
     <>
-      <Header />
       <PageSide list={pageList} />
     </>
   );

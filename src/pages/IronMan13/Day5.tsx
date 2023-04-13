@@ -10,7 +10,6 @@ function Day5() {
   useTitle("Chicken Say Hi | 🤖 讓變數學會七十二變的高手~運算子");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.IronMan13} title={pageTitle} text={testMd} />
     </>
   );

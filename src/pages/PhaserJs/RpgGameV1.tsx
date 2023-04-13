@@ -9,7 +9,6 @@ function RpgGameV1() {
   useTitle("Chicken Say Hi | RPG Game");
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.PhaserPage}
         title={pageTitle}

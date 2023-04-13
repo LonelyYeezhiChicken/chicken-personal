@@ -6,7 +6,6 @@ function DaylilyNote() {
   useTitle("Chicken Say Hi | 開發雜記");
   return (
     <>
-      <Header />
       <PageSide list={pageList} />
     </>
   );

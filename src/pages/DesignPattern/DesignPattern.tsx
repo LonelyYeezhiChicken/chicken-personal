@@ -6,7 +6,6 @@ function DesignPattern() {
   useTitle("Chicken Say Hi | Design Pattern");
   return (
     <>
-      <Header />
       <PageSide list={pageList} />
     </>
   );

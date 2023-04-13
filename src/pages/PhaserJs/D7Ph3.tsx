@@ -9,7 +9,6 @@ function D7Ph3() {
   useTitle("Chicken Say Hi | phaser3 - 場景切換");
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.PhaserPage}
         title={pageTitle}

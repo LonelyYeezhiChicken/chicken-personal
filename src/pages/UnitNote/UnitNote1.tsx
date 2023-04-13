@@ -9,7 +9,6 @@ function OAuthNote1() {
   useTitle("Chicken Say Hi | 📋 Unit test (一)");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.UnitNote} title={pageTitle} text={testMd} />
     </>
   );

@@ -9,7 +9,6 @@ function SRP() {
   useTitle("Chicken Say Hi | 💡 2.開閉原則 (OCP)");
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.DesignPattern}
         title={pageTitle}

@@ -12,7 +12,6 @@ function ISP() {
   );
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.DesignPattern}
         title={pageTitle}

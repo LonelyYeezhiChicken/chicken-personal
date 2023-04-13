@@ -9,7 +9,6 @@ function Day15() {
   useTitle("Chicken Say Hi | 🤖 多筆資料的好朋友~List");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.IronMan13} title={pageTitle} text={testMd} />
     </>
   );

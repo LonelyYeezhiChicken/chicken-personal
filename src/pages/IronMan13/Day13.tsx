@@ -9,7 +9,6 @@ function Day13() {
   useTitle("Chicken Say Hi | 🤖 來個輪迴吧~foreach迴圈");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.IronMan13} title={pageTitle} text={testMd} />
     </>
   );

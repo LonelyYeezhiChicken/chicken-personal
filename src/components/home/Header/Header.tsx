@@ -1,131 +1,101 @@
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { LinkMap } from "../../../models";
 
-let rootEl: HTMLElement | null = document.getElementById("root");
-let getEmoji: string = "🌛/🌞";
-
-function changDark(): void {
-  if (rootEl !== null) {
-    if (rootEl.className.includes("dark")) {
-      rootEl.classList.remove("dark");
-    } else {
-      rootEl.classList.add("dark");
-    }
-  }
+interface NavLink {
+  to: string;
+  label: string;
+  emoji: string;
 }
 
 export function Header() {
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector("header");
+      if (header) {
+        if (window.scrollY > 0) {
+          header.classList.add("fixed", "top-0", "shadow-md");
+        } else {
+          header.classList.remove("fixed", "top-0", "shadow-md");
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const navLinks: NavLink[] = [
+    { to: LinkMap.Home.toString(), label: "雞舍", emoji: "🏠" },
+    { to: LinkMap.About.toString(), label: "關於", emoji: "📋" },
+    { to: LinkMap.Portfolio.toString(), label: "筆記", emoji: "🎨" },
+  ];
+
+  const toggleDarkMode = () => {
+    const root = document.getElementById("root");
+    if (root) {
+      root.classList.toggle("dark");
+    }
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <header className="h-24 sm:h-32 flex items-center z-30 w-full">
+    <header className="h-10 sm:h-16 flex items-center z-30 w-full bg-white dark:bg-gray-800 shadow-md">
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="uppercase text-gray-800 dark:text-white font-black text-3xl flex items-center">
-          {/* <svg
-            width="25"
-            height="25"
-            viewBox="0 0 1792 1792"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"></path>
-          </svg> */}
+          {/* <span role="img" aria-label="chicken" className="text-yellow-600">
+            🐓
+          </span>
+          <span className="mr-2">Chicken Say Hi</span> */}
         </div>
         <div className="flex items-center">
           <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex md:flex items-center hidden">
-            <Link
-              to={LinkMap.Home.toString()}
-              className="py-2 px-6 flex hover:text-gray-400"
-            >
-              雞舍
-            </Link>
-            <Link
-              to={LinkMap.About.toString()}
-              className="py-2 px-6 flex hover:text-gray-400"
-            >
-              關於一隻雞
-            </Link>
-            {/* <Link
-              to={LinkMap.Find.toString()}
-              className="py-2 px-6 flex hover:text-gray-400"
-            >
-              尋找一隻雞
-            </Link> */}
-            <Link
-              to={LinkMap.Portfolio.toString()}
-              className="py-2 px-6 flex hover:text-gray-400"
-            >
-              一隻雞的筆記
-            </Link>
-            <button
-              className="py-2 px-6 flex hover:text-gray-400 "
-              onClick={() => changDark()}
-            >
-              {getEmoji}
-            </button>
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className="py-1 px-4 flex hover:text-gray-400 transition duration-300"
+              >
+                {link.label}
+              </Link>
+            ))}
           </nav>
           <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg sm:flex lg:hidden md:hidden items-center hidden">
-            <Link
-              to={LinkMap.Home.toString()}
-              className="py-2 px-6 flex hover:text-gray-400"
-            >
-              雞舍
-            </Link>
-            <Link
-              to={LinkMap.About.toString()}
-              className="py-2 px-6 flex hover:text-gray-300"
-            >
-              關於
-            </Link>
-            {/* <Link
-              to={LinkMap.Find.toString()}
-              className="py-2 px-6 flex hover:text-gray-400"
-            >
-              尋找
-            </Link> */}
-            <Link
-              to={LinkMap.Portfolio.toString()}
-              className="py-2 px-6 flex hover:text-gray-400"
-            >
-              筆記
-            </Link>
-            <button
-              className="py-2 px-6 flex hover:text-gray-400"
-              onClick={() => changDark()}
-            >
-              {getEmoji}
-            </button>
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className="py-1 px-4 flex hover:text-gray-300 transition duration-300"
+              >
+                {link.label}
+              </Link>
+            ))}
           </nav>
           <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:hidden md:hidden sm:hidden  items-center flex">
-            <Link
-              to={LinkMap.Home.toString()}
-              className="py-2 px-6 flex hover:text-gray-400"
-            >
-              🏠
-            </Link>
-            <Link
-              to={LinkMap.About.toString()}
-              className="py-2 px-6 flex hover:text-gray-400"
-            >
-              📋
-            </Link>
-            {/* <Link
-              to={LinkMap.Find.toString()}
-              className="py-2 px-6 flex hover:text-gray-400"
-            >
-              🔎
-            </Link> */}
-            <Link
-              to={LinkMap.Portfolio.toString()}
-              className="py-2 px-6 flex hover:text-gray-400"
-            >
-              🎨
-            </Link>
-            <button
-              className="py-2 px-6 flex hover:text-gray-400"
-              onClick={() => changDark()}
-            >
-              🌗
-            </button>
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className="py-1 px-4 flex hover:text-gray-300 transition duration-300"
+              >
+                <span className="sr-only">{link.label}</span>
+                <span className="lg:hidden md:hidden">{link.emoji}</span>
+              </Link>
+            ))}
           </nav>
+          <button
+            className="ml-4 focus:outline-none"
+            onClick={toggleDarkMode}
+            aria-label="Toggle dark mode"
+          >
+            <span role="img" aria-label="moon">
+              {isDarkMode ? "🌙" : "☀️"}
+            </span>
+          </button>
         </div>
       </div>
     </header>

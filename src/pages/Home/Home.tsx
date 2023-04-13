@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className="h-screen">
       <GoTo />
-      <Header />
+
       <InputForm />
     </div>
   );

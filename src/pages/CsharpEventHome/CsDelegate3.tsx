@@ -10,7 +10,6 @@ function csDelegate3() {
   useTitle("Chicken Say Hi | 📪 [三.] 委派 (Delegate)");
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.CsharpEventHome}
         title={pageTitle}

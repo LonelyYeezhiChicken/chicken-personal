@@ -9,7 +9,6 @@ function ThreeNote1() {
   useTitle("Chicken Say Hi | 🌍 1. WebGL 簡介");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.ThreeJs} title={pageTitle} text={note1} />
     </>
   );

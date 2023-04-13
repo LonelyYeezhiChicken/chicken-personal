@@ -6,7 +6,6 @@ function IronMan13() {
   useTitle("Chicken Say Hi | 鐵人 13");
   return (
     <>
-      <Header />
       <PageSide list={pageList} />
     </>
   );

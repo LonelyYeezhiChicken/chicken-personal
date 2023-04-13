@@ -10,7 +10,6 @@ function Day30() {
   useTitle("Chicken Say Hi | 🤖 Install Tailwind Css with ASP.NET MVC5");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.IronMan13} title={pageTitle} text={testMd} />
     </>
   );

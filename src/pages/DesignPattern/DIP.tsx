@@ -12,7 +12,6 @@ function DIP() {
   );
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.DesignPattern}
         title={pageTitle}

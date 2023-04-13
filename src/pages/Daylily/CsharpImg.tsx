@@ -9,7 +9,6 @@ function CsharpImg() {
   useTitle("Chicken Say Hi | 👩‍💻 [C#] 1.0.4 圖片處理");
   return (
     <>
-      <Header />
       <Portfolio
         backPath={LinkMap.DaylilyNote}
         title={pageTitle}

@@ -9,7 +9,6 @@ function Day19() {
   useTitle("Chicken Say Hi | 🤖 讓時間倒轉吧~遞迴");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.IronMan13} title={pageTitle} text={testMd} />
     </>
   );

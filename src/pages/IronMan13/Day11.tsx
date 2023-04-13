@@ -10,7 +10,6 @@ function Day11() {
   useTitle("Chicken Say Hi | 🤖 把複雜的事情與關係簡單化~列舉與結構");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.IronMan13} title={pageTitle} text={testMd} />
     </>
   );

@@ -9,7 +9,6 @@ function MethodArc() {
   useTitle("Chicken Say Hi | P5 arc 函式");
   return (
     <>
-      <Header />
       <Portfolio backPath={LinkMap.P5Js} title={pageTitle} text={testMd} />
     </>
   );
