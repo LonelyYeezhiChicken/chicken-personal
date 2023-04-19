@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 import { Link } from "react-router-dom";
 import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import {
   dracula,
   duotoneLight,
@@ -75,11 +76,18 @@ export function PageBody({ backPath, title, text }: PageBodyData) {
         remarkPlugins={[remarkGfm]}
         components={{
           code: renderCodeBlock,
+          img: ({ node, ...props }) => (
+            /* @ts-ignore */
+            <LazyLoadImage {...props} effect="blur" /> // 使用 LazyLoadImage 元件進行圖片的懶載入
+          ),
         }}
       >
         {text}
       </ReactMarkdown>
       <footer className="m-10 mb-10">
+        {/* <p className="text-gray-500 dark:text-gray-400 text-sm">
+          發文時間：{new Date().toLocaleString()}
+        </p> */}
         <Link
           to={backPath}
           className="inline-flex items-center text-gray-900 dark:text-yellow-50 hover:text-yellow-500 transition duration-200"
