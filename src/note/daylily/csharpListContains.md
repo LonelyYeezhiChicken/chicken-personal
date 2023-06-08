@@ -1,23 +1,21 @@
 在 C# 中比較兩個列表
 
-
-1. 用 C# 中的 ` Linq ` 方法比較列表以查詢差異
-2. 用 C# 中的 ` List.Contains() ` 函式比較列表以尋找差異
-
-
+1. 用 C# 中的 `Linq` 方法比較列表以查詢差異
+2. 用 C# 中的 `List.Contains()` 函式比較列表以尋找差異
 
 ### 用 C# 中的 Linq 方法比較列表以查詢差異
 
 ### 考慮以下情況:
-我們有兩個列表，分別是 ` list1 ` 和 ` list2 ` ，我們想知道:
--  ` list1 ` 中哪些元素不在 ` list2 ` 中
--   ` list2 ` 中哪些元素不在 ` list1 ` 中
 
-可以使用 ` Linq ` 中的 ` Except() ` 函式來完成。` Linq ` 或語言整合查詢用於查詢 C# 中的資料結構。
+我們有兩個列表，分別是 `list1` 和 `list2` ，我們想知道:
+
+- `list1` 中哪些元素不在 `list2` 中
+- `list2` 中哪些元素不在 `list1` 中
+
+可以使用 `Linq` 中的 `Except()` 函式來完成。`Linq` 或語言整合查詢用於查詢 C# 中的資料結構。
 
 - Except() 函式返回一個列表的一組元素，這些元素在另一個列表中不存在。
 - 下面的程式碼例子向我們展示瞭如何用 C# 中的 Linq 來比較兩個列表的差異。
-
 
 ```csharp
 using System;
@@ -48,7 +46,9 @@ namespace compare_lists
     }
 }
 ```
+
 輸出：
+
 ```text
 Present in List1 But not in List2
 1
@@ -60,13 +60,12 @@ Present in List2 But not in List1
 
 用 C# 中的 List.Contains() 函式比較列表以尋找差異
 
+`List.Contains()` 函式用於確定 C# 中列表中是否存在元素。
 
-` List.Contains() ` 函式用於確定 C# 中列表中是否存在元素。
-- 如果列表中存在元素 x，則 ` List.Contains(x) ` 函式將返回 true；
+- 如果列表中存在元素 x，則 `List.Contains(x)` 函式將返回 true；
 - 如果元素 x 不存在，則該函式將返回 false。
-  
-  我們可以對 Linq 使用 List.Contains() 方法來確定哪些元素存在於一個列表中，而不存在於另一個列表中。下面的程式碼示例向我們展示瞭如何使用 C# 中的 List.Contains() 函式比較兩個列表的差異。
 
+  我們可以對 Linq 使用 List.Contains() 方法來確定哪些元素存在於一個列表中，而不存在於另一個列表中。下面的程式碼示例向我們展示瞭如何使用 C# 中的 List.Contains() 函式比較兩個列表的差異。
 
 ```csharp
 using System;
@@ -98,8 +97,8 @@ namespace compare_lists
 }
 
 ```
-輸出：
 
+輸出：
 
 ```text
 Present in List1 But not in List2
@@ -120,4 +119,3 @@ Present in List2 But not in List1
 最後，我們同時列印了 firstNotSecond 和 secondNotFirst 列表中的元素。
 
 在此，輸出被重複與重複值一樣多的次數。如果我們要考慮重複值，則該方法應該比以前的方法更可取。
-

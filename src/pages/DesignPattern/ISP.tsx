@@ -3,20 +3,13 @@ import { LinkMap } from "../../models";
 import testMd from "../../note/designPattern/isp.md";
 import { useTitle } from "../../utils/PageTitle";
 
-const pageTitle: string =
-  "💡4. 介面隔離原則 (ISP) (interface segregation principle)";
+const pageTitle: string = "💡4. 介面隔離原則 (ISP) (interface segregation principle)";
 
 function ISP() {
-  useTitle(
-    "Chicken Say Hi | 💡 4. 介面隔離原則 (interface segregation principle)"
-  );
+  useTitle("Chicken Say Hi | 💡 4. 介面隔離原則 (interface segregation principle)");
   return (
     <>
-      <Portfolio
-        backPath={LinkMap.DesignPattern}
-        title={pageTitle}
-        text={testMd}
-      />
+      <Portfolio backPath={LinkMap.DesignPattern} title={pageTitle} text={testMd} />
     </>
   );
 }

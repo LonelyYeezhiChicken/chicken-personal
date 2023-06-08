@@ -1,4 +1,4 @@
-import { Footer, Title, Header, HorizontalCard } from '../../components';
+import { Footer, Title, Header, HorizontalCard } from "../../components";
 import {
   p5Js,
   phaserJs,
@@ -11,13 +11,13 @@ import {
   Daylily,
   Webapi4Net,
   ThreeJs,
-} from './pageData';
-import { useTitle } from '../../utils/PageTitle';
+} from "./pageData";
+import { useTitle } from "../../utils/PageTitle";
 
-const pageTitle: string = '🎨 一隻雞的作品';
+const pageTitle: string = "🎨 一隻雞的作品";
 
 function Portfolio() {
-  useTitle('Chicken Say Hi | 作品集');
+  useTitle("Chicken Say Hi | 作品集");
 
   const renderHorizontalCard = (cardData: any) => {
     return (

@@ -1,13 +1,12 @@
 # 基本語法(七) - 動畫
 
-
 ### 我們之前是用土炮的方式來切換圖片，達到動畫效果，今天我們來用比較正規得方式來做動畫
 
-
 ### 今天的動畫是要讓雞在沙漠走來走去
+
 - 先載入雞與背景的圖片
 - 我們這邊使用 `spritesheet` 來設定每一偵的寬高
-![mImg](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/roles/chickenGo.png?raw=true)
+  ![mImg](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/roles/chickenGo.png?raw=true)
 
 ```javascript
 class GameScene extends Phaser.Scene {
@@ -33,8 +32,10 @@ class GameScene extends Phaser.Scene {
 ```
 
 ### 接下接下來需要設定雞的圖片應該從第幾偵開始
-- 我們這邊多給一個參數表示從第12格開始 `this.add.sprite(50, 200, "chicken", 12)`
-- 並且把雞放大 1.5倍
+
+- 我們這邊多給一個參數表示從第 12 格開始 `this.add.sprite(50, 200, "chicken", 12)`
+- 並且把雞放大 1.5 倍
+
 ```javascript
 class GameScene extends Phaser.Scene {
   constructor() {
@@ -75,15 +76,16 @@ class GameScene extends Phaser.Scene {
 
     // 把雞放大 1.5 倍
     this.chicken.setScale(1.5);
-   
   }
 }
 ```
 
 ### 建立動畫
+
 - 這邊使用 `this.anims.create` 來建立動畫
 - `start` `end` ，表示動畫應該從哪格開始與結束
 - 我們分別建立一個向左走與向右走的動畫
+
 ```javascript
 class GameScene extends Phaser.Scene {
   constructor() {
@@ -104,7 +106,7 @@ class GameScene extends Phaser.Scene {
       frameHeight: 32,
     });
   }
-  
+
   /**
    * 生成物件
    */
@@ -148,10 +150,12 @@ class GameScene extends Phaser.Scene {
 ```
 
 ### 播放動畫
+
 - 這時候我們想要點擊畫面雞就會出發
 - 點擊畫面會用到 `this.input.activePointer.isDown`
 - 接下來就是播放動畫了 `this.chicken.anims.play("chickenGoRight", true)`
-- 並且要幫雞的 x軸 +1 他才會往右前進
+- 並且要幫雞的 x 軸 +1 他才會往右前進
+
 ```javascript
 class GameScene extends Phaser.Scene {
   constructor() {
@@ -172,7 +176,7 @@ class GameScene extends Phaser.Scene {
       frameHeight: 32,
     });
   }
-  
+
   /**
    * 生成物件
    */
@@ -214,20 +218,21 @@ class GameScene extends Phaser.Scene {
   }
 
   update() {
-   
     if (this.input.activePointer.isDown) {
-        this.chicken.x += 1;
-        this.chicken.anims.play("chickenGoRight", true);
+      this.chicken.x += 1;
+      this.chicken.anims.play("chickenGoRight", true);
     }
   }
 }
 ```
 
 ### 讓雞回家
+
 - 現在一直點著螢幕，雞就會離家出走
 - 跑出螢幕外就回不了家了
 - 因此我們加一個變數，來判斷雞是不是該回家了
 - 並且偵測機是不是走到世界的盡頭，是的話就讓他回頭
+
 ```javascript
 class GameScene extends Phaser.Scene {
   constructor() {
@@ -318,7 +323,8 @@ class GameScene extends Phaser.Scene {
 ---
 
 ### 遊戲場景
-``` javascript
+
+```javascript
 class GameScene extends Phaser.Scene {
   constructor() {
     super({ key: "gameScene" });
@@ -401,10 +407,11 @@ class GameScene extends Phaser.Scene {
     }
   }
 }
-
 ```
+
 ### 主程式
-``` javascript
+
+```javascript
 <!DOCTYPE html>
 <html lang="en">
 

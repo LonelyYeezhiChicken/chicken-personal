@@ -1,6 +1,7 @@
 ### 多點傳送委派(MulticastDelegate)
 
 1. 使用`+=`進行註冊
+
 ```csharp
 	Animal deleAnimal = new Animal(Dog);
 
@@ -12,6 +13,7 @@
 ---
 
 ## 完整程式碼
+
 ```csharp
 using System;
 

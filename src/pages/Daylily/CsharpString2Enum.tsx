@@ -9,11 +9,7 @@ function String2Enum() {
   useTitle("Chicken Say Hi | 👩‍💻 [C#] 1.0.1 string to enum");
   return (
     <>
-      <Portfolio
-        backPath={LinkMap.DaylilyNote}
-        title={pageTitle}
-        text={testMd}
-      />
+      <Portfolio backPath={LinkMap.DaylilyNote} title={pageTitle} text={testMd} />
     </>
   );
 }

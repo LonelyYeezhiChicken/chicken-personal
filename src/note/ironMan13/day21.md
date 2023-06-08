@@ -1,13 +1,15 @@
 萬物皆有他的結構，\
 就如同世界上所有東西皆由元素所組成，\
-而定義這些結構在C#中稱為class，\
+而定義這些結構在 C#中稱為 class，\
 他是一切的藍圖
 
 ### 變數成員與方法成員
-* 結構:
-![mdImg](https://ithelp.ithome.com.tw/upload/images/20210920/20097001TE37hH4gKq.png)
 
-### 範例:我們來實作貓的類別 
+- 結構:
+  ![mdImg](https://ithelp.ithome.com.tw/upload/images/20210920/20097001TE37hH4gKq.png)
+
+### 範例:我們來實作貓的類別  
+
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -76,49 +78,52 @@ namespace CsharpDemo
 ```
 
 輸入:
->孤獨一隻雞\
->48
+
+> 孤獨一隻雞\
+> 48
 
 輸出:
->請輸入姓名:\
->孤獨一隻雞\
->請輸入年齡:\
->48\
->嗨!我是孤獨一隻雞\
->喵~~~~~喵~~~\
->嗨!我是孤獨一隻雞\
->我已經抓了 1 隻老鼠
 
-1. 在Cat這個類別之中，
-    * 貓有三個屬性:\
-	  1. 名字 \
-	  2. 年齡 \
-	  3. 捉到老鼠數量\
-	分別使用 name 、age、 miceCount 來表示，\
-	他們稱為類別的成員變數(Member Variable) 
-    ![mdImg](https://ithelp.ithome.com.tw/upload/images/20210920/20097001jyYIlCq1wD.png)
-    
- 2. 公用和私用 (public/private)
-- public/private統稱為"修飾詞"
+> 請輸入姓名:\
+> 孤獨一隻雞\
+> 請輸入年齡:\
+> 48\
+> 嗨!我是孤獨一隻雞\
+> 喵~~~~~喵~~~\
+> 嗨!我是孤獨一隻雞\
+> 我已經抓了 1 隻老鼠
+
+1. 在 Cat 這個類別之中，
+   - 貓有三個屬性:\
+       1. 名字 \
+       2. 年齡 \
+       3. 捉到老鼠數量\
+     分別使用  name 、age、 miceCount  來表示，\
+     他們稱為類別的成員變數(Member Variable) 
+     ![mdImg](https://ithelp.ithome.com.tw/upload/images/20210920/20097001jyYIlCq1wD.png)
+2. 公用和私用 (public/private)
+
+- public/private 統稱為"修飾詞"
+
 ```csharp
 	public string name;
 	public int age;            ⇒ 公有成員
 	public void Meow()
 	public void CaseMice()
-	
+
 	private int miceCount = 0; 
 	private void Hello()        ⇒私有成員
- ```
-    
-  `  ※把變數或函數標記為private，可以確保這些數據不受到外界的影響`
-  
-  | 已宣告存取範圍 | 意義|
-  ------------- | -------------
-| public | 未限制存取。
-| protected | 存取限於包含類別或衍生自包含類別的類型。
-| internal | 存取限於目前組件。
-| protected internal | 存取限於目前組件或衍生自包含類別的類型。
-| private | 存取限於包含類型。
-| private protected | 存取限於目前組件內包含類別或衍生自包含類別的類型。 自 C# 7.2 起可用。
+```
+
+`  ※把變數或函數標記為private，可以確保這些數據不受到外界的影響`
+
+| 已宣告存取範圍     | 意義                                                                  |
+| ------------------ | --------------------------------------------------------------------- |
+| public             | 未限制存取。                                                          |
+| protected          | 存取限於包含類別或衍生自包含類別的類型。                              |
+| internal           | 存取限於目前組件。                                                    |
+| protected internal | 存取限於目前組件或衍生自包含類別的類型。                              |
+| private            | 存取限於包含類型。                                                    |
+| private protected  | 存取限於目前組件內包含類別或衍生自包含類別的類型。 自 C# 7.2 起可用。 |
 
 ### 學會了類別之後，會發現原來程式碼，也可以這樣做分類鴨!

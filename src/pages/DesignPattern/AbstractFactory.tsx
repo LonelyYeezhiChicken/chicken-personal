@@ -9,11 +9,7 @@ function AbstractFactory() {
   useTitle("Chicken Say Hi | 💡 3. 抽象工廠 (Abstract Factory)");
   return (
     <>
-      <Portfolio
-        backPath={LinkMap.DesignPattern}
-        title={pageTitle}
-        text={testMd}
-      />
+      <Portfolio backPath={LinkMap.DesignPattern} title={pageTitle} text={testMd} />
     </>
   );
 }

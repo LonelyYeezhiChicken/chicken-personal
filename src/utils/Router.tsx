@@ -1,6 +1,6 @@
-import { Navigate, Route, Routes, useParams } from 'react-router-dom';
-import { Main } from '../components/layouts';
-import { LinkMap } from '../models';
+import { Navigate, Route, Routes, useParams } from "react-router-dom";
+import { Main } from "../components/layouts";
+import { LinkMap } from "../models";
 import {
   Home,
   Continue,
@@ -98,7 +98,7 @@ import {
   ThreeNote,
   Webapi4NetNote1,
   ThreeNote1,
-} from '../pages';
+} from "../pages";
 
 export function Router() {
   return (

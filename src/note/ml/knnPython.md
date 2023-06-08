@@ -1,6 +1,6 @@
-## K近鄰演算法 (k-nearest neighbor, k-NN)
+## K 近鄰演算法 (k-nearest neighbor, k-NN)
 
-K近鄰演算法 (k-nearest neighbor, k-NN) 是一種基本的分類與回歸方法，屬於非監督式學習。其主要功能是根據輸入的特徵向量來預測實體的類別。該演算法通過計算不同數據之間的相似度來進行分類或回歸，並根據最近鄰的特徵向量來進行預測。
+K 近鄰演算法 (k-nearest neighbor, k-NN) 是一種基本的分類與回歸方法，屬於非監督式學習。其主要功能是根據輸入的特徵向量來預測實體的類別。該演算法通過計算不同數據之間的相似度來進行分類或回歸，並根據最近鄰的特徵向量來進行預測。
 
 ## K-NN 三大要素
 
@@ -29,10 +29,13 @@ K近鄰演算法 (k-nearest neighbor, k-NN) 是一種基本的分類與回歸方
 5. 無法處理缺失值或不完整的數據。
 
 ### 結論
-K近鄰演算法 (k-nearest neighbor, k-NN) 是一種簡單且易於實現的非監督式學習方法，主要用於分類和回歸問題。其基本思想是根據特徵向量的相似度來進行預測，並通過選取最近的K個鄰居來進行分類或回歸。儘管K-NN有一些缺點，但在特定的應用場景中仍然可以是一個有效的機器學習工具。在實際應用中，我們應該根據數據集的特點和需求來選擇合適的距離度量、K值和分類決策規則，並進行適當的特徵工程和模型評估，以獲得較好的預測效果。
+
+K 近鄰演算法 (k-nearest neighbor, k-NN) 是一種簡單且易於實現的非監督式學習方法，主要用於分類和回歸問題。其基本思想是根據特徵向量的相似度來進行預測，並通過選取最近的 K 個鄰居來進行分類或回歸。儘管 K-NN 有一些缺點，但在特定的應用場景中仍然可以是一個有效的機器學習工具。在實際應用中，我們應該根據數據集的特點和需求來選擇合適的距離度量、K 值和分類決策規則，並進行適當的特徵工程和模型評估，以獲得較好的預測效果。
 
 ### ref
+
 ---
+
 1. Cover, T., & Hart, P. (1967). Nearest neighbor pattern classification. IEEE Transactions on Information Theory, 13(1), 21-27.
 2. Duda, R. O., Hart, P. E., & Stork, D. G. (2012). Pattern classification. John Wiley & Sons.
 3. Zhang, D. (2011). Nearest neighbor search: a database perspective. ACM SIGMOD Record, 40(2), 18-25.

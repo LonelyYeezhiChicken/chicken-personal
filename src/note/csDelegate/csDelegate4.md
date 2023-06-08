@@ -1,8 +1,10 @@
 ### Acton 泛型委派
 
 1. 定義函式
+
 - 傳入值設定為 Action
 - Action -> 可以直接傳入函式
+
 ```csharp
 	/// <summary>
     /// 定義函式
@@ -15,16 +17,18 @@
 ```
 
 2. 呼叫馬戲團
+
 - 直接傳入狗函式
 - 無須做任何實例化
+
 ```csharp
  RunCircus(Dog);
 ```
 
-
 ---
 
 ## 完整程式碼
+
 ```csharp
 using System;
 

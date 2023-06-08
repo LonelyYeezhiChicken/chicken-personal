@@ -1,11 +1,11 @@
-import { Header, Footer } from '../../components/home';
-import chicken from '../../assets/chicken.jpg';
-import { useTitle } from '../../utils/PageTitle';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import { Header, Footer } from "../../components/home";
+import chicken from "../../assets/chicken.jpg";
+import { useTitle } from "../../utils/PageTitle";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function About() {
-  useTitle('Chicken Say Hi | About');
+  useTitle("Chicken Say Hi | About");
   return (
     <>
       <section className="relative pt-16 bg-blueGray-50 max-h-full overflow-auto ">
@@ -21,14 +21,10 @@ function About() {
                 />
                 <div className="p-5 mb-4 flex flex-col gap-y-3">
                   <h4 className="text-xl font-bold text-white dark:text-gray-700">孤獨一隻雞</h4>
-                  <p className="text-xl font-bold text-white dark:text-gray-700">
-                    I'm a backend developer.
-                  </p>
+                  <p className="text-xl font-bold text-white dark:text-gray-700">I'm a backend developer.</p>
                   <p> 我是一隻平凡無奇的雞，每天過著平凡無奇的生活</p>
                   <p className="cursor-pointer">
-                    <a href="mailto:lonelyyeezhichicken@gmail.com">
-                      e-mail: lonelyyeezhichicken@gmail.com
-                    </a>
+                    <a href="mailto:lonelyyeezhichicken@gmail.com">e-mail: lonelyyeezhichicken@gmail.com</a>
                   </p>
                 </div>
               </div>

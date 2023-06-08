@@ -1,3 +1,3 @@
-export * from './HomeInfo';
-export * from './LinkInfo';
-export * from './PageInfo';
+export * from "./HomeInfo";
+export * from "./LinkInfo";
+export * from "./PageInfo";

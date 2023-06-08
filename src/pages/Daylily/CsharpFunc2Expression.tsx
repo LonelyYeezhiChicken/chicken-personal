@@ -9,11 +9,7 @@ function CsharpFunc2Expression() {
   useTitle("Chicken Say Hi | 👩‍💻 [C#] 1.0.6 委派與委派表達樹");
   return (
     <>
-      <Portfolio
-        backPath={LinkMap.DaylilyNote}
-        title={pageTitle}
-        text={testMd}
-      />
+      <Portfolio backPath={LinkMap.DaylilyNote} title={pageTitle} text={testMd} />
     </>
   );
 }

@@ -3,6 +3,7 @@
 ### 我們今天就來讓沙漠中長滿草吧
 
 ### 先載入沙漠背景與草皮
+
 ![mdImg](https://raw.githubusercontent.com/LonelyYeezhiChicken/chicken-personal/main/src/assets/mdImgs/phaser/note/backgrounds/desert.webp)
 ![草皮](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/others/Grass.png?raw=true)
 
@@ -27,7 +28,8 @@ class GameScene extends Phaser.Scene {
 ```
 
 ### 接下來就是大家熟悉的建立背景
- ```javascript
+
+```javascript
 class GameScene extends Phaser.Scene {
   constructor() {
     super({ key: "gameScene" });
@@ -44,7 +46,7 @@ class GameScene extends Phaser.Scene {
     // 載入草皮
     this.load.image("grass", "../assets/others/Grass.png");
   }
-  
+
   /**
    * 生成物件
    */
@@ -63,11 +65,13 @@ class GameScene extends Phaser.Scene {
 ```
 
 ### 接下來進入建立草皮群組環節
+
 - 首先我們使用 `this.add.group` 來對場景加入群組
 - 接下來設定群組的參數
   1. 設定群組的唯一值 ` key: "grass"`
   2. 複製多少物件 `repeat: 10, //種十撮`
 - 再來就是設定物件的起始點還有規則
+
 ```javascript
 class GameScene extends Phaser.Scene {
   constructor() {
@@ -85,8 +89,8 @@ class GameScene extends Phaser.Scene {
     // 載入草皮
     this.load.image("grass", "../assets/others/Grass.png");
   }
-  
- /**
+
+  /**
    * 生成物件
    */
   create() {
@@ -117,9 +121,11 @@ class GameScene extends Phaser.Scene {
 ```
 
 ### 因為沙漠太熱了，所以草要集體縮水
+
 - 首先可以先取得群組內的所有物件 `getChildren()`
 - 此時我們就可以使用 `forEach` 迴圈來同時改變群組內的所有物件
 - 放大縮小我們使用 `setScale()` 來處理
+
 ```javascript
 class GameScene extends Phaser.Scene {
   constructor() {
@@ -137,8 +143,8 @@ class GameScene extends Phaser.Scene {
     // 載入草皮
     this.load.image("grass", "../assets/others/Grass.png");
   }
-  
- /**
+
+  /**
    * 生成物件
    */
   create() {
@@ -172,12 +178,14 @@ class GameScene extends Phaser.Scene {
   }
 }
 ```
+
 ### 今天我們學會了大量複製場景中的物件了，大家可以試著在沙漠裡撲滿更多的草
 
 ---
 
 ### 遊戲場景
-``` javascript
+
+```javascript
 class GameScene extends Phaser.Scene {
   constructor() {
     super({ key: "gameScene" });
@@ -228,10 +236,11 @@ class GameScene extends Phaser.Scene {
     });
   }
 }
-
 ```
+
 ### 主程式
-``` javascript
+
+```javascript
 <!DOCTYPE html>
 <html lang="en">
 

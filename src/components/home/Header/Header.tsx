@@ -55,43 +55,27 @@ export function Header() {
         <div className="flex items-center">
           <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex md:flex items-center hidden">
             {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className="py-1 px-4 flex hover:text-gray-400 transition duration-300"
-              >
+              <Link key={link.to} to={link.to} className="py-1 px-4 flex hover:text-gray-400 transition duration-300">
                 {link.label}
               </Link>
             ))}
           </nav>
           <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg sm:flex lg:hidden md:hidden items-center hidden">
             {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className="py-1 px-4 flex hover:text-gray-300 transition duration-300"
-              >
+              <Link key={link.to} to={link.to} className="py-1 px-4 flex hover:text-gray-300 transition duration-300">
                 {link.label}
               </Link>
             ))}
           </nav>
           <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:hidden md:hidden sm:hidden  items-center flex">
             {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className="py-1 px-4 flex hover:text-gray-300 transition duration-300"
-              >
+              <Link key={link.to} to={link.to} className="py-1 px-4 flex hover:text-gray-300 transition duration-300">
                 <span className="sr-only">{link.label}</span>
                 <span className="lg:hidden md:hidden">{link.emoji}</span>
               </Link>
             ))}
           </nav>
-          <button
-            className="ml-4 focus:outline-none"
-            onClick={toggleDarkMode}
-            aria-label="Toggle dark mode"
-          >
+          <button className="ml-4 focus:outline-none" onClick={toggleDarkMode} aria-label="Toggle dark mode">
             <span role="img" aria-label="moon">
               {isDarkMode ? "🌙" : "☀️"}
             </span>

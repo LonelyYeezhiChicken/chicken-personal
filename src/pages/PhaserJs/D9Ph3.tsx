@@ -9,11 +9,7 @@ function D9Ph3() {
   useTitle("Chicken Say Hi | 基本語法(七) - 動畫");
   return (
     <>
-      <Portfolio
-        backPath={LinkMap.PhaserPage}
-        title={pageTitle}
-        text={testMd}
-      />
+      <Portfolio backPath={LinkMap.PhaserPage} title={pageTitle} text={testMd} />
     </>
   );
 }

@@ -9,11 +9,7 @@ function DPOverview2() {
   useTitle("Chicken Say Hi | 💡 2. 設計模式概述(二)");
   return (
     <>
-      <Portfolio
-        backPath={LinkMap.DesignPattern}
-        title={pageTitle}
-        text={testMd}
-      />
+      <Portfolio backPath={LinkMap.DesignPattern} title={pageTitle} text={testMd} />
     </>
   );
 }

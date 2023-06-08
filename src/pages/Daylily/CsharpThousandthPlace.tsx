@@ -9,11 +9,7 @@ function CsharpThousandthPlace() {
   useTitle("Chicken Say Hi | 👩‍💻 [C#] 1.0.2 千分位符");
   return (
     <>
-      <Portfolio
-        backPath={LinkMap.DaylilyNote}
-        title={pageTitle}
-        text={testMd}
-      />
+      <Portfolio backPath={LinkMap.DaylilyNote} title={pageTitle} text={testMd} />
     </>
   );
 }

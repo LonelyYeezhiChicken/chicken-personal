@@ -28,9 +28,7 @@ export function PageSide({ list }: PageDataList) {
                   to={item.goPath}
                   className="hover:text-indigo-500 hover:bg-indigo-100 flex items-center p-2 my-6 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200 text-gray-800 dark:text-gray-400 rounded-lg"
                 >
-                  <span className="mx-1 sm:mx-4 text-lg font-semibold">
-                    {item.text} ➜
-                  </span>
+                  <span className="mx-1 sm:mx-4 text-lg font-semibold">{item.text} ➜</span>
                   <span className="flex-grow text-right"></span>
                 </Link>
               </motion.div>

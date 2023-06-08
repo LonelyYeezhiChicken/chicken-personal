@@ -9,11 +9,7 @@ function Adapter() {
   useTitle("Chicken Say Hi | 💡 1. 轉接器模式 (Adapter Pattern)");
   return (
     <>
-      <Portfolio
-        backPath={LinkMap.DesignPattern}
-        title={pageTitle}
-        text={testMd}
-      />
+      <Portfolio backPath={LinkMap.DesignPattern} title={pageTitle} text={testMd} />
     </>
   );
 }
