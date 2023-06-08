@@ -1,4 +1,5 @@
 ### 創造者模式概述:
+
 - 它適用於各式物件都需分開建立的複雜情境
 - 優點:
   - 容易擴充
@@ -8,14 +9,18 @@
   - 在需求複雜度增加時，需要更多的類別來建立物件，導致開發與維護成本提高
 
 ### 創造者模式包含:
+
 - 創造者介面 (Builder interface): 規範建立物件所需要的方法
 - 具體創造者 (Concrete Builder): 實作創造者介面的功能
 - 指揮者 (Director): 負責處理建立流程
 - 產品 (Product): 要被建立的物件
 
 ### 範例:
+
 - 需求: 我需要建立一棟房子，房子要有門、有窗、有牆
+
 1. 先定義產品 - 房子
+
 ```csharp
     internal class House
     {
@@ -38,7 +43,9 @@
         }
     }
 ```
+
 2. 定義創造者介面
+
 ```csharp
     internal abstract class Builder
     {
@@ -48,7 +55,9 @@
         public abstract House GetProduct();
     }
 ```
+
 3. 實作創造者介面 - 具體創造者
+
 ```csharp
     internal class ConcreteBuilder : Builder
     {
@@ -75,7 +84,9 @@
         }
     }
 ```
+
 4. 建立指揮者
+
 ```csharp
     internal class Director
     {
@@ -87,7 +98,9 @@
         }
     }
 ```
+
 5. 客戶端使用
+
 ```csharp
 Builder builder = new ConcreteBuilder();
 Director.Construct(builder);
@@ -96,7 +109,9 @@ var house = builder.GetProduct();
 
 Console.WriteLine(house.ToString());
 ```
+
 - 輸出:
+
 ```text
 房子包含: 門、牆壁、窗戶
 ```

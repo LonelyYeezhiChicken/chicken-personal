@@ -5,7 +5,9 @@
 C#也擁有共同制服的功能
 
 ### 多載
+
 ### 範例:我們先來看一段程式
+
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -42,12 +44,14 @@ namespace CsharpDemo
 ```
 
 結果:
->Int : 200\
-Double : 204.4242
+
+> Int : 200\
+> Double : 204.4242
 
 `如果需要不同的算法，我們就需要寫種方法，但對於多載來說它可以幫他們穿上制服`
 
 ### 範例:使用多載來處理上面的程式吧
+
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -83,11 +87,12 @@ namespace CsharpDemo
         }
     }
  }
- ```
- 
- 結果:
- >Int : 200\
-Double : 204.4242
+```
+
+結果:
+
+> Int : 200\
+> Double : 204.4242
 
 `各位可能會突然頓悟，啊原來多載就是一樣名字的方法，卻可以做不同事情`
 

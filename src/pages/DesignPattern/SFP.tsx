@@ -9,11 +9,7 @@ function SFP() {
   useTitle("Chicken Say Hi | 💡 2. 簡單工廠 (Simple Factory Pattern)");
   return (
     <>
-      <Portfolio
-        backPath={LinkMap.DesignPattern}
-        title={pageTitle}
-        text={testMd}
-      />
+      <Portfolio backPath={LinkMap.DesignPattern} title={pageTitle} text={testMd} />
     </>
   );
 }

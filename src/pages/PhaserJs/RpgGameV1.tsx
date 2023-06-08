@@ -9,11 +9,7 @@ function RpgGameV1() {
   useTitle("Chicken Say Hi | RPG Game");
   return (
     <>
-      <Portfolio
-        backPath={LinkMap.PhaserPage}
-        title={pageTitle}
-        text={testMd}
-      />
+      <Portfolio backPath={LinkMap.PhaserPage} title={pageTitle} text={testMd} />
     </>
   );
 }

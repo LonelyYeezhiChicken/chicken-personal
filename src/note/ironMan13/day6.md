@@ -3,32 +3,35 @@
 我比你漂亮，C#世界也是非常愛比較的
 
 ### 比較運算子
-* 隨便兩個數字抓來都是可以做比較的，C#的世界也不例外
 
-| 運算子 | 用途 |  類別 |
-| - | - | - |
-|< | 小於 | 二元 |
-|> | 大於 | 二元 |
-|<= | 小於等於 | 二元 |
-|>= | 大於等於 | 二元 |
-|==| 等於 | 二元 |
-|!=| 不等於 | 二元 |
+- 隨便兩個數字抓來都是可以做比較的，C#的世界也不例外
+
+| 運算子 | 用途     | 類別 |
+| ------ | -------- | ---- |
+| <      | 小於     | 二元 |
+| >      | 大於     | 二元 |
+| <=     | 小於等於 | 二元 |
+| >=     | 大於等於 | 二元 |
+| ==     | 等於     | 二元 |
+| !=     | 不等於   | 二元 |
 
 `注意! 各位千萬不要把 " == " 與 " = "搞混了，前者是比較，後者是賦值`
 
 ### 邏輯表達式
-* 搭配著比較運算子，我們可以列出邏輯表達式
-* 如果答案是正確的我們稱之為"真(true)"
-* 反之答案是不正確的我們稱之為"假(false)"
 
-邏輯表達式 | 結果 
-------------- | -------------
-|1 < 2 | 真
-| 3 > 2 | 真 
-| 4 == 5 | 假 
-| (6 / 2) != 3 | 假 
+- 搭配著比較運算子，我們可以列出邏輯表達式
+- 如果答案是正確的我們稱之為"真(true)"
+- 反之答案是不正確的我們稱之為"假(false)"
+
+| 邏輯表達式   | 結果 |
+| ------------ | ---- |
+| 1 < 2        | 真   |
+| 3 > 2        | 真   |
+| 4 == 5       | 假   |
+| (6 / 2) != 3 | 假   |
 
 ### 範例:我們來驗證上面的例子
+
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -55,30 +58,35 @@ namespace CsharpDemo
 ```
 
 結果:
->True\
-True\
-False\
-False
+
+> True\
+> True\
+> False\
+> False
 
 ### 邏輯運算子
+
 裡頭包含了:
-1. `&&` 且 (and) 
+
+1. `&&` 且 (and)
 2. `||` 或 (or)
 3. `!` 非 (not)
 
 ### 1. `&&` 且 (and) :兩者條件都要滿足
 
-|P | Q |  P and Q |
-| - | - |- |
-|true | true | true |
-|true | false | false |
-|false | true | false |
-|false | false | false |
+| P     | Q     | P and Q |
+| ----- | ----- | ------- |
+| true  | true  | true    |
+| true  | false | false   |
+| false | true  | false   |
+| false | false | false   |
 
 ### 我們來看看電路圖，必須兩個開關都導通，才會通電
+
 ![mdImg](https://ithelp.ithome.com.tw/upload/images/20210905/20097001UVjpqXfioN.png)
 
-### 範例:x是大於10的偶數
+### 範例:x 是大於 10 的偶數
+
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -101,24 +109,27 @@ namespace CsharpDemo
         }
     }
  }
- ```
- 
- 結果:
- >True
+```
+
+結果:
+
+> True
 
 ### 2. `||` 或 (or):其中之一滿足則成立
 
-P | Q |  P and Q
-| - | - |- |
-|true | true | true |
-|true | false | true |
-|false | true | true |
-|false | false | false |
+| P     | Q     | P and Q |
+| ----- | ----- | ------- |
+| true  | true  | true    |
+| true  | false | true    |
+| false | true  | true    |
+| false | false | false   |
 
 ### 我們來看看電路圖，只要有一個開關都導通，就會通電
+
 ![mdImg](https://ithelp.ithome.com.tw/upload/images/20210905/20097001XrHDlQUZwh.png)
 
-### 範例:x是負數或是 x 是3的倍數
+### 範例:x 是負數或是 x 是 3 的倍數
+
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -153,21 +164,25 @@ namespace CsharpDemo
         }
     }
  }
- ```
- 
- 結果:
- >x = 12 , True
-x = -10 , True
-x = 10 , False
+```
+
+結果:
+
+> x = 12 , True
+> x = -10 , True
+> x = 10 , False
 
 ### 4. `!` 非 (not):與事實相反
-* 如果1不等於2，我們就 `1 != 2` 也可以使用 `!(1 == 2)` 表示
 
-### 布林變數~bool 
-* 布林變數也是C#變數成員的一種型別，他的種族代號是`bool`
-* 他的值只會有兩種，不是真就是假，從來不騙人
+- 如果 1 不等於 2，我們就 `1 != 2` 也可以使用 `!(1 == 2)` 表示
+
+### 布林變數~bool
+
+- 布林變數也是 C#變數成員的一種型別，他的種族代號是`bool`
+- 他的值只會有兩種，不是真就是假，從來不騙人
 
 ### 範例:我們輸入一個整數，讓電腦來告訴我們它是不是偶數
+
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -200,19 +215,23 @@ namespace CsharpDemo
 ```
 
 輸入:
->10
+
+> 10
 
 結果:
->來輸入一個整數吧!\
-10\
-請問神奇一隻雞，10是偶數嗎 ? True
+
+> 來輸入一個整數吧!\
+> 10\
+> 請問神奇一隻雞，10 是偶數嗎 ? True
 
 輸入:
->11
+
+> 11
 
 結果:
->來輸入一個整數吧!\
-1\
-請問神奇一隻雞，1是偶數嗎 ? False
+
+> 來輸入一個整數吧!\
+> 1\
+> 請問神奇一隻雞，1 是偶數嗎 ? False
 
 ### 就說電腦不會騙人吧，對就對，不對就不對，我們現在已經可以讓電腦算數學，也讓電腦擁有明辨是非的能力了，請大家期待之後的文章，電腦會越來越聰明的

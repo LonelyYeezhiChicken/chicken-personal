@@ -1,7 +1,7 @@
-
 1. 新增各種動物
+
 ```csharp
-  
+
 	/// <summary>
 	/// 貓
 	/// </summary>
@@ -9,7 +9,7 @@
 	{
 		Console.WriteLine($"喵喵!");
 	}
-	
+
 	/// <summary>
 	/// 鴨
 	/// </summary>
@@ -17,7 +17,7 @@
 	{
 		Console.WriteLine($"呱呱!");
 	}
-	
+
 	/// <summary>
 	/// 雞
 	/// </summary>
@@ -28,6 +28,7 @@
 ```
 
 2. 取消掉委派傳入的名字
+
 ```csharp
     /// <summary>
     /// 定義委派
@@ -46,7 +47,8 @@
     }
 ```
 
-3. 使用迴圈建立動物List
+3. 使用迴圈建立動物 List
+
 ```csharp
    List<Animal> deleAnimal = new List<Animal>()
     {
@@ -58,6 +60,7 @@
 ```
 
 4. 使用`foreach`執行馬戲團
+
 ```csharp
 	foreach(var animalFunc in deleAnimal)
 	{
@@ -68,6 +71,7 @@
 ---
 
 ## 完整程式碼
+
 ```csharp
 using System;
 using System.Collections.Generic;

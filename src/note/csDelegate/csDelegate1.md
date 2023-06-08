@@ -1,7 +1,9 @@
-## 委派練習1
+## 委派練習 1
+
 - [程式碼](https://github.com/LINDuke-Lin/csharp-Exercise/blob/main/csharpExercise/DelegateExercise/delegateExercise1.cs)
 
 1. 定義要使用的委派
+
 - 使用`delegate`關鍵字
 - 定義傳入參數`string name`
 
@@ -14,9 +16,11 @@
 ```
 
 2. 定義要接收委派的函式
+
 - 定義馬戲團表演的函式
 - 傳入委派與動物姓名
 - 在函式裡實現委派`animal(name);`
+
 ```csharp
     /// <summary>
     /// 定義函式
@@ -30,6 +34,7 @@
 ```
 
 3. 定義小狗函式
+
 ```csharp
     /// <summary>
     /// 小狗函式
@@ -42,21 +47,25 @@
 ```
 
 4. 在主程式實例化動物委派
+
 - 將小狗作為函式帶入
+
 ```csharp
    Animal deleDog = new Animal(Dog);
 ```
 
 5. 將呼叫馬戲團函式
+
 - 將動物委派傳入
+
 ```csharp
   RunCircus(deleDog, "小狗");
 ```
 
 ---
 
-
 ## 完整程式碼
+
 ```csharp
 using System;
 using System.Collections.Generic;

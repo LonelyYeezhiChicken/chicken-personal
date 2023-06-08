@@ -1,4 +1,4 @@
 export type SelectorList = {
-    id: string | number;
-    value: any
+  id: string | number;
+  value: any;
 };

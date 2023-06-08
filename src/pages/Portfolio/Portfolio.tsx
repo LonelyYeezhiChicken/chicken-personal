@@ -21,15 +21,13 @@ function Portfolio() {
 
   const renderHorizontalCard = (cardData: any) => {
     return (
-      <div className="flex flex-col">
-        <div className="card-animation">
-          <HorizontalCard
-            pgId={cardData.id}
-            title={cardData.title}
-            content={cardData.content}
-            imgPath={cardData.imgPath}
-          />
-        </div>
+      <div className="w-1/2">
+        <HorizontalCard
+          pgId={cardData.id}
+          title={cardData.title}
+          content={cardData.content}
+          imgPath={cardData.imgPath}
+        />
       </div>
     );
   };
@@ -39,16 +37,13 @@ function Portfolio() {
       <Title text={pageTitle} />
       <section className="max-h-full overflow-auto">
         <div className="sm:flex relative z-20 items-center mt-2">
-          <div className="container mx-auto px-6 flex-col justify-between items-center relative py-4 mt-5">
+          <div className="flex-wrap container mx-auto px-6 py-4 mt-5 flex">
             {renderHorizontalCard(ironMan13)}
             {renderHorizontalCard(p5Js)}
             {renderHorizontalCard(OAuthNote)}
             {renderHorizontalCard(Ml)}
             {/* {renderHorizontalCard(NunitTest)} */}
             {renderHorizontalCard(Webapi4Net)}
-            <div className="flex flex-col mt-8 sm:mt-0"></div>
-          </div>
-          <div className="container mx-auto px-6 flex-col justify-between items-center relative sm:py-4 sm:mt-5">
             {renderHorizontalCard(phaserJs)}
             {renderHorizontalCard(CsharpEvent)}
             {renderHorizontalCard(DesignPattern)}
@@ -56,6 +51,9 @@ function Portfolio() {
             {renderHorizontalCard(ThreeJs)}
             <div className="flex flex-col mt-8 sm:mt-0"></div>
           </div>
+          {/* <div className="container mx-auto px-6 flex-col justify-between items-center relative sm:py-4 sm:mt-5">
+            <div className="flex flex-col mt-8 sm:mt-0"></div>
+          </div> */}
         </div>
       </section>
       <Footer />

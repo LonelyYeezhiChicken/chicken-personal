@@ -9,11 +9,7 @@ function CsharpImg() {
   useTitle("Chicken Say Hi | 👩‍💻 [C#] 1.0.4 圖片處理");
   return (
     <>
-      <Portfolio
-        backPath={LinkMap.DaylilyNote}
-        title={pageTitle}
-        text={testMd}
-      />
+      <Portfolio backPath={LinkMap.DaylilyNote} title={pageTitle} text={testMd} />
     </>
   );
 }

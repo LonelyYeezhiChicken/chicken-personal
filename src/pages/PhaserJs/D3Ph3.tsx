@@ -9,11 +9,7 @@ function D2Ph3() {
   useTitle("Chicken Say Hi | phaser3 - 靜態資源");
   return (
     <>
-      <Portfolio
-        backPath={LinkMap.PhaserPage}
-        title={pageTitle}
-        text={testMd}
-      />
+      <Portfolio backPath={LinkMap.PhaserPage} title={pageTitle} text={testMd} />
     </>
   );
 }
