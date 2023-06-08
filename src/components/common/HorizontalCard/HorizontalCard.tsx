@@ -1,7 +1,7 @@
-import { useNavigate } from "react-router-dom";
-import { LinkMap } from "../../../models";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
+import { useNavigate } from 'react-router-dom';
+import { LinkMap } from '../../../models';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 type Props = {
   pgId: number;
@@ -18,7 +18,7 @@ enum Page {
 export function HorizontalCard({ pgId, title, content, imgPath }: Props) {
   const navigate = useNavigate();
   function goToPage(page: number) {
-    let path: string = "/";
+    let path: string = '/';
     switch (page) {
       case 1:
         path = LinkMap.P5Js.toString();
@@ -58,12 +58,12 @@ export function HorizontalCard({ pgId, title, content, imgPath }: Props) {
   }
 
   return (
-    <div className="flex max-w-md bg-white shadow-lg rounded-lg overflow-hidden m-5">
-      <div className="w-1/3 bg-cover bg-landscape ">
+    <div className="flex bg-white shadow-lg rounded-lg overflow-hidden m-5 p-5">
+      <div className="w-1/3 bg-cover bg-landscape">
         <LazyLoadImage
           alt=""
           src={imgPath}
-          className="w-90 sm:h-40 h-32"
+          className="w-90 sm:h-40 h-32 object-contain"
           effect="blur"
         />
       </div>
