@@ -6,9 +6,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Hi, I'm Chicken 🐔",
-  tagline: "這是孤獨一隻雞的故事小天地",
-  favicon: "img/favicon.ico",
+  title: "這是孤獨一隻雞的故事小天地",
+  tagline: "Hi, I'm Chicken 🐔",
+  favicon: "img/cLogo.svg",
 
   // Set the production url of your site here
   url: "https://blog.lychicken.com",
@@ -66,7 +66,7 @@ const config = {
       navbar: {
         title: "Chicken Say Hi",
         logo: {
-          alt: "My Site Logo",
+          alt: "Chicken Say Hi Logo",
           src: "img/logo.svg",
         },
         items: [
