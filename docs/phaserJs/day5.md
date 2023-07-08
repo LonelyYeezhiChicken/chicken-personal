@@ -2,6 +2,7 @@
 sidebar_position: 20
 description: phaser js 遊戲引擎 
 key: [phaser3, phaserJS, 遊戲引擎, game]
+tags: [phaser3, phaserJS, 遊戲引擎, game]
 ---
 
 # 基本語法(三) - 圖片串聯

@@ -2,6 +2,7 @@
 sidebar_position: 5
 description: single repository principle 
 key: [設計模式, Design Pattern, 物件導向設計原則, single repository principle, 單一責任原則]
+tags: [設計模式, Design Pattern,物件導向設計原則]
 ---
 
 # 單一責任原則 

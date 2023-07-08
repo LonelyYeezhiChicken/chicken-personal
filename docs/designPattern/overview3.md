@@ -2,6 +2,7 @@
 sidebar_position: 5
 description: 設計模式筆記 
 key: [設計模式, Design Pattern]
+tags: [設計模式, Design Pattern]
 ---
 
 # 設計模式概述(三)

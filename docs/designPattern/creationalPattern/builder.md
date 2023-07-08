@@ -2,6 +2,7 @@
 sidebar_position: 5
 description: 創造者模式 (Builder Pattern) 
 key: [設計模式, Design Pattern, 創造者模式, Builder Pattern]
+tags: [設計模式, Design Pattern]
 ---
 
 # 創造者模式

@@ -2,6 +2,7 @@
 sidebar_position: 1
 description: 工廠方法 (Factory Method Pattern) 
 key: [設計模式, Design Pattern, 工廠方法, Factory Method Pattern]
+tags: [設計模式, Design Pattern]
 ---
 
 # 工廠模式

@@ -2,6 +2,7 @@
 sidebar_position: 20
 description: interface segregation principle
 key: [設計模式, Design Pattern, 物件導向設計原則, interface segregation principle, 介面隔離原則]
+tags: [設計模式, Design Pattern,物件導向設計原則]
 ---
 
 # 介面隔離原則

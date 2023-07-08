@@ -2,6 +2,7 @@
 sidebar_position: 10
 description:  map 函式
 key: [P5 Js, map]
+tags: [P5JS]
 ---
 
 # map 函式

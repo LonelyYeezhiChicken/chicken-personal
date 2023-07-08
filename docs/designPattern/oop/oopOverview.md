@@ -2,6 +2,7 @@
 sidebar_position: 1
 description: 設計模式筆記 
 key: [設計模式, Design Pattern]
+tags: [設計模式, Design Pattern,物件導向設計原則]
 ---
 
 #  物件導向設計原則概述

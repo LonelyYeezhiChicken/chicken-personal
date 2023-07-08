@@ -2,6 +2,7 @@
 sidebar_position: 20
 description:  聲波
 key: [P5 Js, 聲波, wave]
+tags: [P5JS]
 ---
 
 # 聲波

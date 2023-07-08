@@ -104,7 +104,7 @@ const config = {
             position: "left",
             label: "筆記",
           },
-          // { to: "/blog", label: "作品", position: "left" },
+          { to: "/blog", label: "作品", position: "left" },
           {
             type: "localeDropdown",
             position: "right",

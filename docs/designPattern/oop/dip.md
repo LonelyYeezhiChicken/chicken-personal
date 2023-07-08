@@ -2,6 +2,7 @@
 sidebar_position: 25
 description: dependency inversion principle
 key: [設計模式, Design Pattern, 物件導向設計原則, dependency inversion principle, 依賴反轉原則]
+tags: [設計模式, Design Pattern,物件導向設計原則]
 ---
 
 # 依賴反轉原則

@@ -1,8 +1,11 @@
 ---
 sidebar_position: 1
+description:  Day1 C# 雞礎觀念- C#簡介
+key: [C#, 雞礎觀念, 鐵人賽, cSharp]
+tags: [C#, 雞礎觀念, 鐵人賽]
 ---
 
-# [Day1]C#簡介
+# C#簡介
 
 ### 故事時間
 

@@ -2,6 +2,7 @@
 sidebar_position: 15
 description: Liskov substitution principle
 key: [設計模式, Design Pattern, 物件導向設計原則, Liskov substitution principle, 里氏替換原則]
+tags: [設計模式, Design Pattern,物件導向設計原則]
 ---
 
 # 里氏替換原則

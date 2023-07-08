@@ -2,6 +2,7 @@
 sidebar_position: 5
 description: string to enum
 key: [Csharp, 雜記, string to enum]
+tags: [C#, C#雜記]
 ---
 
 # string to enum

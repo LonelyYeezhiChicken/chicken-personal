@@ -2,6 +2,7 @@
 sidebar_position: 5
 description: 委派 (Delegate) - 馬戲團(多隻動物版)
 key: [委派, Delegate]
+tags: [委派, Delegate]
 ---
 
 # 馬戲團(多隻動物版)

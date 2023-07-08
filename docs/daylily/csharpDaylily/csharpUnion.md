@@ -2,6 +2,7 @@
 sidebar_position: 15
 description: 取得兩個 list 得聯集
 key: [Csharp, 雜記, 聯集]
+tags: [C#, C#雜記]
 ---
 
 # 聯集

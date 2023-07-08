@@ -2,6 +2,7 @@
 sidebar_position: 20
 description:  委派 (Delegate)(Action 委派(傳參數)) - 馬戲團
 key: [委派, Delegate, Action, 委派]
+tags: [委派, Delegate]
 ---
 
 # Acton 泛型委派 - 傳參數

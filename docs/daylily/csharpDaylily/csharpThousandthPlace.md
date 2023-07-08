@@ -2,6 +2,7 @@
 sidebar_position: 10
 description: 千分位符
 key: [Csharp, 雜記, 千分位符]
+tags: [C#, C#雜記]
 ---
 
 # 千分位符

@@ -2,6 +2,7 @@
 sidebar_position: 1
 description: 原型模式 (Prototype Pattern) 
 key: [設計模式, Design Pattern, 原型模式, Prototype Pattern]
+tags: [設計模式, Design Pattern]
 ---
 
 # 原型模式
