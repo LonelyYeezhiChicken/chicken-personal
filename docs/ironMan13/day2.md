@@ -1,7 +1,11 @@
 ---
 sidebar_position: 5
+description:  Day2 C# 雞礎觀念- 與C#開發千里來相見
+key: [C#, 雞礎觀念, 鐵人賽, cSharp]
+tags: [C#, 雞礎觀念, 鐵人賽]
 ---
-# [Day2]與C#開發千里來相見
+
+# 與C#開發千里來相見
 
 ### 開發工具:
 

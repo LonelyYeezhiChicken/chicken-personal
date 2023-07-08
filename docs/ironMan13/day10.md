@@ -1,8 +1,11 @@
 ---
 sidebar_position: 45
+description: Day10 C# 雞礎觀念- 重播與停止 while迴圈與break
+key: [C#, 雞礎觀念, 鐵人賽, cSharp]
+tags: [C#, 雞礎觀念, 鐵人賽]
 ---
 
-# [Day10]重播與停止 while迴圈與break
+# 重播與停止 while迴圈與break
 日子一天一天過，<br/>
 周而復始，無限循環<br/>
 C#裡面也有重複不斷的語句，while
