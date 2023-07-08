@@ -7,12 +7,12 @@
     "message": "Chicken Say Hi Logo",
     "description": "The alt text of navbar logo"
   },
-  "item.label.Tutorial": {
-    "message": "Tutorial",
+  "item.label.Note": {
+    "message": "筆記",
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Blog": {
-    "message": "Blog",
+    "message": "作品",
     "description": "Navbar item with label Blog"
   },
   "item.label.GitHub": {

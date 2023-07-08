@@ -7,8 +7,8 @@
     "message": "Chicken Say Hi Logo",
     "description": "The alt text of navbar logo"
   },
-  "item.label.Tutorial": {
-    "message": "Tutorial",
+  "item.label.Note": {
+    "message": "Note",
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Blog": {

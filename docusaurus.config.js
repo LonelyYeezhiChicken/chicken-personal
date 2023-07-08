@@ -28,8 +28,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en", "zh-Hant"],
+    defaultLocale: "zh-Hant",
+    locales: ["zh-Hant", "en"],
   },
 
   presets: [
@@ -71,16 +71,16 @@ const config = {
         },
         items: [
           {
-            type: "localeDropdown",
-            position: "left",
-          },
-          {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
-            label: "Tutorial",
+            label: "筆記",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          // { to: "/blog", label: "作品", position: "left" },
+          {
+            type: "localeDropdown",
+            position: "right",
+          },
           {
             href: "https://github.com/LonelyYeezhiChicken",
             label: "GitHub",
@@ -95,6 +95,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ["csharp"],
       },
     }),
 };
