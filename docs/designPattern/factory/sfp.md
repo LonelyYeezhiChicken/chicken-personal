@@ -5,7 +5,7 @@ key: [設計模式, Design Pattern, 簡單工廠, Simple Factory Pattern]
 tags: [設計模式, Design Pattern]
 ---
 
-# 簡單工廠
+# 💡 簡單工廠
 ## Simple Factory Pattern
 ### 概述:
 

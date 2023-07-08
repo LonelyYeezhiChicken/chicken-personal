@@ -5,7 +5,7 @@ key: [設計模式, Design Pattern, 原型模式, Prototype Pattern]
 tags: [設計模式, Design Pattern]
 ---
 
-# 原型模式
+# 💡 原型模式
 ## Prototype Pattern
 ### 概述:
 

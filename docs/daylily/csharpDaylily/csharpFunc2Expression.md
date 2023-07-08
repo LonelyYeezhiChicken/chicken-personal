@@ -5,7 +5,7 @@ key: [Csharp, 雜記, 委派與委派表達樹, Func to Expression]
 tags: [C#, C#雜記]
 ---
 
-# 委派與委派表達樹
+# 👩‍💻 委派與委派表達樹
 ## Func to Expression (Compile())
 
 ```csharp

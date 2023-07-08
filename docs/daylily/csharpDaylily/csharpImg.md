@@ -5,7 +5,7 @@ key: [Csharp, 雜記, 圖片存檔, base64 to image]
 tags: [C#, C#雜記]
 ---
 
-# 圖片存檔(base64 to image)
+# 👩‍💻 圖片存檔(base64 to image)
 
 ```csharp
 byte[] imageBytes = Convert.FromBase64String(syncImg.StrBase64Img);

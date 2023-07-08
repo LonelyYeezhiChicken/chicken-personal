@@ -5,7 +5,7 @@ key: [phaser3, phaserJS, 遊戲引擎, game]
 tags: [phaser3, phaserJS, 遊戲引擎, game]
 ---
 
-# 基本語法(五) - 場景切換
+# 🎮 基本語法(五) - 場景切換
 ### 我們今天來將場景模組化，讓他隨時可以切換
 
 ### 使用 `class` 包裝場景

@@ -5,7 +5,7 @@ key: [C#, 雞礎觀念, 鐵人賽, cSharp]
 tags: [C#, 雞礎觀念, 鐵人賽]
 ---
 
-# 來個輪迴吧~foreach迴圈
+# 🤖 來個輪迴吧~foreach迴圈
 我們曾經認識過 for，<br/>
 後來也遇到 While，<br/>
 如今又出現一個 foreach

@@ -5,7 +5,7 @@ key: [委派, Delegate]
 tags: [委派, Delegate]
 ---
 
-# 馬戲團
+# 📪 馬戲團
 
 - [程式碼](https://github.com/LonelyYeezhiChicken/csharp-Exercise/blob/main/csharpExercise/DelegateExercise/delegateExercise1.cs)
 

@@ -5,7 +5,7 @@ key: [設計模式, Design Pattern, 抽象工廠, Abstract Factory]
 tags: [設計模式, Design Pattern]
 ---
 
-# 抽象工廠
+# 💡 抽象工廠
 ## Abstract Factory
 ### 概述:
 

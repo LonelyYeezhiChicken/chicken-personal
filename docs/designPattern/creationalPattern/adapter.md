@@ -5,7 +5,7 @@ key: [設計模式, Design Pattern, 轉接器模式, Builder Pattern]
 tags: [設計模式, Design Pattern]
 ---
 
-# 轉接器模式
+# 💡 轉接器模式
 ## Builder Pattern
 ### 概述:
 

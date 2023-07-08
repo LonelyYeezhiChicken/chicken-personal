@@ -5,7 +5,7 @@ key: [委派, Delegate, Func, 委派]
 tags: [委派, Delegate]
 ---
 
-#  Func<T,TResult> 泛型委派 - 有回傳值
+#  📪 Func<T,TResult> 泛型委派 - 有回傳值
 
 ### 1. 定義函式
 

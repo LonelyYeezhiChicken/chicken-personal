@@ -5,7 +5,7 @@ key: [Csharp, 雜記, string to enum]
 tags: [C#, C#雜記]
 ---
 
-# string to enum
+# 👩‍💻 string to enum
 
 ### 我們在某些情境下會應用到將字串轉為列舉
 

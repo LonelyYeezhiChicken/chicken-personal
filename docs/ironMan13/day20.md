@@ -5,7 +5,7 @@ key: [C#, 雞礎觀念, 鐵人賽, cSharp]
 tags: [C#, 雞礎觀念, 鐵人賽]
 ---
 
-# 物件導向(oop)基本觀念
+# 🤖 物件導向(oop)基本觀念
 ![mdImg](https://ithelp.ithome.com.tw/upload/images/20210920/20097001xizPMY5Y3v.png)
 在程式語言中，<br/>
 我們不只要掌握基本的語法，<br/>

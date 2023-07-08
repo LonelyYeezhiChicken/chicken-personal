@@ -5,7 +5,7 @@ key: [委派, Delegate, Action, 委派]
 tags: [委派, Delegate]
 ---
 
-# Acton 泛型委派 - 傳參數
+# 📪 Acton 泛型委派 - 傳參數
 
 - [程式碼](https://github.com/LonelyYeezhiChicken/csharp-Exercise/blob/main/csharpExercise/DelegateExercise/DelegateExercise5.cs)
 
