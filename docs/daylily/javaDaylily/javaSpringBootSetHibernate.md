@@ -11,7 +11,7 @@ Spring Boot 集成 Hibernate 的步驟如下：
 
 
 ### 1. 在 pom.xml 文件中添加 Hibernate 依賴：
-```java
+```xml
 <dependency>
     <groupId>org.hibernate</groupId>
     <artifactId>hibernate-core</artifactId>
