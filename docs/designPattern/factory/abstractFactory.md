@@ -2,6 +2,7 @@
 sidebar_position: 10
 description: 抽象工廠 (Abstract Factory) 
 key: [設計模式, Design Pattern, 抽象工廠, Abstract Factory]
+tags: [設計模式, Design Pattern]
 ---
 
 # 抽象工廠

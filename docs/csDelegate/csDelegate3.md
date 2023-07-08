@@ -2,6 +2,7 @@
 sidebar_position: 10
 description:  委派 (Delegate(多點傳送委派) - 馬戲團(多隻動物版)
 key: [委派, Delegate, MulticastDelegate, 多點傳送委派]
+tags: [委派, Delegate]
 ---
 
 # 多點傳送委派-馬戲團(多隻動物版)

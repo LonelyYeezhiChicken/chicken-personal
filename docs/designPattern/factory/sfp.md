@@ -2,6 +2,7 @@
 sidebar_position: 5
 description: 簡單工廠 (Simple Factory Pattern) 
 key: [設計模式, Design Pattern, 簡單工廠, Simple Factory Pattern]
+tags: [設計模式, Design Pattern]
 ---
 
 # 簡單工廠

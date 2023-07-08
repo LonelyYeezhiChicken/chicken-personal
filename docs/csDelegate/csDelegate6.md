@@ -2,6 +2,7 @@
 sidebar_position: 25
 description:  委派 (Delegate)(Func 委派) - 馬戲團
 key: [委派, Delegate, Func, 委派]
+tags: [委派, Delegate]
 ---
 
 # `Func<T>` 泛型委派 - 有回傳值

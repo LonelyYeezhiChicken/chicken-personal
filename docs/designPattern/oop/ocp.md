@@ -2,6 +2,7 @@
 sidebar_position: 10
 description: open/closed principle 
 key: [設計模式, Design Pattern, 物件導向設計原則, open/closed principle, 開閉原則]
+tags: [設計模式, Design Pattern,物件導向設計原則]
 ---
 
 # 開閉原則

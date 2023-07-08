@@ -2,6 +2,7 @@
 sidebar_position: 15
 description:  委派 (Delegate)(Action 委派) - 馬戲團
 key: [委派, Delegate, Action, 委派]
+tags: [委派, Delegate]
 ---
 
 #  Acton 泛型委派
