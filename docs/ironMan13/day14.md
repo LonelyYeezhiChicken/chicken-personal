@@ -1,5 +1,5 @@
 ---
-sidebar_position: 60
+sidebar_position: 65
 description: Day14 C# 雞礎觀念- 不同層次的陣列~二維陣列
 key: [C#, 雞礎觀念, 鐵人賽, cSharp]
 tags: [C#, 雞礎觀念, 鐵人賽]
