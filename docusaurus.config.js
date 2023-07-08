@@ -125,6 +125,9 @@ const config = {
         darkTheme: darkCodeTheme,
         additionalLanguages: ["csharp"],
       },
+      // algolia: {
+      //   contextualSearch: true,
+      // },
     }),
 };
 
