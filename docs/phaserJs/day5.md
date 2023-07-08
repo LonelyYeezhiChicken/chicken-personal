@@ -5,7 +5,7 @@ key: [phaser3, phaserJS, 遊戲引擎, game]
 tags: [phaser3, phaserJS, 遊戲引擎, game]
 ---
 
-# 基本語法(三) - 圖片串聯
+# 🎮 基本語法(三) - 圖片串聯
 ### 今天就來讓圖片動起來吧!
 
 - 首先我們今天會新增一個行星的物件

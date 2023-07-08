@@ -5,7 +5,7 @@ key: [phaser3, phaserJS, 遊戲引擎, game]
 tags: [phaser3, phaserJS, 遊戲引擎, game]
 ---
 
-# 基本語法(一) - 靜態資源
+# 🎮 基本語法(一) - 靜態資源
 ### 今天開始來把背景與角色加載到遊戲資源裡面吧!
 
 ## 基本 phaser.js 功能 - 加載素材

@@ -5,7 +5,7 @@ key: [設計模式, Design Pattern, 物件導向設計原則, single repository 
 tags: [設計模式, Design Pattern,物件導向設計原則]
 ---
 
-# 單一責任原則 
+# 💡 單一責任原則 
 ## single repository principle
 - 責任(Responsibility)
 - 強調高內聚，低耦合

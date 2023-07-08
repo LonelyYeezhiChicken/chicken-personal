@@ -5,7 +5,7 @@ key: [設計模式, Design Pattern, 創造者模式, Builder Pattern]
 tags: [設計模式, Design Pattern]
 ---
 
-# 創造者模式
+# 💡 創造者模式
 ## Builder Pattern
 ### 概述:
 

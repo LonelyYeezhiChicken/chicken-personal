@@ -5,7 +5,7 @@ key: [C#, 雞礎觀念, 鐵人賽, cSharp, Tailwind]
 tags: [C#, 雞礎觀念, 鐵人賽, Tailwind]
 ---
 
-# Install Tailwind Css with ASP.NET MVC5
+# 🤖 Install Tailwind Css with ASP.NET MVC5
 
 ![mdImg](https://ithelp.ithome.com.tw/upload/images/20210930/20097001lFLnXlnoY5.png)
 

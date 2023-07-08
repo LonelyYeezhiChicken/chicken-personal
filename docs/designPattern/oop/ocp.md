@@ -5,7 +5,7 @@ key: [設計模式, Design Pattern, 物件導向設計原則, open/closed princi
 tags: [設計模式, Design Pattern,物件導向設計原則]
 ---
 
-# 開閉原則
+# 💡 開閉原則
 ## open/closed principle
 - 程式碼都有可能因為需求的增加需要擴充
 - 而擴充不應該修改原始的程式碼

@@ -5,7 +5,7 @@ key: [C#, 雞礎觀念, 鐵人賽, cSharp]
 tags: [C#, 雞礎觀念, 鐵人賽]
 ---
 
-# 物件導向(oop)~建構方法(Constructor)
+# 🤖 物件導向(oop)~建構方法(Constructor)
 
 老闆我要一個豬排漢堡，<br/>
 不要番茄，不要小黃瓜，<br/>

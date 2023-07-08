@@ -5,7 +5,7 @@ key: [phaser3, phaserJS, 遊戲引擎, game]
 tags: [phaser3, phaserJS, 遊戲引擎, game]
 ---
 
-# 基本語法(四) - 操作
+# 🎮 基本語法(四) - 操作
 ### 今天開始要來操作畫面了
 
 - 今天的任務是要讓變身後的草泥馬噴火

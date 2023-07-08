@@ -5,7 +5,7 @@ key: [設計模式, Design Pattern, 物件導向設計原則, Liskov substitutio
 tags: [設計模式, Design Pattern,物件導向設計原則]
 ---
 
-# 里氏替換原則
+# 💡 里氏替換原則
 ## Liskov substitution principle
 - 子類別可以擴充父類的功能，但不可以改變它原有的功能
 - 實作繼承後，需要確保他的型別被轉換後還可以獲得正確的結果
