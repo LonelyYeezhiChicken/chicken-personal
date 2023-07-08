@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Chicken Say Hi",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Chicken Say Hi Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Note": {
+    "message": "筆記",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Blog": {
+    "message": "作品",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

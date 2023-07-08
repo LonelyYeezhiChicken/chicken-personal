@@ -1,5 +1,0 @@
-{
-  "printWidth": 120, // 程式碼寬度最長120字
-  "tabWidth": 2, // 縮排一律4個空白鍵
-  "useTabs": false // 使用空白鍵縮排
-}
