@@ -1,5 +1,7 @@
 ---
 sidebar_position: 25
+description: phaser js 遊戲引擎 
+key: [phaser3, phaserJS, 遊戲引擎, game]
 ---
 
 # 基本語法(四) - 操作
@@ -9,14 +11,14 @@ sidebar_position: 25
 - 因此要先放進噴火的物件，這次使用照片串流的方式
 - 之後還會有另一種動畫的使用方式
 
-![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/skills/fire/file-1.png?raw=true)
-![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/skills/fire/file-2.png?raw=true)
-![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/skills/fire/file-3.png?raw=true)
-![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/skills/fire/file-4.png?raw=true)
-![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/skills/fire/file-5.png?raw=true)
-![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/skills/fire/file-6.png?raw=true)
-![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/skills/fire/file-7.png?raw=true)
-![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/skills/fire/file-8.png?raw=true)
+![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-1.png?raw=true)<br/>
+![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-2.png?raw=true)<br/>
+![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-3.png?raw=true)<br/>
+![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-4.png?raw=true)<br/>
+![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-5.png?raw=true)<br/>
+![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-6.png?raw=true)<br/>
+![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-7.png?raw=true)<br/>
+![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-8.png?raw=true)
 
 ```javascript
 //載入素材

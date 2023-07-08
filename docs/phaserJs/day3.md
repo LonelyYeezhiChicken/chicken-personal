@@ -1,5 +1,7 @@
 ---
 sidebar_position: 10
+description: phaser js 遊戲引擎 
+key: [phaser3, phaserJS, 遊戲引擎, game]
 ---
 
 # 基本語法(一) - 靜態資源
@@ -67,7 +69,7 @@ function preload() {
 }
 ```
 
-![草泥馬圖](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/roles/alpaca.png?raw=true)
+![草泥馬圖](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/roles/alpaca.png?raw=true)
 
 ### 載入資源 - 音樂
 

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 35
+description: phaser js 遊戲引擎 
+key: [phaser3, phaserJS, 遊戲引擎, game]
 ---
 
 # 基本語法(七) - 動畫
@@ -9,7 +11,8 @@ sidebar_position: 35
 
 - 先載入雞與背景的圖片
 - 我們這邊使用 `spritesheet` 來設定每一偵的寬高
-  ![mImg](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/roles/chickenGo.png?raw=true)
+
+  ![mImg](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/roles/chickenGo.png?raw=true)
 
 ```javascript
 class GameScene extends Phaser.Scene {
