@@ -11,7 +11,7 @@ tags: [java, java雜記, Hibernate, Spring Boot, MSSQL]
 
 
 ### 1. 在 pom.xml 中添加 MSSQL 驅動程序的依賴：
-```java
+```xml
 <dependency>
     <groupId>com.microsoft.sqlserver</groupId>
     <artifactId>mssql-jdbc</artifactId>
