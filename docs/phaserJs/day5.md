@@ -8,7 +8,7 @@ sidebar_position: 20
 - 首先我們今天會新增一個行星的物件
 - 可以參考前幾篇來置入行星這邊就不再多做贅述
 
-![mdImg1](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/backgrounds/planet.png?raw=true)
+![mdImg1](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/backgrounds/planet.png?raw=true)
 
 ```javascript
 //載入素材

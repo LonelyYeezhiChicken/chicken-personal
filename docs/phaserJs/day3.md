@@ -67,7 +67,7 @@ function preload() {
 }
 ```
 
-![草泥馬圖](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/src/assets/mdImgs/phaser/note/roles/alpaca.png?raw=true)
+![草泥馬圖](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/roles/alpaca.png?raw=true)
 
 ### 載入資源 - 音樂
 
