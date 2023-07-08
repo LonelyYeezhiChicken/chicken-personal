@@ -56,6 +56,13 @@ const config = {
         },
       }),
     ],
+    [
+      "@docusaurus/plugin-google-gtag",
+      {
+        trackingID: "G-23JXYZ7T1V",
+        anonymizeIP: true,
+      },
+    ],
   ],
 
   themeConfig:
