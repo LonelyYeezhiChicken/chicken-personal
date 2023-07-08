@@ -1,1 +1,0 @@
-import{i}from"./inline-style-parser.6dc90e75.js";var u=i;function s(t,v){var r=null;if(!t||typeof t!="string")return r;for(var a,l=u(t),p=typeof v=="function",o,e,n=0,f=l.length;n<f;n++)a=l[n],o=a.property,e=a.value,p?v(o,e,a):e&&(r||(r={}),r[o]=e);return r}var y=s;export{y as s};
