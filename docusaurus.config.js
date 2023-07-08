@@ -62,7 +62,35 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      image: "img/chicken.jpg",
+      metadata: [
+        { name: "viewport", content: "width=device-width, initial-scale=1.0" },
+        { property: "og:title", content: "Chicken Say Hi" },
+        { property: "og:url", content: "https://blog.lychicken.com/" },
+        { property: "og:site_name", content: "孤獨一隻雞" },
+        { property: "og:description", content: "這是一隻雞的小天地" },
+        { property: "og:locale", content: "zh_TW" },
+        { property: "og:width", content: "300" },
+        { property: "og:height", content: "301" },
+        { property: "article:author", content: "Lonely Yeezhi Chicken" },
+        { property: "article:tag", content: "雞" },
+        { property: "article:tag", content: "一隻雞" },
+        { property: "article:tag", content: "孤獨一隻雞" },
+        { property: "article:tag", content: "作品" },
+        { property: "article:tag", content: "Chicken" },
+        { property: "article:tag", content: "Chicken Say Hi" },
+        { property: "article:tag", content: "Lonely Yeezhi Chicken" },
+        {
+          property: "article:tag",
+          content:
+            "前端, 後端, 全端, 網頁, 開發, 技術, 網頁開發, 前端開發, 後端開發, 全端開發, JavaScript, HTML, CSS, 經驗分享, 手札, 筆記",
+        },
+        {
+          property: "article:tag",
+          content:
+            "frontend, backend, web, C#, Java, PHP, JavaScript, HTML, CSS, 經驗分享, 手札, note",
+        },
+      ],
       navbar: {
         title: "Chicken Say Hi",
         logo: {
