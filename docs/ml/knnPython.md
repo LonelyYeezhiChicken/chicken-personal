@@ -1,5 +1,5 @@
 ---
-sidebar_position: 15
+sidebar_position: 35
 description:  knn 演算法 (近鄰演算法)
 key: [ML, 機器學習, K 近鄰演算法, knn, k-nearest neighbor, k-NN]
 tags: [ML, 機器學習, knn]
