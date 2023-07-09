@@ -1,11 +1,11 @@
 ---
-sidebar_position: 15
+sidebar_position: 35
 description:  knn 演算法 (近鄰演算法)
 key: [ML, 機器學習, K 近鄰演算法, knn, k-nearest neighbor, k-NN]
 tags: [ML, 機器學習, knn]
 ---
 
-# K 近鄰演算法 (k-NN)
+# 🛸 K 近鄰演算法 (k-NN)
 ## k-nearest neighbor
 
 K 近鄰演算法 (k-nearest neighbor, k-NN) 是一種基本的分類與回歸方法，屬於非監督式學習。其主要功能是根據輸入的特徵向量來預測實體的類別。該演算法通過計算不同數據之間的相似度來進行分類或回歸，並根據最近鄰的特徵向量來進行預測。
