@@ -5,7 +5,7 @@ key: [ML, 機器學習, Digitization of Sound, Multimedia , 聲音數據化, 量
 tags: [聲音數據化, 超媒體, 量化]
 ---
 
-# 聲音數據化
+# 🛸 聲音數據化
 ## Multimedia Data Representations
 ## Digitization of Sound(聲音數據化)
 

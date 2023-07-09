@@ -5,7 +5,7 @@ key: [ML, 機器學習, video]
 tags: [video]
 ---
 
-# Basics of Video
+# 🛸 Basics of Video
 ## Types of Color Video Signals
 
 ### Component video

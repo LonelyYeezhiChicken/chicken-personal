@@ -5,7 +5,7 @@ key: [ML, 機器學習, JPEG, Entropy, Quantization, dct]
 tags: [JPEG, Entropy, Quantization]
 ---
 
-# JPEG-圖片壓縮
+# 🛸 JPEG-圖片壓縮
 ### JPEG概述
 
 - Joint Photographic Expert Group在1992年被評為國際標準
