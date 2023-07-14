@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchicken_personal=self.webpackChunkchicken_personal||[]).push([[2535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"\u7b2c\u4e00\u4ee3 RPG Game","permalink":"/en/blog/mdx-blog-post"}]}')}}]);
