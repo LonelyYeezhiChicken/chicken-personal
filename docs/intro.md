@@ -12,33 +12,21 @@ I'm a backend developer.
 
 - E-mail: [lonelyyeezhichicken@gmail.com](mailto:lonelyyeezhichicken@gmail.com)
 
-## Front-end
-- Vue JS
-- Vanilla JS
-- TypeScript
-- React JS
-- Knockout JS
-- Tailwind CSS
+| Front-end     | Framework   |
+|:-------------:|:-----------:|
+| Vue JS        | Asp.net5    |
+| Vanilla JS    | .NET 6      |
+| TypeScript    | Spring Boot |
+| React JS      | Flask       |
+| Knockout JS   | Phaser 3    |
+| Tailwind CSS  | Laravel     |
 
-## Framework
-- Asp.net5
-- .NET 6
-- Spring Boot
-- Flask
-- Phaser 3
-- Laravel
+| Back-end   | DB & Others |
+|:----------:|:-----------:|
+| C#         | MSSQL       |
+| Java       | MySQL       |
+| Python     | Oracle      |
+| PHP        | Docker      |
+| MATLAB     | Message Queue |
+|            | PLC         |
 
-## Back-end
-- C#
-- Java
-- Python
-- PHP
-- MATLAB
-
-## DB & Others
-- MSSQL
-- MySQL
-- Oracle
-- Docker
-- Message Queue
-- PLC
