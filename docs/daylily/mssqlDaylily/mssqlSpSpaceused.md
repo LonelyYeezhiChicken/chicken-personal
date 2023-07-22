@@ -7,7 +7,6 @@ tags: [MSSQL, MSSQL雜記]
 
 # 👩‍💻 查詢占用硬碟
 
-
 ```sql
 -- 檢視目前資料庫所用的空間，但不一定能反映實際可用的磁碟空間。 
 EXEC sp_spaceused 
@@ -16,8 +15,6 @@ GO
 EXEC sp_spaceused @updateusage = N'TRUE'; 
 GO
 ```
-
-
 
 ```sql
 SET NOCOUNT ON 
