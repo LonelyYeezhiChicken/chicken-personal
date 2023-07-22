@@ -1,11 +1,19 @@
 # 個人網站 2.0
 
-### 初始化
-```
+## 初始化
+
+```shell
 yarn install
 ```
 
-### 執行debug模式
+## 執行debug模式
+
+```shell
+yarn start
 ```
-yarn dev
+
+## 建置
+
+```shell
+yarn build
 ```
