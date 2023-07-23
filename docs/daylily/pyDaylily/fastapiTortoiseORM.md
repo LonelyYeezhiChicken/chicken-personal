@@ -112,8 +112,6 @@ tortoise-orm==0.19.3
 
 ### 2. 執行
 
-- 如果在不同環境，從 git 上拉取下來才需要執行此步驟
-
 ```py
     uvicorn main:app --reload
 ```
