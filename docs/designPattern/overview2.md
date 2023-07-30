@@ -42,7 +42,6 @@ tags: [設計模式, Design Pattern]
 
 | 模式名稱                              |
 | ------------------------------------- |
-| 創建型模式 Creational Pattern         |
 | 單例模式 Singleton Pattern            |
 | 簡單工廠模式 Simple Factory Pattern   |
 | 工廠方法模式 Factory Method Pattern   |

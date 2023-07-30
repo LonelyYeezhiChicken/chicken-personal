@@ -121,7 +121,7 @@ var house = builder.GetProduct();
 Console.WriteLine(house.ToString());
 ```
 
-### 6. 結果
+### 6.結果
 
 - 輸出:
 
