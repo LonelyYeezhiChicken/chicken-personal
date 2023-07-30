@@ -6,8 +6,10 @@ tags: [設計模式, Design Pattern]
 ---
 
 # 💡 創造者模式
+
 ## Builder Pattern
-### 概述:
+
+## 概述
 
 - 它適用於各式物件都需分開建立的複雜情境
 - 優點:
@@ -17,14 +19,14 @@ tags: [設計模式, Design Pattern]
 - 缺點:
   - 在需求複雜度增加時，需要更多的類別來建立物件，導致開發與維護成本提高
 
-### 創造者模式包含:
+### 創造者模式包含
 
 - 創造者介面 (Builder interface): 規範建立物件所需要的方法
 - 具體創造者 (Concrete Builder): 實作創造者介面的功能
 - 指揮者 (Director): 負責處理建立流程
 - 產品 (Product): 要被建立的物件
 
-### 範例:
+## 範例
 
 - 需求: 我需要建立一棟房子，房子要有門、有窗、有牆
 
@@ -119,7 +121,7 @@ var house = builder.GetProduct();
 Console.WriteLine(house.ToString());
 ```
 
-### 結果
+### 6. 結果
 
 - 輸出:
 

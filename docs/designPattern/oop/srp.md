@@ -5,8 +5,10 @@ key: [設計模式, Design Pattern, 物件導向設計原則, single repository 
 tags: [設計模式, Design Pattern,物件導向設計原則]
 ---
 
-# 💡 單一責任原則 
+# 💡 單一責任原則
+
 ## single repository principle
+
 - 責任(Responsibility)
 - 強調高內聚，低耦合
 - 需將責任封裝於各個 class 之中
@@ -42,7 +44,7 @@ Public class CustomerDataChart{
 }
 ```
 
-### 由以上程式碼可以發現：
+## 由以上程式碼可以發現
 
 - 一個 class 之中包含了
   - 資料庫連線
@@ -52,7 +54,7 @@ Public class CustomerDataChart{
 - 此 class 違背了單一職責
 - 如果需要修改資料庫連線方式
 
-### 以單一職責進行重構
+## 以單一職責進行重構
 
 - 首先可以將其分為三個 Class
   - DBUtil - 資料庫連線
@@ -103,7 +105,7 @@ Public class CustomerDataChart
 }
 ```
 
-### 常見問題:
+## 常見問題
 
 - 將所有功能寫在同一個 class
 
