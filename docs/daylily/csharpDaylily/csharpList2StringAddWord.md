@@ -10,8 +10,8 @@ tags: [C#, C#雜記]
 ```csharp
 void Main()
 {
-	List<string> testList = new List<string>(){"a","z","c","d","x"};
-	string testStr = string.Join(",",testList);
-	testStr.Dump();
+ List<string> testList = new List<string>(){"a","z","c","d","x"};
+ string testStr = string.Join(",",testList);
+ testStr.Dump();
 }
 ```

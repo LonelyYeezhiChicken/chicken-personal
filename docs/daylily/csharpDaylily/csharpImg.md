@@ -9,14 +9,15 @@ tags: [C#, C#雜記]
 
 ```csharp
 byte[] imageBytes = Convert.FromBase64String(syncImg.StrBase64Img);
- using (var ms = new MemoryStream(imageBytes, 0, imageBytes.Length))
+ 
+using (var ms = new MemoryStream(imageBytes, 0, imageBytes.Length))
 {
  System.Drawing.Image image = System.Drawing.Image.FromStream(ms, true);
-    image.Save(path);
+ image.Save(path);
 }
 ```
 
-伺服器取得檔案路徑與建立目錄
+## 伺服器取得檔案路徑與建立目錄
 
 ```csharp
         /// <summary>
@@ -35,7 +36,7 @@ byte[] imageBytes = Convert.FromBase64String(syncImg.StrBase64Img);
         }
 ```
 
-圖片資訊修改 (任意檔案通用):
+## 圖片資訊修改 (任意檔案通用)
 
 ```csharp
 var folder = new DirectoryInfo(storagePath);
@@ -44,7 +45,7 @@ imgList.First().CreationTime = syncImg.UpdateDateTime; // 建立時間
 imgList.First().LastWriteTime = syncImg.UpdateDateTime;// 編輯時間
 ```
 
-永久刪除圖片 (任意檔案通用):
+## 永久刪除圖片 (任意檔案通用)
 
 ```csharp
  imgList.Where(fi => fi.Name == del.Key).First().Delete();
