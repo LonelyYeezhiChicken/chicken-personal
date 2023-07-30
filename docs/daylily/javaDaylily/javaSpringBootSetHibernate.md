@@ -7,10 +7,10 @@ tags: [java, java雜記, Hibernate, Spring Boot]
 
 # 👩‍💻 Spring Boot 安裝 Hibernate
 
-Spring Boot 集成 Hibernate 的步驟如下：
+## Spring Boot 集成 Hibernate 的步驟如下
 
+### 1. 在 pom.xml 文件中添加 Hibernate 依賴
 
-### 1. 在 pom.xml 文件中添加 Hibernate 依賴：
 ```xml
 <dependency>
     <groupId>org.hibernate</groupId>
@@ -19,14 +19,16 @@ Spring Boot 集成 Hibernate 的步驟如下：
 </dependency>
 ```
 
-### 2. 在 application.properties 文件中添加 Hibernate 相關配置：
+### 2. 在 application.properties 文件中添加 Hibernate 相關配置
+
 ```java
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
 ```
 
-### 3. 在 Spring Boot 主類中添加 @EnableTransactionManagement 注解：
+### 3. 在 Spring Boot 主類中添加 @EnableTransactionManagement 注解
+
 ```java
 @SpringBootApplication
 @EnableTransactionManagement
@@ -37,7 +39,8 @@ public class Application {
 }
 ```
 
-### 4. 在需要使用 Hibernate 的類中添加 @Transactional 注解：
+### 4. 在需要使用 Hibernate 的類中添加 @Transactional 注解
+
 ```java
 @Service
 public class UserService {
