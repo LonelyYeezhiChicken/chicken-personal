@@ -6,6 +6,7 @@ tags: [video]
 ---
 
 # 🛸 Basics of Video
+
 ## Types of Color Video Signals
 
 ### Component video
@@ -23,7 +24,7 @@ tags: [video]
 - 為Component video與Composite video的折衷
 - 他使用兩條線，一條為luminance與一條複合訊號
 
-# Analog Video
+## Analog Video
 
 ### NTSC Video
 
@@ -34,9 +35,9 @@ tags: [video]
 - 每幀 625 條掃描線，每秒 25 幀（40 毫秒/幀）
 - 使用 YUV 顏色模型
 
-# Digital Video
+## Digital Video
 
-### 好處:
+### 好處
 
 - 可以直接做非線性的編輯
 - 可以重複錄音

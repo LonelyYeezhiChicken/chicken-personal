@@ -6,7 +6,8 @@ tags: [JPEG, Entropy, Quantization]
 ---
 
 # 🛸 JPEG-圖片壓縮
-### JPEG概述
+
+## JPEG概述
 
 - Joint Photographic Expert Group在1992年被評為國際標準
 - 適用於彩色與灰階圖片
@@ -17,7 +18,6 @@ tags: [JPEG, Entropy, Quantization]
 - JPEG使用變換編碼:
     1. 大部分圖像內容在圖像轉換中是相對較慢的
     2. 與較低頻率的空間頻率分量損失相比，人類更容易接受高頻率的損失
-    
 
 ### JPEG Overview
 
@@ -41,15 +41,14 @@ tags: [JPEG, Entropy, Quantization]
 
 ![https://ithelp.ithome.com.tw/upload/images/20211227/20097001f7aEMztwNy.png](https://ithelp.ithome.com.tw/upload/images/20211227/20097001f7aEMztwNy.png)
 
-
 ### Quantization
 
 - 量化的誤差是有損壓縮的主要來源
 - 均衡量化
-    - 每個F[u,v]都同除以常數N
+  - 每個F[u,v]都同除以常數N
 - 非均衡量化
-    - 使用量化表
-    - 最終在將量化表存於table之中
+  - 使用量化表
+  - 最終在將量化表存於table之中
 
 ### Zig-zag Scan
 
