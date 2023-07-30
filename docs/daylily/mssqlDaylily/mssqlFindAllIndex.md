@@ -7,7 +7,6 @@ tags: [MSSQL, MSSQL雜記]
 
 # 👩‍💻 查詢所有index
 
-
 ```sql
 SELECT
     TableName = t.name,

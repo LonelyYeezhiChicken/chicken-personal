@@ -6,19 +6,27 @@ tags: [phaser3, phaserJS, 遊戲引擎, game]
 ---
 
 # 🎮 基本語法(四) - 操作
-### 今天開始要來操作畫面了
+
+## 今天開始要來操作畫面了
 
 - 今天的任務是要讓變身後的草泥馬噴火
 - 因此要先放進噴火的物件，這次使用照片串流的方式
 - 之後還會有另一種動畫的使用方式
 
-![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-1.png?raw=true)<br/>
-![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-2.png?raw=true)<br/>
-![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-3.png?raw=true)<br/>
-![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-4.png?raw=true)<br/>
-![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-5.png?raw=true)<br/>
-![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-6.png?raw=true)<br/>
-![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-7.png?raw=true)<br/>
+![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-1.png?raw=true)
+
+![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-2.png?raw=true)
+
+![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-3.png?raw=true)
+
+![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-4.png?raw=true)
+
+![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-5.png?raw=true)
+
+![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-6.png?raw=true)
+
+![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-7.png?raw=true)
+
 ![噴火](https://github.com/LonelyYeezhiChicken/chicken-personal/blob/main/static/mdImgs/phaser/note/skills/fire/file-8.png?raw=true)
 
 ```javascript
@@ -89,13 +97,14 @@ function init() {
 
 ## 基本 phaser.js 功能 - 點擊
 
-### 使用 `input.activePointer.isDown`
+## 使用 `input.activePointer.isDown`
 
 - 在滑鼠或手機畫面被按住時，他會是 `true`
 - 因此我們可以利用 `update` 一直更新的特性
 
-1. 首先先做個判斷
-   - 判斷草泥馬變身後才能噴火
+### 1. 首先先做個判斷
+
+- 判斷草泥馬變身後才能噴火
 
 ```javascript
 // 初始化
@@ -116,9 +125,10 @@ function init() {
 }
 ```
 
-2. 判斷是不是有被點擊
-   - 使用 `input.activePointer.isDown`
-   - 搭配 `if` 判斷式
+### 2. 判斷是不是有被點擊
+
+- 使用 `input.activePointer.isDown`
+- 搭配 `if` 判斷式
 
 ```javascript
 // 初始化
@@ -141,11 +151,12 @@ function init() {
 }
 ```
 
-3. 顯示與不顯示物件
-   - 利用物件的透明度來讓它顯示與不顯示
-   - `alpha` 為透明度的屬性
-   - `alpha = 0 ` 表示全透明
-   - `alpha = 100 ` 表示不透明
+### 3. 顯示與不顯示物件
+
+- 利用物件的透明度來讓它顯示與不顯示
+- `alpha` 為透明度的屬性
+- `alpha = 0` 表示全透明
+- `alpha = 100` 表示不透明
 
 ```javascript
 // 初始化
@@ -170,9 +181,10 @@ function init() {
 }
 ```
 
-4. 噴火動畫
-   - 最後利用 `update` 一直更新的特性
-   - 來切換圖片讓火焰動畫呈現
+### 4. 噴火動畫
+
+- 最後利用 `update` 一直更新的特性
+- 來切換圖片讓火焰動畫呈現
 
 ```javascript
 // 初始化
@@ -198,11 +210,11 @@ function init() {
 }
 ```
 
-### 以上就是今天的操作啦!
+## 以上就是今天的操作啦
 
 ---
 
-### 程式原碼
+## 程式原碼
 
 ```javascript
 <!DOCTYPE html>

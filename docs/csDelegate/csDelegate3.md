@@ -12,7 +12,7 @@ tags: [委派, Delegate]
 ### 1. 使用 `+=` 進行註冊
 
 ```csharp
-	Animal deleAnimal = new Animal(Dog);
+ Animal deleAnimal = new Animal(Dog);
 
     deleAnimal += new Animal(Cat);
     deleAnimal += new Animal(Duck);

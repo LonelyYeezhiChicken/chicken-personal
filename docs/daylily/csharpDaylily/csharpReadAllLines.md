@@ -7,18 +7,21 @@ tags: [C#, C#雜記]
 
 # 👩‍💻 讀文檔 逐行讀取
 
-### 1. File.ReadAllLines
-```
+## 1. File.ReadAllLines
+
+```text
 File.ReadAllLines(FileName);
 ```
-### 2. ReadLine() 
-```
+
+## 2. ReadLine()
+
+```csharp
 //We have to create Streader Object to use this method
 StreamReader ObjectName = new StreamReader(FileName);
 ObjectName.ReadLine();
 ```
 
-```
+```csharp
 using System;
 using System.IO;
 
@@ -26,7 +29,7 @@ public class ReadFile
 {
     public static void Main()
     {
-      string FileToRead = @"D:\New folder\textfile.txt";
+      string FileToRead = @"D:\New folder\textFile.txt";
       using (StreamReader ReaderObject = new StreamReader(FileToRead))
       {
           string Line;

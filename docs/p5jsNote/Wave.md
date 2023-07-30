@@ -9,9 +9,9 @@ tags: [P5JS]
 
 使用圓型，x 軸不變，y 軸上下移動組成聲波
 
-### 變數宣告
+## 變數宣告
 
-- 分別宣告 ；
+- 分別宣告
 
   - 角度(用於 y 軸計算)
 
@@ -25,21 +25,21 @@ tags: [P5JS]
   let radius = 20;
   ```
 
-### 設定圓的模式
+## 設定圓的模式
 
-- 半徑最後為半徑模式 `circle(x, y, 半徑) `
+- 半徑最後為半徑模式 `circle(x, y, 半徑)`
 
   ```javascript
   ellipseMode(RADIUS);
   ```
 
-- 半徑最後為直徑模式(預設模式) `circle(x, y, 直徑) `
+- 半徑最後為直徑模式(預設模式) `circle(x, y, 直徑)`
 
   ```javascript
   ellipseMode(CENTER);
   ```
 
-### 開始畫圓
+## 開始畫圓
 
 ```javascript
 //畫25個圓

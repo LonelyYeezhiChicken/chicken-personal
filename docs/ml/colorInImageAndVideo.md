@@ -6,7 +6,9 @@ tags: [顏色模型, 超媒體, 量化, video]
 ---
 
 # 🛸 影片與圖片的色彩
+
 ## Color in Image and Video
+
 ## Basics of Color
 
 ### Light and Spectra(光和光譜)
@@ -35,7 +37,7 @@ tags: [顏色模型, 超媒體, 量化, video]
 - CIE (Commission Internationale de L'Eclairage, or International Commission on Illumination)
 - 定義了三個標準原色(X,Y,Z)
 
-# Color Models in Images
+## Color Models in Images
 
 ### 一張彩色圖片由(R,G,B)整數三元組的2維陣列
 
@@ -49,7 +51,7 @@ tags: [顏色模型, 超媒體, 量化, video]
 - Cyan, Magenta, and Yellow (CMY)維RGB的互補色
 - CMY主要用於影印設備，紙張上的顏料會吸收某些顏色
 
-# Color Models in Video
+## Color Models in Video
 
 ### YIQ and YUV是影片中常用的顏色模型
 
@@ -58,8 +60,8 @@ tags: [顏色模型, 超媒體, 量化, video]
 - 最初用於PAL模擬影像中，現在也適用於數字影像的CCIR 601標準
 - Y(luminance)是CIE的Y原色
 - U與V可以用來表示色差
-    - U=B-Y
-    - V=R-Y
+  - U=B-Y
+  - V=R-Y
 - 如果黑白圖像時U=V=0
 
 ### YCbCr Color Model
@@ -75,7 +77,7 @@ tags: [顏色模型, 超媒體, 量化, video]
 - I → orange-blue axis
 - Q → purple-green axis
 - 眼睛敏感程度
-    - Y → I →Q
+  - Y → I →Q
 
 ### 總結
 
@@ -85,6 +87,6 @@ tags: [顏色模型, 超媒體, 量化, video]
 - RGB → 是一種加色模型，常用於發光設備
 - CMY → 是一種減色模型，常用於影印設備
 - YUV → 是使用人眼特性來確定訊息的優先等級
-    - Y黑白(亮度)圖像
-    - V和U是色差(色度)圖像
-    - YIQ也是使用類似的想法
+  - Y黑白(亮度)圖像
+  - V和U是色差(色度)圖像
+  - YIQ也是使用類似的想法

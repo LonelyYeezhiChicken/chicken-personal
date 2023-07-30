@@ -7,7 +7,6 @@ tags: [MSSQL, MSSQL雜記]
 
 # 👩‍💻 查詢所有Table筆數
 
-
 ```sql
 USE [DB] 
 GO 

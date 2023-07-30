@@ -6,7 +6,9 @@ tags: [聲音數據化, 超媒體, 量化]
 ---
 
 # 🛸 聲音數據化
+
 ## Multimedia Data Representations
+
 ## Digitization of Sound(聲音數據化)
 
 ### Facts about Sound(關於聲音的數據)
@@ -37,9 +39,9 @@ tags: [聲音數據化, 超媒體, 量化]
 ### Graphic/Image Data Structures(圖形數據結構)
 
 - Pixels → picture elements in digital images
-    - 數位圖像中的圖片元素
+  - 數位圖像中的圖片元素
 - Image Resolution → number of pixels in a digital image
-    - 數位圖像中的像素數
+  - 數位圖像中的像素數
 - Bit-Map → 數據顯示表示的方式與他們存在影片中的相同
 
 ### 單色圖像

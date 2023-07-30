@@ -7,7 +7,7 @@ tags: [WebAPI, C#, asp dotnet]
 
 # 🛰 Web 結構
 
-### web 體系結構擁有三個核心觀念:
+## web 體系結構擁有三個核心觀念
 
 1. 資源 (resource)
 2. URI (Uniform Resource Identifier)
@@ -36,7 +36,7 @@ tags: [WebAPI, C#, asp dotnet]
 
 ---
 
-# 參考
+## 參考
 
 - [resource - rfc2396](https://www.rfc-editor.org/rfc/rfc2396#section-1.1)
 - [URI - rfc3986](https://www.rfc-editor.org/rfc/rfc3986)

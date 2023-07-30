@@ -7,36 +7,35 @@ tags: [委派, Delegate]
 
 # 📪 馬戲團(多隻動物版)
 
-### 1. 新增各種動物
+## 1. 新增各種動物
 
 ```csharp
+ /// <summary>
+ /// 貓
+ /// </summary>
+ public static void Cat()
+ {
+  Console.WriteLine($"喵喵!");
+ }
 
-	/// <summary>
-	/// 貓
-	/// </summary>
-	public static void Cat()
-	{
-		Console.WriteLine($"喵喵!");
-	}
+ /// <summary>
+ /// 鴨
+ /// </summary>
+ public static void Duck()
+ {
+  Console.WriteLine($"呱呱!");
+ }
 
-	/// <summary>
-	/// 鴨
-	/// </summary>
-	public static void Duck()
-	{
-		Console.WriteLine($"呱呱!");
-	}
-
-	/// <summary>
-	/// 雞
-	/// </summary>
-	public static void Chicken()
-	{
-		Console.WriteLine($"咕咕!");
-	}
+ /// <summary>
+ /// 雞
+ /// </summary>
+ public static void Chicken()
+ {
+  Console.WriteLine($"咕咕!");
+ }
 ```
 
-### 2. 取消掉委派傳入的名字
+## 2. 取消掉委派傳入的名字
 
 ```csharp
     /// <summary>
@@ -56,7 +55,7 @@ tags: [委派, Delegate]
     }
 ```
 
-### 3. 使用迴圈建立動物 List
+## 3. 使用迴圈建立動物 List
 
 ```csharp
    List<Animal> deleAnimal = new List<Animal>()
@@ -68,13 +67,13 @@ tags: [委派, Delegate]
     };
 ```
 
-### 4. 使用`foreach`執行馬戲團
+## 4. 使用`foreach`執行馬戲團
 
 ```csharp
-	foreach(var animalFunc in deleAnimal)
-	{
-		RunCircus(animalFunc);
-	}
+ foreach(var animalFunc in deleAnimal)
+ {
+  RunCircus(animalFunc);
+ }
 ```
 
 ---

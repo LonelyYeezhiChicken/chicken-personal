@@ -9,7 +9,7 @@ tags: [委派, Delegate]
 
 - [程式碼](https://github.com/LonelyYeezhiChicken/csharp-Exercise/blob/main/csharpExercise/DelegateExercise/delegateExercise1.cs)
 
-### 1. 定義要使用的委派
+## 1. 定義要使用的委派
 
 - 使用`delegate`關鍵字
 - 定義傳入參數`string name`
@@ -22,7 +22,7 @@ tags: [委派, Delegate]
     private delegate void Animal(string name);
 ```
 
-### 2. 定義要接收委派的函式
+## 2. 定義要接收委派的函式
 
 - 定義馬戲團表演的函式
 - 傳入委派與動物姓名
@@ -40,7 +40,7 @@ tags: [委派, Delegate]
     }
 ```
 
-### 3. 定義小狗函式
+## 3. 定義小狗函式
 
 ```csharp
     /// <summary>
@@ -53,7 +53,7 @@ tags: [委派, Delegate]
     }
 ```
 
-### 4. 在主程式實例化動物委派
+## 4. 在主程式實例化動物委派
 
 - 將小狗作為函式帶入
 
@@ -61,7 +61,7 @@ tags: [委派, Delegate]
    Animal deleDog = new Animal(Dog);
 ```
 
-### 5. 將呼叫馬戲團函式
+## 5. 將呼叫馬戲團函式
 
 - 將動物委派傳入
 

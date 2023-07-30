@@ -6,9 +6,10 @@ tags: [phaser3, phaserJS, 遊戲引擎, game]
 ---
 
 # 🎮 基本語法(五) - 場景切換
-### 我們今天來將場景模組化，讓他隨時可以切換
 
-### 使用 `class` 包裝場景
+## 我們今天來將場景模組化，讓他隨時可以切換
+
+## 使用 `class` 包裝場景
 
 1. 首先我們在與 `index.html` 同層建立 `scenes` 資料夾
 2. 在資料夾中建立起始場景的檔案 `gameStart.js`
@@ -20,9 +21,9 @@ class GameStart extends Phaser.Scene {
 }
 ```
 
-### 註冊場景
+## 註冊場景
 
-1. 利用 `constructor` 的 `super()` 註冊場景 Key
+### 1. 利用 `constructor` 的 `super()` 註冊場景 Key
 
 ```javascript
 class GameStart extends Phaser.Scene {
@@ -33,7 +34,7 @@ class GameStart extends Phaser.Scene {
 }
 ```
 
-### 載入素材
+## 載入素材
 
 - 由於繼承了 `Phaser.Scene`
 - 因此我們直接可以使用 `preload()`
@@ -55,7 +56,7 @@ class GameStart extends Phaser.Scene {
 }
 ```
 
-### 生成物件
+## 生成物件
 
 - 跟 `preload()` 原理相同
 - 直接使用 `create()` 即可
@@ -95,7 +96,7 @@ class GameStart extends Phaser.Scene {
 }
 ```
 
-### 點擊事件
+## 點擊事件
 
 - 接下來我們要做遊戲開始按鈕
 - 因此需要對按鈕物件下 `setInteractive()` 表示他可以跟玩家互動
@@ -143,7 +144,7 @@ class GameStart extends Phaser.Scene {
 }
 ```
 
-### 加入第二場景
+## 加入第二場景
 
 - 第二場景是將 day6 的 js 分離出來，因此這邊不在做詳細的描述
 - 先在 `scenes` 資料夾中建加入場景的檔案 `alpacaScene.js`
@@ -246,7 +247,7 @@ class AlpacaScene extends Phaser.Scene {
 }
 ```
 
-### 將場景加入遊戲中
+## 將場景加入遊戲中
 
 - 我們將焦點移回 `index.html` 中
 - 首先要先引用剛剛建立的兩個場景
@@ -280,7 +281,7 @@ class AlpacaScene extends Phaser.Scene {
 </body>
 ```
 
-### 加入遊戲基本設定與場景
+## 加入遊戲基本設定與場景
 
 - 先新增一個遊戲
 - 接下來在新增場景
@@ -316,7 +317,7 @@ class AlpacaScene extends Phaser.Scene {
 </body>
 ```
 
-### 場景切換
+## 場景切換
 
 - 這時我們回到 `gameStart.js`
 - 加入一個場景跳轉( `startGame()` ) 的 function
@@ -377,11 +378,11 @@ class GameStart extends Phaser.Scene {
 }
 ```
 
-### 今天我們學到了如何利用 JS 的 class 來模組化場景，並且如何去切換它，明天我們來練習物件的複製吧!
+## 今天我們學到了如何利用 JS 的 class 來模組化場景，並且如何去切換它，明天我們來練習物件的複製吧
 
 ---
 
-### 程式原碼
+## 程式原碼
 
 ### AlpacaScene 場景
 
