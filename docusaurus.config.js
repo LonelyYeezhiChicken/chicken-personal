@@ -36,13 +36,14 @@ const config = {
     [
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/LonelyYeezhiChicken/chicken-personal/tree/main/",
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
@@ -58,7 +59,7 @@ const config = {
           trackingID: "G-23JXYZ7T1V",
           anonymizeIP: true,
         },
-      }),
+      },
     ],
   ],
 
