@@ -9,7 +9,7 @@ tags: [委派, Delegate]
 
 - [程式碼](https://github.com/LonelyYeezhiChicken/csharp-Exercise/blob/main/csharpExercise/DelegateExercise/DelegateExercise5.cs)
 
-### 1. 定義函式
+## 1. 定義函式
 
 - 傳入值設定為 Action `<string>`
 - `<T>` 之中帶入要傳遞的變數型別
@@ -26,7 +26,7 @@ tags: [委派, Delegate]
     }
 ```
 
-### 2. 呼叫馬戲團
+## 2. 呼叫馬戲團
 
 - 直接傳入狗函式
 - 無須做任何實例化

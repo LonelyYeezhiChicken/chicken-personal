@@ -5,9 +5,9 @@ key: [委派, Delegate, Func, 委派]
 tags: [委派, Delegate]
 ---
 
-#  📪 Func<T,TResult> 泛型委派 - 有回傳值
+# 📪 Func<T,TResult> 泛型委派 - 有回傳值
 
-### 1. 定義函式
+## 1. 定義函式
 
 - 傳入值設定為 `Func<int, string>`
 - `<T,TResult>`
@@ -27,7 +27,7 @@ tags: [委派, Delegate]
     }
 ```
 
-### 2. 呼叫馬戲團
+## 2. 呼叫馬戲團
 
 - 直接傳入狗函式
 - 無須做任何實例化

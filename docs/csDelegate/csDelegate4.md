@@ -7,13 +7,13 @@ tags: [委派, Delegate]
 
 #  📪 Acton 泛型委派
 
-### 1. 定義函式
+## 1. 定義函式
 
 - 傳入值設定為 Action
 - Action -> 可以直接傳入函式
 
-```csharp
-	/// <summary>
+```csharp  
+    /// <summary>
     /// 定義函式
     /// </summary>
     /// <param name="animal">動物的委派</param>
@@ -23,7 +23,7 @@ tags: [委派, Delegate]
     }
 ```
 
-### 2. 呼叫馬戲團
+## 2. 呼叫馬戲團
 
 - 直接傳入狗函式
 - 無須做任何實例化
