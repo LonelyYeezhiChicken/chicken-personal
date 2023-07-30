@@ -1,13 +1,13 @@
 ---
 sidebar_position: 10
-description: 轉接器模式 (Builder Pattern) 
-key: [設計模式, Design Pattern, 轉接器模式, Builder Pattern]
+description: 轉接器模式 (Adapter Pattern) 
+key: [設計模式, Design Pattern, 轉接器模式, Adapter Pattern]
 tags: [設計模式, Design Pattern]
 ---
 
 # 💡 轉接器模式
 
-## Builder Pattern
+## Adapter Pattern
 
 ## 概述
 
