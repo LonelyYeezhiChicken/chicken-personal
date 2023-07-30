@@ -7,7 +7,7 @@ tags: [git, git雜記]
 
 # 👩‍💻 commit type
 
-### commit 的類型：
+## commit 的類型
 
 - feat： 新功能、新特性
 - fix： 修改 bug
@@ -23,4 +23,4 @@ tags: [git, git雜記]
 - release： 發佈新版本
 - workflow： 工作流相關文件修改
 
-ref: [git commit 提交规范 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/90281637)
+ref: [git commit 提交规范 - 知乎](https://zhuanlan.zhihu.com/p/90281637)
