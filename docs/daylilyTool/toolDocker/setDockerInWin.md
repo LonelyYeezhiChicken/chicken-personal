@@ -43,7 +43,7 @@ tags: [Docker, 工具]
 
 - 畫面會顯示可安裝版本
 
-```shell
+```bash
 NAME                                   FRIENDLY NAME
 Ubuntu                                 Ubuntu
 Debian                                 Debian GNU/Linux
