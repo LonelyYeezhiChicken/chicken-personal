@@ -100,6 +100,12 @@ ALTER PROFILE DEFAULT LIMIT PASSWORD_LIFE_TIME UNLIMITED;
 alter user SYSTEM account unlock;
 ```
 
+## 預設帳號密碼
+
+> 使用者名稱: system
+>
+> 使用者密碼: oracle
+
 ---
 
 ref: [Docker中安装Oracle-12c](https://zhuanlan.zhihu.com/p/605595017)
