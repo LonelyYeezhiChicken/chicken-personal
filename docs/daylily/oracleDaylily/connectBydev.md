@@ -2,7 +2,7 @@
 sidebar_position: 10
 description: 使用 sqldeveloper 連接 Oracle
 key: [Oracle, 雜記]
-tags: [Oracle, MSSQL雜記]
+tags: [Oracle, Oracle雜記]
 ---
 
 # 👩‍💻 使用 sqldeveloper 連接

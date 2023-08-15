@@ -2,7 +2,7 @@
 sidebar_position: 5
 description: Docker 中安裝 Oracle
 key: [Oracle, 雜記]
-tags: [Oracle, MSSQL雜記, Docker]
+tags: [Oracle, Oracle雜記, Docker]
 ---
 
 # 👩‍💻 Docker 中安裝 Oracle
