@@ -15,7 +15,7 @@ tags: [java, Spring Cloud, Microservices]
 - 將原本一個獨立的系統拆分為多個小型的服務
 - 每個服務都在獨立的 Process 中運行
 
-### 服務之間的溝通
+## 服務之間的溝通
 
 > 在每個服務之間的溝通方式大致可以分為三類
 
@@ -23,7 +23,7 @@ tags: [java, Spring Cloud, Microservices]
 2. Event streaming
 3. Message brokers
 
-### 優點
+## 微服務優點
 
 在每個小型服務被拆開之後，每個服務只需要維護自身的邏輯，
 
