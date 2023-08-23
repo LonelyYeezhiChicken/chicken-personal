@@ -110,10 +110,10 @@ const config = {
             label: "筆記",
           },
           { to: "/blog", label: "作品", position: "left" },
-          {
-            type: "localeDropdown",
-            position: "right",
-          },
+          // {
+          //   type: "localeDropdown",
+          //   position: "right",
+          // },
           {
             href: "https://github.com/LonelyYeezhiChicken",
             label: "GitHub",
