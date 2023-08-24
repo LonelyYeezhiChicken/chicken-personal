@@ -134,6 +134,14 @@ const config = {
       //   contextualSearch: true,
       // },
     }),
+  plugins: [
+    [
+      require.resolve("docusaurus-lunr-search"),
+      {
+        languages: ["zh-Hant"],
+      },
+    ],
+  ],
 };
 
 module.exports = config;

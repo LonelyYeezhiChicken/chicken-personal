@@ -23,8 +23,7 @@ I'm a backend developer.
 |:-------------:|:-----------:|:----------:|:-----------:|
 |    Vue JS     |   Asp.net5   |     C#     |    MSSQL    |
 |  Vanilla JS   |    .NET 6   |    Java    |    MySQL    |
-|  TypeScript   | Spring Boot |    Java    |    MySQL    |
+|  TypeScript   | Spring Boot |    MATLAB    |    PLC    |
 |   React JS    |    Flask    |   Python   |   Oracle    |
 | Knockout JS   |   Phaser 3  |    PHP     |   Docker    |
-| Tailwind CSS  |   Laravel   |   MATLAB   | Message Queue |
-|               |             |            |     PLC     |
+| Tailwind CSS  |   Laravel   |            | Message Queue |
