@@ -138,7 +138,7 @@ const config = {
     [
       require.resolve("docusaurus-lunr-search"),
       {
-        languages: ["zh-Hant"],
+        languages: ["zh"],
       },
     ],
   ],
