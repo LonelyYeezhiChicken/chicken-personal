@@ -1,6 +1,6 @@
 ---
 sidebar_position: 15
-description: Spring Boot 簡介
+description: 建立 RESTful API
 key: [java, Spring Cloud, Microservices, 微服務, Spring Boot]
 tags: [java, Spring Cloud, Microservices, Spring Boot]
 ---
