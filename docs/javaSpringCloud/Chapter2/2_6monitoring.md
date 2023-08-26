@@ -20,7 +20,7 @@ tags: [java, Spring Cloud, Microservices, Spring Boot]
 ### 選用 Spring Boot 與 Spring Cloud 提供的功能
 
 > 我們在構建微服務時，選擇使用 Spring Boot 作為微服務框架
-> 
+>
 > 除了它強大的快速開發功能之外，還有一個特別的依賴模組 — spring-boot-starter-actuator，該模組能夠自動為 Spring Boot 應用提供一系列用於監控的端點，
 >
 > 同時在實現各個微服務組件時，Spring Cloud 對該模組進行了擴展，為原生端點增加了更多的指標和度量信息，例如: 在整合 Eureka 時，會為 `/health` 端點增加相關信息。對於不同的組件，還提供了更多有用的端點，比如 API 網關組件 Zuul 提供了 `/routes` 端點來返回路由信息
