@@ -7,6 +7,8 @@ tags: [java, Spring Cloud, Microservices, Spring Boot]
 
 # 🌤️ 建立 RESTful API
 
+## 實作
+
 - 建立檔案 `src/main/java/demoController.java`
 
 ```java
@@ -37,6 +39,6 @@ http://localhost:8080/Hi
 
 ---
 
-### 建立 controller 範本
+## 建立 controller 範本
 
 [github 連結](https://github.com/LonelyYeezhiChicken/spring-boot-demo/tree/controller)
