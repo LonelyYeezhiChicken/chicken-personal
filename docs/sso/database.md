@@ -27,7 +27,7 @@ CREATE TABLE user_table (
     username VARCHAR(50) NOT NULL,
     password_hash VARCHAR(100) NOT NULL,
     email VARCHAR(100),
-    -- 其他用户属性列
+    status BOOLEAN
 );
 ```
 
@@ -39,9 +39,9 @@ CREATE TABLE user_table (
 CREATE TABLE session_table (
     session_id serial PRIMARY KEY,
     user_id INT NOT NULL,
-    start_time TIMESTAMPTZ NOT NULL,
-    expiration_time TIMESTAMPTZ NOT NULL,
-    -- 其他会话属性列
+    start_time TIMESTAMPTZ NOT NULL DEFAULT current_timestamp,
+    expiration_time TIMESTAMPTZ NOT NULL DEFAULT current_timestamp + interval '1 hour',
+
     FOREIGN KEY (user_id) REFERENCES user_table (user_id)
 );
 ```
@@ -57,7 +57,7 @@ CREATE TABLE token_table (
     token_type VARCHAR(50) NOT NULL,
     token_value VARCHAR(255) NOT NULL,
     expiration_time TIMESTAMPTZ NOT NULL,
-    -- 其他令牌属性列
+    
     FOREIGN KEY (user_id) REFERENCES user_table (user_id)
 );
 ```
@@ -69,9 +69,8 @@ CREATE TABLE token_table (
 ```sql
 CREATE TABLE application_table (
     app_id serial PRIMARY KEY,
-    app_name VARCHAR(100) NOT NULL,
-    redirect_url VARCHAR(255) NOT NULL,
-    -- 其他应用程序属性列
+    app_name VARCHAR(100) NOT NULL UNIQUE,
+    redirect_url VARCHAR(255) NOT NULL
 );
 ```
 
@@ -84,10 +83,11 @@ CREATE TABLE user_app_mapping (
     mapping_id serial PRIMARY KEY,
     user_id INT NOT NULL,
     app_id INT NOT NULL,
-    -- 其他映射属性列
+
     FOREIGN KEY (user_id) REFERENCES user_table (user_id),
     FOREIGN KEY (app_id) REFERENCES application_table (app_id)
 );
+
 ```
 
 ### 6. Audit Log Table（審計日誌表格）
@@ -100,9 +100,10 @@ CREATE TABLE audit_log (
     user_id INT,
     action VARCHAR(100) NOT NULL,
     timestamp TIMESTAMPTZ NOT NULL,
-    -- 其他審計日誌属性列
+
     FOREIGN KEY (user_id) REFERENCES user_table (user_id)
 );
+
 ```
 
 ### 7. Metadata Table（元數據表格）
@@ -112,9 +113,8 @@ CREATE TABLE audit_log (
 ```sql
 CREATE TABLE metadata_table (
     metadata_id serial PRIMARY KEY,
-    key VARCHAR(100) NOT NULL,
-    value TEXT,
-    -- 其他元数据属性列
+    key VARCHAR(100) NOT NULL UNIQUE,
+    value TEXT
 );
 ```
 
@@ -126,31 +126,115 @@ CREATE TABLE metadata_table (
 CREATE TABLE role_table (
     role_id serial PRIMARY KEY,
     role_name VARCHAR(50) NOT NULL
-    -- 其他角色属性列
 );
 
 CREATE TABLE permissions_table (
     permission_id serial PRIMARY KEY,
-    permission_name VARCHAR(100) NOT NULL,
-    -- 其他权限属性列
+    permission_name VARCHAR(100) NOT NULL UNIQUE
 );
 
 CREATE TABLE user_role_mapping (
-    mapping_id serial PRIMARY KEY,
+    mapping_id serial PRIMARY KEY UNIQUE,
     user_id INT NOT NULL,
     role_id INT NOT NULL,
-    -- 其他映射属性列
     FOREIGN KEY (user_id) REFERENCES user_table (user_id),
     FOREIGN KEY (role_id) REFERENCES role_table (role_id)
 );
 
 CREATE TABLE role_permission_mapping (
-    mapping_id serial PRIMARY KEY,
+    mapping_id serial PRIMARY KEY UNIQUE,
     role_id INT NOT NULL,
     permission_id INT NOT NULL,
-    -- 其他映射属性列
     FOREIGN KEY (role_id) REFERENCES role_table (role_id),
     FOREIGN KEY (permission_id) REFERENCES permissions_table (permission_id)
 );
+```
 
+---
+
+## 完整 SQL
+
+```sql
+CREATE TABLE user_table (
+    user_id serial PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password_hash VARCHAR(100) NOT NULL,
+    email VARCHAR(100),
+    status BOOLEAN
+);
+
+CREATE TABLE session_table (
+    session_id serial PRIMARY KEY,
+    user_id INT NOT NULL,
+    start_time TIMESTAMPTZ NOT NULL DEFAULT current_timestamp,
+    expiration_time TIMESTAMPTZ NOT NULL DEFAULT current_timestamp + interval '1 hour',
+
+    FOREIGN KEY (user_id) REFERENCES user_table (user_id)
+);
+
+CREATE TABLE token_table (
+    token_id serial PRIMARY KEY,
+    user_id INT NOT NULL,
+    token_type VARCHAR(50) NOT NULL,
+    token_value VARCHAR(255) NOT NULL,
+    expiration_time TIMESTAMPTZ NOT NULL,
+    
+    FOREIGN KEY (user_id) REFERENCES user_table (user_id)
+);
+
+CREATE TABLE application_table (
+    app_id serial PRIMARY KEY,
+    app_name VARCHAR(100) NOT NULL UNIQUE,
+    redirect_url VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE user_app_mapping (
+    mapping_id serial PRIMARY KEY,
+    user_id INT NOT NULL,
+    app_id INT NOT NULL,
+
+    FOREIGN KEY (user_id) REFERENCES user_table (user_id),
+    FOREIGN KEY (app_id) REFERENCES application_table (app_id)
+);
+
+CREATE TABLE audit_log (
+    log_id serial PRIMARY KEY,
+    user_id INT,
+    action VARCHAR(100) NOT NULL,
+    timestamp TIMESTAMPTZ NOT NULL,
+
+    FOREIGN KEY (user_id) REFERENCES user_table (user_id)
+);
+
+CREATE TABLE metadata_table (
+    metadata_id serial PRIMARY KEY,
+    key VARCHAR(100) NOT NULL UNIQUE,
+    value TEXT
+);
+
+CREATE TABLE role_table (
+    role_id serial PRIMARY KEY,
+    role_name VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE permissions_table (
+    permission_id serial PRIMARY KEY,
+    permission_name VARCHAR(100) NOT NULL UNIQUE
+);
+
+CREATE TABLE user_role_mapping (
+    mapping_id serial PRIMARY KEY UNIQUE,
+    user_id INT NOT NULL,
+    role_id INT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES user_table (user_id),
+    FOREIGN KEY (role_id) REFERENCES role_table (role_id)
+);
+
+CREATE TABLE role_permission_mapping (
+    mapping_id serial PRIMARY KEY UNIQUE,
+    role_id INT NOT NULL,
+    permission_id INT NOT NULL,
+    FOREIGN KEY (role_id) REFERENCES role_table (role_id),
+    FOREIGN KEY (permission_id) REFERENCES permissions_table (permission_id)
+);
 ```
