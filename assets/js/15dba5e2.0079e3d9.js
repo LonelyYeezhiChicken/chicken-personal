@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchicken_personal=self.webpackChunkchicken_personal||[]).push([[1281],{6142:s=>{s.exports=JSON.parse('{"label":"sso","permalink":"/docs/tags/sso","allTagsPath":"/docs/tags","count":1,"items":[{"id":"sso/database","title":"\ud83d\udd10 SSO \u8cc7\u6599\u5eab","description":"SSO \u8cc7\u6599\u5eab","permalink":"/docs/sso/database"}]}')}}]);
