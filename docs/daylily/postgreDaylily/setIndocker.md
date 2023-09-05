@@ -31,7 +31,7 @@ docker pull postgres:12.3
 docker run --name postgres12 -e POSTGRES_PASSWORD=[password] -p 5432:5432 -d postgres:12.3
 ```
 
-### 3. 設定 oracle 帳號密碼
+### 3. 設定 Postgresql 帳號密碼
 
 - 進入容器
 
