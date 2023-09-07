@@ -9,6 +9,10 @@ tags: [scoop, 工具, JDK, java, java雜記]
 
 ## 關於
 
+> Java 版本繁多，每次專案需要切換不同版本，是件麻煩的事情
+>
+> 因此可以依賴 scoop 來安裝不同的 java 版本
+
 ## 安裝
 
 ### 將 Java 加入 bucket
