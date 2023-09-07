@@ -19,6 +19,10 @@ tags: [java, java雜記]
 
 ## 環境安裝
 
+### 使用 [scoop](https://blog.lychicken.com/docs/daylilyTool/toolScoop/setScoop) 安裝 [JDK](https://blog.lychicken.com/docs/daylilyTool/toolScoop/setJdk)
+
+> 可以直接省略步驟1與步驟2
+
 ### 1.JDK下載 [官網載點](https://www.oracle.com/java/technologies/downloads/#jdk17-windows)
 
 ![https://ithelp.ithome.com.tw/upload/images/20220413/20097001cTNzcx5W0D.png](https://ithelp.ithome.com.tw/upload/images/20220413/20097001cTNzcx5W0D.png)
