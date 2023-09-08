@@ -1,5 +1,5 @@
 ---
-sidebar_position: 15
+sidebar_position: 25
 description: Spring Boot  Hibernate 連接 MSSQL
 key: [java, 雜記, Hibernate, Spring Boot, MSSQL]
 tags: [java, java雜記, Hibernate, Spring Boot, MSSQL]

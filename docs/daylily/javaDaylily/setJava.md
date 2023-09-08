@@ -1,5 +1,5 @@
 ---
-sidebar_position: 0
+sidebar_position: 15
 description: Spring Data JPA 與 Hibernate 的關係
 key: [java, 雜記, 環境變數]
 tags: [java, java雜記]
