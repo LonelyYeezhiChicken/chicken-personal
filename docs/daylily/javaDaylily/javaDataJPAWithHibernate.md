@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 20
 description: Spring Data JPA 與 Hibernate 的關係
 key: [java, 雜記, Hibernate, Spring Data JPA]
 tags: [java, java雜記, Hibernate, Spring Data JPA]
