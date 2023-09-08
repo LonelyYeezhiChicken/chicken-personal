@@ -13,9 +13,13 @@ tags: [MongoDB, MongoDB雜記, Docker]
 - Image: mongo:4.1
 - OS: Windows11
 
+:::caution
+如果需要與 Mongo Express 的容器做集成，直接跳至 [Docker 中安裝 MongoDB](https://blog.lychicken.com/docs/daylily/mongoDBDaylily/setMongoExpress)
+:::
+
 ## 安裝步驟
 
-### 1. 下載Image
+### 1. 下載 Image
 
 - 下載
 
