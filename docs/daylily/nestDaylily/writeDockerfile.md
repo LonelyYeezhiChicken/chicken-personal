@@ -1,8 +1,8 @@
 ---
 sidebar_position: 15
 description: NestJS dockerfile
-key: [NestJS, Node, TypeScript, Docker]
-tags: [NestJS, Node, TypeScript, Docker]
+key: [NestJS, Node, TypeScript, Docker, Dockerfile]
+tags: [NestJS, Node, TypeScript, Docker, Dockerfile]
 ---
 
 # 👩‍💻 NestJS 的 dockerfile
