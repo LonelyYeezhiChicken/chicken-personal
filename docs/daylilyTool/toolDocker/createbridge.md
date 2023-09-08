@@ -9,9 +9,9 @@ tags: [Docker, 工具]
 
 ## 關於 docker bridge
 
-> Docker Bridge網絡是Docker默認使用的網絡模式
+> Docker Bridge 網絡是 Docker 默認使用的網絡模式
 >
-> 它提供了一種方式，讓Docker容器可以在主機上創建一個虛擬網絡，容器可以相互通訊，
+> 它提供了一種方式，讓 Docker 容器可以在主機上創建一個虛擬網絡，容器可以相互通訊，
 >
 > 但通常不會直接暴露給外部網絡。這對於構建內部微服務架構或多容器應用程序非常有用
 
@@ -29,8 +29,8 @@ docker network create -d bridge [bridge name]
 docker network bridge ls
 ```
 
-- -d bridge指定網絡驅動程式為橋接（bridge）
-- [bridge name]為網絡指定的名稱
+- -d bridge 指定網絡驅動程式為橋接（bridge）
+- [bridge name] 為網絡指定的名稱
 
 ### 移除 bridge
 
