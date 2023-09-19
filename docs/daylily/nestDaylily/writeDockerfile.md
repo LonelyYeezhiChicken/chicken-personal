@@ -23,6 +23,9 @@ COPY  package*.json ./
 
 COPY tsconfig*.json ./
 
+# 複製程式碼
+COPY . .
+
 # 下載依賴
 RUN npm install
 
