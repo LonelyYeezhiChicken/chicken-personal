@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchicken_personal=self.webpackChunkchicken_personal||[]).push([[2572],{2572:(e,c,s)=>{s.r(c)}}]);
