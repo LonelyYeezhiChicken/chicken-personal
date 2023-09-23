@@ -371,6 +371,8 @@ user
 │ │
 │ └─update-user.dto.ts
 │ │
+│ └─user.dto.ts
+│ │
 │ └─index.ts
 │
 └─user.controller.ts
@@ -442,6 +444,8 @@ user
 │ └─create-user.dto.ts
 │ │
 │ └─update-user.dto.ts
+│ │
+│ └─user.dto.ts
 │ │
 │ └─index.ts
 │
