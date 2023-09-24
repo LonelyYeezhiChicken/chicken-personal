@@ -98,7 +98,7 @@ it('should return an array of cats', async () => {
 
 ### 生命週期-jest.spyOn
 
-> `jest.spyOn`：這是一個 `moke`，用來做假物件，離掉真實物件的相依性(只專注在該內部邏輯，外部都做隔離)
+> `jest.spyOn`：這是一個 `mock`，用來做假物件，離掉真實物件的相依性(只專注在該內部邏輯，外部都做隔離)
 >
 > 在這邊預設，`catsService` 的 `findAll` 會回傳 `['test']`
 
@@ -128,7 +128,7 @@ expect(await catsController.findAll()).toBe(result);
 | beforeEach | SetUp | 標示為初始化 |
 | describe (for function) | Test or TestCase | 標示測試的函式 |
 | it | Test or TestCase | 測試案例 |
-| jest.spyOn | NSubstitute.Substitute | moke，用來做假物件，離掉真實物件的相依性 |
+| jest.spyOn | NSubstitute.Substitute | mock，用來做假物件，離掉真實物件的相依性 |
 | expect | Assert | 斷言 |
 
 ---
