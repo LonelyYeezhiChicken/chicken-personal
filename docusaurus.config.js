@@ -115,6 +115,11 @@ const config = {
           //   position: "right",
           // },
           {
+            href: "https://town.lychicken.com",
+            label: "小雞鎮",
+            position: "right",
+          },
+          {
             href: "https://github.com/LonelyYeezhiChicken",
             label: "GitHub",
             position: "right",
