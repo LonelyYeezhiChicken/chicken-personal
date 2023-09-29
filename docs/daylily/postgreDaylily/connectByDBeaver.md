@@ -29,7 +29,7 @@ tags: [Postgresql, Postgresql雜記]
 >
 > Port: 5432
 >
-> Database: Docker-Postgres
+> Database: postgres
 >
 > UserName: postgres
 
