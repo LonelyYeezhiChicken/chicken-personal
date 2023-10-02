@@ -32,6 +32,10 @@ const config = {
     locales: ["zh-Hant", "en"],
   },
 
+  markdown: {
+    mermaid: true,
+  },
+
   presets: [
     [
       "classic",
@@ -65,6 +69,7 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    /** @type {import('@docusaurus/theme-mermaid').ThemeConfig} */
     ({
       // Replace with your project's social card
       image: "img/chicken.jpg",
@@ -135,9 +140,12 @@ const config = {
         darkTheme: darkCodeTheme,
         additionalLanguages: ["csharp", "java"],
       },
-      // algolia: {
-      //   contextualSearch: true,
-      // },
+      mermaid: {
+        options: {
+          maxTextSize: 50,
+        },
+        theme: { light: "neutral", dark: "forest" },
+      },
     }),
   plugins: [
     [
