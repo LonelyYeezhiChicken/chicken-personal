@@ -351,11 +351,3 @@ pnpm run typeorm:run-migrations
 ## REF
 
 [副鎮長-梁迪哥 教學](https://hackmd.io/@JgGTFI_BRjyUv6YuG1bmUQ/B1ZKISX_n/%2FFwXhSn6rTXG4BsAQCeiJyw#%E4%B8%BB%E6%97%A8)
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
