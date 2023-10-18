@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchicken_personal=self.webpackChunkchicken_personal||[]).push([[7404],{62783:e=>{e.exports=JSON.parse('{"label":"WebAPI","permalink":"/docs/tags/web-api","allTagsPath":"/docs/tags","count":1,"items":[{"id":"webapi4Net/note1","title":"\ud83d\udef0 Web \u7d50\u69cb","description":"Web \u7d50\u69cb","permalink":"/docs/webapi4Net/note1"}]}')}}]);
