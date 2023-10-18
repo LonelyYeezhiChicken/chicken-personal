@@ -67,9 +67,10 @@ const config = {
     ],
   ],
 
+  themes: ["@docusaurus/theme-mermaid"],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    /** @type {import('@docusaurus/theme-mermaid').ThemeConfig} */
     ({
       // Replace with your project's social card
       image: "img/chicken.jpg",
@@ -141,10 +142,7 @@ const config = {
         additionalLanguages: ["csharp", "java"],
       },
       mermaid: {
-        options: {
-          maxTextSize: 50,
-        },
-        theme: { light: "neutral", dark: "forest" },
+        theme: { light: "neutral" },
       },
     }),
   plugins: [
