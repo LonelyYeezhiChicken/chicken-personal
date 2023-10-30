@@ -205,3 +205,9 @@ sequenceDiagram
     User -->> Service1: 登出
     User -->> Service2: 登出
 ```
+
+---
+
+REF:
+
+- [看完这篇你不能再说不懂SSO原理了！](https://www.cnblogs.com/qdhxhz/p/17007958.html)
