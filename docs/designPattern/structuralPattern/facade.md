@@ -1,7 +1,7 @@
 ---
 sidebar_position: 25
 description: 門面模式  (Facade  Pattern) 
-key: [設計模式, Design Pattern, 裝飾者模式 , Facade  Pattern]
+key: [設計模式, Design Pattern, 門面模式 , Facade  Pattern]
 tags: [設計模式, Design Pattern]
 ---
 
