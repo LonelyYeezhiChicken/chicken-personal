@@ -57,7 +57,7 @@ tags: [設計模式, Design Pattern]
 | 橋接模式 Bridge Pattern      |
 | 組合模式 Composite Pattern   |
 | 裝飾器模式 Decorator Pattern |
-| 外觀模式 Facade Pattern      |
+| 門面模式 Facade Pattern      |
 | 享元模式 Flyweight Pattern   |
 | 代理模式 Proxy Pattern       |
 
