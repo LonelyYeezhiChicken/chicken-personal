@@ -139,7 +139,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ["csharp", "java"],
+        additionalLanguages: ["csharp", "java", "powershell"],
       },
       mermaid: {
         theme: { light: "neutral" },

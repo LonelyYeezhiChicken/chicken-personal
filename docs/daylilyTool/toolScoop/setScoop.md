@@ -47,6 +47,12 @@ scoop bucket add [bucket name]
 scoop bucket list
 ```
 
+### 確認現有套件
+
+```shell
+scoop list
+```
+
 ### 更新 bucket
 
 - 更新特定套件
