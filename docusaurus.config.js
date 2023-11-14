@@ -130,6 +130,29 @@ const config = {
             label: "GitHub",
             position: "right",
           },
+          {
+            type: "dropdown",
+            label: "友情連結",
+            position: "right",
+            items: [
+              {
+                href: "https://mileschou.me/",
+                label: "Miles' Blog",
+              },
+              {
+                href: "https://mtwmt.com/",
+                label: "Mandy's Web",
+              },
+              {
+                href: "https://tedmax100.github.io/",
+                label: "阿雷s' Blog",
+              },
+              {
+                href: "https://dotblogs.com.tw/yc421206",
+                label: "余小章 @ 大內殿堂",
+              },
+            ],
+          },
         ],
       },
       footer: {
