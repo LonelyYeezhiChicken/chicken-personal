@@ -136,8 +136,12 @@ const config = {
             position: "right",
             items: [
               {
+                href: "https://gson.lychicken.com/",
+                label: "梁大哥's Blog",
+              },
+              {
                 href: "https://mileschou.me/",
-                label: "Miles' Blog",
+                label: "Miles's Blog",
               },
               {
                 href: "https://mtwmt.com/",
@@ -145,7 +149,7 @@ const config = {
               },
               {
                 href: "https://tedmax100.github.io/",
-                label: "阿雷s' Blog",
+                label: "阿雷's Blog",
               },
               {
                 href: "https://dotblogs.com.tw/yc421206",
