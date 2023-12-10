@@ -48,7 +48,7 @@ public class newString {
 
 ## String 與 new String 的差異
 
-> 直接等於 String 的時候，會先到 Sting pool 尋找是否有相同的字串，拿來做使用
+> 直接等於 String 的時候，會先到 String pool 尋找是否有相同的字串，拿來做使用
 >
 > new String 則是直接在記憶體中開一段新的位址
 
