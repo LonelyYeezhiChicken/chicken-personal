@@ -13,7 +13,7 @@ tags: [Postgresql, Postgresql雜記]
 
 [連結](https://dbeaver.io/download/)
 
-### oracle11g
+### Postgresql
 
 [安裝步驟](https://blog.lychicken.com/docs/daylily/postgreDaylily/setIndocker)
 
