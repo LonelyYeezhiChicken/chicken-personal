@@ -1,11 +1,11 @@
 ---
 sidebar_position: 5
-description: Python 基本型別-字串
-key: [Python, string]
+description: Python 基本型別(一)
+key: [Python, string, number]
 tags: [Python]
 ---
 
-# 🐍 Python 基本型別-字串
+# 🐍 Python 基本型別(一)
 
 ## 數字 (Number)
 
