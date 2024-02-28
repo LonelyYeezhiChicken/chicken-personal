@@ -1,7 +1,7 @@
 ---
 sidebar_position: 10
 description: Python 基本型別(二)
-key: [Python, string, number]
+key: [Python, List, bool]
 tags: [Python]
 ---
 
