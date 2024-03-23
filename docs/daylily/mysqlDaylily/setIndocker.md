@@ -67,4 +67,5 @@ FLUSH PRIVILEGES;
 2. Driver properties
 3. 將 useSSL 改為 false
 4. 將 allowPublicKeyRetrieval 改為 true
+
 :::
