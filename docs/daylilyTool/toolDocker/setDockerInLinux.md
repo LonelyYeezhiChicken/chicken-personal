@@ -94,3 +94,10 @@ sudo apt-get install docker-compose-plugin
 ```bash
 docker compose version
 ```
+
+---
+
+## REF
+
+- [梁大哥筆記](https://hackmd.io/hux5UiziTlyoNbj7EOBxQQ?view)
+- [docker 官網](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
