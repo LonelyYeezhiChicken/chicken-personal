@@ -102,7 +102,7 @@ docker compose up -d
 
 建立和配置儀表板是 Grafana 的核心功能之一，允許您可視化和分析來自不同數據源的監控數據以下是在 Grafana 中建立和配置儀表板的詳細步驟：
 
-### 尋找和導入現有的儀表板：
+### 尋找和導入現有的儀表板
 
 1. **訪問 Grafana Dashboards**：
    - 打開瀏覽器，訪問 [Grafana Dashboards](https://grafana.com/grafana/dashboards/) 網站
