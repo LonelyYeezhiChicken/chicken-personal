@@ -1,8 +1,8 @@
 ---
 sidebar_position: 5
-description: RabbitMQ 啟用 MQTT
-key: [RabbitMQ, tool, Docker, Message Queue]
-tags: [RabbitMQ, tool, Docker, Message Queue]
+description: 使用 Docker Compose 部署 Prometheus 和 Grafana
+key: [Prometheus, Grafana, Docker, Monitoring]
+tags: [Prometheus, Grafana, Docker, Monitoring]
 ---
 
 # ☀️ 使用 docker-compose
