@@ -136,7 +136,7 @@ const config = {
             position: "right",
             items: [
               {
-                href: "https://gson.lychicken.com/",
+                href: "https://hackmd.io/@JgGTFI_BRjyUv6YuG1bmUQ",
                 label: "梁大哥's Blog",
               },
               {
