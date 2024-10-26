@@ -1,8 +1,8 @@
 ---
 sidebar_position: 30
 description: 在 scoop 底下安裝 Mockoon 
-key: [scoop, tool, windows, Python]
-tags: [scoop, 工具, Python]
+key: [scoop, tool, windows, Mockoon]
+tags: [scoop, 工具, Mockoon]
 ---
 
 # 🥣 Mockoon 安裝
@@ -29,7 +29,7 @@ Name     Source                                     Updated                  Man
 extras   https://github.com/ScoopInstaller/Extras   2024/10/26 上午 04:31:41      2091
 ```
 
-### 下載 Python
+### 下載 Mockoon
 
 ```shell
 scoop install mockoo
