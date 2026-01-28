@@ -9,51 +9,51 @@ tags: [sso, Single Sign-On]
 
 ## 關於 SSO 功能模組
 
-單一登錄（Single Sign-On，簡稱SSO）功能模組是一個用於身份驗證和授權的關鍵組件，旨在提供用戶在多個應用程式之間的無縫身份驗證體驗，它通過一次登錄，用戶可以訪問多個相關的應用程式，而無需多次輸入他們的認證信息
+在現代應用程式架構中，單一登錄 (SSO) 系統通常扮演著**身份提供者 (Identity Provider, IdP)** 的核心角色。它的主要職責是管理使用者身份，並向已註冊的應用程式（稱為**服務提供者, Service Provider, SP** 或 **客戶端, Client**）提供安全可靠的身份驗證服務。
 
-這個模組的主要目標是增加安全性和便利性，同時降低管理多個應用程式的身份驗證和授權的複雜性，它包含多個子模組，每個子模組負責不同方面的功能，如用戶管理、會話管理、日誌記錄等等
-
-我們將在以下部分詳細探討每個子模組的功能和操作，這個SSO功能模組旨在幫助開發者輕鬆實現強大的單一登錄體驗，同時確保安全性和可擴展性
+這個模組的目標是透過一次登錄，讓使用者能夠無縫存取多個相關的應用程式，無需重複輸入認證資訊，從而提升安全性與便利性。
 
 ## 模組拆分
 
-### Authentication
+一個功能完整的 SSO (IdP) 系統通常包含以下幾個核心模組：
 
-1. 使用者註冊 (User Registration)
-2. 使用者登錄 (User Login)
-3. 生成和驗證 Token
-4. 管理使用者會話 (Session Management)
+### 核心身份驗證 (Authentication)
 
-### User Management
+1.  使用者註冊 (User Registration)
+2.  使用者登錄 (User Login) & 登出 (Logout)
+3.  多因素驗證 (Multi-Factor Authentication, MFA)
+4.  產生與驗證存取權杖 (Access Token) 與身份權杖 (ID Token)
+5.  管理使用者會話 (Session Management)
 
-1. 使用者新增、編輯和刪除
-2. 更改密碼和密碼重置
-3. 更新使用者狀態
+### 使用者管理 (User Management)
 
-### Application
+1.  新增、編輯和刪除使用者
+2.  密碼變更與重設
+3.  使用者狀態管理（啟用、禁用、鎖定）
 
-> 應用程式模組
+### 應用程式管理 (Application Management / Client Registry)
 
-1. 新增和管理應用程式
-2. 設置應用程式的回調 URL
+1.  新增、編輯和刪除應用程式 (Client)
+2.  設定應用程式的回呼 URL (Callback URL) 與其他安全參數
+3.  為每個應用程式生成唯一的 Client ID 和 Client Secret
 
-### User-App Mapping
+### 授權與同意管理 (Authorization & Consent)
 
-> 使用者和應用程式關聯模組
+1.  管理使用者對應用程式的授權範圍 (Scope)
+2.  記錄並管理使用者的同意 (Consent) 決策
 
-1. 使用者與應用程式的關聯管理
+### 身份聯合 (Identity Federation)
 
-### Log
+1.  整合外部身份提供者 (External IdP)，如 Google, GitHub, Facebook
+2.  支援 SAML, OAuth2/OIDC 等標準協定進行聯合登入
 
-> 日誌模組
+### 存取控制 (Access Control / RBAC)
 
-1. 記錄使用者操作
-2. 檢索和顯示操作日誌
+1.  新增、編輯和刪除角色 (Role)
+2.  定義、分配和管理權限 (Permission)
+3.  管理使用者與角色的對應關係
 
-### Permission and Role
+### 日誌與稽核 (Logging & Auditing)
 
-> 許可權和角色模組
-
-1. 新增、編輯和刪除角色
-2. 定義、分配和管理許可權
-3. 管理使用者角色
+1.  記錄使用者登入、登出、授權等安全事件
+2.  提供操作日誌的檢索與顯示

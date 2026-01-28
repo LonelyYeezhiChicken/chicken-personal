@@ -15,138 +15,117 @@ tags: [sso, Single Sign-On, Postgresql]
 
 ### 資料庫設計考量
 
-> SSO系統通常需要一些資料庫表格來存儲使用者資訊、令牌和相關的身份驗證數據以下是一些常見的表格，這些表格可以用於實現SSO
+> 一個現代化的 SSO 系統，特別是基於 OIDC 和 JWT (JSON Web Tokens) 的無狀態（Stateless）架構，其資料庫設計需要考量幾個關鍵點。以下是一個更符合業界實踐的資料庫結構範例。
 
 ### 1. User Table（使用者表格）
 
-> 存儲使用者的基本資訊，如使用者名稱、密碼雜湊、電子郵件地址、使用者ID等這是SSO系統中最基本的表格
+> 存儲使用者的基本資訊。`username` 和 `email` 都應具備唯一性，以防止資料重複。
 
 ```sql
 CREATE TABLE user_table (
     user_id serial PRIMARY KEY,
-    username VARCHAR(50) NOT NULL,
-    password_hash VARCHAR(100) NOT NULL,
-    email VARCHAR(100),
-    status BOOLEAN
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    email VARCHAR(100) UNIQUE,
+    status VARCHAR(20) NOT NULL DEFAULT 'active' -- e.g., active, inactive, locked
 );
 ```
 
-### 2. Session Table（會話表格）
+### 2. Refresh Token Table（刷新權杖表格）
 
-> 用於存儲使用者的會話資訊，包括會話ID、使用者ID、會話開始時間、過期時間等這些資訊用於追蹤使用者的登錄狀態
-
-```sql
-CREATE TABLE session_table (
-    session_id serial PRIMARY KEY,
-    user_id INT NOT NULL,
-    start_time TIMESTAMPTZ NOT NULL DEFAULT current_timestamp,
-    expiration_time TIMESTAMPTZ NOT NULL DEFAULT current_timestamp + interval '1 hour',
-
-    FOREIGN KEY (user_id) REFERENCES user_table (user_id)
-);
-```
-
-### 3. Token Table（令牌表格）
-
-> 用於存儲令牌資訊，令牌是用於身份驗證的臨時憑證表格包括令牌ID、使用者ID、令牌類型、令牌值、過期時間等
+> 在無狀態的 JWT 架構中，我們不需要在伺服器端保存 `session`。使用者的登入狀態由 Access Token 本身來證明。然而，為了安全地換發新的 Access Token，我們需要一個地方來儲存長效的 Refresh Token。
 
 ```sql
-CREATE TABLE token_table (
+CREATE TABLE refresh_token_table (
     token_id serial PRIMARY KEY,
     user_id INT NOT NULL,
-    token_type VARCHAR(50) NOT NULL,
-    token_value VARCHAR(255) NOT NULL,
-    expiration_time TIMESTAMPTZ NOT NULL,
+    token_value TEXT NOT NULL,
+    expires_at TIMESTAMPTZ NOT NULL,
+    issued_at TIMESTAMPTZ NOT NULL DEFAULT current_timestamp,
     
-    FOREIGN KEY (user_id) REFERENCES user_table (user_id)
+    FOREIGN KEY (user_id) REFERENCES user_table (user_id) ON DELETE CASCADE
 );
 ```
 
-### 4. Application Table（應用程式表格）
+### 3. Application Table（應用程式表格）
 
-> 存儲與SSO系統集成的各個應用程式或服務的資訊，包括應用程式ID、應用程式名稱、重定向URL等
+> 存儲與 SSO 系統集成的各個應用程式（在 OAuth2 中稱為 Client）的資訊。
 
 ```sql
 CREATE TABLE application_table (
     app_id serial PRIMARY KEY,
     app_name VARCHAR(100) NOT NULL UNIQUE,
-    redirect_url VARCHAR(255) NOT NULL
+    client_id VARCHAR(100) NOT NULL UNIQUE,
+    client_secret_hash VARCHAR(255) NOT NULL,
+    redirect_uris TEXT[] NOT NULL -- An array of allowed redirect URIs
 );
 ```
 
-### 5. User-Application Mapping Table（使用者-應用程式映射表格）
+### 4. User-Application Consent Table（使用者應用程式授權表格）
 
-> 用於將使用者與其有權訪問的應用程式關聯起來這個表格包括使用者ID和應用程式ID的關聯資訊
+> 用於記錄使用者同意授權給某個應用程式的範圍（Scopes）。
 
 ```sql
-CREATE TABLE user_app_mapping (
-    mapping_id serial PRIMARY KEY,
+CREATE TABLE user_app_consent (
+    consent_id serial PRIMARY KEY,
     user_id INT NOT NULL,
     app_id INT NOT NULL,
+    granted_scopes TEXT[] NOT NULL,
+    last_granted_at TIMESTAMPTZ NOT NULL DEFAULT current_timestamp,
 
-    FOREIGN KEY (user_id) REFERENCES user_table (user_id),
-    FOREIGN KEY (app_id) REFERENCES application_table (app_id)
+    FOREIGN KEY (user_id) REFERENCES user_table (user_id) ON DELETE CASCADE,
+    FOREIGN KEY (app_id) REFERENCES application_table (app_id) ON DELETE CASCADE,
+    UNIQUE (user_id, app_id)
 );
-
 ```
 
-### 6. Audit Log Table（審計日誌表格）
+### 5. Audit Log Table（審計日誌表格）
 
-> 用於記錄與使用者登錄和身份驗證相關的活動，如成功登錄、失敗登錄嘗試、會話終止等
+> 記錄與安全相關的活動，用於追蹤和分析。
 
 ```sql
 CREATE TABLE audit_log (
     log_id serial PRIMARY KEY,
     user_id INT,
     action VARCHAR(100) NOT NULL,
-    timestamp TIMESTAMPTZ NOT NULL,
+    ip_address VARCHAR(50),
+    user_agent TEXT,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT current_timestamp,
 
-    FOREIGN KEY (user_id) REFERENCES user_table (user_id)
-);
-
-```
-
-### 7. Metadata Table（元數據表格）
-
-> 存儲與SSO配置相關的元數據，如令牌簽名金鑰、令牌有效期設置等
-
-```sql
-CREATE TABLE metadata_table (
-    metadata_id serial PRIMARY KEY,
-    key VARCHAR(100) NOT NULL UNIQUE,
-    value TEXT
+    FOREIGN KEY (user_id) REFERENCES user_table (user_id) ON DELETE SET NULL
 );
 ```
 
-### 8. Role and Permissions Table（角色和權限表格）
+### 6. Role and Permission Tables（角色與權限表格）
 
-> 如果SSO系統需要處理角色和權限，可以包括用於存儲角色和權限資訊的表格
+> 實現 RBAC (Role-Based Access Control) 的核心表格。
 
 ```sql
 CREATE TABLE role_table (
     role_id serial PRIMARY KEY,
-    role_name VARCHAR(50) NOT NULL
+    role_name VARCHAR(50) NOT NULL UNIQUE
 );
 
-CREATE TABLE permissions_table (
+CREATE TABLE permission_table (
     permission_id serial PRIMARY KEY,
-    permission_name VARCHAR(100) NOT NULL UNIQUE
+    permission_name VARCHAR(100) NOT NULL UNIQUE,
+    description TEXT
 );
 
 CREATE TABLE user_role_mapping (
-    mapping_id serial PRIMARY KEY UNIQUE,
     user_id INT NOT NULL,
     role_id INT NOT NULL,
-    FOREIGN KEY (user_id) REFERENCES user_table (user_id),
-    FOREIGN KEY (role_id) REFERENCES role_table (role_id)
+    PRIMARY KEY (user_id, role_id),
+    FOREIGN KEY (user_id) REFERENCES user_table (user_id) ON DELETE CASCADE,
+    FOREIGN KEY (role_id) REFERENCES role_table (role_id) ON DELETE CASCADE
 );
 
 CREATE TABLE role_permission_mapping (
-    mapping_id serial PRIMARY KEY UNIQUE,
     role_id INT NOT NULL,
     permission_id INT NOT NULL,
-    FOREIGN KEY (role_id) REFERENCES role_table (role_id),
-    FOREIGN KEY (permission_id) REFERENCES permissions_table (permission_id)
+    PRIMARY KEY (role_id, permission_id),
+    FOREIGN KEY (role_id) REFERENCES role_table (role_id) ON DELETE CASCADE,
+    FOREIGN KEY (permission_id) REFERENCES permission_table (permission_id) ON DELETE CASCADE
 );
 ```
 
@@ -157,84 +136,77 @@ CREATE TABLE role_permission_mapping (
 ```sql
 CREATE TABLE user_table (
     user_id serial PRIMARY KEY,
-    username VARCHAR(50) NOT NULL,
-    password_hash VARCHAR(100) NOT NULL,
-    email VARCHAR(100),
-    status BOOLEAN
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    email VARCHAR(100) UNIQUE,
+    status VARCHAR(20) NOT NULL DEFAULT 'active' -- e.g., active, inactive, locked
 );
 
-CREATE TABLE session_table (
-    session_id serial PRIMARY KEY,
-    user_id INT NOT NULL,
-    start_time TIMESTAMPTZ NOT NULL DEFAULT current_timestamp,
-    expiration_time TIMESTAMPTZ NOT NULL DEFAULT current_timestamp + interval '1 hour',
-
-    FOREIGN KEY (user_id) REFERENCES user_table (user_id)
-);
-
-CREATE TABLE token_table (
+CREATE TABLE refresh_token_table (
     token_id serial PRIMARY KEY,
     user_id INT NOT NULL,
-    token_type VARCHAR(50) NOT NULL,
-    token_value VARCHAR(255) NOT NULL,
-    expiration_time TIMESTAMPTZ NOT NULL,
+    token_value TEXT NOT NULL,
+    expires_at TIMESTAMPTZ NOT NULL,
+    issued_at TIMESTAMPTZ NOT NULL DEFAULT current_timestamp,
     
-    FOREIGN KEY (user_id) REFERENCES user_table (user_id)
+    FOREIGN KEY (user_id) REFERENCES user_table (user_id) ON DELETE CASCADE
 );
 
 CREATE TABLE application_table (
     app_id serial PRIMARY KEY,
     app_name VARCHAR(100) NOT NULL UNIQUE,
-    redirect_url VARCHAR(255) NOT NULL
+    client_id VARCHAR(100) NOT NULL UNIQUE,
+    client_secret_hash VARCHAR(255) NOT NULL,
+    redirect_uris TEXT[] NOT NULL -- An array of allowed redirect URIs
 );
 
-CREATE TABLE user_app_mapping (
-    mapping_id serial PRIMARY KEY,
+CREATE TABLE user_app_consent (
+    consent_id serial PRIMARY KEY,
     user_id INT NOT NULL,
     app_id INT NOT NULL,
+    granted_scopes TEXT[] NOT NULL,
+    last_granted_at TIMESTAMPTZ NOT NULL DEFAULT current_timestamp,
 
-    FOREIGN KEY (user_id) REFERENCES user_table (user_id),
-    FOREIGN KEY (app_id) REFERENCES application_table (app_id)
+    FOREIGN KEY (user_id) REFERENCES user_table (user_id) ON DELETE CASCADE,
+    FOREIGN KEY (app_id) REFERENCES application_table (app_id) ON DELETE CASCADE,
+    UNIQUE (user_id, app_id)
 );
 
 CREATE TABLE audit_log (
     log_id serial PRIMARY KEY,
     user_id INT,
     action VARCHAR(100) NOT NULL,
-    timestamp TIMESTAMPTZ NOT NULL,
+    ip_address VARCHAR(50),
+    user_agent TEXT,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT current_timestamp,
 
-    FOREIGN KEY (user_id) REFERENCES user_table (user_id)
-);
-
-CREATE TABLE metadata_table (
-    metadata_id serial PRIMARY KEY,
-    key VARCHAR(100) NOT NULL UNIQUE,
-    value TEXT
+    FOREIGN KEY (user_id) REFERENCES user_table (user_id) ON DELETE SET NULL
 );
 
 CREATE TABLE role_table (
     role_id serial PRIMARY KEY,
-    role_name VARCHAR(50) NOT NULL
+    role_name VARCHAR(50) NOT NULL UNIQUE
 );
 
-CREATE TABLE permissions_table (
+CREATE TABLE permission_table (
     permission_id serial PRIMARY KEY,
-    permission_name VARCHAR(100) NOT NULL UNIQUE
+    permission_name VARCHAR(100) NOT NULL UNIQUE,
+    description TEXT
 );
 
 CREATE TABLE user_role_mapping (
-    mapping_id serial PRIMARY KEY UNIQUE,
     user_id INT NOT NULL,
     role_id INT NOT NULL,
-    FOREIGN KEY (user_id) REFERENCES user_table (user_id),
-    FOREIGN KEY (role_id) REFERENCES role_table (role_id)
+    PRIMARY KEY (user_id, role_id),
+    FOREIGN KEY (user_id) REFERENCES user_table (user_id) ON DELETE CASCADE,
+    FOREIGN KEY (role_id) REFERENCES role_table (role_id) ON DELETE CASCADE
 );
 
 CREATE TABLE role_permission_mapping (
-    mapping_id serial PRIMARY KEY UNIQUE,
     role_id INT NOT NULL,
     permission_id INT NOT NULL,
-    FOREIGN KEY (role_id) REFERENCES role_table (role_id),
-    FOREIGN KEY (permission_id) REFERENCES permissions_table (permission_id)
+    PRIMARY KEY (role_id, permission_id),
+    FOREIGN KEY (role_id) REFERENCES role_table (role_id) ON DELETE CASCADE,
+    FOREIGN KEY (permission_id) REFERENCES permission_table (permission_id) ON DELETE CASCADE
 );
 ```

@@ -26,10 +26,10 @@ nest new sso
 ? Which package manager would you ❤️  to use?
 ```
 
-### 選擇 yarn
+### 選擇 pnpm
 
 ```shell
-? Which package manager would you ❤️  to use? yarn
+? Which package manager would you ❤️  to use? pnpm
 CREATE sso/.eslintrc.js (663 bytes)
 CREATE sso/.prettierrc (51 bytes)
 CREATE sso/nest-cli.json (171 bytes)
@@ -51,7 +51,7 @@ CREATE sso/test/jest-e2e.json (183 bytes)
 👉  Get started with the following commands:
 
 $ cd sso
-$ yarn run start
+$ pnpm run start
 ```
 
 ### 設定 port
@@ -76,7 +76,7 @@ bootstrap();
 ```shell
 cd sso
 
-yarn run start
+pnpm run start
 ```
 
 ```shell
