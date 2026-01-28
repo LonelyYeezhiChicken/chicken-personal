@@ -12,18 +12,27 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 8
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: "pnpm"
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 8
-          run_install: true
+          cache: 'pnpm'
+          cache-dependency-path: 'chicken-personal/pnpm-lock.yaml'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+        working-directory: ./chicken-personal
+
       - name: Build
         run: pnpm build
+        working-directory: ./chicken-personal
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
