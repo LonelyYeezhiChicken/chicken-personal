@@ -22,22 +22,23 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: 'pnpm'
-          cache-dependency-path: 'chicken-personal/pnpm-lock.yaml'
+          cache: "pnpm"
+          # 直接指向根目錄的鎖定檔，解決 "unable to cache" 報錯
+          cache-dependency-path: "pnpm-lock.yaml"
 
       - name: Install dependencies
+        # 確保使用 frozen-lockfile 以保證環境一致性
         run: pnpm install --frozen-lockfile
-        working-directory: ./chicken-personal
 
       - name: Build
+        # Docusaurus 預設產出路徑為 ./build
         run: pnpm build
-        working-directory: ./chicken-personal
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./chicken-personal/build
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: 'docs: deploy to gh-pages'
+          publish_dir: ./build
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_message: "docs: deploy to gh-pages"
