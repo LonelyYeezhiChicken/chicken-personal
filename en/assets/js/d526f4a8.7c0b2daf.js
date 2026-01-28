@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchicken_personal=self.webpackChunkchicken_personal||[]).push([[5077],{30505:e=>{e.exports=JSON.parse('{"label":"phaserJS","permalink":"/en/blog/tags/phaser-js","allTagsPath":"/en/blog/tags","count":1}')}}]);

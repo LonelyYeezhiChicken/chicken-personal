@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchicken_personal=self.webpackChunkchicken_personal||[]).push([[87624],{83199:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/phaser-3","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

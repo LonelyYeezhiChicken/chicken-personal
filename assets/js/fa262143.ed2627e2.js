@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchicken_personal=self.webpackChunkchicken_personal||[]).push([[37116],{27430:s=>{s.exports=JSON.parse('{"label":"ts","permalink":"/blog/tags/ts","allTagsPath":"/blog/tags","count":1}')}}]);

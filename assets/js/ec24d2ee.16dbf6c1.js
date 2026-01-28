@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchicken_personal=self.webpackChunkchicken_personal||[]).push([[56102],{63688:e=>{e.exports=JSON.parse('{"label":"game","permalink":"/blog/tags/game","allTagsPath":"/blog/tags","count":1}')}}]);

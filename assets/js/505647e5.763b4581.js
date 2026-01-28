@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchicken_personal=self.webpackChunkchicken_personal||[]).push([[79881],{56795:e=>{e.exports=JSON.parse('{"label":"WebGL","permalink":"/docs/tags/web-gl","allTagsPath":"/docs/tags","count":1,"items":[{"id":"threeJs/note1","title":"\ud83c\udf0d WebGL \u7c21\u4ecb","description":"Three JS - WebGL","permalink":"/docs/threeJs/note1"}]}')}}]);
