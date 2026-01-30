@@ -2,7 +2,7 @@
 sidebar_position: 5
 description: 使用 Scoop 套件管理器在 Windows 上快速安裝 Mockoon。
 key: [Mockoon, Scoop, Windows, API, Mock]
-tags: [Mockoon, Scoop, Windows, API, Mock]
+tags: [Mockoon, Scoop, Windows, API, Mock, AI筆記]
 ---
 
 # 👀 使用 Scoop 安裝

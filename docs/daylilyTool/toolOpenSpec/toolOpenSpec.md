@@ -2,7 +2,7 @@
 sidebar_position: 5
 description: OpenSpec 的核心概念與常用指令，用於與 AI 代理進行高效的軟體開發協作。
 key: [OpenSpec, AI, Agent, CLI, Software Development]
-tags: [OpenSpec, AI, Agent, CLI, Software Development]
+tags: [OpenSpec, AI, Agent, CLI, Software Development, AI筆記]
 ---
 
 # ⚙️ OpenSpec 簡介

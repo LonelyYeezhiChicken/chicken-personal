@@ -2,7 +2,7 @@
 sidebar_position: 10
 description: Gemini CLI 的 Skill 功能，允許你定義可重複使用的行為與指令集，讓 Gemini 代理更懂你的專案。
 key: [Gemini, AI, CLI, Skill, Agent, OpenCode]
-tags: [Gemini, AI, CLI, Skill, Agent, OpenCode]
+tags: [Gemini, AI, CLI, Skill, Agent, OpenCode, AI筆記]
 ---
 
 # 🤖 Gemini CLI 的 Skill 功能

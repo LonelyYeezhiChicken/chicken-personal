@@ -2,7 +2,7 @@
 sidebar_position: 15
 description: Mockoon 的基本使用教學，從建立第一個 Mock API 環境到設定路由。
 key: [Mockoon, Usage, API, Mock, Tutorial]
-tags: [Mockoon, Usage, API, Mock, Tutorial]
+tags: [Mockoon, Usage, API, Mock, Tutorial, AI筆記]
 ---
 
 # 👀 Mockoon 基本用法

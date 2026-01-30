@@ -2,7 +2,7 @@
 sidebar_position: 10
 description: 使用 Docker 容器化運行 Mockoon，實現環境隔離與快速部署。
 key: [Mockoon, Docker, API, Mock, Container]
-tags: [Mockoon, Docker, API, Mock, Container]
+tags: [Mockoon, Docker, API, Mock, Container, AI筆記]
 ---
 
 # 👀 使用 Docker 安裝

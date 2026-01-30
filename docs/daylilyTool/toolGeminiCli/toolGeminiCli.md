@@ -2,7 +2,7 @@
 sidebar_position: 5
 description: Gemini CLI 的核心概念與常用指令，用於與 Gemini AI 進行互動。
 key: [Gemini, AI, CLI, Google, Development]
-tags: [Gemini, AI, CLI, Google, Development]
+tags: [Gemini, AI, CLI, Google, Development, AI筆記]
 ---
 
 # 🤖 Gemini CLI 簡介
