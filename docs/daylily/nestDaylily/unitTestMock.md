@@ -167,7 +167,7 @@ export class UserModule {}
 > 宣告會用到的服務
 
 :::caution
-import { ErrorCheckModule } from '../error-check/error-check.module';
+`import { ErrorCheckModule } from '../error-check/error-check.module';`
 
 由於路徑並沒有跟 `user.service.spec.ts` 同一層，因此需要使用 `../` 否則測試運行時會吃不到檔案
 :::

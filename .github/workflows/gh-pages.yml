@@ -9,6 +9,9 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: chicken-personal
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -16,29 +19,26 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 9
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: "pnpm"
-          # 直接指向根目錄的鎖定檔，解決 "unable to cache" 報錯
-          cache-dependency-path: "pnpm-lock.yaml"
+          cache-dependency-path: "chicken-personal/pnpm-lock.yaml"
 
       - name: Install dependencies
-        # 確保使用 frozen-lockfile 以保證環境一致性
         run: pnpm install --frozen-lockfile
 
       - name: Build
-        # Docusaurus 預設產出路徑為 ./build
         run: pnpm build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./chicken-personal/build
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
-          commit_message: "docs: deploy to gh-pages"
+          commit_message: "docs: deploy to gh-pages [Docusaurus v3]"

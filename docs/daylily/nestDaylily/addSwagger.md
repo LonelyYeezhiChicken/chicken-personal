@@ -46,4 +46,4 @@ bootstrap();
 pnpm start
 ```
 
-> <http://localhost:3050/api>
+> [http://localhost:3050/api](http://localhost:3050/api)

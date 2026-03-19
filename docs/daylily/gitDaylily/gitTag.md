@@ -13,7 +13,7 @@ tags: [git, git雜記]
 git log --oneline
 ```
 
-接下來，使用以下語法就可以貼上 tag 了。後面的 <commit_SHA-1> 也可以忽略不打，這樣的話是直接貼到最新的 commit 上。
+接下來，使用以下語法就可以貼上 tag 了。後面的 &lt;commit_SHA-1&gt; 也可以忽略不打，這樣的話是直接貼到最新的 commit 上。
 
 ```shell
 git tag <tag_name> <commit_SHA-1>

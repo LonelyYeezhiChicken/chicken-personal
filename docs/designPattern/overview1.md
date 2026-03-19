@@ -9,7 +9,7 @@ tags: [設計模式, Design Pattern]
 
 ## 設計模式的起源
 
-- 設計模式的誕生 : 出自於 Christopher Alexander<哈佛大學建築學博士>，號稱 The father of patterns
+- 設計模式的誕生 : 出自於 Christopher Alexander (哈佛大學建築學博士)，號稱 The father of patterns
 - Christopher Alexander 與其團隊用了將近 20 年的時間，調查住宅周邊環境
 - 他們發現人們對舒適的住宅與城市環境之間存在著一些共同的認同定律
 - Christopher Alexander 在著作 A Pattern Language: Towns, Buildings, Construction 中把這些認同規律歸納為 253 个模式

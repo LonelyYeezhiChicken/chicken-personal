@@ -99,9 +99,9 @@ java -jar [jar name].jar --application-test.properties=test
 
 6. **隨機屬性設定：** 如果您透過 random.* 設定了隨機屬性，這些設定也會被納入考慮。
 
-7. **外部配置文件（針對特定環境）：** 對於特定的 {profile} 環境，您可以在應用 JAR 包外部準備配置文件，例如 app-{profile}.properties 或使用 YAML 格式的文件。
+7. **外部配置文件（針對特定環境）：** 對於特定的 `{profile}` 環境，您可以在應用 JAR 包外部準備配置文件，例如 `app-{profile}.properties` 或使用 YAML 格式的文件。
 
-8. **內部配置文件（針對特定環境）：** 同樣地，對於特定的 {profile} 環境，您也可以在應用 JAR 包內部設置配置文件，例如 app-{profile}.properties 或使用 YAML 定義的文件。
+8. **內部配置文件（針對特定環境）：** 同樣地，對於特定的 `{profile}` 環境，您也可以在應用 JAR 包內部設置配置文件，例如 `app-{profile}.properties` 或使用 YAML 定義的文件。
 
 9. **外部的 application.properties 和 YAML 配置：** 若這些配置位於應用 JAR 包的外部。
 
