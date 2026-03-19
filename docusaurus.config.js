@@ -5,182 +5,200 @@ const { themes } = require("prism-react-renderer");
 const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
-  title: "這是孤獨一隻雞的故事小天地",
-  tagline: "Hi, I'm Chicken 🐔",
-  favicon: "img/cLogo.svg",
+/** @type {async () => import('@docusaurus/types').Config} */
+async function createConfig() {
+  const remarkMath = (await import("remark-math")).default;
+  const rehypeKatex = (await import("rehype-katex")).default;
 
-  // Set the production url of your site here
-  url: "https://blog.lychicken.com",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  return {
+    title: "這是孤獨一隻雞的故事小天地",
+    tagline: "Hi, I'm Chicken 🐔",
+    favicon: "img/cLogo.svg",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "LonelyYeezhiChicken", // Usually your GitHub org/user name.
-  projectName: "chicken-personal", // Usually your repo name.
+    // Set the production url of your site here
+    url: "https://blog.lychicken.com",
+    // Set the /<baseUrl>/ pathname under which your site is served
+    // For GitHub pages deployment, it is often '/<projectName>/'
+    baseUrl: "/",
 
-  onBrokenLinks: "warn",
+    // GitHub pages deployment config.
+    // If you aren't using GitHub pages, you don't need these.
+    organizationName: "LonelyYeezhiChicken", // Usually your GitHub org/user name.
+    projectName: "chicken-personal", // Usually your repo name.
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: "zh-Hant",
-    locales: ["zh-Hant", "en"],
-  },
-
-  markdown: {
-    mermaid: true,
+    onBrokenLinks: "warn",
     onBrokenMarkdownLinks: "warn",
-  },
 
-  presets: [
-    [
-      "classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      {
-        docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/LonelyYeezhiChicken/chicken-personal/tree/main/",
-          showLastUpdateTime: true,
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/LonelyYeezhiChicken/chicken-personal/tree/main/",
-        },
-        theme: {
-          customCss: require.resolve("./src/css/custom.css"),
-        },
-        gtag: {
-          trackingID: "G-23JXYZ7T1V",
-          anonymizeIP: true,
-        },
-      },
-    ],
-  ],
+    // Even if you don't use internalization, you can use this field to set useful
+    // metadata like html lang. For example, if your site is Chinese, you may want
+    // to replace "en" with "zh-Hans".
+    i18n: {
+      defaultLocale: "zh-Hant",
+      locales: ["zh-Hant", "en"],
+    },
 
-  themes: ["@docusaurus/theme-mermaid"],
+    markdown: {
+      mermaid: true,
+    },
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: "img/chicken.jpg",
-      metadata: [
-        { name: "viewport", content: "width=device-width, initial-scale=1.0" },
-        { property: "og:title", content: "Chicken Say Hi" },
-        { property: "og:url", content: "https://blog.lychicken.com/" },
-        { property: "og:site_name", content: "孤獨一隻雞" },
-        { property: "og:description", content: "這是一隻雞的小天地" },
-        { property: "og:locale", content: "zh_TW" },
-        { property: "og:width", content: "300" },
-        { property: "og:height", content: "301" },
-        { property: "article:author", content: "Lonely Yeezhi Chicken" },
-        { property: "article:tag", content: "雞" },
-        { property: "article:tag", content: "一隻雞" },
-        { property: "article:tag", content: "孤獨一隻雞" },
-        { property: "article:tag", content: "作品" },
-        { property: "article:tag", content: "Chicken" },
-        { property: "article:tag", content: "Chicken Say Hi" },
-        { property: "article:tag", content: "Lonely Yeezhi Chicken" },
+    presets: [
+      [
+        "classic",
+        /** @type {import('@docusaurus/preset-classic').Options} */
         {
-          property: "article:tag",
-          content:
-            "前端, 後端, 全端, 網頁, 開發, 技術, 網頁開發, 前端開發, 後端開發, 全端開發, JavaScript, HTML, CSS, 經驗分享, 手札, 筆記",
-        },
-        {
-          property: "article:tag",
-          content:
-            "frontend, backend, web, C#, Java, PHP, JavaScript, HTML, CSS, 經驗分享, 手札, note",
+          docs: {
+            sidebarPath: require.resolve("./sidebars.js"),
+            // Please change this to your repo.
+            // Remove this to remove the "edit this page" links.
+            editUrl:
+              "https://github.com/LonelyYeezhiChicken/chicken-personal/tree/main/",
+            showLastUpdateTime: true,
+            remarkPlugins: [remarkMath],
+            rehypePlugins: [rehypeKatex],
+          },
+          blog: {
+            showReadingTime: true,
+            // Please change this to your repo.
+            // Remove this to remove the "edit this page" links.
+            editUrl:
+              "https://github.com/LonelyYeezhiChicken/chicken-personal/tree/main/",
+            remarkPlugins: [remarkMath],
+            rehypePlugins: [rehypeKatex],
+          },
+          theme: {
+            customCss: require.resolve("./src/css/custom.css"),
+          },
+          gtag: {
+            trackingID: "G-23JXYZ7T1V",
+            anonymizeIP: true,
+          },
         },
       ],
-      navbar: {
-        title: "Chicken Say Hi",
-        logo: {
-          alt: "Chicken Say Hi Logo",
-          src: "img/logo.svg",
-        },
-        items: [
+    ],
+
+    themes: ["@docusaurus/theme-mermaid"],
+
+    themeConfig:
+      /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+      ({
+        // Replace with your project's social card
+        image: "img/chicken.jpg",
+        metadata: [
+          { name: "viewport", content: "width=device-width, initial-scale=1.0" },
+          { property: "og:title", content: "Chicken Say Hi" },
+          { property: "og:url", content: "https://blog.lychicken.com/" },
+          { property: "og:site_name", content: "孤獨一隻雞" },
+          { property: "og:description", content: "這是一隻雞的小天地" },
+          { property: "og:locale", content: "zh_TW" },
+          { property: "og:width", content: "300" },
+          { property: "og:height", content: "301" },
+          { property: "article:author", content: "Lonely Yeezhi Chicken" },
+          { property: "article:tag", content: "雞" },
+          { property: "article:tag", content: "一隻雞" },
+          { property: "article:tag", content: "孤獨一隻雞" },
+          { property: "article:tag", content: "作品" },
+          { property: "article:tag", content: "Chicken" },
+          { property: "article:tag", content: "Chicken Say Hi" },
+          { property: "article:tag", content: "Lonely Yeezhi Chicken" },
           {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
-            label: "筆記",
+            property: "article:tag",
+            content:
+              "前端, 後端, 全端, 網頁, 開發, 技術, 網頁開發, 前端開發, 後端開發, 全端開發, JavaScript, HTML, CSS, 經驗分享, 手札, 筆記",
           },
-          { to: "/blog", label: "作品", position: "left" },
-          // {
-          //   type: "localeDropdown",
-          //   position: "right",
-          // },
           {
-            href: "https://town.lychicken.com",
-            label: "小雞鎮",
-            position: "right",
-          },
-          {
-            href: "https://github.com/LonelyYeezhiChicken",
-            label: "GitHub",
-            position: "right",
-          },
-          {
-            type: "dropdown",
-            label: "友情連結",
-            position: "right",
-            items: [
-              {
-                href: "https://hackmd.io/@JgGTFI_BRjyUv6YuG1bmUQ",
-                label: "梁大哥's Blog",
-              },
-              {
-                href: "https://mileschou.me/",
-                label: "Miles's Blog",
-              },
-              {
-                href: "https://mtwmt.com/",
-                label: "Mandy's Web",
-              },
-              {
-                href: "https://tedmax100.github.io/",
-                label: "阿雷's Blog",
-              },
-              {
-                href: "https://dotblogs.com.tw/yc421206",
-                label: "余小章 @ 大內殿堂",
-              },
-            ],
+            property: "article:tag",
+            content:
+              "frontend, backend, web, C#, Java, PHP, JavaScript, HTML, CSS, 經驗分享, 手札, note",
           },
         ],
-      },
-      footer: {
-        style: "dark",
-        copyright: `Copyright © ${new Date().getFullYear()}@BY Lonely Yeezhi Chicken.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-        additionalLanguages: ["csharp", "java", "powershell"],
-      },
-      mermaid: {
-        theme: { light: "neutral" },
-      },
-    }),
-  plugins: [
-    [
-      require.resolve("docusaurus-lunr-search"),
+        navbar: {
+          title: "Chicken Say Hi",
+          logo: {
+            alt: "Chicken Say Hi Logo",
+            src: "img/logo.svg",
+          },
+          items: [
+            {
+              type: "docSidebar",
+              sidebarId: "tutorialSidebar",
+              position: "left",
+              label: "筆記",
+            },
+            { to: "/blog", label: "作品", position: "left" },
+            // {
+            //   type: "localeDropdown",
+            //   position: "right",
+            // },
+            {
+              href: "https://town.lychicken.com",
+              label: "小雞鎮",
+              position: "right",
+            },
+            {
+              href: "https://github.com/LonelyYeezhiChicken",
+              label: "GitHub",
+              position: "right",
+            },
+            {
+              type: "dropdown",
+              label: "友情連結",
+              position: "right",
+              items: [
+                {
+                  href: "https://hackmd.io/@JgGTFI_BRjyUv6YuG1bmUQ",
+                  label: "梁大哥's Blog",
+                },
+                {
+                  href: "https://mileschou.me/",
+                  label: "Miles's Blog",
+                },
+                {
+                  href: "https://mtwmt.com/",
+                  label: "Mandy's Web",
+                },
+                {
+                  href: "https://tedmax100.github.io/",
+                  label: "阿雷's Blog",
+                },
+                {
+                  href: "https://dotblogs.com.tw/yc421206",
+                  label: "余小章 @ 大內殿堂",
+                },
+              ],
+            },
+          ],
+        },
+        footer: {
+          style: "dark",
+          copyright: `Copyright © ${new Date().getFullYear()}@BY Lonely Yeezhi Chicken.`,
+        },
+        prism: {
+          theme: lightCodeTheme,
+          darkTheme: darkCodeTheme,
+          additionalLanguages: ["csharp", "java", "powershell"],
+        },
+        mermaid: {
+          theme: { light: "neutral" },
+        },
+      }),
+    plugins: [
+      [
+        require.resolve("docusaurus-lunr-search"),
+        {
+          languages: ["zh"],
+        },
+      ],
+    ],
+    stylesheets: [
       {
-        languages: ["zh"],
+        href: "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",
+        type: "text/css",
+        integrity:
+          "sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV",
+        crossorigin: "anonymous",
       },
     ],
-  ],
-};
+  };
+}
 
-module.exports = config;
+module.exports = createConfig;
