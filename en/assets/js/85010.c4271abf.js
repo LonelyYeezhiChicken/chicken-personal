@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkchicken_personal=globalThis.webpackChunkchicken_personal||[]).push([[85010],{85010(e,a,c){c.d(a,{createTreemapServices:()=>s.d});var s=c(38153);c(56100)}}]);

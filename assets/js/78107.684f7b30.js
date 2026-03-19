@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkchicken_personal=globalThis.webpackChunkchicken_personal||[]).push([[78107],{488(c,e,h){h.r(e)}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkchicken_personal=globalThis.webpackChunkchicken_personal||[]).push([[60740],{60740(e,c,a){a.d(c,{createPieServices:()=>s.f});var s=a(75184);a(56100)}}]);
