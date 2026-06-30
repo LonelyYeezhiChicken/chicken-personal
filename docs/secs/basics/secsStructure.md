@@ -2,87 +2,85 @@
 sidebar_position: 1
 description: SECS-II 訊息的結構到底長什麼樣？SxFy 是什麼意思？一次搞懂 Stream, Function, W-Bit 和 Data Item。
 key: [SECS, GEM, SxFy, Stream, Function, SECS-II, Data Item, List]
-tags: [SECS, GEM, SxFy, Stream, Function, SECS-II, Data Item, List]
+tags: [SECS, GEM, 基礎, AI筆記]
 ---
 
 # 🔰 SECS-II 訊息結構
 
-SECS-II 訊息是 Host 和 Equipment 之間溝通的最小單位。每個訊息都像一個結構嚴謹的「數據包」，由「標頭 (Header)」和「內文 (Body)」組成。
+本章節解析 SECS-II 訊息的最小組成單元。搞懂 SxFy 標頭、W-Bit 與 Data Item，是查閱任何 Stream 訊息字典（如 [`s1-equipmentStatus`](/docs/secs/messages/s1-equipmentStatus)）的前置知識。
 
--   **標頭 (Header)**：描述這則訊息的「目的」，像是訊息的分類、指令和是否需要回覆。
--   **內文 (Body)**：訊息的「內容」，包含了要傳遞的具體數據。
+## 1. 訊息組成：Header + Body
 
-## 訊息標頭：SxFy 的世界
+| 部分 | 職責 |
+|------|------|
+| **Header（標頭）** | 訊息身份：Stream、Function、是否需回覆 |
+| **Body（內文）** | 具體數據，由 Data Item 組成 |
 
-標頭中最核心的概念就是 `SxFy`，它定義了訊息的獨特身份和用途。
+HSMS 傳輸時，Header 外還有 **10-byte HSMS Message Header**（Session ID、W-Bit、System Bytes 等），詳見 [`hsmsMessage`](/docs/secs/protocol-advanced/hsmsMessage)。
 
-### Stream (S)：訊息的分類
+## 2. 訊息標頭：SxFy
 
-**Stream** 是訊息的「主要類別」，用來區分不同領域的訊息。你可以把它想像成圖書館的「藏書區」。
+### 2.1 Stream (S) 與 Function (F)
 
-例如：
--   `S1`：設備狀態 (Equipment Status)，如查詢設備是否在線上。
--   `S2`：設備控制 (Equipment Control)，如命令設備開始或停止。
--   `S6`：數據收集 (Data Collection)，如回報生產數據。
--   `S7`：配方管理 (Recipe Management)，如上傳或下載生產配方。
+- **Stream**：訊息主類別（S1=狀態、S2=控制、S5=警報…）
+- **Function**：該類別下的具體訊息編號
+- **範圍**：Stream 1–127，Function 1–255
 
-### Function (F)：訊息的指令
+完整 Stream 地圖見 [`streamOverview`](/docs/secs/messages/streamOverview)。
 
-**Function** 是在特定 Stream 下的「具體指令」。你可以把它想像成藏書區裡的「某一本書」。
+### 2.2 Primary 與 Reply 配對
 
--   **奇數 Function** 通常代表「請求」或「發送」。
--   **偶數 Function** 通常代表「回覆」。
+- **奇數 F** 通常為 Primary（請求/發送）
+- **偶數 F** 通常為 Reply（回覆）
 
-例如，`S1F1` 和 `S1F2` 是一對常見的訊息：
--   `S1F1` (由 Host 發送)："Are you there?" (請求確認設備是否在線)
--   `S1F2` (由 Equipment 回覆)："I am here." (回覆確認在線)
+例如 `S1F1`（請求）→ `S1F2`（回覆）。
 
-### W-Bit (Wait Bit)：是否需要回覆？
+:::caution 例外
+**S9（Error Messages）** 是專門回報錯誤的 Stream，不遵循一般奇偶配對規則。詳見 [`s9-error`](/docs/secs/messages/s9-error)。
+:::
 
-W-Bit 是一個標記，用來指示這則訊息是否「需要回覆」。
--   `W = 1`：需要回覆。發送方會等待接收方的回覆訊息。
--   `W = 0`：不需要回覆。
+### 2.3 W-Bit (Wait Bit)
 
-例如，當 Host 發送 `S1F1` (W=1) 時，它期望 Equipment 必須回覆 `S1F2`。
+| W-Bit | 意義 |
+|-------|------|
+| W=1 | 需要回覆，發送方等待 Reply |
+| W=0 | 不需回覆 |
 
----
+Host 發送 `S1F1` (W=1) 時，期望 Equipment 回覆 `S1F2`。
 
-## 訊息內文：由「資料項目」組成
-
-如果標頭是信封，那訊息內文就是信紙，上面寫著要傳遞的具體內容。內文是由一或多個「**資料項目 (Data Item)**」所組成。
-
-SECS-II 定義了豐富的資料項目類型，讓你可以傳遞任何複雜的數據。
-
-### 主要資料項目 (Data Item) 類型
+## 3. 訊息內文：Data Item
 
 | 類型 | 名稱 | 描述 | 範例 |
-| :--- | :--- | :--- | :--- |
-| **L** | List | 列表，可以包含其他資料項目，形成複雜的樹狀結構 | `L 2 <item1> <item2>` |
+|------|------|------|------|
+| **L** | List | 可巢狀的列表 | `L 2 <item1> <item2>` |
 | **A** | ASCII | ASCII 字串 | `A 5 "HELLO"` |
-| **J** | JIS-8 | 日文字元集 | - |
+| **J** | JIS-8 | 日文字元集 | — |
 | **B** | Binary | 二進位數據 | `B 4 <data>` |
-| **BOOLEAN** | 布林 | `0` (False) 或 `1` (True) | `BOOLEAN 1 1` |
-| **I1, I2, I4, I8** | Signed Integer | 帶正負號的整數 (1, 2, 4, 8位元組) | `I2 2 -100` |
-| **U1, U2, U4, U8** | Unsigned Integer | 無正負號的整數 (1, 2, 4, 8位元組) | `U4 4 4294967295` |
-| **F4, F8** | Floating Point | 浮點數 (4, 8位元組) | `F4 4 3.14` |
+| **BOOLEAN** | 布林 | True / False | `BOOLEAN 1 1` |
+| **I1–I8** | Signed Integer | 有號整數 | `I2 2 -100` |
+| **U1–U8** | Unsigned Integer | 無號整數 | `U4 4 4294967295` |
+| **F4, F8** | Floating Point | 浮點數 | `F4 4 3.14` |
 
+## 4. 範例：S2F41 Remote Command
 
-### 範例：一則真實的 S2F41 命令
-
-假設 Host 要對 Equipment 下達一個指令 `START_PROCESS`，並附帶兩個參數：`Recipe.rcp` 和 `150`。
-
-這通常會使用 `S2F41` (Host Command Send) 來發送。訊息的結構可能會像這樣 (以 YAML 格式示意)：
+Host 下達 `START_PROCESS` 指令（結構因設備而異，以下為示意）：
 
 ```yaml
-# 標頭 (Header)
-S2F41 W (Stream=2, Function=41, Expect Reply)
+# Header
+S2F41 W
 
-# 內文 (Body)
-L 2                                    # 一個包含 2 個項目的列表
-  A 13 "START_PROCESS"                 # 項目1: ASCII 字串，指令名稱
-  L 2                                  # 項目2: 一個包含 2 個參數的子列表
-    A 9 "Recipe.rcp"                   #    參數1: ASCII 字串，配方檔案名稱
-    I2 2 150                           #    參數2: 2-byte 整數，數值
+# Body
+L 2
+  A 13 "START_PROCESS"
+  L 2
+    A 9 "Recipe.rcp"
+    I2 2 150
 ```
 
-透過這種結構，SECS-II 能夠以一種極度標準化且可擴充的方式，在 Host 和 Equipment 之間傳遞各式各樣的複雜指令和數據。
+完整 S2 訊息字典見 [`s2-equipmentControl`](/docs/secs/messages/s2-equipmentControl)。
+
+## 5. 與其他文章的關聯
+
+- Stream 總覽：[`streamOverview`](/docs/secs/messages/streamOverview)
+- S1 完整對照表：[`s1-equipmentStatus`](/docs/secs/messages/s1-equipmentStatus)
+- SECS 與 GEM：[`secsAndGem`](/docs/secs/overView/secsAndGem)

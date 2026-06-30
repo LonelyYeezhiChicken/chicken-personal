@@ -2,70 +2,82 @@
 sidebar_position: 2
 description: SECS/GEM 的通訊協定：SECS-I, SECS-II, HSMS 是什麼？訊息是如何被傳遞的？
 key: [SECS, GEM, 通訊協定, SECS-I, SECS-II, HSMS, RS-232, TCP/IP]
-tags: [SECS, GEM, 通訊協定, SECS-I, SECS-II, HSMS, RS-232, TCP/IP]
+tags: [SECS, GEM, 概觀, AI筆記]
 ---
 
 # 🔰 SECS 通訊協定
 
-在上一篇文章中，我們知道了 SECS 是設備 (Equipment) 和主機 (Host) 之間的溝通語言。但是，這些「話」是怎麼從 A 點傳到 B 點的呢？這就需要通訊協定 (Protocol) 了。
+本章節解析 SECS 訊息如何從 Host 傳到 Equipment。SECS-II 定義「說什麼」，SECS-I 與 HSMS 定義「怎麼傳」——兩者分離是理解整個架構的關鍵。
 
-我們可以把一次完整的通訊想像成「寄信」。你需要：
-1.  **信件內容** (你想說什麼？)
-2.  **傳遞方式** (信要怎麼寄出去？)
+## 1. SECS-II (SEMI E5)：信件的內容
 
-在 SECS 的世界裡，這兩件事分別由不同的標準來定義。
+**SECS-II** 定義訊息的內容與格式：
 
-## SECS-II (SEMI E5)：信件的內容與格式
+- 說什麼（例如 `S1F1` = Are You There）
+- 怎麼組織（List、ASCII、Integer 等 Data Item）
 
-**SECS-II** 定義了訊息的「內容和格式」。它就像是書信的撰寫規則，規定了：
--   你該說什麼 (例如：`S1F1` 代表 "Are you there?")
--   你該怎麼說 (訊息的結構、數據類型等)
+無論使用 SECS-I 或 HSMS 傳遞，**SECS-II 訊息內容相同**。
 
-它定義了數百種標準化的訊息，涵蓋了狀態報告、參數控制、警報處理等各種場景。無論你使用哪種傳遞方式，信件的內容（SECS-II 訊息）都是一樣的。
+> SECS-II 是溝通的**核心內容**，與傳遞方式無關。
 
-> **核心觀念**：SECS-II 是溝通的**核心內容**，與訊息如何傳遞無關。
+訊息代號詳見 [`streamOverview`](/docs/secs/messages/streamOverview)。
 
-## 傳遞方式：SECS-I vs. HSMS
+## 2. 傳遞方式：SECS-I vs HSMS
 
-信寫好了，該怎麼寄出去呢？這裡有兩種方法：傳統的 SECS-I 和現代的 HSMS。
+### 2.1 SECS-I (SEMI E4)：RS-232 序列埠
 
-### SECS-I (SEMI E4)：傳統但可靠的 RS-232 連線
+- 底層：**RS-232** 序列埠（COM Port）
+- 模式：點對點專線，一線一機
+- 速度：常見預設 **9600 bps**（實作可更高）
+- 距離：約 15 公尺以內
+- 傳輸單位：以 **Block** 為單位，含長度、序號與 **Checksum**，透過 ENQ/EOT/ACK/NAK 握手
 
-**SECS-I** 是最早的傳遞方式，它使用 **RS-232** 序列埠 (Serial Port / COM Port) 來傳輸數據。
+適用：老舊設備、單機連線。深入說明見 [`secs1BlockTransfer`](/docs/secs/protocol-advanced/secs1BlockTransfer)（待撰寫）。
 
-你可以把它想像成一個「點對點的專線電話」。
+### 2.2 HSMS (SEMI E37)：TCP/IP 網路
 
--   **優點**：實作簡單、穩定可靠。在只有一台設備和一台主機的簡單情境下非常適用。
--   **缺點**：
-    -   **速度慢**：最高速率通常不超過 9600 bps。
-    -   **距離短**：RS-232 的物理限制使其傳輸距離通常在 15 公尺以內。
-    -   **一對一**：一條 RS-232 線只能連接一台設備。
+- 底層：**TCP/IP**
+- 預設 **TCP Port：5000**
+- 模式：區域網路內一對多
+- 速度：遠超 SECS-I（取決於網路頻寬）
 
-隨著工廠規模擴大，SECS-I 的缺點越來越明顯，因此更現代的 HSMS 應運而生。
+**HSMS-SS（Single Session，E37.1）** 是現代晶圓廠的主流模式，每條 TCP 連線只維持一個 Session，簡化連線管理。
 
-### HSMS (SEMI E37)：高速的 TCP/IP 網路連線
+適用：現代 FAB、多機連線。深入說明見 [`hsmsConnection`](/docs/secs/protocol-advanced/hsmsConnection)。
 
-**HSMS (High-Speed SECS Message Services)** 是基於 **TCP/IP** 網路協定的現代傳遞方式。
+## 3. 連線參數對照
 
-你可以把它想像成透過「網際網路」來寄送訊息。
+| 項目 | SECS-I | HSMS |
+|------|--------|------|
+| 實體介面 | RS-232 | Ethernet |
+| 位址 | COM Port 名稱 | IP + Port（預設 5000） |
+| 連線數 | 1:1 | 1:N |
+| SEMI 標準 | E4 | E37 / E37.1 |
 
--   **優點**：
-    -   **速度快**：傳輸速率遠超 SECS-I，可達 100 Mbps 或更高。
-    -   **無距離限制**：只要在同一個區域網路 (LAN) 內，都可以通訊。
-    -   **一對多**：一台主機可以透過網路同時與多台設備建立連線。
--   **缺點**：相較於 SECS-I，網路設定（如 IP 位址、Port）較為複雜。
+## 4. 三者關係總結
 
-## 總結：三者的關係
+```mermaid
+flowchart TD
+  GEM[GEM E30 設備行為]
+  SECS2[SECS-II E5 訊息內容]
+  HSMS[HSMS E37 傳遞]
+  SECS1[SECS-I E4 傳遞]
+  GEM --> SECS2
+  SECS2 --> HSMS
+  SECS2 --> SECS1
+```
 
--   **SECS-II** 定義了「**說什麼**」(訊息內容)。
--   **SECS-I** 和 **HSMS** 決定了「**怎麼傳**」(傳遞方式)。
+| 特性 | SECS-I (E4) | HSMS (E37) |
+|------|-------------|------------|
+| 底層協定 | RS-232 | TCP/IP |
+| 連線方式 | 點對點 | 網路 |
+| 速度 | 慢（常見 9600 bps） | 快 |
+| 應用場景 | 老舊設備 | 現代工廠 |
 
-| 特性 | SECS-I (SEMI E4) | HSMS (SEMI E37) |
-| :--- | :--- | :--- |
-| **底層協定** | RS-232 序列埠 | TCP/IP |
-| **連線方式** | 點對點 (Point-to-Point) | 網路 (Network) |
-| **速度** | 慢 (9600 bps) | 快 (100+ Mbps) |
-| **距離** | 短 (約 15 公尺) | 長 (取決於網路範圍) |
-| **應用場景** | 老舊設備、單機連線 | 現代工廠、多機連線 |
+現代半導體工廠以 **HSMS + SECS-II + GEM** 為主流組合。
 
-在現代半導體工廠中，**HSMS + SECS-II** 的組合已經成為主流，它提供了高效、可靠且靈活的設備通訊解決方案。
+## 5. 與其他文章的關聯
+
+- SECS 簡介：[`aboutSECS`](/docs/secs/overView/aboutSECS)
+- SECS 與 GEM：[`secsAndGem`](/docs/secs/overView/secsAndGem)
+- 訊息結構：[`secsStructure`](/docs/secs/basics/secsStructure)
