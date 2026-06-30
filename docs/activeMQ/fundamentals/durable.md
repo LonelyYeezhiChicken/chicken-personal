@@ -131,7 +131,25 @@ graph TD
 
 ### Kahadb 的設定
 
-在 ActiveMQ 的設定文件中，可以通過設定屬性來調整 Kahadb 的行為，例如調整檔案合併的頻率、設置快照等，這些設定選項使得 Kahadb 可以根據特定應用場景進行調優，以達到最佳性能
+- 檔案: `/conf/activemq.xml`
+
+```xml
+<persistenceAdapter>
+  <kahaDB directory="${activemq.data}/kahadb"
+          journalMaxFileLength="32mb"
+          checkpointInterval="5000"
+          enableJournalDiskSyncs="true"/>
+</persistenceAdapter>
+```
+
+| 屬性 | 說明 | 預設 |
+|------|------|------|
+| `directory` | 資料目錄 | `${activemq.data}/kahadb` |
+| `journalMaxFileLength` | 單一日誌檔上限 | `32mb` |
+| `checkpointInterval` | 索引 checkpoint 間隔（毫秒） | `5000` |
+| `enableJournalDiskSyncs` | 日誌 fsync 到磁碟 | `true` |
+
+進階調校參見 [`kahadbTuning`](/docs/activeMQ/advanced/kahadbTuning)。
 
 ## 非持久化訊息
 

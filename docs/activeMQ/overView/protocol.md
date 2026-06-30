@@ -7,6 +7,20 @@ tags: [ActiveMQ, 工具, Message Queue]
 
 # 🧣 ActiveMQ 通訊協議
 
+ActiveMQ Classic 同時支援多種傳輸協議，讓 Java、Python、瀏覽器與 IoT 裝置都能以各自擅長的方式連接同一個 Broker。選對協議，是整合異質系統的第一步。
+
+## 協議適用場景對照
+
+| 協議 | Port | 適用場景 | 典型客戶端 |
+|------|------|----------|------------|
+| OpenWire (TCP) | 61616 | Java JMS 應用 | ActiveMQ Java Client |
+| AMQP | 5672 | 跨語言企業整合 | RabbitMQ 相容客戶端 |
+| STOMP | 61613 | Web 前端、腳本 | stomp.js、Python stomp |
+| MQTT | 1883 | IoT、低頻寬裝置 | Eclipse Paho |
+| WebSocket | 61614 | 瀏覽器即時通訊 | stomp.js over WS |
+
+客戶端用法參見 [`stompMqttClient`](/docs/activeMQ/usage/stompMqttClient)。
+
 ## 官方預設通訊協議
 
 - 檔案: /conf/activemq.xml
@@ -32,7 +46,7 @@ tags: [ActiveMQ, 工具, Message Queue]
 - 在預設的情況下，被命名為 `openwire`
 - 連線字串的組成為 `tcp://ip:port?key=value`
 - TCP 優點
-  - TPC 協議為保證連線
+  - TCP 協議為保證連線
   - 效率高，socket 本身有 retry 機制
 
 ```xml
@@ -61,14 +75,14 @@ tags: [ActiveMQ, 工具, Message Queue]
 </transportConnectors>
 ```
 
-### STORM
+### STOMP
 
-> STORM (STOMP - Streaming Text Oriented Messaging Protocol)
+> STOMP (Streaming Text Oriented Messaging Protocol)
 
 - 預設 port 為 `61613`
-- 在預設的情況下，STORM 連線被命名為 `stomp`
+- 在預設的情況下，STOMP 連線被命名為 `stomp`
 - 連線字串的組成為 `stomp://ip:port?key=value`
-- STORM 優點
+- STOMP 優點
   - 提供輕量級的訊息傳遞協議，適合實時通訊和流數據處理
   - 易於實現並與多種客戶端和伺服器庫兼容
 

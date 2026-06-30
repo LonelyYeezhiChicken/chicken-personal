@@ -40,3 +40,20 @@ consumer.setMessageListener(message -> {
 ```
 
 在這個例子中，只有屬性 `category` 為 `urgent` 的訊息才會觸發消費者的訊息處理邏輯
+
+## Message Selector 語法
+
+| 運算子 | 範例 | 說明 |
+|--------|------|------|
+| `=` | `category = 'urgent'` | 等於 |
+| `<>` | `status <> 'done'` | 不等於 |
+| `>` / `>=` | `priority > 5` | 數值比較 |
+| `LIKE` | `name LIKE 'ORDER%'` | 萬用字元（`%` 多字元，`_` 單字元） |
+| `BETWEEN` | `amount BETWEEN 100 AND 500` | 範圍 |
+| `IN` | `type IN ('A', 'B')` | 列舉 |
+| `IS NULL` | `expired IS NULL` | 空值判斷 |
+| `AND` / `OR` | `type = 'A' AND priority > 3` | 邏輯組合 |
+
+:::tip
+過濾在 Broker 端執行，不符合條件的訊息不會傳給 Consumer，比客戶端自行判斷更有效率。
+:::
