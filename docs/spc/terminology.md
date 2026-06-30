@@ -227,3 +227,13 @@ graph TD
 1. **看圖不看數**：如果控制圖點位亂跳，算出來的 $C_{pk}$ 都沒有意義（基礎不穩）。
 2. **先穩定後優化**：先把車子變窄（縮小波動），再去調整停車位置（對準中心）。
 3. **區分目標與現實**：隨時校準規格界限（客戶要的）與管制界限（機台給的）的鴻溝。
+
+---
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](./index.md)
+- 快速術語：[`glossary`](./glossary.md)
+- 管制 vs 規格：[`control-vs-spec-limits`](./core-model/control-vs-spec-limits.md)
+- 雙圖哲學：[`dual-chart-philosophy`](./core-model/dual-chart-philosophy.md)
+- 端到端場景：[`endToEndLifecycle`](./core-model/endToEndLifecycle.md)

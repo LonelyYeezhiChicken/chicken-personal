@@ -52,3 +52,10 @@ flowchart TD
 ## 4. 領域專家思維：系統擴展性
 
 系統支援橫向擴展 (Scale-out)，並具備「計算熔斷機制」，確保全廠監控環境不會因單一異常點而崩潰。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 計算引擎：[`calculation-engine`](./calculation-engine.md)
+- 規則引擎：[`rule-engine`](./rule-engine.md)
+- 數據快照：[`data-snapshot`](../core-model/data-snapshot.md)

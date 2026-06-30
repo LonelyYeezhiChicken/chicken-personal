@@ -41,3 +41,11 @@ tags: [SPC, 領域模型, AI筆記]
 1.  **試產階段 (TRIAL)**：不計算 $C_{pk}$，僅收集數據以建立基線。
 2.  **量產階段 (ACTIVE)**：正式計算界限，並執行 OOC 自動化聯動。
 3.  **過時階段 (OBSOLETE)**：保留歷史數據以供稽核，但不再接收新數據。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 術語表：[`glossary`](../glossary.md)
+- 路由引擎：[`monitoring-plan`](../engine/monitoring-plan.md)
+- 資料擷取：[`data-collection`](../engine/data-collection.md)
+- 端到端場景：[`endToEndLifecycle`](./endToEndLifecycle.md)

@@ -48,3 +48,11 @@ tags: [SPC, 領域模型, AI筆記]
 
 - **錯誤行為**：為了減少報警，手動將管制界限調寬。
 - **正確行為**：管制界限必須由統計引擎自動更新。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 術語表：[`glossary`](../glossary.md)
+- 理論基石：[`terminology`](../terminology.md)
+- 計算引擎：[`calculation-engine`](../engine/calculation-engine.md)
+- 異常偵測：[`detection-and-alert`](../exception-handling/detection-and-alert.md)

@@ -32,3 +32,11 @@ tags: [SPC, 異常處理, AI筆記]
 
 - **歷史重判**：修改舊數據時，系統自動重新執行該區間判定。
 - **延遲觸發**：補點告警標記為 `Backfill Alert`，通常不觸發自動 Hold Lot，由工程師事後審查。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 規則引擎：[`rule-engine`](../engine/rule-engine.md)
+- 告警抑制：[`alert-suppression`](./alert-suppression.md)
+- 端到端場景：[`endToEndLifecycle`](../core-model/endToEndLifecycle.md)
+- 除錯入門：[`spcDebugging`](./spcDebugging.md)

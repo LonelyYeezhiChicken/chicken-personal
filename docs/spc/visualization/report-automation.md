@@ -37,3 +37,9 @@ tags: [SPC, 系統自動化, AI筆記]
 專家深知，一份好的報表應引導下一步行動。
 - **行動鏈結**：嵌入「深連結 (Deep Link)」，讓工程師能直接跳轉回系統進行下鑽分析。
 - **反饋循環**：不斷優化焦點報告的過濾閾值，實現精準管理。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 深度下鑽：[`drill-down`](./drill-down.md)
+- 通報可靠性：[`notification-reliability`](../exception-handling/notification-reliability.md)

@@ -33,3 +33,9 @@ tags: [SPC, 數據視覺化, 演算法, AI筆記]
 採樣僅應用於「繪圖層」，不應用於「計算層」。
 - **分離原則**：圖表顯示採樣後的線條，但 $C_{pk}$ 計算必須基於「全量數據」。
 - **視覺警示**：高倍率採樣時顯示提示，提醒工程師若需細部判讀應放大區間。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 圖層渲染：[`layer-rendering`](./layer-rendering.md)
+- 計算引擎：[`calculation-engine`](../engine/calculation-engine.md)

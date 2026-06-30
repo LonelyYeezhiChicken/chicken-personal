@@ -63,3 +63,11 @@ graph LR
 
 考慮以下情境：一個製程的中心值完全正確，但波動劇增 ($\sigma$ 變大)。
 - **結論**：雙圖聯動能確保系統同時捕捉到「目標偏移」與「穩定性崩潰」，這是判斷製程健康度的標準。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 理論基石：[`terminology`](../terminology.md)
+- 資料彙總：[`data-collection`](../engine/data-collection.md)
+- 計算引擎：[`calculation-engine`](../engine/calculation-engine.md)
+- 除錯入門：[`spcDebugging`](../exception-handling/spcDebugging.md)

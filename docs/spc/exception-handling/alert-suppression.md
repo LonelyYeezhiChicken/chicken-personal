@@ -41,3 +41,10 @@ flowchart TD
 專家深知，最好的通報是「極少且極精確」。
 - **自定義模板**：包含偏移量 $\Delta \mu$、當前 $C_{pk}$、關聯機台等關鍵資訊。
 - **統計優化**：定期分析通報頻率，調優界限與窗口。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 異常偵測：[`detection-and-alert`](./detection-and-alert.md)
+- 通報可靠性：[`notification-reliability`](./notification-reliability.md)
+- 除錯入門：[`spcDebugging`](./spcDebugging.md)

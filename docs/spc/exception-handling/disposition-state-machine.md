@@ -50,3 +50,10 @@ stateDiagram-v2
 
 - **強制註記**：結案前檢查處置代碼與分析內容。
 - **流程稽核**：紀錄「誰、何時、執行什麼變更」，滿足回溯需求。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 數據快照：[`data-snapshot`](../core-model/data-snapshot.md)
+- MES 聯動：[`cross-system-integration`](./cross-system-integration.md)
+- 端到端場景：[`endToEndLifecycle`](../core-model/endToEndLifecycle.md)

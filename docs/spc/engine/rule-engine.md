@@ -40,3 +40,10 @@ tags: [SPC, 統計計算, AI筆記]
 - **初期開發**：採用寬鬆規則，避免過多無效通知。
 - **熟練量產**：啟用全套 Nelson 規則，捕捉細微衰退。
 - **自定義擴展**：系統支援基於 Script 的自定義規則。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 判讀規則：[`decision-rules`](../core-model/decision-rules.md)
+- 計算引擎：[`calculation-engine`](./calculation-engine.md)
+- 異常偵測：[`detection-and-alert`](../exception-handling/detection-and-alert.md)

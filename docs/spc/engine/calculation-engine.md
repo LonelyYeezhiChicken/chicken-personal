@@ -57,3 +57,11 @@ flowchart TD
 專家不應只追求極高的 $C_{pk}$。
 - **成本平衡**：盲目提升 $C_{pk}$ 可能會大幅增加量測成本。
 - **動態調整**：系統支援在界限發布前進行「模擬檢核」，輔助決策。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 管制 vs 規格：[`control-vs-spec-limits`](../core-model/control-vs-spec-limits.md)
+- 資料擷取：[`data-collection`](./data-collection.md)
+- 規則引擎：[`rule-engine`](./rule-engine.md)
+- 端到端場景：[`endToEndLifecycle`](../core-model/endToEndLifecycle.md)

@@ -53,3 +53,11 @@ flowchart TD
 ## 4. 領域專家思維：模式分析勝過單點判斷
 
 專家會觀察「出界」與「趨勢」的關聯。若趨勢已連續 5 點上升，即便第 6 點仍在界限內，專家也會提前介入。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 規則引擎：[`rule-engine`](../engine/rule-engine.md)
+- 異常偵測：[`detection-and-alert`](../exception-handling/detection-and-alert.md)
+- 端到端場景：[`endToEndLifecycle`](./endToEndLifecycle.md)
+- 除錯入門：[`spcDebugging`](../exception-handling/spcDebugging.md)

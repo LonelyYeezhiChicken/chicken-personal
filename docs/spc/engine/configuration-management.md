@@ -37,3 +37,10 @@ tags: [SPC, 系統管理, AI筆記]
 
 - **配置審計**：定期檢視誰在何時修改了關鍵界限。
 - **批量同步**：支援將驗證過的規則集同步至同型號的所有機台，維持全廠一致性。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 監控計畫：[`monitoring-plan`](./monitoring-plan.md)
+- 進階計算：[`advanced-calculation`](./advanced-calculation.md)
+- 除錯入門：[`spcDebugging`](../exception-handling/spcDebugging.md)

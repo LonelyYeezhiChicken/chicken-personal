@@ -43,3 +43,10 @@ flowchart TD
     - **中度**：標記為 Track In Monitor。
     - **嚴重**：執行 Hard Hold。
 透過階層化管理，專家能實現在「保障品質」與「極大化產能」之間的動態平衡。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 異常偵測：[`detection-and-alert`](./detection-and-alert.md)
+- 處置狀態機：[`disposition-state-machine`](./disposition-state-machine.md)
+- 端到端場景：[`endToEndLifecycle`](../core-model/endToEndLifecycle.md)

@@ -45,3 +45,10 @@ tags: [SPC, 領域模型, AI筆記]
 
 - **歷史補點重判**：新點進入後，自動重新掃描窗口，檢查是否觸發連續性違規.
 - **排除效應**：若排除離群點，系統需自動重算歷史指標。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 處置狀態機：[`disposition-state-machine`](../exception-handling/disposition-state-machine.md)
+- MES 聯動：[`cross-system-integration`](../exception-handling/cross-system-integration.md)
+- 端到端場景：[`endToEndLifecycle`](./endToEndLifecycle.md)

@@ -37,3 +37,10 @@ tags: [SPC, 系統架構, AI筆記]
 專家不應過度使用萬用字元。
 - **過度定義的代價**：寬鬆的路由會導致「異質數據混合」，扭曲管制界限。
 - **最佳實踐**：使用「精確定義」，並利用「配置範本」快速複製計畫。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 監控策略：[`monitoring-strategy`](../core-model/monitoring-strategy.md)
+- 配置變更：[`configuration-management`](./configuration-management.md)
+- 除錯入門：[`spcDebugging`](../exception-handling/spcDebugging.md)

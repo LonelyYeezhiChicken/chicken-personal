@@ -62,3 +62,10 @@ sequenceDiagram
 ## 4. 領域專家思維：採樣的時效性
 
 專家在設定彙總策略時會考慮「時間相關性」。系統支援「強制分組截斷」，確保每一組數據都具備物理上的同質性。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 監控策略：[`monitoring-strategy`](../core-model/monitoring-strategy.md)
+- 計算引擎：[`calculation-engine`](./calculation-engine.md)
+- 端到端場景：[`endToEndLifecycle`](../core-model/endToEndLifecycle.md)

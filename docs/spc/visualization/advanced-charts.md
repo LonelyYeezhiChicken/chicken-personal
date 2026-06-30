@@ -32,3 +32,10 @@ tags: [SPC, 數據視覺化, 統計圖表, AI筆記]
 1.  **趨勢圖**：確認製程是否「穩定」。
 2.  **直方圖**：確認製程是否「有能力」。
 3.  **對比圖**：確認製程是否「均勻」。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 理論基石：[`terminology`](../terminology.md)
+- 深度下鑽：[`drill-down`](./drill-down.md)
+- 進階計算：[`advanced-calculation`](../engine/advanced-calculation.md)

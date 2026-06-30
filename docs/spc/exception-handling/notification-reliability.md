@@ -33,3 +33,10 @@ tags: [SPC, 異常處理, 基礎設施, AI筆記]
 
 - **讀取回執**：追蹤用戶是否已讀取通知。
 - **品質報告**：定期檢視通報延遲與失敗率，優化全球工廠的監控同步性。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 異常偵測：[`detection-and-alert`](./detection-and-alert.md)
+- 告警抑制：[`alert-suppression`](./alert-suppression.md)
+- 報表自動化：[`report-automation`](../visualization/report-automation.md)

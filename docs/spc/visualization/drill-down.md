@@ -48,3 +48,10 @@ flowchart TD
 
 - **排除法分析**：臨時「隱藏」疑似錯誤點，即時查看對 $C_{pk}$ 的影響。
 - **預測性縮放**：預測數據何時會突破規格界限。
+
+## 與其他文章的關聯
+
+- 學習路徑：[`index`](../index.md)
+- 雙圖哲學：[`dual-chart-philosophy`](../core-model/dual-chart-philosophy.md)
+- 數據快照：[`data-snapshot`](../core-model/data-snapshot.md)
+- 高階圖表：[`advanced-charts`](./advanced-charts.md)
