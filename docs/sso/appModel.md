@@ -23,7 +23,7 @@ tags: [sso, Single Sign-On]
 2.  使用者登錄 (User Login) & 登出 (Logout)
 3.  多因素驗證 (Multi-Factor Authentication, MFA)
 4.  產生與驗證存取權杖 (Access Token) 與身份權杖 (ID Token)
-5.  管理使用者會話 (Session Management)
+5.  管理使用者會話 (Session Management)——此處指 **IdP 端的瀏覽器 Session Cookie**，支撐「已在 IdP 登入、訪問新 RP 時免重打密碼」。各 **RP** 則通常以 ID Token / Access Token（或自建 session）維持登入狀態，與 IdP session 是兩回事。
 
 ### 使用者管理 (User Management)
 
@@ -42,16 +42,20 @@ tags: [sso, Single Sign-On]
 1.  管理使用者對應用程式的授權範圍 (Scope)
 2.  記錄並管理使用者的同意 (Consent) 決策
 
-### 身份聯合 (Identity Federation)
+### 身份聯合 (Identity Federation)（進階／可選）
 
 1.  整合外部身份提供者 (External IdP)，如 Google, GitHub, Facebook
 2.  支援 SAML, OAuth2/OIDC 等標準協定進行聯合登入
 
-### 存取控制 (Access Control / RBAC)
+> Side project 可先完成本地帳密 + OIDC 核心流程，身份聯合留到後續擴充即可。
+
+### 存取控制 (Access Control / RBAC)（進階／可選）
 
 1.  新增、編輯和刪除角色 (Role)
 2.  定義、分配和管理權限 (Permission)
 3.  管理使用者與角色的對應關係
+
+> 多數情況下，RBAC 由各 RP 應用程式自行實作，IdP 只負責「你是誰」（Authentication），「你能做什麼」由 RP 決定。
 
 ### 日誌與稽核 (Logging & Auditing)
 

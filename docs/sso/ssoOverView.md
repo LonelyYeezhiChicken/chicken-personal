@@ -11,16 +11,6 @@ tags: [sso, Single Sign-On]
 
 > SSO (Single Sign-On): 單點登入
 >
-> 是一種身份驗證和授權機制，允許使用者僅需一次登入，然後就能訪問多個相關的應用程式和服務，而無需再次輸入其認證資訊
->
-> SSO 提供了方便性和安全性，並提高了使用者體驗
-
-# 🔐 SSO 概觀
-
-## 關於 SSO
-
-> SSO (Single Sign-On): 單點登入
->
 > 是一種身份驗證機制，允許使用者僅需一次登入，就能訪問多個互相信任的應用程式，而無需為每個應用程式重複輸入認證資訊。SSO 旨在提升使用者便利性與系統安全性。
 
 ## 傳統登入方式 (Session-Cookie)
@@ -78,7 +68,7 @@ sequenceDiagram
 這種緊密依賴伺服器端 Session 的方式在分散式或微服務架構中會遇到瓶頸：
 
 1.  **Session 無法共享**：每個服務都有自己的 Session 儲存區，無法互通。使用者在系統 A 登入後，訪問系統 B 時仍會被視為未登入。
-2.  **Cookie 無法跨主域**：瀏覽器的安全機制限制 Cookie 只能在同一個主域名下傳遞，無法在 `a.com` 和 `b.com` 之間共享。
+2.  **Cookie 無法跨主域**：瀏覽器的安全機制限制 Cookie 只能在同一個主域名下傳遞，無法在 `a.com` 和 `b.com` 之間共享。同一主域下的子網域（如 `app.example.com` 與 `sso.example.com`）可透過 Cookie 的 `Domain` 屬性共用，但不同主域仍不行。
 
 為了解決這些問題，SSO 應運而生。
 
@@ -118,6 +108,12 @@ sequenceDiagram
     end
 ```
 
+流程圖省略了幾個實務細節：
+
+- RP 發起登入時會帶 `state` 參數，回呼時必須驗證，以防 CSRF。
+- IdP 驗證成功後，瀏覽器會被導向 RP 註冊的 `redirect_uri`，URL 上帶著一次性 `code`。
+- `code` 換 Token 發生在 **RP 後端**（需帶 `client_id` / `client_secret`），瀏覽器不應直接拿到長效憑證。
+
 ### SSO 流程圖 (已登入狀態下訪問另一服務)
 
 當使用者已經在 IdP 登入後，訪問另一個應用程式的流程變得非常無縫。
@@ -141,7 +137,7 @@ sequenceDiagram
 
 ### SSO 登出流程圖 (Single Logout, SLO)
 
-單點登出確保使用者在任何一個應用程式登出後，所有其他應用程式的登入狀態也一併失效。
+理想的單點登出（SLO）應讓使用者在任一應用程式登出後，所有已登入的 RP 一併失效。實作上比單點登入複雜得多。
 
 ```mermaid
 sequenceDiagram
@@ -158,9 +154,11 @@ sequenceDiagram
     note right of IdP: IdP 也可以透過後端通知<br/>或其他重導向機制<br/>讓所有已登入的 RP 都登出。
 ```
 
----
+:::info 簡化圖提醒
+上圖只展示 IdP 清除自身 Session 的路徑。**僅清除 IdP Cookie 並不能自動登出各 RP**——RP 若已建立本地 session 或快取 token，可能仍視為已登入。完整 SLO 需額外實作 front-channel logout（瀏覽器逐一導向各 RP 登出端點）或 back-channel logout（IdP 後端通知各 RP），實務上許多系統只做到「IdP 登出 + 當前 RP 登出」。
+:::
 
-REF:
+## 參考資料
 
 -   [看完这篇你不能再说不懂SSO原理了！](https://www.cnblogs.com/qdhxhz/p/17007958.html)
 -   [OpenID Connect (OIDC) Core Specification](https://openid.net/connect/)

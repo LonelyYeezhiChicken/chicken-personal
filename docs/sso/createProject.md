@@ -7,6 +7,8 @@ tags: [sso, Single Sign-On, NestJS]
 
 # 🔐 SSO 建立專案
 
+本篇僅建立 NestJS 空殼專案。OIDC 流程概念見 [SSO 概觀](./ssoOverView.md)，資料庫設計見 [SSO 資料庫](./database.md)，模組拆分見 [SSO 功能模組](./appModel.md)。
+
 ## 環境
 
 - TS
@@ -71,7 +73,7 @@ bootstrap();
 
 ### 啟動
 
-> 根據說明的指令啟動
+> `pnpm run start` 會呼叫 `package.json` 中的 script，底層實際執行的是 `nest start`。
 
 ```shell
 cd sso
@@ -91,7 +93,5 @@ $ nest start
 [啟動後開啟網站](http://localhost:3050/)
 
 > Hello World!
-
----
 
 [github 連結](https://github.com/LonelyYeezhiChicken/SSO-v1)

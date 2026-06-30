@@ -7,19 +7,23 @@ tags: [sso, Single Sign-On, Postgresql]
 
 # 🔐 SSO 資料庫
 
-## 何謂 SSO
+## 關於本篇
 
-> 單點登錄（Single Sign-On，SSO）是一種身份驗證機制，允許使用者使用一組憑證（通常是使用者名稱和密碼）登錄到多個不同的應用程式或服務，而無需為每個應用程式輸入憑證
+SSO 概念說明見 [SSO 概觀](./ssoOverView.md)。本篇聚焦 IdP 端的資料庫設計。
 
 ## 資料庫
 
 ### 資料庫設計考量
 
-> 一個現代化的 SSO 系統，特別是基於 OIDC 和 JWT (JSON Web Tokens) 的無狀態（Stateless）架構，其資料庫設計需要考量幾個關鍵點。以下是一個更符合業界實踐的資料庫結構範例。
+一個基於 OIDC 的 IdP **通常是有狀態的**：瀏覽器端的 IdP 登入 Session（Cookie）、短效的 authorization code、以及 refresh token 都需要伺服器端儲存或快取。這與 [SSO 概觀](./ssoOverView.md) 中 IdP 建立登入會話的描述一致。
+
+所謂「JWT 無狀態」主要指 **RP 端**：RP 收到 ID Token 後可用公鑰驗簽，不必每次回 IdP 查 session。但 IdP 本身仍需要持久化儲存來管理使用者、Client 註冊與 token 生命週期。
+
+以下為符合常見 OIDC IdP 實踐的資料庫結構範例。
 
 ### 1. User Table（使用者表格）
 
-> 存儲使用者的基本資訊。`username` 和 `email` 都應具備唯一性，以防止資料重複。
+存儲使用者的基本資訊。`username` 和 `email` 都應具備唯一性，以防止資料重複。
 
 ```sql
 CREATE TABLE user_table (
@@ -31,15 +35,34 @@ CREATE TABLE user_table (
 );
 ```
 
-### 2. Refresh Token Table（刷新權杖表格）
+### 2. Authorization Code Table（授權碼表格，可選）
 
-> 在無狀態的 JWT 架構中，我們不需要在伺服器端保存 `session`。使用者的登入狀態由 Access Token 本身來證明。然而，為了安全地換發新的 Access Token，我們需要一個地方來儲存長效的 Refresh Token。
+Authorization Code Flow 中，IdP 產生的 `code` 生命週期極短（通常數分鐘內），需在伺服器端記錄以供 RP 兌換。高流量場景可改用 Redis 等快取，不一定需要關聯式表格。
+
+```sql
+CREATE TABLE authorization_code_table (
+    code_hash VARCHAR(255) PRIMARY KEY,
+    user_id INT NOT NULL,
+    client_id VARCHAR(100) NOT NULL,
+    redirect_uri TEXT NOT NULL,
+    scopes TEXT[],
+    expires_at TIMESTAMPTZ NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT current_timestamp,
+
+    FOREIGN KEY (user_id) REFERENCES user_table (user_id) ON DELETE CASCADE
+);
+```
+
+### 3. Refresh Token Table（刷新權杖表格）
+
+Access Token 生命週期短，RP 需透過 Refresh Token 向 IdP 換發新 token。Refresh Token 必須在伺服器端儲存，以便撤銷與輪替。
 
 ```sql
 CREATE TABLE refresh_token_table (
     token_id serial PRIMARY KEY,
     user_id INT NOT NULL,
-    token_value TEXT NOT NULL,
+    client_id VARCHAR(100) NOT NULL,
+    token_hash VARCHAR(255) NOT NULL,
     expires_at TIMESTAMPTZ NOT NULL,
     issued_at TIMESTAMPTZ NOT NULL DEFAULT current_timestamp,
     
@@ -47,9 +70,9 @@ CREATE TABLE refresh_token_table (
 );
 ```
 
-### 3. Application Table（應用程式表格）
+### 4. Application Table（應用程式表格）
 
-> 存儲與 SSO 系統集成的各個應用程式（在 OAuth2 中稱為 Client）的資訊。
+存儲與 SSO 系統集成的各個應用程式（在 OAuth2 中稱為 Client）的資訊。
 
 ```sql
 CREATE TABLE application_table (
@@ -61,9 +84,9 @@ CREATE TABLE application_table (
 );
 ```
 
-### 4. User-Application Consent Table（使用者應用程式授權表格）
+### 5. User-Application Consent Table（使用者應用程式授權表格）
 
-> 用於記錄使用者同意授權給某個應用程式的範圍（Scopes）。
+用於記錄使用者同意授權給某個應用程式的範圍（Scopes）。
 
 ```sql
 CREATE TABLE user_app_consent (
@@ -79,9 +102,9 @@ CREATE TABLE user_app_consent (
 );
 ```
 
-### 5. Audit Log Table（審計日誌表格）
+### 6. Audit Log Table（審計日誌表格）
 
-> 記錄與安全相關的活動，用於追蹤和分析。
+記錄與安全相關的活動，用於追蹤和分析。
 
 ```sql
 CREATE TABLE audit_log (
@@ -96,40 +119,9 @@ CREATE TABLE audit_log (
 );
 ```
 
-### 6. Role and Permission Tables（角色與權限表格）
-
-> 實現 RBAC (Role-Based Access Control) 的核心表格。
-
-```sql
-CREATE TABLE role_table (
-    role_id serial PRIMARY KEY,
-    role_name VARCHAR(50) NOT NULL UNIQUE
-);
-
-CREATE TABLE permission_table (
-    permission_id serial PRIMARY KEY,
-    permission_name VARCHAR(100) NOT NULL UNIQUE,
-    description TEXT
-);
-
-CREATE TABLE user_role_mapping (
-    user_id INT NOT NULL,
-    role_id INT NOT NULL,
-    PRIMARY KEY (user_id, role_id),
-    FOREIGN KEY (user_id) REFERENCES user_table (user_id) ON DELETE CASCADE,
-    FOREIGN KEY (role_id) REFERENCES role_table (role_id) ON DELETE CASCADE
-);
-
-CREATE TABLE role_permission_mapping (
-    role_id INT NOT NULL,
-    permission_id INT NOT NULL,
-    PRIMARY KEY (role_id, permission_id),
-    FOREIGN KEY (role_id) REFERENCES role_table (role_id) ON DELETE CASCADE,
-    FOREIGN KEY (permission_id) REFERENCES permission_table (permission_id) ON DELETE CASCADE
-);
-```
-
----
+:::info 關於 RBAC
+角色與權限（RBAC）通常由各 RP 應用程式自行管理，而非 IdP 的必備表格。若你的 side project 需要集中管理角色，可另行擴充，但不屬於 OIDC 標準的最低需求。
+:::
 
 ## 完整 SQL
 
@@ -139,16 +131,27 @@ CREATE TABLE user_table (
     username VARCHAR(50) NOT NULL UNIQUE,
     password_hash VARCHAR(255) NOT NULL,
     email VARCHAR(100) UNIQUE,
-    status VARCHAR(20) NOT NULL DEFAULT 'active' -- e.g., active, inactive, locked
+    status VARCHAR(20) NOT NULL DEFAULT 'active'
+);
+
+CREATE TABLE authorization_code_table (
+    code_hash VARCHAR(255) PRIMARY KEY,
+    user_id INT NOT NULL,
+    client_id VARCHAR(100) NOT NULL,
+    redirect_uri TEXT NOT NULL,
+    scopes TEXT[],
+    expires_at TIMESTAMPTZ NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT current_timestamp,
+    FOREIGN KEY (user_id) REFERENCES user_table (user_id) ON DELETE CASCADE
 );
 
 CREATE TABLE refresh_token_table (
     token_id serial PRIMARY KEY,
     user_id INT NOT NULL,
-    token_value TEXT NOT NULL,
+    client_id VARCHAR(100) NOT NULL,
+    token_hash VARCHAR(255) NOT NULL,
     expires_at TIMESTAMPTZ NOT NULL,
     issued_at TIMESTAMPTZ NOT NULL DEFAULT current_timestamp,
-    
     FOREIGN KEY (user_id) REFERENCES user_table (user_id) ON DELETE CASCADE
 );
 
@@ -157,7 +160,7 @@ CREATE TABLE application_table (
     app_name VARCHAR(100) NOT NULL UNIQUE,
     client_id VARCHAR(100) NOT NULL UNIQUE,
     client_secret_hash VARCHAR(255) NOT NULL,
-    redirect_uris TEXT[] NOT NULL -- An array of allowed redirect URIs
+    redirect_uris TEXT[] NOT NULL
 );
 
 CREATE TABLE user_app_consent (
@@ -166,7 +169,6 @@ CREATE TABLE user_app_consent (
     app_id INT NOT NULL,
     granted_scopes TEXT[] NOT NULL,
     last_granted_at TIMESTAMPTZ NOT NULL DEFAULT current_timestamp,
-
     FOREIGN KEY (user_id) REFERENCES user_table (user_id) ON DELETE CASCADE,
     FOREIGN KEY (app_id) REFERENCES application_table (app_id) ON DELETE CASCADE,
     UNIQUE (user_id, app_id)
@@ -179,34 +181,6 @@ CREATE TABLE audit_log (
     ip_address VARCHAR(50),
     user_agent TEXT,
     created_at TIMESTAMPTZ NOT NULL DEFAULT current_timestamp,
-
     FOREIGN KEY (user_id) REFERENCES user_table (user_id) ON DELETE SET NULL
-);
-
-CREATE TABLE role_table (
-    role_id serial PRIMARY KEY,
-    role_name VARCHAR(50) NOT NULL UNIQUE
-);
-
-CREATE TABLE permission_table (
-    permission_id serial PRIMARY KEY,
-    permission_name VARCHAR(100) NOT NULL UNIQUE,
-    description TEXT
-);
-
-CREATE TABLE user_role_mapping (
-    user_id INT NOT NULL,
-    role_id INT NOT NULL,
-    PRIMARY KEY (user_id, role_id),
-    FOREIGN KEY (user_id) REFERENCES user_table (user_id) ON DELETE CASCADE,
-    FOREIGN KEY (role_id) REFERENCES role_table (role_id) ON DELETE CASCADE
-);
-
-CREATE TABLE role_permission_mapping (
-    role_id INT NOT NULL,
-    permission_id INT NOT NULL,
-    PRIMARY KEY (role_id, permission_id),
-    FOREIGN KEY (role_id) REFERENCES role_table (role_id) ON DELETE CASCADE,
-    FOREIGN KEY (permission_id) REFERENCES permission_table (permission_id) ON DELETE CASCADE
 );
 ```
