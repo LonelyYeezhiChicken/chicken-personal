@@ -1,0 +1,8 @@
+{
+  "label": "JavaScript 互動",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "讓網頁動起來：變數、DOM、事件與 API"
+  }
+}

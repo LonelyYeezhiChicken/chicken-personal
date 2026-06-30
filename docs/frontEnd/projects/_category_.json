@@ -1,0 +1,8 @@
+{
+  "label": "綜合練習",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "把 HTML、CSS、JS 串成完整作品"
+  }
+}
