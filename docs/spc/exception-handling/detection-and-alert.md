@@ -1,42 +1,53 @@
 ---
 sidebar_position: 1
-description: SPC 異常處理：異常偵測與告警觸發
+description: OOC/OOS 雙路判定、告警事務原子性與優先級派發
 key: [SPC, 異常偵測, OOC, OOS, 原子性, 優先級]
 tags: [SPC, 異常處理, AI筆記]
 ---
 
 # 📊 異常偵測與告警觸發
 
-本章節解析異常處理流程的起點。在每秒流入海量數據的環境下，如何確保「每一筆異常都不被漏掉」且「任務派發具備事務性」，是系統設計的首要挑戰。
+本章節只做一件事：說明數據寫入瞬間如何**同時判定 OOC/OOS 並可靠建立告警任務**。規則語意見 [`decision-rules`](../core-model/decision-rules.md)。
 
-## 1. 多維度異常判定邏輯
+## 讀完本篇你能回答
 
-統計引擎在數據寫入時，會同時啟動兩條判定路徑：
-- **統計違規 (OOC)**：基於統計規則（如 Nelson Rules）的判定。
-- **規格違規 (OOS)**：基於物理規格邊界 ($USL/LSL$) 的判定。
+- OOC 與 OOS 在哪個時點被判定？
+- 怎麼保證告警任務不遺失？
+- OOS 與 OOC 的通報優先級誰高？
 
-## 2. 原子性保證 (Transaction Atomicity)
+## 1. 雙路判定
 
-為了防止告警任務遺失，系統採用事務封裝技術：
-- **封裝作業**：將「數據持久化」與「告警任務插入」鎖定在同一個資料庫事務中。
-- **續傳機制**：若發送服務掛掉，背景補償程式會在恢復後自動續傳，達成「零丟失」。
+| 路徑 | 依據 | 結果 |
+|------|------|------|
+| OOC | UCL/LCL + Nelson 規則 | 製程不穩 |
+| OOS | USL/LSL | 產品不合格 |
 
-## 3. 告警任務的優先級判定
+兩路獨立、同時執行。
 
-系統根據以下維度動態計算優先級：
-- **違規嚴重度**：$OOS$ 優先級通常高於 $OOC$。
-- **製程關鍵度**：關鍵工序標記為 **High Priority**。
-- **派發策略**：高優先級任務確保在 $5$ 秒內觸發行動裝置通知。
+## 2. 事務原子性
 
-## 4. 領域專家思維：補點情境
+「寫入 SpcHis」與「插入告警任務」鎖在同一資料庫事務。發送服務掛掉時，背景補償程式續傳，目標零丟失。
 
-- **歷史重判**：修改舊數據時，系統自動重新執行該區間判定。
-- **延遲觸發**：補點告警標記為 `Backfill Alert`，通常不觸發自動 Hold Lot，由工程師事後審查。
+## 3. 優先級
 
-## 與其他文章的關聯
+| 因子 | 影響 |
+|------|------|
+| OOS > OOC | 嚴重度 |
+| 關鍵工序 | High Priority |
+| 高優先 | 目標 5 秒內推播 |
 
-- 學習路徑：[`index`](../index.md)
-- 規則引擎：[`rule-engine`](../engine/rule-engine.md)
-- 告警抑制：[`alert-suppression`](./alert-suppression.md)
-- 端到端場景：[`endToEndLifecycle`](../core-model/endToEndLifecycle.md)
-- 除錯入門：[`spcDebugging`](./spcDebugging.md)
+## 4. 補點（Backfill）
+
+| 情境 | 行為 |
+|------|------|
+| 歷史數據修改 | 重跑該區間判定 |
+| 延遲補點 | 標記 Backfill Alert，通常不自動 Hold |
+
+## 延伸閱讀
+
+| 主題 | 文章 |
+|------|------|
+| 告警抑制 | [`alert-suppression`](./alert-suppression.md) |
+| 規則引擎 | [`rule-engine`](../engine/rule-engine.md) |
+| 端到端流程 | [`endToEndLifecycle`](../core-model/endToEndLifecycle.md) |
+| 除錯 | [`spcDebugging`](./spcDebugging.md) |

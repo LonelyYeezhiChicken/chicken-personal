@@ -1,46 +1,47 @@
 ---
 sidebar_position: 4
-description: SPC 資料擷取與計算引擎：監控計畫與路由引擎
+description: SpcPlan 路由引擎：Domain 維度、Wildcard 匹配與優先級算法
 key: [SPC, 監控計畫, 數據路由, 萬用字元, 優先級]
 tags: [SPC, 系統架構, AI筆記]
 ---
 
 # 📊 監控計畫與路由引擎
 
-本章節解析 SPC 系統的「數據入口」機制。在現代化晶圓廠中，如何高效且精確地完成路由 (Routing)，是系統穩定性的基石。
+本章節只做一件事：說明**工程層**如何把一筆量測數據路由到正確控制圖。統計學為什麼要分群，見 [`monitoring-strategy`](../core-model/monitoring-strategy.md)。
 
-## 1. 多層次定義域 (Domain) 管理
+## 讀完本篇你能回答
 
-監控計畫 ($SpcPlan$) 透過多維度的屬性定義了其監控範疇。
+- SpcPlan 用哪些維度定義監控範圍？
+- 一筆數據符合多個 Plan 時怎麼選？
+- 計畫修改後，歷史數據能重新掛載嗎？
 
-### 1.1 核心過濾維度
-- **物理維度**：廠別 (Fab)、機台 (Entity)、腔體 (Chamber)。
-- **邏輯維度**：產品 (Product)、工序 (Operation)、量測項 (DataItem)。
-- **設計理由**：半導體製程對「同質性」要求極高，必須透過路由引擎實現「腔體級」精細監控。
+## 1. Domain 維度
 
-## 2. 高效匹配引擎設計
+| 類別 | 欄位 |
+|------|------|
+| 物理 | Fab、Entity、Chamber |
+| 邏輯 | Product、Operation、DataItem |
 
-### 2.1 萬用字元與正則匹配
-- 系統支援 `*`（多字元）與 `?`（單字元）匹配。
+目標是**腔體級**精細監控，維持數據同質性。
 
-### 2.2 優先級路由邏輯
-- **最精確匹配優先**：若一筆數據同時符合多個計畫，系統會將數據路由至定義最精確者。
-- **匹配分數算法**：根據定義中的精確字元數量計算權重。
+## 2. 匹配與優先級
+
+- 支援 `*`、`?` 萬用字元
+- **最精確匹配優先**：精確字元越多，權重越高
+- 匹配失敗 → Pending Pool（見 [`spcDebugging`](../exception-handling/spcDebugging.md)）
 
 ## 3. 動態重新分流
 
-- **追溯性分流**：計畫修改後，可自動觸發歷史數據重新掛載。
-- **一致性保證**：透過資料庫事務確保遷移過程中數據指標不遺失。
+計畫變更後可觸發歷史數據重新掛載，以資料庫事務保證遷移過程指標不遺失。
 
-## 4. 領域專家思維：過濾器的權力
+:::info 實務提醒
+少用過寬 Wildcard——異質數據混合會扭曲管制界限。優先用精確定義 + 配置範本複製。
+:::
 
-專家不應過度使用萬用字元。
-- **過度定義的代價**：寬鬆的路由會導致「異質數據混合」，扭曲管制界限。
-- **最佳實踐**：使用「精確定義」，並利用「配置範本」快速複製計畫。
+## 延伸閱讀
 
-## 與其他文章的關聯
-
-- 學習路徑：[`index`](../index.md)
-- 監控策略：[`monitoring-strategy`](../core-model/monitoring-strategy.md)
-- 配置變更：[`configuration-management`](./configuration-management.md)
-- 除錯入門：[`spcDebugging`](../exception-handling/spcDebugging.md)
+| 主題 | 文章 |
+|------|------|
+| 分群概念 | [`monitoring-strategy`](../core-model/monitoring-strategy.md) |
+| 配置變更 | [`configuration-management`](./configuration-management.md) |
+| 端到端流程 | [`endToEndLifecycle`](../core-model/endToEndLifecycle.md) |

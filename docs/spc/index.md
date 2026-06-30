@@ -7,124 +7,104 @@ tags: [SPC, 指南, AI筆記]
 
 # 📊 SPC 學習路徑
 
-本章節是 SPC 系列的導航首頁。本文件庫同時服務**零基礎讀者**與**開發者/架構師**——依你的目標選擇閱讀軌道。
+本章節只做一件事：依你的目標選**閱讀軌道**——零基礎先走軌道 A，要設計系統再走軌道 B。
 
-## 適用對象
+## 讀完本系列你能做什麼
 
-- **軌道 A**：剛接觸 SPC、品保工程師、需讀懂控制圖與 OOC 的讀者
-- **軌道 B**：SPC 系統開發者、架構師，需設計 ETL、計算引擎、異常閉環
+| 軌道 | 讀者 | 能力 |
+|------|------|------|
+| **A** | 品保、新手 | 讀雙圖、懂 OOC/OOS、參與除錯對話 |
+| **A+B** | 開發者、架構師 | 設計 ETL、計算/規則引擎、異常閉環 |
 
-**先修知識：無。** 軌道 A 從 [`terminology`](./terminology.md) 的車庫比喻講起。
+**先修知識：無。** 從 [`terminology`](./terminology.md) 的車庫比喻開始。
 
-## 雙軌路徑總覽
+## 雙軌總覽
 
 ```mermaid
 flowchart TD
-  subgraph trackA [軌道 A 零基礎入門]
+  subgraph trackA [軌道 A 約 9 篇]
     A1[terminology] --> A2[glossary]
-    A2 --> A3[core-model 精選 4篇]
+    A2 --> A3[core 精選]
     A3 --> A4[endToEndLifecycle]
-    A4 --> A5[exception 精選 3篇]
+    A4 --> A5[exception 精選]
   end
-  subgraph trackB [軌道 B 系統實作深度]
-    B1[core-model 全篇]
-    B1 --> B2[engine 6篇]
-    B2 --> B3[visualization 5篇]
-    B3 --> B4[exception-handling 全篇]
+  subgraph trackB [軌道 B 全系統]
+    B1[engine] --> B2[visualization]
+    B2 --> B3[exception 全篇]
   end
   trackA --> trackB
 ```
 
----
-
-## 軌道 A：零基礎入門（約 12 步）
+## 軌道 A：零基礎入門
 
 | 順序 | 文章 | 讀完能回答 |
 |------|------|-----------|
-| 1 | [基礎理論與名詞解釋](./terminology.md) | SPC 是什麼？Cp/Cpk、OOC/OOS 差異？ |
-| 2 | [快速術語表](./glossary.md) | UCL、Subgroup、OCAP 各代表什麼？ |
-| 3 | [管制界限與規格界限](./core-model/control-vs-spec-limits.md) | 管制界限 vs 規格界限？ |
-| 4 | [雙圖哲學](./core-model/dual-chart-philosophy.md) | 為什麼要看 X-bar 和 R 兩張圖？ |
-| 5 | [判讀規則](./core-model/decision-rules.md) | 不出界也算異常嗎？ |
-| 6 | [端到端資料生命週期](./core-model/endToEndLifecycle.md) | 一筆量測數據怎麼走完系統？ |
-| 7 | [異常偵測與告警](./exception-handling/detection-and-alert.md) | OOC 和 OOS 怎麼觸發告警？ |
-| 8 | [異常處置狀態機](./exception-handling/disposition-state-machine.md) | 異常點怎麼被處置結案？ |
-| 9 | [看圖與除錯入門](./exception-handling/spcDebugging.md) | 虛警、補點、路由失敗怎麼判斷？ |
-| 選讀 | [高階統計圖表](./visualization/advanced-charts.md) | 直方圖、盒鬚圖什麼時候用？ |
+| 1 | [基礎理論與名詞解釋](./terminology.md) | SPC 最小概念閉環 |
+| 2 | [快速術語表](./glossary.md) | 縮寫速查 |
+| 3 | [管制界限與規格界限](./core-model/control-vs-spec-limits.md) | 兩種線差在哪 |
+| 4 | [雙圖哲學](./core-model/dual-chart-philosophy.md) | 為何看兩張圖 |
+| 5 | [判讀規則](./core-model/decision-rules.md) | 不出界也算 OOC？ |
+| 6 | [端到端資料生命週期](./core-model/endToEndLifecycle.md) | 數據怎麼走完 |
+| 7 | [異常偵測與告警](./exception-handling/detection-and-alert.md) | 告警怎麼觸發 |
+| 8 | [異常處置狀態機](./exception-handling/disposition-state-machine.md) | 怎麼結案 |
+| 9 | [看圖與除錯入門](./exception-handling/spcDebugging.md) | 虛警怎麼查 |
+| 選讀 | [高階統計圖表](./visualization/advanced-charts.md) | 直方圖何時用 |
 
-### 軌道 A 讀完後，你應該能
-
-- 區分 OOC（統計不穩）與 OOS（產品不合格）
-- 判讀 X-bar / R 雙圖的基本異常模式
-- 描述資料從量測 → 路由 → 計算 → 告警 → 處置的完整流程
-- 參與現場虛警除錯對話
-
----
-
-## 軌道 B：系統實作深度（入門後延伸）
-
-完成軌道 A 後，依模組深入閱讀。
+## 軌道 B：系統實作（入門後）
 
 ### 核心領域模型
 
 | 文章 | 主題 |
 |------|------|
-| [監控策略與分群架構](./core-model/monitoring-strategy.md) | SpcPlan、理性分群 |
-| [雙圖哲學與架構分離](./core-model/dual-chart-philosophy.md) | 控制圖 vs 統計圖表 |
-| [管制界限與規格界限](./core-model/control-vs-spec-limits.md) | UCL/LCL vs USL/LSL |
-| [判讀規則與模式識別](./core-model/decision-rules.md) | Nelson Rules、模式偵測 |
-| [數據快照與異常處置](./core-model/data-snapshot.md) | SpcHis、SpcOocHis |
-| [端到端資料生命週期](./core-model/endToEndLifecycle.md) | 全流程總結 |
+| [監控策略與分群](./core-model/monitoring-strategy.md) | 統計學為何分群 |
+| [雙圖哲學](./core-model/dual-chart-philosophy.md) | 架構分離 |
+| [管制 vs 規格](./core-model/control-vs-spec-limits.md) | 界限博弈 |
+| [判讀規則](./core-model/decision-rules.md) | Nelson 語意 |
+| [數據快照](./core-model/data-snapshot.md) | SpcHis / SpcOocHis |
+| [端到端生命週期](./core-model/endToEndLifecycle.md) | 全流程 |
 
-### 資料擷取與計算引擎
-
-| 文章 | 主題 |
-|------|------|
-| [資料擷取與彙總架構](./engine/data-collection.md) | Raw Sample、Monitor Value |
-| [統計計算引擎](./engine/calculation-engine.md) | CL/UCL/LCL、Cpk/Ppk |
-| [進階計算機制](./engine/advanced-calculation.md) | 非常態、異步重判 |
-| [監控計畫與路由引擎](./engine/monitoring-plan.md) | Domain 匹配 |
-| [統計規則引擎](./engine/rule-engine.md) | 滑動窗口、位元遮罩 |
-| [配置變更管理](./engine/configuration-management.md) | 版本化、影響評估 |
-
-### 數據視覺化
+### 計算引擎
 
 | 文章 | 主題 |
 |------|------|
-| [圖層分離與高效渲染](./visualization/layer-rendering.md) | ChartDirector、LOD |
-| [海量數據採樣策略](./visualization/data-sampling.md) | LTTB 算法 |
-| [深度下鑽與互動分析](./visualization/drill-down.md) | 三層分析路徑 |
-| [高階統計圖表分析](./visualization/advanced-charts.md) | 直方圖、盒鬚圖 |
-| [報表自動化系統](./visualization/report-automation.md) | 定時報表 |
+| [資料擷取與彙總](./engine/data-collection.md) | Raw / Monitor |
+| [統計計算引擎](./engine/calculation-engine.md) | 界限、Cpk |
+| [進階計算](./engine/advanced-calculation.md) | 非常態、重判 |
+| [監控計畫路由](./engine/monitoring-plan.md) | Wildcard |
+| [規則引擎](./engine/rule-engine.md) | 滑動窗口 |
+| [配置變更](./engine/configuration-management.md) | 版本化 |
+
+### 視覺化
+
+| 文章 | 主題 |
+|------|------|
+| [圖層渲染](./visualization/layer-rendering.md) | ChartDirector |
+| [數據採樣](./visualization/data-sampling.md) | LTTB |
+| [深度下鑽](./visualization/drill-down.md) | 三層 RCA |
+| [高階圖表](./visualization/advanced-charts.md) | 直方圖等 |
+| [報表自動化](./visualization/report-automation.md) | 焦點報告 |
 
 ### 異常處理
 
 | 文章 | 主題 |
 |------|------|
-| [異常偵測與告警觸發](./exception-handling/detection-and-alert.md) | OOC/OOS 原子性 |
-| [告警抑制與通報策略](./exception-handling/alert-suppression.md) | 歸併、升級 |
-| [異常處置狀態機](./exception-handling/disposition-state-machine.md) | OCAP 生命週期 |
-| [跨系統聯動處置](./exception-handling/cross-system-integration.md) | Hold Lot、停線 |
-| [通報可靠性與補償機制](./exception-handling/notification-reliability.md) | 零丟失 |
-| [看圖與除錯入門](./exception-handling/spcDebugging.md) | 虛警排查 |
-
-### 軌道 B 讀完後，你應該能
-
-- 設計 ETL 彙總與 Monitoring Plan 路由
-- 實作統計計算與規則引擎的架構取捨
-- 規劃視覺化渲染與海量數據採樣
-- 設計異常閉環（告警 → 處置 → MES 聯動）
-
----
+| [異常偵測](./exception-handling/detection-and-alert.md) | 原子性 |
+| [告警抑制](./exception-handling/alert-suppression.md) | 歸併升級 |
+| [處置狀態機](./exception-handling/disposition-state-machine.md) | OCAP |
+| [MES 聯動](./exception-handling/cross-system-integration.md) | Hold Lot |
+| [通報可靠性](./exception-handling/notification-reliability.md) | 重試備援 |
+| [除錯入門](./exception-handling/spcDebugging.md) | 虛警 |
 
 ## 本系列不涵蓋
 
-- 統計學教科書級公式推導
-- 各廠 MES / 量測設備介面差異
-- ChartDirector 或前端圖表庫的 API 實作細節
+- 統計教科書級推導
+- 各廠 MES 介面差異
+- ChartDirector API 細節
 
 ## 快速查詢
 
-- 不懂縮寫？→ [術語表](./glossary.md)
-- 想看完整流程？→ [端到端資料生命週期](./core-model/endToEndLifecycle.md)
-- 現場虛警？→ [看圖與除錯入門](./exception-handling/spcDebugging.md)
+| 需求 | 文章 |
+|------|------|
+| 不懂縮寫 | [glossary](./glossary.md) |
+| 看全流程 | [endToEndLifecycle](./core-model/endToEndLifecycle.md) |
+| 現場虛警 | [spcDebugging](./exception-handling/spcDebugging.md) |

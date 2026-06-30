@@ -1,42 +1,43 @@
 ---
 sidebar_position: 5
-description: SPC 異常處理：通報可靠性與補償機制
+description: 多管道通報、指數退避重試與備援路徑
 key: [SPC, 異構管道, 指數退避, 備援路徑, 重試策略]
 tags: [SPC, 異常處理, 基礎設施, AI筆記]
 ---
 
 # 📊 通報可靠性與補償機制
 
-本章節解析通報系統的基礎設施層。任何環節的失敗都可能擴大品質風險，因此可靠性至關重要。
+本章節只做一件事：說明告警任務從建立到送達的**可靠投遞**機制。告警建立見 [`detection-and-alert`](./detection-and-alert.md)。
 
-## 1. 異構通知管道與插件化架構
+## 讀完本篇你能回答
 
-- **MMS / IM**：即時性最高，內嵌數據。
-- **Enterprise App**：系統推播通知。
-- **SMTP Email**：資訊量大，內嵌趨勢圖截圖。
+- 通報任務有哪些狀態？
+- MMS 掛了怎麼辦？
+- 如何稽核「誰讀了通知」？
 
-## 2. 通報任務生命週期與重試策略
+## 1. 多管道
 
-### 2.1 任務狀態
-- **PENDING** / **SENT** / **FAILED**。
+| 管道 | 特點 |
+|------|------|
+| MMS / IM | 即時、可內嵌摘要 |
+| App Push | 行動裝置 |
+| Email | 長內容、可附圖 |
 
-### 2.2 指數退避重試 (Exponential Backoff)
-- **智慧重試**：1、4、16 分鐘間隔重試。
-- **目的**：避免網路瞬斷時重複發送導致伺服器崩潰。
+插件化架構，依廠區配置啟用。
 
-## 3. 備援路徑與最終通知
+## 2. 重試策略
 
-- **路徑自動切換**：首選管道持續失敗時（如 MMS），自動轉向 Email。
-- **系統告警**：若通報系統整體失效，向管理員發送最高等級警報。
+任務狀態：PENDING → SENT / FAILED。失敗時以 1、4、16 分鐘**指數退避**重試，避免雪崩。
 
-## 4. 領域專家思維：通報可審計性
+## 3. 備援與稽核
 
-- **讀取回執**：追蹤用戶是否已讀取通知。
-- **品質報告**：定期檢視通報延遲與失敗率，優化全球工廠的監控同步性。
+- 首選管道持續失敗 → 自動切 Email
+- 全系統失效 → 管理員最高級警報
+- 記錄已讀回執，定期檢視延遲與失敗率
 
-## 與其他文章的關聯
+## 延伸閱讀
 
-- 學習路徑：[`index`](../index.md)
-- 異常偵測：[`detection-and-alert`](./detection-and-alert.md)
-- 告警抑制：[`alert-suppression`](./alert-suppression.md)
-- 報表自動化：[`report-automation`](../visualization/report-automation.md)
+| 主題 | 文章 |
+|------|------|
+| 告警抑制 | [`alert-suppression`](./alert-suppression.md) |
+| 報表派送 | [`report-automation`](../visualization/report-automation.md) |

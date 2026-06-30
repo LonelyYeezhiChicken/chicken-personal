@@ -1,59 +1,63 @@
 ---
 sidebar_position: 3
-description: SPC 異常處理：異常處置狀態機與 OOC 生命週期管理
+description: OOC 紀錄狀態流、根因分類與 Excluded 重算
 key: [SPC, 狀態機, ACK, OCAP, 數據排除]
 tags: [SPC, 異常處理, 管理流程, AI筆記]
 ---
 
 # 📊 異常處置狀態機
 
-本章節解析異常紀錄的持久化模型。在我們的系統中，異常點是具備狀態屬性的管理對象。
+本章節只做一件事：說明一筆 OOC/OOS 紀錄如何從**偵測到結案**走完整 OCAP 流程。快照模型見 [`data-snapshot`](../core-model/data-snapshot.md)。
 
-## 1. 異常紀錄狀態流 (State Transitions)
+## 讀完本篇你能回答
+
+- 異常紀錄有哪些狀態？誰負責推進？
+- Common Cause 與 Special Cause 為什麼要強制分類？
+- Excluded 之後系統做什麼？
+
+## 1. 狀態流
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Detected: 規則觸發
-    Detected --> Notification: 告警抑制過濾
-    Notification --> InProgress: 負責人簽收 (ACK)
-    
-    state InProgress {
-        [*] --> Investigation: 原因分析
-        Investigation --> ActionTaken: 執行處置 (OCAP)
-        ActionTaken --> Review: 效果確認
-    }
-    
-    Review --> Closed: 處置有效
-    Review --> Investigation: 處置無效
-    
-    Closed --> [*]
+  [*] --> Detected
+  Detected --> Notification
+  Notification --> InProgress: ACK
+  state InProgress {
+    Investigation --> ActionTaken --> Review
+  }
+  Review --> Closed
+  Review --> Investigation: 無效
+  Closed --> [*]
 ```
 
-- **NEW**：偵測違規後的初始狀態。
-- **ACK**：工程師簽收，停止通報升級。
-- **ANALYZING**：調查異常原因中。
-- **CLOSED**：填寫處置動作後正式結案。
+| 狀態 | 意義 |
+|------|------|
+| Detected | 規則觸發 |
+| ACK | 簽收，停止升級 |
+| Investigation | 根因分析 |
+| Closed | 對策有效 |
 
-## 2. 根因分類與原因代碼
+## 2. 根因分類
 
-強制對異常進行歸類：
-- **Common Cause**：製程內在波動。
-- **Special Cause**：明確的外部干擾。
-- **分析價值**：透過原因代碼分佈（柏拉圖分析）鎖定品質波動主因。
+| 類型 | 用途 |
+|------|------|
+| Common Cause | 系統改善、長期優化 |
+| Special Cause | 立即處置 |
 
-## 3. 數據排除與重算效應
+原因代碼分佈（柏拉圖）可鎖定主要品質波動來源。
 
-- **排除操作**：若確認為量測機台故障，可將點標記為 `Excluded`。
-- **自動重算**：觸發影子計算，剔除該點並重估 $C_{pk}$，確保基線純淨。
+## 3. 排除與重算
 
-## 4. 領域專家思維：OCAP 標準化
+確認量測機故障等情況可標記 `Excluded`，觸發影子計算重估 $C_{pk}$。
 
-- **強制註記**：結案前檢查處置代碼與分析內容。
-- **流程稽核**：紀錄「誰、何時、執行什麼變更」，滿足回溯需求。
+:::info 實務提醒
+結案前強制填寫處置代碼與分析內容，滿足稽核「誰、何時、做了什麼」。
+:::
 
-## 與其他文章的關聯
+## 延伸閱讀
 
-- 學習路徑：[`index`](../index.md)
-- 數據快照：[`data-snapshot`](../core-model/data-snapshot.md)
-- MES 聯動：[`cross-system-integration`](./cross-system-integration.md)
-- 端到端場景：[`endToEndLifecycle`](../core-model/endToEndLifecycle.md)
+| 主題 | 文章 |
+|------|------|
+| 快照模型 | [`data-snapshot`](../core-model/data-snapshot.md) |
+| MES 聯動 | [`cross-system-integration`](./cross-system-integration.md) |
+| 端到端流程 | [`endToEndLifecycle`](../core-model/endToEndLifecycle.md) |

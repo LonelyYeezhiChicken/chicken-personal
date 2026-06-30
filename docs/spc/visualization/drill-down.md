@@ -1,57 +1,54 @@
 ---
 sidebar_position: 3
-description: SPC 數據視覺化：深度下鑽與互動分析
+description: 三層下鑽路徑、跨圖聯動與局部統計重估
 key: [SPC, 下鑽分析, RCA, 局部縮放, 跨圖表聯動]
 tags: [SPC, 數據視覺化, 根因分析, AI筆記]
 ---
 
 # 📊 深度下鑽與互動分析
 
-本章節解析視覺化系統的「分析深度」。發現異常只是開始，真正的價值在於具備穿透數據層級的能力，幫助工程師找出問題根因。
+本章節只做一件事：說明發現 OOC 紅點後，如何從彙總值一路鑽到 Raw Sample 與 MES 脈絡。雙圖概念見 [`dual-chart-philosophy`](../core-model/dual-chart-philosophy.md)。
 
-## 1. 三層式分析路徑 (Three-Layer Analysis Path)
+## 讀完本篇你能回答
 
-### 📊 實務路徑：OOC 根因分析流程圖
+- OOC 根因分析的三層路徑是什麼？
+- 怎麼區分量測噪聲 vs 製程偏移？
+- X-bar 與 R 圖如何聯動？
+
+## 1. 三層下鑽
 
 ```mermaid
 flowchart TD
-    OOC[發現 OOC 紅點] --> Step1[第一層: 點擊點位 / 查看違規規則]
-    Step1 --> Step2[第二層: 展開 Raw Samples / 檢查組內分佈]
-    Step2 --> Check{組內散佈很大?}
-    Check -- "Yes" --> Sensor[量測問題 / 單點噪聲 / 感測器異常]
-    Check -- "No" --> Step3[第三層: 聯動 MES / 查閱生產脈絡]
-    Step3 --> Context[分析人員/材料/環境/機台狀態]
-    Context --> RCA[找出物理根因]
+  OOC[OOC 紅點] --> L1[第一層: 觸發規則與彙總值]
+  L1 --> L2[第二層: Raw Samples 組內分佈]
+  L2 --> Big{組內散佈大?}
+  Big -->|是| Sensor[量測/感測器問題]
+  Big -->|否| L3[第三層: MES 生產脈絡]
+  L3 --> RCA[物理根因]
 ```
 
-### 第一層：觀測彙總
-- **內容**：顯示該組彙總數據 ($\bar{X}, R, S$) 與觸發規則。
+| 層級 | 看到什麼 |
+|------|----------|
+| 1 | $\bar{X}$、$R$、觸發規則 |
+| 2 | 組內分佈、Wafer Map |
+| 3 | 機台、操作員、環境紀錄 |
 
-### 第二層：原始樣本 (Raw Samples)
-- **視覺化工具**：系統呈現「組內分佈圖」或晶圓座標圖 (Wafer Map)。
-- **分析價值**：區分「組內變異」與「系統性位移」。
+## 2. 局部重估
 
-### 第三層：生產脈絡 (Drill-through)
-- **內容**：聯動 MES，獲取該批次的生產環境數據（機台、操作員、溫濕度等）。
+框選 ROI 可即時重算該區間的 $C_{pk}$ 與 $\bar{\bar{X}}$，評估改善是否顯著。
 
-## 2. 局部縮放與統計重估
+## 3. 跨圖聯動
 
-- **局部縮放**：支持框選 ROI。
-- **即時重判**：針對局部區間重新計算 $C_{pk}$ 與 $\bar{\bar{X}}$。幫助工程師評估品質改善是否顯著。
+點選 X-bar 異常點 → R 圖同步跳轉同一時刻；多量測項同步時間軸比對。
 
-## 3. 跨圖表聯動分析 (Linked Views)
+:::info 實務提醒
+可暫時隱藏疑似壞點觀察 Cpk 變化（排除法），但正式結案需走 Excluded 流程見 [`disposition-state-machine`](../exception-handling/disposition-state-machine.md)。
+:::
 
-- **位置與變異圖同步**：選取 $\bar{X}$ 異常點時，$R$ 圖自動跳轉至相同時間點。
-- **多維度同步**：在不同量測項目間同步時間軸，分析指標間的關聯。
+## 延伸閱讀
 
-## 4. 領域專家思維：假設驗證
-
-- **排除法分析**：臨時「隱藏」疑似錯誤點，即時查看對 $C_{pk}$ 的影響。
-- **預測性縮放**：預測數據何時會突破規格界限。
-
-## 與其他文章的關聯
-
-- 學習路徑：[`index`](../index.md)
-- 雙圖哲學：[`dual-chart-philosophy`](../core-model/dual-chart-philosophy.md)
-- 數據快照：[`data-snapshot`](../core-model/data-snapshot.md)
-- 高階圖表：[`advanced-charts`](./advanced-charts.md)
+| 主題 | 文章 |
+|------|------|
+| 快照資料 | [`data-snapshot`](../core-model/data-snapshot.md) |
+| 高階圖表 | [`advanced-charts`](./advanced-charts.md) |
+| 除錯入門 | [`spcDebugging`](../exception-handling/spcDebugging.md) |

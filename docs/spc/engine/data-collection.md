@@ -1,71 +1,55 @@
 ---
 sidebar_position: 1
-description: SPC 資料擷取與計算引擎：資料擷取與彙總架構
+description: Raw Sample 與 Monitor Value 雙層模型，以及 R/S 離散估計選擇
 key: [SPC, ETL, 原始樣本, 觀測彙總值, R, S]
 tags: [SPC, 資料工程, AI筆記]
 ---
 
 # 📊 資料擷取與彙總架構
 
-本章節解析數據進入系統後的初步處理流程。在半導體製造中，我們面臨海量的原始數據，如何「理性地彙總」是統計分析的第一步。
+本章節只做一件事：說明 ETL 如何把設備量測變成控制圖上的**一個點**（Monitor Value），以及為什麼要保留 Raw Sample。全流程見 [`endToEndLifecycle`](../core-model/endToEndLifecycle.md)。
 
-```mermaid
-sequenceDiagram
-    participant Machine as 現場設備/MES
-    participant ETL as ETL 擷取引擎
-    participant Engine as 統計計算引擎
-    participant DB as 快照資料庫
-    
-    Machine->>ETL: 原始採集數據 (Raw Data)
-    ETL->>ETL: 數據清洗與彙總 (Aggregation)
-    ETL->>Engine: 標準化數據流
-    Note over Engine: 計算 CL / UCL / LCL<br/>計算 Cp / Cpk / Ca
-    Engine->>Engine: 統計規則過濾 (Nelson Rules)
-    Engine->>DB: 儲存數據快照 (Snapshot)
-    DB-->>Engine: 提取歷史數據 (Sliding Window)
-```
+## 讀完本篇你能回答
 
-## 1. 數據分層模型：原始樣本 vs. 觀測彙總值
+- Raw Sample 與 Monitor Value 各存什麼？
+- $n$ 較小用 $R$、較大用 $S$ 的邏輯是什麼？
+- 各組樣本數不同時，中心線怎麼算？
 
-為了兼顧儲存效率與分析深度，系統建立了雙層數據模型：
+## 1. 雙層數據模型
 
-### 1.1 原始樣本 (Raw Samples)
-- **定義**：直接從量測設備獲取的物理數值。
-- **儲存價值**：保留原始樣本是為了計算「組內變異」以及後續的診斷。
+| 層級 | 內容 | 用途 |
+|------|------|------|
+| **Raw Sample** | 設備直接量測值 | 組內變異、下鑽診斷 |
+| **Monitor Value** | 一組樣本彙總後的單值 | 控制圖上的「點」 |
 
-### 1.2 觀測彙總值 (Monitor Value)
-- **定義**：對一組樣本進行數學彙總後的單一數值，這也是控制圖上實際呈現的「點」。
-- **彙總類型**：
-    - **位置估計 (Location Estimate)**：通常為樣本平均值 $\bar{X} = \frac{\sum x_i}{n}$。
-    - **離散估計 (Variation Estimate)**：反映數據的散佈程度。
+彙總分兩類：
 
-## 2. 離散估計量的選擇邏輯：$R$ vs. $S$
+- **位置**：$\bar{X} = \sum x_i / n$
+- **離散**：$R$ 或 $S$
 
-系統會根據樣本數 $n$ 自動調整估計方法：
+## 2. R vs S 怎麼選
 
-### 2.1 全距 (Range, $R$)
-- **公式**：
-  $$R = X_{\text{max}} - X_{\text{min}}$$
-- **適用場景**：樣本數 $n < 10$。
+| 方法 | 公式 | 適用 |
+|------|------|------|
+| 全距 $R$ | $X_{\max} - X_{\min}$ | $n < 10$ |
+| 標準差 $S$ | $\sqrt{\sum(x_i-\bar{x})^2/(n-1)}$ | $n \geq 10$ |
 
-### 2.2 標準差 (Standard Deviation, $S$)
-- **公式**：
-  $$S = \sqrt{\frac{\sum (x_i - \bar{x})^2}{n-1}}$$
-- **適用場景**：樣本數 $n \geq 10$。
+## 3. 動態樣本數
 
-## 3. 動態樣本數處理
+各組 $n$ 不一致時，總中心線用加權平均：
 
-- **係數補償**：系統會動態查找統計常數表。
-- **加權中心線**：當各組 $n$ 不同時，中心線 $\bar{\bar{X}}$ 採用加權平均計算：
-  $$\bar{\bar{X}} = \frac{\sum (n_i \cdot \bar{x}_i)}{\sum n_i}$$
+$$\bar{\bar{X}} = \frac{\sum (n_i \cdot \bar{x}_i)}{\sum n_i}$$
 
-## 4. 領域專家思維：採樣的時效性
+係數表（$d_2$、$A_2$ 等）依當前 $n$ 自動查表。
 
-專家在設定彙總策略時會考慮「時間相關性」。系統支援「強制分組截斷」，確保每一組數據都具備物理上的同質性。
+:::info 實務提醒
+分組要考慮**時間同質性**——相隔過久的樣本不應硬湊同一 Subgroup。系統可支援強制分組截斷。
+:::
 
-## 與其他文章的關聯
+## 延伸閱讀
 
-- 學習路徑：[`index`](../index.md)
-- 監控策略：[`monitoring-strategy`](../core-model/monitoring-strategy.md)
-- 計算引擎：[`calculation-engine`](./calculation-engine.md)
-- 端到端場景：[`endToEndLifecycle`](../core-model/endToEndLifecycle.md)
+| 主題 | 文章 |
+|------|------|
+| 分群概念 | [`monitoring-strategy`](../core-model/monitoring-strategy.md) |
+| 界限計算 | [`calculation-engine`](./calculation-engine.md) |
+| 端到端流程 | [`endToEndLifecycle`](../core-model/endToEndLifecycle.md) |

@@ -1,61 +1,55 @@
 ---
 sidebar_position: 3
-description: SPC 資料擷取與計算引擎：進階計算機制
+description: 非常態分佈處理、異步計算與補點重判機制
 key: [SPC, 非常態分佈, AD 檢定, 分位數法, 高性能設計]
 tags: [SPC, 統計計算, AI筆記]
 ---
 
 # 📊 進階計算機制
 
-本章節探討 SPC 系統在應對真實生產環境中的兩大挑戰：**非對稱數據分佈**與**極大規模並發計算**。
+本章節只做一件事：說明當數據**不符合常態**或**規模極大**時，計算引擎的應對策略。基礎界限算法見 [`calculation-engine`](./calculation-engine.md)。
 
-## 1. 非常態分佈 (Non-normality) 處理
+## 讀完本篇你能回答
 
-標準的 SPC 理論假設數據呈現常態分佈。但在特定製程中，數據往往呈現單側偏態。
+- 什麼時候不能用 $3\sigma$ 算界限？
+- 分位數法怎麼取代 UCL/LCL？
+- 補點進來後為什麼要重判 OOC？
 
-### 📊 實務決策：非常態數據處理路徑
+## 1. 非常態數據
+
+標準 SPC 假設常態分佈。偏態或雙峰時：
 
 ```mermaid
 flowchart TD
-    Data[獲取數據序列] --> Test{AD 檢定 P-value > 0.05?}
-    Test -- "Yes (常態)" --> Standard[使用 3-Sigma 計算管制界限]
-    Test -- "No (非常態)" --> CheckShape{分佈偏態嚴重?}
-    CheckShape -- "輕微偏態" --> BoxCox[執行數據轉換: Box-Cox / Johnson]
-    CheckShape -- "嚴重偏態 / 雙峰" --> Quantile[執行分位數法: Quantile Method]
-    Quantile --> Result[UCL=99.865th / LCL=0.135th]
+  Data[數據序列] --> AD{AD 檢定 P>0.05?}
+  AD -->|是| Sigma[3-sigma 界限]
+  AD -->|否| Shape{偏態嚴重?}
+  Shape -->|輕微| Transform[Box-Cox 等轉換]
+  Shape -->|嚴重| Quantile[分位數法 UCL/LCL]
 ```
 
-### 1.1 Anderson-Darling (AD) 檢定
-- **門檻值**：當 $P\text{-value} < 0.05$ 時，系統判定數據為「非常態」。
+| 方法 | 說明 |
+|------|------|
+| AD 檢定 | $P < 0.05$ 判定非常態 |
+| 分位數法 | $UCL$=99.865th、$LCL$=0.135th，維持等機率報警 |
 
-### 1.2 分位數法 (Quantile Method)
-- **原理**：直接利用數據分佈的分位點。
-  $$UCL = \text{Quantile}(99.865\%)$$
-  $$LCL = \text{Quantile}(0.135\%)$$
-- **設計理由**：確保兩側的報警機率與常態分佈一致，實現「等機率界限」。
+## 2. 效能設計
 
-## 2. 異步計算引擎與高性能設計
+| 機制 | 目的 |
+|------|------|
+| 事件驅動異步計算 | 寫入不阻塞，背景算界限 |
+| 記憶體快取 + 增量統計 | 減少全表掃描 |
+| Scale-out + 熔斷 | 單點異常不拖垮全廠 |
 
-### 2.1 事件驅動架構
-- **工作流**：數據寫入後發送「計算事件」至背景執行緒池。
-- **優勢**：前台操作非阻塞，極大化吞吐量。
+## 3. 補點與重判
 
-### 2.2 緩存策略與增量計算
-- **Memory-cache**：將歷史觀測值快取在記憶體中。
-- **增量統計**：針對總平均值，系統僅計算「差量」，減少掃描開銷。
+- 新點（含延遲 Backfill）進入 → 重掃受影響的滑動窗口
+- **已簽核界限**鎖定不變，補點只觸發判定、不自動改界
 
-## 3. 延遲數據與歷史重判
+## 延伸閱讀
 
-- **重判邏輯**：新點進入後，自動遞迴掃描受影響的滑動窗口，重新標記 OOC 狀態。
-- **界限鎖定機制**：已簽核界限不可自動更新，補入數據僅觸發判定。
-
-## 4. 領域專家思維：系統擴展性
-
-系統支援橫向擴展 (Scale-out)，並具備「計算熔斷機制」，確保全廠監控環境不會因單一異常點而崩潰。
-
-## 與其他文章的關聯
-
-- 學習路徑：[`index`](../index.md)
-- 計算引擎：[`calculation-engine`](./calculation-engine.md)
-- 規則引擎：[`rule-engine`](./rule-engine.md)
-- 數據快照：[`data-snapshot`](../core-model/data-snapshot.md)
+| 主題 | 文章 |
+|------|------|
+| 基礎計算 | [`calculation-engine`](./calculation-engine.md) |
+| 規則重判 | [`rule-engine`](./rule-engine.md) |
+| 快照 | [`data-snapshot`](../core-model/data-snapshot.md) |

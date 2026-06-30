@@ -1,46 +1,49 @@
 ---
 sidebar_position: 6
-description: SPC 資料擷取與計算引擎：配置變更管理
+description: 配置版本化、影響模擬與電子簽核的合規變更流程
 key: [SPC, 配置不可變性, 影響評估, 安全審查, 電子簽章]
 tags: [SPC, 系統管理, AI筆記]
 ---
 
 # 📊 配置變更管理
 
-本章節介紹 SPC 系統的「合規性」機制。在受控的生產環境中，任何規則的修改都必須留下不可抹滅的足跡。
+本章節只做一件事：說明 SPC 配置（Plan、規則、界限）如何**可回溯、可審批**地變更。變更引发的虛警見 [`spcDebugging`](../exception-handling/spcDebugging.md)。
 
-## 1. 配置不可變性與版本化
+## 讀完本篇你能回答
 
-配置文件一旦啟用，就不允許原地修改。
+- 為什麼啟用後的配置不能原地修改？
+- 發布新規則前怎麼評估 OOC 比率變化？
+- Draft → Active 要經過什麼流程？
 
-### 1.1 版本序列 (Versioning Sequence)
-- **變更即副本**：每次修改都會產生具備唯一識別碼的新版本。
-- **快照存檔**：舊版本會標記為 `Obsolete` 並存檔，確保歷史判定可回溯。
+## 1. 版本化
 
-## 2. 變更影響評估 (Impact Analysis)
+| 原則 | 做法 |
+|------|------|
+| 不可變 | 每次變更產生新版本 ID |
+| 可回溯 | 舊版標記 Obsolete 並存檔 |
 
-### 2.1 離線模擬器
-- **邏輯檢驗**：在發布前，將新規則套用至歷史數據進行模擬。
-- **風險預防**：自動展示 OOC 點位比率變化，預警告警疲勞風險。
+## 2. 影響評估
 
-## 3. 安全審查流程與電子簽章
+發布前用**離線模擬器**把新規則套到歷史數據，預覽 OOC 比率變化，避免告警疲勞。
 
-### 3.1 狀態流轉 (State Machine)
-- **Draft (草稿)**：編輯中。
-- **Pending (審核中)**：待主管簽核。
-- **Active (生效中)**：正式推送至生產環境。
+## 3. 審批流程
 
-### 3.2 原因代碼與 Ticket 關聯
-- 強制要求輸入修改原因，並與 Ticket 系統建立連結。
+| 狀態 | 意義 |
+|------|------|
+| Draft | 編輯中 |
+| Pending | 待主管簽核 |
+| Active | 推送生產 |
 
-## 4. 領域專家思維：零錯誤變更
+修改必須附原因代碼並連結 Ticket。
 
-- **配置審計**：定期檢視誰在何時修改了關鍵界限。
-- **批量同步**：支援將驗證過的規則集同步至同型號的所有機台，維持全廠一致性。
+:::info 實務提醒
+定期審計「誰在何時改了界限」；驗證過的規則集可批量同步至同型機台。
+:::
 
-## 與其他文章的關聯
+## 延伸閱讀
 
-- 學習路徑：[`index`](../index.md)
-- 監控計畫：[`monitoring-plan`](./monitoring-plan.md)
-- 進階計算：[`advanced-calculation`](./advanced-calculation.md)
-- 除錯入門：[`spcDebugging`](../exception-handling/spcDebugging.md)
+| 主題 | 文章 |
+|------|------|
+| 監控計畫 | [`monitoring-plan`](./monitoring-plan.md) |
+| 進階重判 | [`advanced-calculation`](./advanced-calculation.md) |
+| 除錯 | [`spcDebugging`](../exception-handling/spcDebugging.md) |

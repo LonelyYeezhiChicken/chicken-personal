@@ -1,54 +1,62 @@
 ---
 sidebar_position: 5
-description: SPC 核心領域模型：數據快照與異常處置
+description: SpcHis 快照封裝、SpcOocHis 違規紀錄與 MES 閉環概念
 key: [SPC, 數據快照, 異常處置, 狀態機, MES 聯動]
 tags: [SPC, 領域模型, AI筆記]
 ---
 
 # 📊 數據快照與異常處置
 
-本章節探討數據的「持久化」與「異常回應」。在製造系統中，數據不只是數字，它是具備稽核價值的證據。
+本章節只做一件事：說明 SPC 如何把「當下的數字」變成可稽核的**證據包**，以及異常紀錄如何進入處置流程。狀態機細節見 [`disposition-state-machine`](../exception-handling/disposition-state-machine.md)。
 
-## 1. 歷史數據 (SpcHis)：封裝當下的時空快照
+## 讀完本篇你能回答
 
-**歷史數據 (SpcHis)** 是數據在進入系統那一刻的「完整證據包」。
+- SpcHis 為什麼要封裝「當下的管制界限」？
+- SpcOocHis 紀錄經歷哪些狀態？
+- 什麼情況下 SPC 會驅動 MES Hold Lot？
 
-### 1.1 狀態封裝 (Snapshot Encapsulation) 原則
-- **核心設計**：在寫入數據時，系統會同步將當下的管制界限封裝進紀錄中。
-- **設計理由**：為了還原歷史現場，必須固化當時的判定標準。
+## 1. SpcHis：歷史快照
 
-### 1.2 觀測完整性
-- 同時紀錄觀測值與原始量測點 (Raw Samples)，支持後續下鑽分析。
+每一筆寫入的觀測值都是一份**時空快照**：
 
-## 2. 違規紀錄 (SpcOocHis)：異常處置的生命週期
+| 封裝內容 | 目的 |
+|----------|------|
+| 當下 UCL/LCL/CL | 爭議時可還原「當時怎麼判定的」 |
+| Monitor Value + Raw Samples | 支援下鑽與組內分析 |
 
-### 2.1 處置狀態機 (State Machine)
-- **偵測 (Detected)**：引擎判定違規。
-- **簽收 (Acknowledged)**：工程師確認異常。
-- **原因註記 (Cause ID)**：歸類為異常原因。
-- **結案 (Closed)**：執行對策並確認製程回復穩定。
+沒有快照封裝，事後無法回答「這顆紅點當時的界限是多少」。
 
-### 2.2 告警抑制
-- **抑制邏輯**：在極短時間內補入多筆違規數據時，系統會將後續數據點歸併，防止告警風暴。
+## 2. SpcOocHis：違規生命週期
 
-## 3. MES 閉環控制
+| 狀態 | 意義 |
+|------|------|
+| Detected | 規則觸發 |
+| Acknowledged | 工程師簽收 |
+| Analyzing | 原因調查 |
+| Closed | 對策完成並確認有效 |
 
-這是 SPC 系統最具影響力的環節：**Block Action**。
+短時間內多筆同類違規會**歸併**，避免告警風暴（見 [`alert-suppression`](../exception-handling/alert-suppression.md)）。
 
-### 3.1 自動 Hold Lot 指令
-- 系統可自動向 MES 發送 Hold 指令，將異常批次「物理性攔截」。
+## 3. MES 閉環
 
-### 3.2 機台停線 (Entity Block)
-- 針對嚴重異常，系統可直接對機台下達停線控制，直到工程師執行復機。
+嚴重異常可觸發：
 
-## 4. 領域專家思維：重判邏輯
+- **Hold Lot**：攔截異常批次
+- **Entity Block**：機台/腔體停線直至品質簽核解除
 
-- **歷史補點重判**：新點進入後，自動重新掃描窗口，檢查是否觸發連續性違規.
-- **排除效應**：若排除離群點，系統需自動重算歷史指標。
+實作與握手協定見 [`cross-system-integration`](../exception-handling/cross-system-integration.md)。
 
-## 與其他文章的關聯
+## 4. 重判與排除
 
-- 學習路徑：[`index`](../index.md)
-- 處置狀態機：[`disposition-state-machine`](../exception-handling/disposition-state-machine.md)
-- MES 聯動：[`cross-system-integration`](../exception-handling/cross-system-integration.md)
-- 端到端場景：[`endToEndLifecycle`](./endToEndLifecycle.md)
+| 操作 | 效應 |
+|------|------|
+| 補點進入 | 重掃滑動窗口，可能觸發連續 OOC |
+| 標記 Excluded | 剔除離群點後重算 $C_{pk}$ |
+
+## 延伸閱讀
+
+| 主題 | 文章 |
+|------|------|
+| 處置狀態機 | [`disposition-state-machine`](../exception-handling/disposition-state-machine.md) |
+| MES 聯動 | [`cross-system-integration`](../exception-handling/cross-system-integration.md) |
+| 端到端流程 | [`endToEndLifecycle`](./endToEndLifecycle.md) |
