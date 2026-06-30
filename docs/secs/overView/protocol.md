@@ -32,7 +32,7 @@ tags: [SECS, GEM, 概觀, AI筆記]
 - 距離：約 15 公尺以內
 - 傳輸單位：以 **Block** 為單位，含長度、序號與 **Checksum**，透過 ENQ/EOT/ACK/NAK 握手
 
-適用：老舊設備、單機連線。深入說明見 [`secs1BlockTransfer`](/docs/secs/protocol-advanced/secs1BlockTransfer)（待撰寫）。
+適用：老舊設備、單機連線。深入說明見 [`secs1BlockTransfer`](/docs/secs/protocol-advanced/secs1BlockTransfer)。
 
 ### 2.2 HSMS (SEMI E37)：TCP/IP 網路
 
@@ -78,6 +78,7 @@ flowchart TD
 
 ## 5. 與其他文章的關聯
 
+- 學習路徑：[`index`](/docs/secs/index)
 - SECS 簡介：[`aboutSECS`](/docs/secs/overView/aboutSECS)
 - SECS 與 GEM：[`secsAndGem`](/docs/secs/overView/secsAndGem)
 - 訊息結構：[`secsStructure`](/docs/secs/basics/secsStructure)

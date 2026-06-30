@@ -81,6 +81,7 @@ L 2
 
 ## 5. 與其他文章的關聯
 
+- 術語表：[`glossary`](/docs/secs/basics/glossary)
 - Stream 總覽：[`streamOverview`](/docs/secs/messages/streamOverview)
 - S1 完整對照表：[`s1-equipmentStatus`](/docs/secs/messages/s1-equipmentStatus)
 - SECS 與 GEM：[`secsAndGem`](/docs/secs/overView/secsAndGem)

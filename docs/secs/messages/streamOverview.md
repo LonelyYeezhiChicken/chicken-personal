@@ -32,14 +32,14 @@ flowchart LR
 |--------|------|----------|----------|
 | **S1** | Equipment Status | 在線確認、通訊建立、上下線、狀態變數查詢 | [`s1-equipmentStatus`](/docs/secs/messages/s1-equipmentStatus) |
 | **S2** | Equipment Control | 遠端指令、事件報告定義、常數/變數設定 | [`s2-equipmentControl`](/docs/secs/messages/s2-equipmentControl) |
-| **S3** | Material Status | 材料（晶圓/片盒）狀態查詢 | 待撰寫 |
-| **S4** | Material Control | 材料搬運與控制 | 待撰寫 |
+| **S3** | Material Status | 材料（晶圓/片盒）狀態查詢 | [`s3-s4-material`](/docs/secs/messages/s3-s4-material) |
+| **S4** | Material Control | 材料搬運與控制 | [`s3-s4-material`](/docs/secs/messages/s3-s4-material) |
 | **S5** | Exception / Alarm | 警報上報、啟用/停用、查詢 | [`s5-alarm`](/docs/secs/messages/s5-alarm) |
 | **S6** | Data Collection | 事件資料收集與追蹤 | [`s6-dataCollection`](/docs/secs/messages/s6-dataCollection) |
-| **S7** | Process Program | 配方（PP）上傳、下載、刪除 | 待撰寫 |
-| **S8** | Control Program | 控制程式傳輸 | 待撰寫 |
+| **S7** | Process Program | 配方（PP）上傳、下載、刪除 | [`s7-recipe`](/docs/secs/messages/s7-recipe) |
+| **S8** | Control Program | 控制程式傳輸 | 選讀（見下方） |
 | **S9** | Error Messages | 錯誤回報（不遵循奇偶配對） | [`s9-error`](/docs/secs/messages/s9-error) |
-| **S10** | Terminal Services | 終端機訊息顯示 | 待撰寫 |
+| **S10** | Terminal Services | 終端機訊息顯示 | 選讀（見下方） |
 
 ## 最常用的訊息配對（入門必記）
 
@@ -62,7 +62,21 @@ flowchart LR
 2. 在該 Stream 的 **完整對照表** 中查 **F 數字**
 3. 例如 `S1F12` → S1 文章 → Status Variable Namelist Reply
 
+## 選讀：S8 與 S10
+
+這兩個 Stream 多數 Host 工程師較少直接操作，入門階段了解用途即可。
+
+### S8：Control Program
+
+用於傳輸**控制程式**（與 S7 的 Process Program 配方不同）。常見於需下載可執行控制邏輯的設備類型。若廠商 Interface Spec 未列出 S8 Capability，可跳過。
+
+### S10：Terminal Services
+
+用於在設備端**顯示文字訊息**（類似終端機輸出），Host 可透過 S10F1 送文字給操作員看。除錯或人工介入場景偶爾會用到。
+
 ## 與其他文章的關聯
 
+- 學習路徑：[`index`](/docs/secs/index)
+- 術語表：[`glossary`](/docs/secs/basics/glossary)
 - 訊息結構 SxFy：[`secsStructure`](/docs/secs/basics/secsStructure)
 - SECS 與 GEM：[`secsAndGem`](/docs/secs/overView/secsAndGem)

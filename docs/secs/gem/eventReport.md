@@ -50,6 +50,7 @@ sequenceDiagram
 
 ## 與其他文章的關聯
 
+- 端到端場景：[`startupScenario`](/docs/secs/gem/startupScenario)
 - S2 定義訊息：[`s2-equipmentControl`](/docs/secs/messages/s2-equipmentControl)
 - S6 上報訊息：[`s6-dataCollection`](/docs/secs/messages/s6-dataCollection)
 - SECS 與 GEM：[`secsAndGem`](/docs/secs/overView/secsAndGem)

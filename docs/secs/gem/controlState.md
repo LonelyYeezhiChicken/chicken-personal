@@ -71,6 +71,8 @@ stateDiagram-v2
 
 ## 與其他文章的關聯
 
+- 端到端場景：[`startupScenario`](/docs/secs/gem/startupScenario)
+- 處理狀態：[`processingState`](/docs/secs/gem/processingState)
 - 通訊狀態機：[`communicationState`](/docs/secs/gem/communicationState)
 - S1 訊息：[`s1-equipmentStatus`](/docs/secs/messages/s1-equipmentStatus)
 - S2 遠端指令：[`s2-equipmentControl`](/docs/secs/messages/s2-equipmentControl)

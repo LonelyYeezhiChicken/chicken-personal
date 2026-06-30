@@ -54,5 +54,6 @@ A 20 "ChamberTempHigh" # ALTX（Alarm Text）
 
 ## 與其他文章的關聯
 
+- GEM 警報管理：[`alarmManagement`](/docs/secs/gem/alarmManagement)
 - GEM 能力對照：[`secsAndGem`](/docs/secs/overView/secsAndGem)
 - Stream 總覽：[`streamOverview`](/docs/secs/messages/streamOverview)

@@ -54,6 +54,7 @@ flowchart TD
 
 ## 與其他文章的關聯
 
+- 學習路徑：[`index`](/docs/secs/index)
 - 通訊協定（SECS-I / HSMS）：[`protocol`](/docs/secs/overView/protocol)
 - SECS 與 GEM 關係：[`secsAndGem`](/docs/secs/overView/secsAndGem)
 - 訊息結構 SxFy：[`secsStructure`](/docs/secs/basics/secsStructure)
