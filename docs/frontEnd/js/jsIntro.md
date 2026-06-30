@@ -5,7 +5,7 @@ key: [JavaScript, 入門, console]
 tags: [前端, JavaScript, 入門]
 ---
 
-# JavaScript 入門
+# 🐄 JavaScript 入門
 
 > 讓網頁「會做事」：在 HTML 裡接上 JS，用 `console.log` 印出第一個訊息。
 

@@ -5,7 +5,7 @@ key: [JavaScript, fetch, API, async await]
 tags: [前端, JavaScript, 入門]
 ---
 
-# 用 fetch 讀 API
+# 🐄 用 fetch 讀 API
 
 > 從網路載入 JSON 資料，顯示在網頁上。使用免 API key 的 [JSONPlaceholder](https://jsonplaceholder.typicode.com/)。
 

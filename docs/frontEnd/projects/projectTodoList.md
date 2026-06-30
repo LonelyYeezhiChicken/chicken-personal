@@ -5,7 +5,7 @@ key: [前端, 作品, 待辦清單, JavaScript, localStorage]
 tags: [前端, 入門, 作品]
 ---
 
-# 作品二：待辦清單
+# 🐄 作品二：待辦清單
 
 > 用 JavaScript 做可新增、刪除、標記完成的待辦清單，資料存在 `localStorage`，重新整理不消失。
 

@@ -5,7 +5,7 @@ key: [CSS, 響應式, RWD, media query]
 tags: [前端, CSS, 入門]
 ---
 
-# 響應式入門
+# 🐄 響應式入門
 
 > 讓同一個網頁在手機與桌機都能舒適閱讀：viewport 設定與 `@media` 斷點。
 

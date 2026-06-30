@@ -5,7 +5,7 @@ key: [JavaScript, 函式, function]
 tags: [前端, JavaScript, 入門]
 ---
 
-# 函式
+# 🐄 函式
 
 > 把重複的邏輯包成函式，需要時呼叫一次，程式更好讀、更好改。
 

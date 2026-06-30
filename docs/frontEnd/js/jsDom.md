@@ -5,7 +5,7 @@ key: [JavaScript, DOM, 事件, addEventListener]
 tags: [前端, JavaScript, 入門]
 ---
 
-# DOM 與事件
+# 🐄 DOM 與事件
 
 > **DOM**（Document Object Model）是瀏覽器把 HTML 轉成的樹狀結構。用 JS 選取元素、改內容、聽按鈕點擊。
 

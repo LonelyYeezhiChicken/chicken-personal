@@ -5,7 +5,7 @@ key: [CSS, Flexbox, 排版]
 tags: [前端, CSS, 入門]
 ---
 
-# Flexbox 排版
+# 🐄 Flexbox 排版
 
 > 用 `display: flex` 讓子元素橫向或直向排列、對齊、均分空間——現代網頁排版入門必學。
 

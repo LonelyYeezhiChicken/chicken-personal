@@ -5,7 +5,7 @@ key: [HTML, 骨架, doctype, head, body]
 tags: [前端, HTML, 入門]
 ---
 
-# HTML 網頁骨架
+# 🐄 HTML 網頁骨架
 
 > 學會每個 HTML 檔案必備的結構：宣告、head（給瀏覽器的資訊）、body（給使用者看的內容）。
 

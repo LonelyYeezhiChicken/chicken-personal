@@ -5,7 +5,7 @@ key: [JavaScript, 變數, if, for]
 tags: [前端, JavaScript, 入門]
 ---
 
-# 變數與流程
+# 🐄 變數與流程
 
 > 用 `let` / `const` 存資料，用 `if` 和 `for` 控制程式怎麼跑。
 
