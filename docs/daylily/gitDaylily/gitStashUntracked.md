@@ -5,7 +5,7 @@ key: [git, 雜記, stash, untracked, 暫存]
 tags: [git, git雜記]
 ---
 
-# 👩‍💻 打包暫存目前的修改（包含未追蹤的檔案）
+# 👩‍💻 打包暫存目前的修改
 
 ## 1: 為什麼預設的 git stash 不夠用？
 
