@@ -52,6 +52,23 @@ tags: [C#, C#雜記]
 | `identity` | Syslog Header 顯示的程式識別標籤 | `MyApp` |
 | `layout` | 日誌訊息格式 | `%-5level %logger - %message%newline` |
 
+## 💡 facility 與 identity 是什麼？
+
+用一句話總結：**`identity` 是「這支程式的姓名（身分證）」，`facility` 是「系統分類（所屬部門/頻道）」**。
+
+### 1. `identity`（你是誰）
+- **具體場景**：伺服器上同時跑了 `OrderAPI`、`PaymentWorker`、`AuthService`，全部都把 Log 送到同一台 Syslog 伺服器。
+- **實際效果**：Syslog 收到日誌時，每筆訊息開頭都會帶上標籤（例如 `[OrderAPI]`）。
+- **用處**：維運人員在 Graylog、ELK 或 Linux 終端機可以用標籤快速篩選「只看 `OrderAPI` 的日誌」，不會跟其他服務混在一起。
+
+### 2. `facility`（日誌大分類 / 路由分流）
+- **具體場景**：公司有「核心帳務交易」、「一般官網 API」、「內部排程 Job」，資安規範要求「帳務 Log 要獨立存檔 5 年，排程 Log 留 7 天即可」。
+- **實際效果**：Syslog 標準定義的來源分類，其中 `Local0` ~ `Local7` 是保留給自訂程式的 8 個專屬頻道。
+- **用處**：Syslog 伺服器（如 Linux Rsyslog）可以根據頻道做路由分流：
+  - `Local0`（核心帳務）$\rightarrow$ 存進 `/var/log/finance/audit.log`（長期備份）
+  - `Local1`（官網 API）$\rightarrow$ 存進 `/var/log/web/api.log`
+  - `Local7`（內部測試/排程）$\rightarrow$ 存進 `/var/log/app/job.log`
+
 ## 程式碼呼叫
 
 ```csharp
