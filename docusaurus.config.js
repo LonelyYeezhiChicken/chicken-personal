@@ -170,6 +170,17 @@ async function createConfig() {
         },
         footer: {
           style: "dark",
+          links: [
+            {
+              title: "條款與政策",
+              items: [
+                {
+                  label: "隱私權政策",
+                  to: "/privacy",
+                },
+              ],
+            },
+          ],
           copyright: `Copyright © ${new Date().getFullYear()}@BY Lonely Yeezhi Chicken.`,
         },
         prism: {
@@ -181,6 +192,13 @@ async function createConfig() {
           theme: { light: "neutral" },
         },
       }),
+    scripts: [
+      {
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5790726279404978",
+        async: true,
+        crossorigin: "anonymous",
+      },
+    ],
     plugins: [
       [
         require.resolve("docusaurus-lunr-search"),
